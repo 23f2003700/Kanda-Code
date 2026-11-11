@@ -1,0 +1,19 @@
+# Source and docs: normalise to LF
+*.py   text eol=lf
+*.md   text eol=lf
+*.yml  text eol=lf
+*.html text eol=lf
+*.txt  text eol=lf
+
+# Data, generated outputs and the notebook are stored byte-for-byte,
+# so the SHA-256 fingerprints in the README match a fresh clone.
+data/**              -text
+outputs/**           -text
+notebooks/**         -text
+docs/KEY_NUMBERS.md  -text
+
+*.png     binary
+*.pdf     binary
+*.xlsx    binary
+*.docx    binary
+*.parquet binary

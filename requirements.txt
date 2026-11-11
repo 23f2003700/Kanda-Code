@@ -1,0 +1,15 @@
+# Tested on Windows 11, Python 3.12.10
+pandas==2.3.3
+numpy==2.3.5
+pyarrow==26.0.0
+statsmodels==0.15.0
+scipy==1.18.1
+matplotlib==3.10.7
+pulp==2.9.0
+openpyxl==3.1.5
+# report and notebook builders only
+python-docx
+docx2pdf          # needs Microsoft Word installed
+nbformat
+nbconvert
+ipykernel

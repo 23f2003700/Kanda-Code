@@ -1,0 +1,8962 @@
+{
+ "meta": {
+  "project": "Kanda Code - When should onion farmers sell their crop?",
+  "units": "prices Rs/quintal in data, Rs/tonne in LP, Rs/kg in text",
+  "runtime_s": 297.0
+ },
+ "data_quality": {
+  "rows_all_india": 965314,
+  "rows_maharashtra": 91898,
+  "markets_maharashtra": 96,
+  "lasalgaon_rows_in_main_dataset": 0,
+  "dropped_price_outside_band": 42,
+  "dropped_nonpositive_arrivals": 0,
+  "dropped_duplicates": 0,
+  "flag_min_modal_max_inconsistent": 0,
+  "dropped_relative_price_outliers": 58,
+  "rows_clean_records": 91798,
+  "market_days_with_multiple_variety_rows": 5672,
+  "multi_row_market_days_with_repeated_arrivals_pct": 100.0,
+  "tonnes_double_counted_if_rows_summed": 1979857.0,
+  "market_days_clean": 85346,
+  "rows_clean": 85346,
+  "date_min": "2014-01-01",
+  "date_max": "2024-12-31",
+  "monthly_missing": [],
+  "daily_days": 3972,
+  "median_markets_reporting_per_day": 22.0,
+  "mean_markets_reporting_per_month_2014": 34.0,
+  "mean_markets_reporting_per_month_2024": 63.8,
+  "nasik_missing_months": [
+   "2014-01",
+   "2014-02",
+   "2014-03",
+   "2014-04",
+   "2014-05",
+   "2014-06",
+   "2014-10",
+   "2015-05",
+   "2015-06",
+   "2015-07",
+   "2015-08",
+   "2015-09",
+   "2015-10"
+  ],
+  "arrival_weight_by_district_pct_top6": {
+   "Ahmednagar": 38.5,
+   "Pune": 18.4,
+   "Sholapur": 15.2,
+   "Mumbai": 9.3,
+   "Chattrapati Sambhajinagar": 4.2,
+   "Kolhapur": 3.7
+  },
+  "markets_top10_by_arrivals": {
+   "Solapur": 5225972.0,
+   "Pune": 3720233.0,
+   "Ahmednagar": 3044270.0,
+   "Newasa(Ghodegaon)": 2879666.0,
+   "Vashi New Mumbai": 2611785.0,
+   "Rahuri": 1500349.0,
+   "Sangamner": 1479319.0,
+   "Kolhapur": 1320823.0,
+   "Parner": 1006692.0,
+   "Junnar(Alephata)": 978144.0
+  },
+  "nhrdf_history_months_used_for_seasonality": 216,
+  "nasik_missing_months_from_2016": 0
+ },
+ "validation_vs_lasalgaon": {
+  "overlap_months": 66,
+  "overlap_start": "2014-01",
+  "overlap_end": "2019-06",
+  "pearson_r_levels": 0.9896,
+  "pearson_r_logs": 0.9821,
+  "pearson_r_monthly_log_changes": 0.9254,
+  "mean_ratio_mh_to_lasalgaon": 0.973,
+  "mean_abs_pct_gap": 8.78,
+  "direction_agreement_pct": 87.7,
+  "season_shape": [
+   {
+    "year": 2014,
+    "rise_composite_pct": 128.0,
+    "rise_lasalgaon_pct": 112.4
+   },
+   {
+    "year": 2015,
+    "rise_composite_pct": 307.9,
+    "rise_lasalgaon_pct": 277.9
+   },
+   {
+    "year": 2016,
+    "rise_composite_pct": 30.5,
+    "rise_lasalgaon_pct": 18.2
+   },
+   {
+    "year": 2017,
+    "rise_composite_pct": 426.6,
+    "rise_lasalgaon_pct": 602.0
+   },
+   {
+    "year": 2018,
+    "rise_composite_pct": 63.2,
+    "rise_lasalgaon_pct": 95.5
+   }
+  ],
+  "nasik_overlap_months": 53,
+  "nasik_pearson_r": 0.9724,
+  "composite_vs_nasik_r_2023_2024": 0.9805,
+  "composite_over_nasik_ratio_2023_2024": 0.948
+ },
+ "spotcheck_2020_2024": {
+  "points": 19,
+  "median_abs_gap_pct": 17.7,
+  "median_signed_gap_pct": -10.2,
+  "share_ours_below_pct": 84.0,
+  "pearson_r": 0.9,
+  "msamb_points": 8,
+  "msamb_median_signed_gap_pct": -19.0,
+  "rows": [
+   {
+    "month": "2020-02",
+    "reported_rs_qtl": 1825.0,
+    "source_type": "news report",
+    "what": "Lasalgaon single-day average, Sat 29 Feb 2020",
+    "source": "Maharashtra farmers in Nashik protest fall in onion prices (Tribune, 2 Mar 2020)",
+    "url": "https://www.tribuneindia.com/news/nation/maharashtra-farmers-in-nashik-protest-fall-in-onion-prices-49853",
+    "ours_rs_qtl": 1674.2,
+    "gap_pct": -8.3
+   },
+   {
+    "month": "2020-03",
+    "reported_rs_qtl": 1450.0,
+    "source_type": "news report",
+    "what": "Lasalgaon single-day average, Mon 2 Mar 2020 (min 900, max 1,652)",
+    "source": "Maharashtra farmers in Nashik protest fall in onion prices (Tribune)",
+    "url": "https://www.tribuneindia.com/news/nation/maharashtra-farmers-in-nashik-protest-fall-in-onion-prices-49853",
+    "ours_rs_qtl": 1392.2,
+    "gap_pct": -4.0
+   },
+   {
+    "month": "2020-04",
+    "reported_rs_qtl": 650.0,
+    "source_type": "news report",
+    "what": "Lasalgaon average on 7 Apr 2020 when trading resumed after a week-long COVID lockdown",
+    "source": "COVID-19 pandemic disrupts onion trade in country (Tribune, 8 Apr 2020)",
+    "url": "https://www.tribuneindia.com/news/nation/covid-19-pandemic-disrupts-onion-trade-in-country-66960",
+    "ours_rs_qtl": 999.7,
+    "gap_pct": 53.8
+   },
+   {
+    "month": "2020-10",
+    "reported_rs_qtl": 6200.0,
+    "source_type": "news report",
+    "what": "Lasalgaon 19 Oct 2020: Kamal (top grade) Rs 6,802; Sarasari (average grade) Rs 6,200; low quality Rs 1,500",
+    "source": "More onion tears till Diwali as prices skyrocket at Lasalgaon mandi (DNA, 19 Oct 2020)",
+    "url": "https://www.dnaindia.com/business/report-more-onion-tears-till-diwali-as-prices-skyrocket-at-lasalgaon-mandi-2850916",
+    "ours_rs_qtl": 3222.0,
+    "gap_pct": -48.0
+   },
+   {
+    "month": "2021-11",
+    "reported_rs_qtl": 1880.0,
+    "source_type": "news report",
+    "what": "Lasalgaon average wholesale price about 16 Nov 2021 (fell Rs 1,050 in a week from Rs 2,900; day range Rs 901-2,512)",
+    "source": "Onion prices continue to drop (EximGuru, 17 Nov 2021)",
+    "url": "https://www.eximguru.com/export-import-news/export-news/onion-prices-continue-to-drop-111549.aspx",
+    "ours_rs_qtl": 2024.1,
+    "gap_pct": 7.7
+   },
+   {
+    "month": "2022-11",
+    "reported_rs_qtl": 1250.0,
+    "source_type": "news report",
+    "what": "Lasalgaon average-quality onion selling at Rs 10-15/kg in Nov 2022 (a one-year low)",
+    "source": "Lasalgaon agricultural produce market: steady supply leads to dip in onion prices (FreshPlaza, 24 Nov 2022)",
+    "url": "https://www.freshplaza.com/europe/article/9481269/lasalgaon-agricultural-produce-market-steady-supply-leads-to-dip-in-onion-prices/",
+    "ours_rs_qtl": 1764.1,
+    "gap_pct": 41.1
+   },
+   {
+    "month": "2022-12",
+    "reported_rs_qtl": 1850.0,
+    "source_type": "news report",
+    "what": "Lasalgaon average wholesale price in the last week of Dec 2022 (later Rs 1,260 on a Tuesday, about 31 Jan 2023)",
+    "source": "Nashik: Lasalgaon APMC 30% drop in average wholesale onion price (FreshPlaza, 3 Feb 2023)",
+    "url": "https://www.freshplaza.com/asia/article/9500719/nashik-lasalgaon-apmc-30-drop-in-average-wholesale-onion-price/",
+    "ours_rs_qtl": 1305.4,
+    "gap_pct": -29.4
+   },
+   {
+    "month": "2023-01",
+    "reported_rs_qtl": 1260.0,
+    "source_type": "news report",
+    "what": "Lasalgaon average wholesale price on a Tuesday (about 31 Jan 2023)",
+    "source": "Nashik: Lasalgaon APMC 30% drop in average wholesale onion price (FreshPlaza, 3 Feb 2023)",
+    "url": "https://www.freshplaza.com/asia/article/9500719/nashik-lasalgaon-apmc-30-drop-in-average-wholesale-onion-price/",
+    "ours_rs_qtl": 1214.9,
+    "gap_pct": -3.6
+   },
+   {
+    "month": "2023-02",
+    "reported_rs_qtl": 888.0,
+    "source_type": "news report",
+    "what": "Lasalgaon Feb 2023: Rs 1,151 on 4 Feb and Rs 625 later in Feb (mean of the two reported prices)",
+    "source": "ThePrint (8 Mar 2023) / Outlook",
+    "url": "https://theprint.in/agriculture/what-option-do-we-have-other-than-suicide-onion-farmers-in-maharashtra-cry-foul-over-crashing-prices/1430541/",
+    "ours_rs_qtl": 860.6,
+    "gap_pct": -3.1
+   },
+   {
+    "month": "2023-09",
+    "reported_rs_qtl": 1994.0,
+    "source_type": "MSAMB weekly report",
+    "what": "Official weekly average price of onion at Lasalgaon, week ending 17 Sep 2023 (down 5% on the week)",
+    "source": "MSAMB SMART Market Intelligence weekly report (week ending 17 Sep 2023)",
+    "url": "https://www.msamb.com/smart/Weekly_170923_Eng.pdf",
+    "ours_rs_qtl": 1790.6,
+    "gap_pct": -10.2
+   },
+   {
+    "month": "2023-10",
+    "reported_rs_qtl": 4400.0,
+    "source_type": "MSAMB weekly report",
+    "what": "Official weekly average at Lasalgaon, week ending 29 Oct 2023 (+39% w/w)",
+    "source": "MSAMB SMART weekly report (week ending 29 Oct 2023)",
+    "url": "https://www.msamb.com/smart/Weekly_291023_Eng.pdf",
+    "ours_rs_qtl": 2632.2,
+    "gap_pct": -40.2
+   },
+   {
+    "month": "2023-12",
+    "reported_rs_qtl": 2194.0,
+    "source_type": "MSAMB weekly report",
+    "what": "Official weekly average at Lasalgaon, week ending 17 Dec 2023 (-39% w/w after the 8 Dec export ban)",
+    "source": "MSAMB SMART weekly report (week ending 17 Dec 2023)",
+    "url": "https://www.msamb.com/smart/Weekly_18122023_eng.pdf",
+    "ours_rs_qtl": 2007.5,
+    "gap_pct": -8.5
+   },
+   {
+    "month": "2024-01",
+    "reported_rs_qtl": 1920.0,
+    "source_type": "MSAMB weekly report",
+    "what": "Official weekly average at Lasalgaon, week ending 7 Jan 2024 (+21% w/w)",
+    "source": "MSAMB SMART weekly report (week ending 7 Jan 2024)",
+    "url": "https://www.msamb.com/smart/Weekly_07012024_eng.pdf",
+    "ours_rs_qtl": 1380.0,
+    "gap_pct": -28.1
+   },
+   {
+    "month": "2024-02",
+    "reported_rs_qtl": 1650.0,
+    "source_type": "news report",
+    "what": "Lasalgaon average Rs 1,650 on 20 Feb 2024 (modal Rs 1,800 on 19 Feb; Rs 1,280 on 17 Feb)",
+    "source": "Onion prices fall by Rs 150 per quintal at Lasalgaon mandi (The Hitavada/PTI, 21 Feb 2024)",
+    "url": "https://thehitavada.com/Encyc/2024/2/21/Onion-prices-fall-by-Rs-150-per-quintal-at-Lasalgaon-mandi.html",
+    "ours_rs_qtl": 1230.3,
+    "gap_pct": -25.4
+   },
+   {
+    "month": "2024-05",
+    "reported_rs_qtl": 1613.0,
+    "source_type": "MSAMB weekly report",
+    "what": "Official weekly average at Lasalgaon, week ending 5 May 2024 (+24% w/w)",
+    "source": "MSAMB SMART weekly report (week ending 5 May 2024)",
+    "url": "https://www.msamb.com/smart/Weekly_07052024_eng.pdf",
+    "ours_rs_qtl": 1361.4,
+    "gap_pct": -15.6
+   },
+   {
+    "month": "2024-06",
+    "reported_rs_qtl": 3005.0,
+    "source_type": "MSAMB weekly report",
+    "what": "Official weekly average at Lasalgaon, week ending 23 Jun 2024 (+20% w/w)",
+    "source": "MSAMB SMART weekly report (week ending 23 Jun 2024)",
+    "url": "https://www.msamb.com/smart/Weekly_24062024_eng.pdf",
+    "ours_rs_qtl": 2189.8,
+    "gap_pct": -27.1
+   },
+   {
+    "month": "2024-08",
+    "reported_rs_qtl": 3041.0,
+    "source_type": "MSAMB weekly report",
+    "what": "Official weekly Lasalgaon averages, Aug 2024: Rs 2,691 (wk end 4 Aug), Rs 3,013 (11 Aug), Rs 3,420 (25 Aug)",
+    "source": "MSAMB SMART weekly reports (5, 12 and 26 Aug 2024)",
+    "url": "https://www.msamb.com/smart/Weekly_26082024_Eng.pdf",
+    "ours_rs_qtl": 2921.5,
+    "gap_pct": -3.9
+   },
+   {
+    "month": "2024-09",
+    "reported_rs_qtl": 4484.0,
+    "source_type": "news report",
+    "what": "Lasalgaon averages Rs 4,267 on Fri 13 Sep 2024 and Rs 4,700 on Sat 14 Sep 2024, after MEP scrapped and duty cut to 20%",
+    "source": "Onion prices in Lasalgaon wholesale market rise after scrapping of MEP (Millennium Post, 14 Sep 2024)",
+    "url": "https://www.millenniumpost.in/nation/onion-prices-in-lasalgaon-wholesale-market-rise-after-scrapping-of-mep-579664",
+    "ours_rs_qtl": 3688.1,
+    "gap_pct": -17.7
+   },
+   {
+    "month": "2024-11",
+    "reported_rs_qtl": 4392.0,
+    "source_type": "MSAMB weekly report",
+    "what": "Official weekly average at Lasalgaon, week ending 1 Dec 2024 (6 of 7 days in Nov; -8% w/w)",
+    "source": "MSAMB SMART weekly report (week ending 1 Dec 2024)",
+    "url": "https://msamb.com/smart/Weekly_02122024_Eng.pdf",
+    "ours_rs_qtl": 3410.1,
+    "gap_pct": -22.4
+   }
+  ]
+ },
+ "eda": {
+  "monthly_obs": 132,
+  "price_mean_rs_kg": 14.88,
+  "price_min_rs_kg": 4.51,
+  "price_min_month": "2019-02",
+  "price_max_rs_kg": 50.56,
+  "price_max_month": "2019-12",
+  "overall_cv_pct": 60.9,
+  "mean_within_year_cv_pct": 48.8,
+  "mean_max_over_min_within_year": 4.58,
+  "mom_change_sd_pct": 32.5,
+  "share_months_abs_change_gt_20pct": 46.6,
+  "monthly_log_return_sd_pct": 29.3,
+  "annualised_vol_from_monthly_pct": 101.5,
+  "season_rise": [
+   {
+    "year": 2014,
+    "apr": 792.3,
+    "best_later": 1806.9,
+    "best_month": "Jul",
+    "rise_pct": 128.0,
+    "apr_to_nov_pct": 65.5
+   },
+   {
+    "year": 2015,
+    "apr": 966.5,
+    "best_later": 3942.8,
+    "best_month": "Aug",
+    "rise_pct": 307.9,
+    "apr_to_nov_pct": 117.1
+   },
+   {
+    "year": 2016,
+    "apr": 666.8,
+    "best_later": 870.0,
+    "best_month": "Nov",
+    "rise_pct": 30.5,
+    "apr_to_nov_pct": 30.5
+   },
+   {
+    "year": 2017,
+    "apr": 514.7,
+    "best_later": 2710.2,
+    "best_month": "Nov",
+    "rise_pct": 426.6,
+    "apr_to_nov_pct": 426.6
+   },
+   {
+    "year": 2018,
+    "apr": 671.1,
+    "best_later": 1095.0,
+    "best_month": "Oct",
+    "rise_pct": 63.2,
+    "apr_to_nov_pct": 40.2
+   },
+   {
+    "year": 2019,
+    "apr": 680.5,
+    "best_later": 5055.7,
+    "best_month": "Dec",
+    "rise_pct": 643.0,
+    "apr_to_nov_pct": 498.5
+   },
+   {
+    "year": 2020,
+    "apr": 999.7,
+    "best_later": 3498.4,
+    "best_month": "Nov",
+    "rise_pct": 250.0,
+    "apr_to_nov_pct": 250.0
+   },
+   {
+    "year": 2021,
+    "apr": 815.2,
+    "best_later": 2318.7,
+    "best_month": "Oct",
+    "rise_pct": 184.4,
+    "apr_to_nov_pct": 148.3
+   },
+   {
+    "year": 2022,
+    "apr": 796.2,
+    "best_later": 1764.1,
+    "best_month": "Nov",
+    "rise_pct": 121.6,
+    "apr_to_nov_pct": 121.6
+   },
+   {
+    "year": 2023,
+    "apr": 593.5,
+    "best_later": 3213.9,
+    "best_month": "Nov",
+    "rise_pct": 441.5,
+    "apr_to_nov_pct": 441.5
+   },
+   {
+    "year": 2024,
+    "apr": 1158.7,
+    "best_later": 3688.1,
+    "best_month": "Sep",
+    "rise_pct": 218.3,
+    "apr_to_nov_pct": 194.3
+   }
+  ],
+  "mean_rise_apr_to_best_pct_hindsight": 255.9,
+  "median_rise_apr_to_best_pct_hindsight": 218.3,
+  "median_rise_apr_to_nov_pct": 148.3,
+  "years_nov_above_apr": 11,
+  "years": 11,
+  "years_best_month": {
+   "Nov": 5,
+   "Oct": 2,
+   "Aug": 1,
+   "Jul": 1,
+   "Dec": 1,
+   "Sep": 1
+  },
+  "yearly": [
+   {
+    "year": 2014,
+    "mean": 1196.0,
+    "min": 584.9,
+    "max": 1806.9,
+    "std": 411.6,
+    "cv_pct": 34.4,
+    "max_over_min": 3.1
+   },
+   {
+    "year": 2015,
+    "mean": 1920.8,
+    "min": 966.5,
+    "max": 3942.8,
+    "std": 1031.6,
+    "cv_pct": 53.7,
+    "max_over_min": 4.1
+   },
+   {
+    "year": 2016,
+    "mean": 767.8,
+    "min": 586.4,
+    "max": 1243.6,
+    "std": 170.6,
+    "cv_pct": 22.2,
+    "max_over_min": 2.1
+   },
+   {
+    "year": 2017,
+    "mean": 1225.9,
+    "min": 474.5,
+    "max": 2710.2,
+    "std": 866.0,
+    "cv_pct": 70.6,
+    "max_over_min": 5.7
+   },
+   {
+    "year": 2018,
+    "mean": 1011.5,
+    "min": 635.9,
+    "max": 2277.0,
+    "std": 447.2,
+    "cv_pct": 44.2,
+    "max_over_min": 3.6
+   },
+   {
+    "year": 2019,
+    "mean": 1798.0,
+    "min": 451.1,
+    "max": 5055.7,
+    "std": 1517.6,
+    "cv_pct": 84.4,
+    "max_over_min": 11.2
+   },
+   {
+    "year": 2020,
+    "mean": 1745.1,
+    "min": 590.7,
+    "max": 3498.4,
+    "std": 1039.0,
+    "cv_pct": 59.5,
+    "max_over_min": 5.9
+   },
+   {
+    "year": 2021,
+    "mean": 1702.6,
+    "min": 815.2,
+    "max": 2923.0,
+    "std": 618.8,
+    "cv_pct": 36.3,
+    "max_over_min": 3.6
+   },
+   {
+    "year": 2022,
+    "mean": 1317.7,
+    "min": 796.2,
+    "max": 1959.4,
+    "std": 420.8,
+    "cv_pct": 31.9,
+    "max_over_min": 2.5
+   },
+   {
+    "year": 2023,
+    "mean": 1445.7,
+    "min": 593.5,
+    "max": 3213.9,
+    "std": 833.0,
+    "cv_pct": 57.6,
+    "max_over_min": 5.4
+   },
+   {
+    "year": 2024,
+    "mean": 2237.9,
+    "min": 1158.7,
+    "max": 3688.1,
+    "std": 934.0,
+    "cv_pct": 41.7,
+    "max_over_min": 3.2
+   }
+  ],
+  "seasonal_profile": [
+   {
+    "month": "Jan",
+    "price_index_mean": 1.086,
+    "price_index_min": 0.304,
+    "price_index_max": 2.251,
+    "arrivals_index_mean": 1.25,
+    "price_mean_rs_qtl": 1494.937
+   },
+   {
+    "month": "Feb",
+    "price_index_mean": 0.873,
+    "price_index_min": 0.251,
+    "price_index_max": 1.717,
+    "arrivals_index_mean": 1.273,
+    "price_mean_rs_qtl": 1247.177
+   },
+   {
+    "month": "Mar",
+    "price_index_mean": 0.641,
+    "price_index_min": 0.298,
+    "price_index_max": 0.894,
+    "arrivals_index_mean": 1.19,
+    "price_mean_rs_qtl": 924.364
+   },
+   {
+    "month": "Apr",
+    "price_index_mean": 0.553,
+    "price_index_min": 0.378,
+    "price_index_max": 0.868,
+    "arrivals_index_mean": 0.97,
+    "price_mean_rs_qtl": 786.834
+   },
+   {
+    "month": "May",
+    "price_index_mean": 0.577,
+    "price_index_min": 0.338,
+    "price_index_max": 0.881,
+    "arrivals_index_mean": 0.953,
+    "price_mean_rs_qtl": 831.365
+   },
+   {
+    "month": "Jun",
+    "price_index_mean": 0.789,
+    "price_index_min": 0.378,
+    "price_index_max": 1.192,
+    "arrivals_index_mean": 0.928,
+    "price_mean_rs_qtl": 1151.968
+   },
+   {
+    "month": "Jul",
+    "price_index_mean": 0.894,
+    "price_index_min": 0.375,
+    "price_index_max": 1.511,
+    "arrivals_index_mean": 0.956,
+    "price_mean_rs_qtl": 1308.872
+   },
+   {
+    "month": "Aug",
+    "price_index_mean": 1.126,
+    "price_index_min": 0.564,
+    "price_index_max": 2.053,
+    "arrivals_index_mean": 0.911,
+    "price_mean_rs_qtl": 1710.846
+   },
+   {
+    "month": "Sep",
+    "price_index_mean": 1.205,
+    "price_index_min": 0.764,
+    "price_index_max": 1.962,
+    "arrivals_index_mean": 0.845,
+    "price_mean_rs_qtl": 1909.133
+   },
+   {
+    "month": "Oct",
+    "price_index_mean": 1.401,
+    "price_index_min": 0.845,
+    "price_index_max": 1.846,
+    "arrivals_index_mean": 0.809,
+    "price_mean_rs_qtl": 2141.752
+   },
+   {
+    "month": "Nov",
+    "price_index_mean": 1.546,
+    "price_index_min": 0.93,
+    "price_index_max": 2.265,
+    "arrivals_index_mean": 0.868,
+    "price_mean_rs_qtl": 2355.786
+   },
+   {
+    "month": "Dec",
+    "price_index_mean": 1.308,
+    "price_index_min": 0.668,
+    "price_index_max": 2.812,
+    "arrivals_index_mean": 1.047,
+    "price_mean_rs_qtl": 1994.036
+   }
+  ],
+  "lasalgaon_seasonal_index_1996_2013": {
+   "Jan": 1.118,
+   "Feb": 0.883,
+   "Mar": 0.65,
+   "Apr": 0.609,
+   "May": 0.613,
+   "Jun": 0.784,
+   "Jul": 0.896,
+   "Aug": 1.091,
+   "Sep": 1.225,
+   "Oct": 1.491,
+   "Nov": 1.422,
+   "Dec": 1.218
+  }
+ },
+ "h1": {
+  "M1_simple": {
+   "formula": "lnP ~ lnA",
+   "n": 132,
+   "elasticity": -0.7565,
+   "se_ols": 0.1694,
+   "t_ols": -4.46,
+   "p_ols": 1.7193104865019882e-05,
+   "se_hac": 0.2863,
+   "p_hac": 0.00822901633404428,
+   "r2": 0.133,
+   "adj_r2": 0.126,
+   "ci95_low": -1.0917,
+   "ci95_high": -0.4213,
+   "durbin_watson": 0.34
+  },
+  "M2_month_FE": {
+   "formula": "lnP ~ lnA + C(mon)",
+   "n": 132,
+   "elasticity": -0.6701,
+   "se_ols": 0.1738,
+   "t_ols": -3.86,
+   "p_ols": 0.000187148932112488,
+   "se_hac": 0.2221,
+   "p_hac": 0.002549460536984943,
+   "r2": 0.417,
+   "adj_r2": 0.358,
+   "ci95_low": -1.0142,
+   "ci95_high": -0.3261,
+   "durbin_watson": 0.33
+  },
+  "M3_month_year_FE": {
+   "formula": "lnP ~ lnA + C(mon) + C(yr)",
+   "n": 132,
+   "elasticity": -0.442,
+   "se_ols": 0.1743,
+   "t_ols": -2.54,
+   "p_ols": 0.012610398131653083,
+   "se_hac": 0.1782,
+   "p_hac": 0.013143454812303371,
+   "r2": 0.608,
+   "adj_r2": 0.529,
+   "ci95_low": -0.7874,
+   "ci95_high": -0.0966,
+   "durbin_watson": 0.52
+  },
+  "M4_lagged_arrivals": {
+   "formula": "lnP ~ lnA_lag1 + C(mon) + C(yr)",
+   "n": 131,
+   "elasticity": -0.1338,
+   "se_ols": 0.1768,
+   "t_ols": -0.76,
+   "p_ols": 0.4507420281409172,
+   "se_hac": 0.209,
+   "p_hac": 0.5219779960868037,
+   "r2": 0.588,
+   "adj_r2": 0.504,
+   "ci95_low": -0.4843,
+   "ci95_high": 0.2166,
+   "durbin_watson": 0.52
+  },
+  "M5_dynamic_with_lagged_price": {
+   "formula": "lnP ~ lnA + lnP_lag1 + C(mon) + C(yr)",
+   "n": 131,
+   "elasticity": -0.0144,
+   "se_ols": 0.1097,
+   "t_ols": -0.13,
+   "p_ols": 0.8957008569175426,
+   "se_hac": 0.1352,
+   "p_hac": 0.9151253810086951,
+   "r2": 0.861,
+   "adj_r2": 0.831,
+   "ci95_low": -0.2318,
+   "ci95_high": 0.203,
+   "durbin_watson": 1.68,
+   "lagged_price_coef": 0.811
+  },
+  "robust_normalisation": {
+   "per_market_day (headline)": {
+    "elasticity": -0.442,
+    "p_hac": 0.013143454812303371
+   },
+   "per_market_reporting": {
+    "elasticity": -0.2717,
+    "p_hac": 0.05817453276444939
+   },
+   "total_arrivals": {
+    "elasticity": -0.2471,
+    "p_hac": 0.07899010601129246
+   },
+   "per_market_day_excl_covid_AprMay2020": {
+    "elasticity": -0.5717,
+    "p_hac": 0.0005223251100616336
+   }
+  },
+  "reverse_causality_lnA_on_lagged_price": {
+   "elasticity": -0.1548,
+   "p_hac": 0.010716497323591387,
+   "n": 131
+  },
+  "D1_daily_sign_check": {
+   "formula": "lnP ~ lnA + C(mon) + C(yr) + C(dow)",
+   "n": 3972,
+   "elasticity": -0.0769,
+   "se_ols": 0.0122,
+   "t_ols": -6.28,
+   "p_ols": 3.656881041038255e-10,
+   "se_hac": 0.0309,
+   "p_hac": 0.01293724707567321,
+   "r2": 0.554,
+   "adj_r2": 0.55,
+   "ci95_low": -0.1008,
+   "ci95_high": -0.0529,
+   "durbin_watson": 0.1
+  },
+  "headline": {
+   "spec": "M3_month_year_FE",
+   "elasticity": -0.442,
+   "interpretation": "Months with 10% heavier arrivals (per market-day) have prices about 4% lower, holding month-of-year and year constant. This is an association, not a causal elasticity.",
+   "one_sided_p_hac": 0.0065717274061516855,
+   "H1_supported": true
+  }
+ },
+ "price_taker": {
+  "lasalgaon_mean_april_arrivals_t": 27752.0,
+  "lasalgaon_mean_oct_nov_arrivals_t": 16800.0,
+  "fpo_max_april_sale_t": 1000.0,
+  "fpo_max_later_monthly_sale_t": 300.0,
+  "share_april_pct": 3.6,
+  "share_oct_nov_pct": 1.79,
+  "implied_price_impact_april_pct": 1.59,
+  "implied_price_impact_oct_nov_pct": 0.79,
+  "note": "Elasticity is from the Maharashtra composite; applying it to one APMC's tonnage is an order-of-magnitude check."
+ },
+ "forecast": {
+  "validation_horizon": {
+   "naive": {
+    "MAPE": 44.44,
+    "RMSE_rs_qtl": 1278.19,
+    "MAE_rs_qtl": 818.33,
+    "bias_pct": -9.66,
+    "direction_hit_pct": 0.0
+   },
+   "seasonal_naive": {
+    "MAPE": 42.06,
+    "RMSE_rs_qtl": 1212.79,
+    "MAE_rs_qtl": 785.8,
+    "bias_pct": 7.35,
+    "direction_hit_pct": 53.12
+   },
+   "moving_average_12": {
+    "MAPE": 62.27,
+    "RMSE_rs_qtl": 1238.65,
+    "MAE_rs_qtl": 859.79,
+    "bias_pct": 30.42,
+    "direction_hit_pct": 0.0
+   },
+   "seasonal_moving_average": {
+    "MAPE": 50.68,
+    "RMSE_rs_qtl": 1121.97,
+    "MAE_rs_qtl": 757.08,
+    "bias_pct": 22.86,
+    "direction_hit_pct": 65.62
+   },
+   "seasonal_ses": {
+    "MAPE": 58.23,
+    "RMSE_rs_qtl": 1173.32,
+    "MAE_rs_qtl": 849.85,
+    "bias_pct": 32.7,
+    "direction_hit_pct": 65.62
+   },
+   "holt_winters": {
+    "MAPE": 57.36,
+    "RMSE_rs_qtl": 1172.23,
+    "MAE_rs_qtl": 838.14,
+    "bias_pct": 31.48,
+    "direction_hit_pct": 65.62
+   },
+   "regression_trend_season": {
+    "MAPE": 36.94,
+    "RMSE_rs_qtl": 1097.93,
+    "MAE_rs_qtl": 695.99,
+    "bias_pct": -1.85,
+    "direction_hit_pct": 65.62
+   },
+   "regression_level_season": {
+    "MAPE": 48.6,
+    "RMSE_rs_qtl": 1129.66,
+    "MAE_rs_qtl": 747.3,
+    "bias_pct": 17.16,
+    "direction_hit_pct": 62.5
+   },
+   "seasonal_moving_average_long": {
+    "MAPE": 47.35,
+    "RMSE_rs_qtl": 1075.93,
+    "MAE_rs_qtl": 715.04,
+    "bias_pct": 19.98,
+    "direction_hit_pct": 68.75
+   },
+   "seasonal_ses_long": {
+    "MAPE": 58.02,
+    "RMSE_rs_qtl": 1146.68,
+    "MAE_rs_qtl": 846.59,
+    "bias_pct": 32.85,
+    "direction_hit_pct": 68.75
+   }
+  },
+  "decision_horizon": {
+   "naive": {
+    "MAPE": 45.62,
+    "RMSE_rs_qtl": 1387.55,
+    "MAE_rs_qtl": 1125.33,
+    "bias_pct": -41.37,
+    "direction_hit_pct": 0.0
+   },
+   "seasonal_naive": {
+    "MAPE": 34.84,
+    "RMSE_rs_qtl": 897.31,
+    "MAE_rs_qtl": 740.41,
+    "bias_pct": -25.89,
+    "direction_hit_pct": 87.5
+   },
+   "moving_average_12": {
+    "MAPE": 43.87,
+    "RMSE_rs_qtl": 1151.94,
+    "MAE_rs_qtl": 951.34,
+    "bias_pct": -17.93,
+    "direction_hit_pct": 0.0
+   },
+   "seasonal_moving_average": {
+    "MAPE": 29.32,
+    "RMSE_rs_qtl": 912.83,
+    "MAE_rs_qtl": 729.94,
+    "bias_pct": -28.21,
+    "direction_hit_pct": 93.75
+   },
+   "seasonal_ses": {
+    "MAPE": 22.45,
+    "RMSE_rs_qtl": 706.16,
+    "MAE_rs_qtl": 541.77,
+    "bias_pct": -22.2,
+    "direction_hit_pct": 93.75
+   },
+   "holt_winters": {
+    "MAPE": 23.85,
+    "RMSE_rs_qtl": 742.66,
+    "MAE_rs_qtl": 577.51,
+    "bias_pct": -23.21,
+    "direction_hit_pct": 93.75
+   },
+   "regression_trend_season": {
+    "MAPE": 29.5,
+    "RMSE_rs_qtl": 840.67,
+    "MAE_rs_qtl": 660.48,
+    "bias_pct": -17.11,
+    "direction_hit_pct": 93.75
+   },
+   "regression_level_season": {
+    "MAPE": 30.45,
+    "RMSE_rs_qtl": 909.1,
+    "MAE_rs_qtl": 739.66,
+    "bias_pct": -29.11,
+    "direction_hit_pct": 87.5
+   },
+   "seasonal_moving_average_long": {
+    "MAPE": 29.49,
+    "RMSE_rs_qtl": 906.04,
+    "MAE_rs_qtl": 728.37,
+    "bias_pct": -27.11,
+    "direction_hit_pct": 81.25
+   },
+   "seasonal_ses_long": {
+    "MAPE": 19.55,
+    "RMSE_rs_qtl": 650.17,
+    "MAE_rs_qtl": 483.05,
+    "bias_pct": -18.17,
+    "direction_hit_pct": 81.25
+   }
+  },
+  "one_step": {
+   "naive": {
+    "MAPE": 21.68,
+    "RMSE_rs_qtl": 499.05,
+    "MAE_rs_qtl": 398.55,
+    "bias_pct": 0.06,
+    "direction_hit_pct": 65.22
+   },
+   "seasonal_naive": {
+    "MAPE": 39.86,
+    "RMSE_rs_qtl": 838.33,
+    "MAE_rs_qtl": 693.59,
+    "bias_pct": -12.8,
+    "direction_hit_pct": 82.61
+   },
+   "moving_average_12": {
+    "MAPE": 34.81,
+    "RMSE_rs_qtl": 812.15,
+    "MAE_rs_qtl": 637.7,
+    "bias_pct": -2.39,
+    "direction_hit_pct": 60.87
+   },
+   "seasonal_moving_average": {
+    "MAPE": 20.86,
+    "RMSE_rs_qtl": 570.02,
+    "MAE_rs_qtl": 407.27,
+    "bias_pct": -12.23,
+    "direction_hit_pct": 86.96
+   },
+   "seasonal_ses": {
+    "MAPE": 14.04,
+    "RMSE_rs_qtl": 409.07,
+    "MAE_rs_qtl": 275.57,
+    "bias_pct": -1.61,
+    "direction_hit_pct": 73.91
+   },
+   "holt_winters": {
+    "MAPE": 12.94,
+    "RMSE_rs_qtl": 397.06,
+    "MAE_rs_qtl": 256.01,
+    "bias_pct": -1.94,
+    "direction_hit_pct": 78.26
+   },
+   "regression_trend_season": {
+    "MAPE": 27.08,
+    "RMSE_rs_qtl": 694.89,
+    "MAE_rs_qtl": 526.08,
+    "bias_pct": -8.44,
+    "direction_hit_pct": 91.3
+   },
+   "regression_level_season": {
+    "MAPE": 21.65,
+    "RMSE_rs_qtl": 588.87,
+    "MAE_rs_qtl": 424.17,
+    "bias_pct": -13.97,
+    "direction_hit_pct": 86.96
+   },
+   "seasonal_moving_average_long": {
+    "MAPE": 20.12,
+    "RMSE_rs_qtl": 560.0,
+    "MAE_rs_qtl": 403.83,
+    "bias_pct": -12.78,
+    "direction_hit_pct": 82.61
+   },
+   "seasonal_ses_long": {
+    "MAPE": 13.66,
+    "RMSE_rs_qtl": 399.77,
+    "MAE_rs_qtl": 271.91,
+    "bias_pct": -1.62,
+    "direction_hit_pct": 69.57
+   }
+  },
+  "paths": {
+   "naive": {
+    "2023": [
+     717.4,
+     717.4,
+     717.4,
+     717.4,
+     717.4,
+     717.4,
+     717.4,
+     717.4,
+     717.4
+    ],
+    "2024": [
+     1265.6,
+     1265.6,
+     1265.6,
+     1265.6,
+     1265.6,
+     1265.6,
+     1265.6,
+     1265.6,
+     1265.6
+    ]
+   },
+   "seasonal_naive": {
+    "2023": [
+     796.2,
+     809.4,
+     1108.2,
+     1111.8,
+     1078.7,
+     1083.4,
+     1725.8,
+     1764.1,
+     1305.4
+    ],
+    "2024": [
+     593.5,
+     663.6,
+     890.7,
+     1177.3,
+     1585.9,
+     1790.6,
+     2632.2,
+     3213.9,
+     2007.5
+    ]
+   },
+   "moving_average_12": {
+    "2023": [
+     1131.3,
+     1131.3,
+     1131.3,
+     1131.3,
+     1131.3,
+     1131.3,
+     1131.3,
+     1131.3,
+     1131.3
+    ],
+    "2024": [
+     1535.9,
+     1535.9,
+     1535.9,
+     1535.9,
+     1535.9,
+     1535.9,
+     1535.9,
+     1535.9,
+     1535.9
+    ]
+   },
+   "seasonal_moving_average": {
+    "2023": [
+     652.7,
+     663.7,
+     869.1,
+     1055.5,
+     1322.2,
+     1369.1,
+     1608.0,
+     1723.2,
+     1530.4
+    ],
+    "2024": [
+     819.2,
+     834.5,
+     1088.4,
+     1331.0,
+     1676.4,
+     1746.4,
+     2076.5,
+     2215.9,
+     1931.1
+    ]
+   },
+   "seasonal_ses": {
+    "2023": [
+     606.6,
+     616.7,
+     807.6,
+     980.9,
+     1228.8,
+     1272.3,
+     1494.4,
+     1601.4,
+     1422.2
+    ],
+    "2024": [
+     1061.5,
+     1081.3,
+     1410.3,
+     1724.7,
+     2172.2,
+     2262.9,
+     2690.6,
+     2871.4,
+     2502.3
+    ]
+   },
+   "holt_winters": {
+    "2023": [
+     627.6,
+     633.2,
+     835.6,
+     921.9,
+     1154.9,
+     1224.4,
+     1484.4,
+     1565.9,
+     1323.9
+    ],
+    "2024": [
+     1096.3,
+     1112.5,
+     1464.1,
+     1637.3,
+     2056.5,
+     2183.8,
+     2686.4,
+     2862.0,
+     2336.3
+    ]
+   },
+   "regression_trend_season": {
+    "2023": [
+     855.4,
+     867.0,
+     1147.6,
+     1268.2,
+     1589.7,
+     1684.8,
+     2040.5,
+     2149.1,
+     1813.2
+    ],
+    "2024": [
+     847.4,
+     867.3,
+     1149.5,
+     1293.4,
+     1632.9,
+     1741.6,
+     2150.6,
+     2298.8,
+     1882.0
+    ]
+   },
+   "regression_level_season": {
+    "2023": [
+     664.8,
+     662.9,
+     860.7,
+     937.5,
+     1225.7,
+     1338.9,
+     1659.8,
+     1786.5,
+     1466.2
+    ],
+    "2024": [
+     824.8,
+     835.2,
+     1090.5,
+     1216.1,
+     1594.2,
+     1741.7,
+     2190.3,
+     2381.3,
+     1885.5
+    ]
+   },
+   "seasonal_moving_average_long": {
+    "2023": [
+     681.1,
+     695.3,
+     907.5,
+     1039.5,
+     1302.7,
+     1436.3,
+     1704.7,
+     1660.5,
+     1411.4
+    ],
+    "2024": [
+     866.0,
+     884.5,
+     1153.1,
+     1326.0,
+     1665.0,
+     1835.6,
+     2185.9,
+     2134.5,
+     1805.5
+    ]
+   },
+   "seasonal_ses_long": {
+    "2023": [
+     659.0,
+     672.8,
+     878.1,
+     1005.8,
+     1260.5,
+     1389.8,
+     1649.5,
+     1606.7,
+     1365.7
+    ],
+    "2024": [
+     1156.3,
+     1181.0,
+     1539.6,
+     1770.4,
+     2223.1,
+     2450.9,
+     2918.5,
+     2849.9,
+     2410.6
+    ]
+   }
+  },
+  "best_method": "regression_trend_season",
+  "best_method_on_test_for_reference": "seasonal_ses_long",
+  "fitted_params_best": {
+   "2023": {},
+   "2024": {}
+  },
+  "selection_rule": "lowest Apr-Dec MAPE on validation seasons 2019-2022; scored on 2023-2024",
+  "best_label": "Regression: trend + month dummies",
+  "labels": {
+   "naive": "Naive (last month)",
+   "seasonal_naive": "Seasonal naive (same month last year)",
+   "moving_average_12": "12-month moving average",
+   "seasonal_moving_average": "Seasonal index x moving average",
+   "seasonal_ses": "Seasonal index x exponential smoothing",
+   "holt_winters": "Holt-Winters (damped trend + seasonality)",
+   "regression_trend_season": "Regression: trend + month dummies",
+   "regression_level_season": "Regression: level + month effects",
+   "seasonal_moving_average_long": "28-yr seasonal index x moving average",
+   "seasonal_ses_long": "28-yr seasonal index x exponential smoothing"
+  }
+ },
+ "lp_params_base": {
+  "Q": 1000.0,
+  "C": 700.0,
+  "L": 250.0,
+  "U": 300.0,
+  "delta": 0.18,
+  "h": 250.0,
+  "T": 9,
+  "first_is_harvest": true
+ },
+ "scenarios": {
+  "A": {
+   "name": "No storage (sell all at harvest)",
+   "C": 0.0,
+   "delta": 0.0,
+   "h": 0.0
+  },
+  "B": {
+   "name": "Ventilated kanda chawl",
+   "delta": 0.18046367718796053,
+   "h": 250.0
+  },
+  "C": {
+   "name": "Cold / IoT-monitored storage",
+   "delta": 0.01834887229131743,
+   "h": 700.0
+  }
+ },
+ "backtest_main": [
+  {
+   "year": 2023,
+   "scenario": "B",
+   "strategy": "calendar_rule_exante",
+   "revenue": 6414356.06,
+   "storage_cost": 611224.13,
+   "net": 5803131.93,
+   "net_per_t": 5803.13,
+   "gain_vs_harvest_per_t": -131.91,
+   "x": [
+    300.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    258.8,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    700.0,
+    573.7,
+    470.1,
+    385.3,
+    315.8,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "sold_t": 558.78,
+   "rule_months": "Oct,Nov,Sep",
+   "oracle_net_per_t": null,
+   "forecast_objective_per_t": null
+  },
+  {
+   "year": 2023,
+   "scenario": "B",
+   "strategy": "calendar_rule_hindsight_OctNov",
+   "revenue": 7363077.6,
+   "storage_cost": 675920.37,
+   "net": 6687157.23,
+   "net_per_t": 6687.16,
+   "gain_vs_harvest_per_t": 752.12,
+   "x": [
+    300.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    212.1,
+    0.0,
+    0.0
+   ],
+   "s": [
+    700.0,
+    573.7,
+    470.1,
+    385.3,
+    315.8,
+    258.8,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "sold_t": 512.08,
+   "rule_months": "Oct,Nov",
+   "oracle_net_per_t": null,
+   "forecast_objective_per_t": null
+  },
+  {
+   "year": 2023,
+   "scenario": "C",
+   "strategy": "calendar_rule_exante",
+   "revenue": 16055181.07,
+   "storage_cost": 2620712.66,
+   "net": 13434468.41,
+   "net_per_t": 13434.47,
+   "gain_vs_harvest_per_t": 7499.43,
+   "x": [
+    300.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    300.0,
+    300.0,
+    31.3,
+    0.0
+   ],
+   "s": [
+    700.0,
+    687.2,
+    674.5,
+    662.2,
+    650.0,
+    338.1,
+    31.9,
+    0.0,
+    0.0
+   ],
+   "sold_t": 931.3,
+   "rule_months": "Oct,Nov,Sep",
+   "oracle_net_per_t": null,
+   "forecast_objective_per_t": null
+  },
+  {
+   "year": 2023,
+   "scenario": "C",
+   "strategy": "calendar_rule_hindsight_OctNov",
+   "revenue": 19720898.2,
+   "storage_cost": 3051136.45,
+   "net": 16669761.75,
+   "net_per_t": 16669.76,
+   "gain_vs_harvest_per_t": 10734.72,
+   "x": [
+    300.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    300.0,
+    300.0,
+    20.0
+   ],
+   "s": [
+    700.0,
+    687.2,
+    674.5,
+    662.2,
+    650.0,
+    638.1,
+    326.4,
+    20.4,
+    0.0
+   ],
+   "sold_t": 920.02,
+   "rule_months": "Oct,Nov",
+   "oracle_net_per_t": null,
+   "forecast_objective_per_t": null
+  },
+  {
+   "year": 2023,
+   "scenario": "A",
+   "strategy": "forecast_plan",
+   "revenue": 5935040.47,
+   "storage_cost": 0.0,
+   "net": 5935040.47,
+   "net_per_t": 5935.04,
+   "gain_vs_harvest_per_t": 0.0,
+   "x": [
+    1000.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "sold_t": 1000.0,
+   "rule_months": null,
+   "oracle_net_per_t": 5935.04,
+   "forecast_objective_per_t": 8554.38
+  },
+  {
+   "year": 2023,
+   "scenario": "B",
+   "strategy": "forecast_plan",
+   "revenue": 5935040.47,
+   "storage_cost": 0.0,
+   "net": 5935040.47,
+   "net_per_t": 5935.04,
+   "gain_vs_harvest_per_t": 0.0,
+   "x": [
+    1000.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "sold_t": 1000.0,
+   "rule_months": null,
+   "oracle_net_per_t": 6687.16,
+   "forecast_objective_per_t": 8554.38
+  },
+  {
+   "year": 2023,
+   "scenario": "B",
+   "strategy": "rolling_replan",
+   "revenue": 5935040.47,
+   "storage_cost": 0.0,
+   "net": 5935040.47,
+   "net_per_t": 5935.04,
+   "gain_vs_harvest_per_t": 0.0,
+   "x": [
+    1000.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "sold_t": 1000.0,
+   "rule_months": null,
+   "oracle_net_per_t": 6687.16,
+   "forecast_objective_per_t": null
+  },
+  {
+   "year": 2023,
+   "scenario": "B",
+   "strategy": "perfect_foresight",
+   "revenue": 7363077.48,
+   "storage_cost": 675920.37,
+   "net": 6687157.1,
+   "net_per_t": 6687.16,
+   "gain_vs_harvest_per_t": 752.12,
+   "x": [
+    300.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    212.1,
+    0.0,
+    0.0
+   ],
+   "s": [
+    700.0,
+    573.7,
+    470.1,
+    385.3,
+    315.8,
+    258.8,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "sold_t": 512.08,
+   "rule_months": null,
+   "oracle_net_per_t": 6687.16,
+   "forecast_objective_per_t": null
+  },
+  {
+   "year": 2023,
+   "scenario": "C",
+   "strategy": "forecast_plan",
+   "revenue": 19660891.82,
+   "storage_cost": 2992407.0,
+   "net": 16668484.82,
+   "net_per_t": 16668.48,
+   "gain_vs_harvest_per_t": 10733.44,
+   "x": [
+    300.0,
+    0.0,
+    0.0,
+    0.0,
+    21.6,
+    0.0,
+    300.0,
+    300.0,
+    0.0
+   ],
+   "s": [
+    700.0,
+    687.2,
+    674.5,
+    662.2,
+    628.5,
+    616.9,
+    305.6,
+    0.0,
+    0.0
+   ],
+   "sold_t": 921.56,
+   "rule_months": null,
+   "oracle_net_per_t": 16690.45,
+   "forecast_objective_per_t": 12485.58
+  },
+  {
+   "year": 2023,
+   "scenario": "C",
+   "strategy": "rolling_replan",
+   "revenue": 19660895.22,
+   "storage_cost": 2992407.63,
+   "net": 16668487.58,
+   "net_per_t": 16668.49,
+   "gain_vs_harvest_per_t": 10733.45,
+   "x": [
+    300.0,
+    0.0,
+    0.0,
+    0.0,
+    21.6,
+    0.0,
+    300.0,
+    300.0,
+    0.0
+   ],
+   "s": [
+    700.0,
+    687.2,
+    674.5,
+    662.2,
+    628.5,
+    616.9,
+    305.6,
+    0.0,
+    0.0
+   ],
+   "sold_t": 921.56,
+   "rule_months": null,
+   "oracle_net_per_t": 16690.45,
+   "forecast_objective_per_t": null
+  },
+  {
+   "year": 2023,
+   "scenario": "C",
+   "strategy": "perfect_foresight",
+   "revenue": 19697946.76,
+   "storage_cost": 3007499.7,
+   "net": 16690447.05,
+   "net_per_t": 16690.45,
+   "gain_vs_harvest_per_t": 10755.41,
+   "x": [
+    300.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    21.2,
+    300.0,
+    300.0,
+    0.0
+   ],
+   "s": [
+    700.0,
+    687.2,
+    674.5,
+    662.2,
+    650.0,
+    616.9,
+    305.6,
+    0.0,
+    0.0
+   ],
+   "sold_t": 921.17,
+   "rule_months": null,
+   "oracle_net_per_t": 16690.45,
+   "forecast_objective_per_t": null
+  },
+  {
+   "year": 2024,
+   "scenario": "B",
+   "strategy": "calendar_rule_exante",
+   "revenue": 13020323.7,
+   "storage_cost": 611224.13,
+   "net": 12409099.57,
+   "net_per_t": 12409.1,
+   "gain_vs_harvest_per_t": 822.24,
+   "x": [
+    300.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    258.8,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    700.0,
+    573.7,
+    470.1,
+    385.3,
+    315.8,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "sold_t": 558.78,
+   "rule_months": "Oct,Nov,Sep",
+   "oracle_net_per_t": null,
+   "forecast_objective_per_t": null
+  },
+  {
+   "year": 2024,
+   "scenario": "B",
+   "strategy": "calendar_rule_hindsight_OctNov",
+   "revenue": 10074561.36,
+   "storage_cost": 675920.37,
+   "net": 9398640.98,
+   "net_per_t": 9398.64,
+   "gain_vs_harvest_per_t": -2188.22,
+   "x": [
+    300.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    212.1,
+    0.0,
+    0.0
+   ],
+   "s": [
+    700.0,
+    573.7,
+    470.1,
+    385.3,
+    315.8,
+    258.8,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "sold_t": 512.08,
+   "rule_months": "Oct,Nov",
+   "oracle_net_per_t": null,
+   "forecast_objective_per_t": null
+  },
+  {
+   "year": 2024,
+   "scenario": "C",
+   "strategy": "calendar_rule_exante",
+   "revenue": 24941697.89,
+   "storage_cost": 2620712.66,
+   "net": 22320985.23,
+   "net_per_t": 22320.99,
+   "gain_vs_harvest_per_t": 10734.13,
+   "x": [
+    300.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    300.0,
+    300.0,
+    31.3,
+    0.0
+   ],
+   "s": [
+    700.0,
+    687.2,
+    674.5,
+    662.2,
+    650.0,
+    338.1,
+    31.9,
+    0.0,
+    0.0
+   ],
+   "sold_t": 931.3,
+   "rule_months": "Oct,Nov,Sep",
+   "oracle_net_per_t": null,
+   "forecast_objective_per_t": null
+  },
+  {
+   "year": 2024,
+   "scenario": "C",
+   "strategy": "calendar_rule_hindsight_OctNov",
+   "revenue": 23582368.17,
+   "storage_cost": 3051136.45,
+   "net": 20531231.72,
+   "net_per_t": 20531.23,
+   "gain_vs_harvest_per_t": 8944.37,
+   "x": [
+    300.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    300.0,
+    300.0,
+    20.0
+   ],
+   "s": [
+    700.0,
+    687.2,
+    674.5,
+    662.2,
+    650.0,
+    638.1,
+    326.4,
+    20.4,
+    0.0
+   ],
+   "sold_t": 920.02,
+   "rule_months": "Oct,Nov",
+   "oracle_net_per_t": null,
+   "forecast_objective_per_t": null
+  },
+  {
+   "year": 2024,
+   "scenario": "A",
+   "strategy": "forecast_plan",
+   "revenue": 11586857.89,
+   "storage_cost": 0.0,
+   "net": 11586857.89,
+   "net_per_t": 11586.86,
+   "gain_vs_harvest_per_t": 0.0,
+   "x": [
+    1000.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "sold_t": 1000.0,
+   "rule_months": null,
+   "oracle_net_per_t": 11586.86,
+   "forecast_objective_per_t": 8473.57
+  },
+  {
+   "year": 2024,
+   "scenario": "B",
+   "strategy": "forecast_plan",
+   "revenue": 11586857.89,
+   "storage_cost": 0.0,
+   "net": 11586857.89,
+   "net_per_t": 11586.86,
+   "gain_vs_harvest_per_t": 0.0,
+   "x": [
+    1000.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "sold_t": 1000.0,
+   "rule_months": null,
+   "oracle_net_per_t": 13075.24,
+   "forecast_objective_per_t": 8473.57
+  },
+  {
+   "year": 2024,
+   "scenario": "B",
+   "strategy": "rolling_replan",
+   "revenue": 11586857.89,
+   "storage_cost": 0.0,
+   "net": 11586857.89,
+   "net_per_t": 11586.86,
+   "gain_vs_harvest_per_t": 0.0,
+   "x": [
+    1000.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "sold_t": 1000.0,
+   "rule_months": null,
+   "oracle_net_per_t": 13075.24,
+   "forecast_objective_per_t": null
+  },
+  {
+   "year": 2024,
+   "scenario": "B",
+   "strategy": "perfect_foresight",
+   "revenue": 13499630.69,
+   "storage_cost": 424385.92,
+   "net": 13075244.77,
+   "net_per_t": 13075.24,
+   "gain_vs_harvest_per_t": 1488.39,
+   "x": [
+    300.0,
+    0.0,
+    300.0,
+    0.0,
+    0.0,
+    93.7,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    700.0,
+    573.7,
+    170.1,
+    139.4,
+    114.3,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "sold_t": 693.66,
+   "rule_months": null,
+   "oracle_net_per_t": 13075.24,
+   "forecast_objective_per_t": null
+  },
+  {
+   "year": 2024,
+   "scenario": "C",
+   "strategy": "forecast_plan",
+   "revenue": 23820762.7,
+   "storage_cost": 3007499.7,
+   "net": 20813263.0,
+   "net_per_t": 20813.26,
+   "gain_vs_harvest_per_t": 9226.41,
+   "x": [
+    300.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    21.2,
+    300.0,
+    300.0,
+    0.0
+   ],
+   "s": [
+    700.0,
+    687.2,
+    674.5,
+    662.2,
+    650.0,
+    616.9,
+    305.6,
+    0.0,
+    0.0
+   ],
+   "sold_t": 921.17,
+   "rule_months": null,
+   "oracle_net_per_t": 22792.96,
+   "forecast_objective_per_t": 13251.15
+  },
+  {
+   "year": 2024,
+   "scenario": "C",
+   "strategy": "rolling_replan",
+   "revenue": 23820763.83,
+   "storage_cost": 3007500.26,
+   "net": 20813263.57,
+   "net_per_t": 20813.26,
+   "gain_vs_harvest_per_t": 9226.41,
+   "x": [
+    300.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    21.2,
+    300.0,
+    300.0,
+    0.0
+   ],
+   "s": [
+    700.0,
+    687.2,
+    674.5,
+    662.2,
+    650.0,
+    616.9,
+    305.6,
+    0.0,
+    0.0
+   ],
+   "sold_t": 921.16,
+   "rule_months": null,
+   "oracle_net_per_t": 22792.96,
+   "forecast_objective_per_t": null
+  },
+  {
+   "year": 2024,
+   "scenario": "C",
+   "strategy": "perfect_foresight",
+   "revenue": 25567440.16,
+   "storage_cost": 2774483.05,
+   "net": 22792957.12,
+   "net_per_t": 22792.96,
+   "gain_vs_harvest_per_t": 11206.1,
+   "x": [
+    300.0,
+    0.0,
+    0.0,
+    0.0,
+    27.3,
+    300.0,
+    0.0,
+    300.0,
+    0.0
+   ],
+   "s": [
+    700.0,
+    687.2,
+    674.5,
+    662.2,
+    622.7,
+    311.3,
+    305.6,
+    0.0,
+    0.0
+   ],
+   "sold_t": 927.27,
+   "rule_months": null,
+   "oracle_net_per_t": 22792.96,
+   "forecast_objective_per_t": null
+  }
+ ],
+ "backtest_robust": [
+  {
+   "year": 2017,
+   "scenario": "B",
+   "strategy": "calendar_rule_exante",
+   "revenue": 5290753.85,
+   "storage_cost": 611224.13,
+   "net": 4679529.72,
+   "net_per_t": 4679.53,
+   "gain_vs_harvest_per_t": -467.0,
+   "x": [
+    300.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    258.8,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    700.0,
+    573.7,
+    470.1,
+    385.3,
+    315.8,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "sold_t": 558.78,
+   "rule_months": "Oct,Nov,Sep",
+   "oracle_net_per_t": null,
+   "forecast_objective_per_t": null
+  },
+  {
+   "year": 2017,
+   "scenario": "B",
+   "strategy": "calendar_rule_hindsight_OctNov",
+   "revenue": 5929271.36,
+   "storage_cost": 675920.37,
+   "net": 5253350.98,
+   "net_per_t": 5253.35,
+   "gain_vs_harvest_per_t": 106.83,
+   "x": [
+    300.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    212.1,
+    0.0,
+    0.0
+   ],
+   "s": [
+    700.0,
+    573.7,
+    470.1,
+    385.3,
+    315.8,
+    258.8,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "sold_t": 512.08,
+   "rule_months": "Oct,Nov",
+   "oracle_net_per_t": null,
+   "forecast_objective_per_t": null
+  },
+  {
+   "year": 2017,
+   "scenario": "C",
+   "strategy": "calendar_rule_exante",
+   "revenue": 12939057.51,
+   "storage_cost": 2620712.66,
+   "net": 10318344.85,
+   "net_per_t": 10318.34,
+   "gain_vs_harvest_per_t": 5171.82,
+   "x": [
+    300.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    300.0,
+    300.0,
+    31.3,
+    0.0
+   ],
+   "s": [
+    700.0,
+    687.2,
+    674.5,
+    662.2,
+    650.0,
+    338.1,
+    31.9,
+    0.0,
+    0.0
+   ],
+   "sold_t": 931.3,
+   "rule_months": "Oct,Nov,Sep",
+   "oracle_net_per_t": null,
+   "forecast_objective_per_t": null
+  },
+  {
+   "year": 2017,
+   "scenario": "C",
+   "strategy": "calendar_rule_hindsight_OctNov",
+   "revenue": 16395421.33,
+   "storage_cost": 3051136.45,
+   "net": 13344284.88,
+   "net_per_t": 13344.28,
+   "gain_vs_harvest_per_t": 8197.76,
+   "x": [
+    300.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    300.0,
+    300.0,
+    20.0
+   ],
+   "s": [
+    700.0,
+    687.2,
+    674.5,
+    662.2,
+    650.0,
+    638.1,
+    326.4,
+    20.4,
+    0.0
+   ],
+   "sold_t": 920.02,
+   "rule_months": "Oct,Nov",
+   "oracle_net_per_t": null,
+   "forecast_objective_per_t": null
+  },
+  {
+   "year": 2017,
+   "scenario": "A",
+   "strategy": "forecast_plan",
+   "revenue": 5146525.46,
+   "storage_cost": 0.0,
+   "net": 5146525.46,
+   "net_per_t": 5146.53,
+   "gain_vs_harvest_per_t": 0.0,
+   "x": [
+    1000.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "sold_t": 1000.0,
+   "rule_months": null,
+   "oracle_net_per_t": 5146.53,
+   "forecast_objective_per_t": 5278.84
+  },
+  {
+   "year": 2017,
+   "scenario": "B",
+   "strategy": "forecast_plan",
+   "revenue": 5146525.46,
+   "storage_cost": 0.0,
+   "net": 5146525.46,
+   "net_per_t": 5146.53,
+   "gain_vs_harvest_per_t": 0.0,
+   "x": [
+    1000.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "sold_t": 1000.0,
+   "rule_months": null,
+   "oracle_net_per_t": 6873.61,
+   "forecast_objective_per_t": 5278.84
+  },
+  {
+   "year": 2017,
+   "scenario": "B",
+   "strategy": "rolling_replan",
+   "revenue": 5146525.46,
+   "storage_cost": 0.0,
+   "net": 5146525.46,
+   "net_per_t": 5146.53,
+   "gain_vs_harvest_per_t": 0.0,
+   "x": [
+    1000.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "sold_t": 1000.0,
+   "rule_months": null,
+   "oracle_net_per_t": 6873.61,
+   "forecast_objective_per_t": null
+  },
+  {
+   "year": 2017,
+   "scenario": "B",
+   "strategy": "perfect_foresight",
+   "revenue": 7415716.74,
+   "storage_cost": 542103.09,
+   "net": 6873613.65,
+   "net_per_t": 6873.61,
+   "gain_vs_harvest_per_t": 1727.09,
+   "x": [
+    300.0,
+    0.0,
+    0.0,
+    0.0,
+    300.0,
+    0.0,
+    0.0,
+    8.7,
+    0.0
+   ],
+   "s": [
+    700.0,
+    573.7,
+    470.1,
+    385.3,
+    15.8,
+    12.9,
+    10.6,
+    0.0,
+    0.0
+   ],
+   "sold_t": 608.68,
+   "rule_months": null,
+   "oracle_net_per_t": 6873.61,
+   "forecast_objective_per_t": null
+  },
+  {
+   "year": 2017,
+   "scenario": "C",
+   "strategy": "forecast_plan",
+   "revenue": 9692607.67,
+   "storage_cost": 1616783.57,
+   "net": 8075824.1,
+   "net_per_t": 8075.82,
+   "gain_vs_harvest_per_t": 2929.3,
+   "x": [
+    300.0,
+    0.0,
+    57.6,
+    300.0,
+    300.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    700.0,
+    687.2,
+    616.9,
+    305.6,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "sold_t": 957.62,
+   "rule_months": null,
+   "oracle_net_per_t": 14176.86,
+   "forecast_objective_per_t": 6525.56
+  },
+  {
+   "year": 2017,
+   "scenario": "C",
+   "strategy": "rolling_replan",
+   "revenue": 9692609.11,
+   "storage_cost": 1616783.93,
+   "net": 8075825.18,
+   "net_per_t": 8075.83,
+   "gain_vs_harvest_per_t": 2929.3,
+   "x": [
+    300.0,
+    0.0,
+    57.6,
+    300.0,
+    300.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    700.0,
+    687.2,
+    616.9,
+    305.6,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "sold_t": 957.62,
+   "rule_months": null,
+   "oracle_net_per_t": 14176.86,
+   "forecast_objective_per_t": null
+  },
+  {
+   "year": 2017,
+   "scenario": "C",
+   "strategy": "perfect_foresight",
+   "revenue": 17617412.45,
+   "storage_cost": 3440551.23,
+   "net": 14176861.22,
+   "net_per_t": 14176.86,
+   "gain_vs_harvest_per_t": 9030.34,
+   "x": [
+    300.0,
+    0.0,
+    0.0,
+    0.0,
+    9.8,
+    0.0,
+    0.0,
+    300.0,
+    300.0
+   ],
+   "s": [
+    700.0,
+    687.2,
+    674.5,
+    662.2,
+    640.2,
+    628.5,
+    616.9,
+    305.6,
+    0.0
+   ],
+   "sold_t": 909.81,
+   "rule_months": null,
+   "oracle_net_per_t": 14176.86,
+   "forecast_objective_per_t": null
+  },
+  {
+   "year": 2018,
+   "scenario": "B",
+   "strategy": "calendar_rule_exante",
+   "revenue": 4096975.09,
+   "storage_cost": 611224.13,
+   "net": 3485750.96,
+   "net_per_t": 3485.75,
+   "gain_vs_harvest_per_t": -3225.35,
+   "x": [
+    300.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    258.8,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    700.0,
+    573.7,
+    470.1,
+    385.3,
+    315.8,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "sold_t": 558.78,
+   "rule_months": "Oct,Nov,Sep",
+   "oracle_net_per_t": null,
+   "forecast_objective_per_t": null
+  },
+  {
+   "year": 2018,
+   "scenario": "B",
+   "strategy": "calendar_rule_hindsight_OctNov",
+   "revenue": 4335578.2,
+   "storage_cost": 675920.37,
+   "net": 3659657.83,
+   "net_per_t": 3659.66,
+   "gain_vs_harvest_per_t": -3051.44,
+   "x": [
+    300.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    212.1,
+    0.0,
+    0.0
+   ],
+   "s": [
+    700.0,
+    573.7,
+    470.1,
+    385.3,
+    315.8,
+    258.8,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "sold_t": 512.08,
+   "rule_months": "Oct,Nov",
+   "oracle_net_per_t": null,
+   "forecast_objective_per_t": null
+  },
+  {
+   "year": 2018,
+   "scenario": "C",
+   "strategy": "calendar_rule_exante",
+   "revenue": 8008174.65,
+   "storage_cost": 2620712.66,
+   "net": 5387461.99,
+   "net_per_t": 5387.46,
+   "gain_vs_harvest_per_t": -1323.64,
+   "x": [
+    300.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    300.0,
+    300.0,
+    31.3,
+    0.0
+   ],
+   "s": [
+    700.0,
+    687.2,
+    674.5,
+    662.2,
+    650.0,
+    338.1,
+    31.9,
+    0.0,
+    0.0
+   ],
+   "sold_t": 931.3,
+   "rule_months": "Oct,Nov,Sep",
+   "oracle_net_per_t": null,
+   "forecast_objective_per_t": null
+  },
+  {
+   "year": 2018,
+   "scenario": "C",
+   "strategy": "calendar_rule_hindsight_OctNov",
+   "revenue": 8255350.64,
+   "storage_cost": 3051136.45,
+   "net": 5204214.19,
+   "net_per_t": 5204.21,
+   "gain_vs_harvest_per_t": -1506.89,
+   "x": [
+    300.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    300.0,
+    300.0,
+    20.0
+   ],
+   "s": [
+    700.0,
+    687.2,
+    674.5,
+    662.2,
+    650.0,
+    638.1,
+    326.4,
+    20.4,
+    0.0
+   ],
+   "sold_t": 920.02,
+   "rule_months": "Oct,Nov",
+   "oracle_net_per_t": null,
+   "forecast_objective_per_t": null
+  },
+  {
+   "year": 2018,
+   "scenario": "A",
+   "strategy": "forecast_plan",
+   "revenue": 6711099.31,
+   "storage_cost": 0.0,
+   "net": 6711099.31,
+   "net_per_t": 6711.1,
+   "gain_vs_harvest_per_t": 0.0,
+   "x": [
+    1000.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "sold_t": 1000.0,
+   "rule_months": null,
+   "oracle_net_per_t": 6711.1,
+   "forecast_objective_per_t": 6202.47
+  },
+  {
+   "year": 2018,
+   "scenario": "B",
+   "strategy": "forecast_plan",
+   "revenue": 6711099.31,
+   "storage_cost": 0.0,
+   "net": 6711099.31,
+   "net_per_t": 6711.1,
+   "gain_vs_harvest_per_t": 0.0,
+   "x": [
+    1000.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "sold_t": 1000.0,
+   "rule_months": null,
+   "oracle_net_per_t": 6711.1,
+   "forecast_objective_per_t": 6202.47
+  },
+  {
+   "year": 2018,
+   "scenario": "B",
+   "strategy": "rolling_replan",
+   "revenue": 6711099.31,
+   "storage_cost": 0.0,
+   "net": 6711099.31,
+   "net_per_t": 6711.1,
+   "gain_vs_harvest_per_t": 0.0,
+   "x": [
+    1000.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "sold_t": 1000.0,
+   "rule_months": null,
+   "oracle_net_per_t": 6711.1,
+   "forecast_objective_per_t": null
+  },
+  {
+   "year": 2018,
+   "scenario": "B",
+   "strategy": "perfect_foresight",
+   "revenue": 6711099.31,
+   "storage_cost": 0.0,
+   "net": 6711099.31,
+   "net_per_t": 6711.1,
+   "gain_vs_harvest_per_t": 0.0,
+   "x": [
+    1000.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "sold_t": 1000.0,
+   "rule_months": null,
+   "oracle_net_per_t": 6711.1,
+   "forecast_objective_per_t": null
+  },
+  {
+   "year": 2018,
+   "scenario": "C",
+   "strategy": "forecast_plan",
+   "revenue": 7712486.56,
+   "storage_cost": 2182243.45,
+   "net": 5530243.11,
+   "net_per_t": 5530.24,
+   "gain_vs_harvest_per_t": -1180.86,
+   "x": [
+    300.0,
+    0.0,
+    0.0,
+    0.0,
+    300.0,
+    300.0,
+    42.8,
+    0.0,
+    0.0
+   ],
+   "s": [
+    700.0,
+    687.2,
+    674.5,
+    662.2,
+    350.0,
+    43.6,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "sold_t": 942.8,
+   "rule_months": null,
+   "oracle_net_per_t": 7243.47,
+   "forecast_objective_per_t": 8521.43
+  },
+  {
+   "year": 2018,
+   "scenario": "C",
+   "strategy": "rolling_replan",
+   "revenue": 7712486.49,
+   "storage_cost": 2182243.65,
+   "net": 5530242.84,
+   "net_per_t": 5530.24,
+   "gain_vs_harvest_per_t": -1180.86,
+   "x": [
+    300.0,
+    0.0,
+    0.0,
+    0.0,
+    300.0,
+    300.0,
+    42.8,
+    0.0,
+    0.0
+   ],
+   "s": [
+    700.0,
+    687.2,
+    674.5,
+    662.2,
+    350.0,
+    43.6,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "sold_t": 942.8,
+   "rule_months": null,
+   "oracle_net_per_t": 7243.47,
+   "forecast_objective_per_t": null
+  },
+  {
+   "year": 2018,
+   "scenario": "C",
+   "strategy": "perfect_foresight",
+   "revenue": 8329166.84,
+   "storage_cost": 1085695.81,
+   "net": 7243471.03,
+   "net_per_t": 7243.47,
+   "gain_vs_harvest_per_t": 532.37,
+   "x": [
+    371.5,
+    0.0,
+    300.0,
+    300.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    628.5,
+    616.9,
+    305.6,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "sold_t": 971.54,
+   "rule_months": null,
+   "oracle_net_per_t": 7243.47,
+   "forecast_objective_per_t": null
+  },
+  {
+   "year": 2019,
+   "scenario": "B",
+   "strategy": "calendar_rule_exante",
+   "revenue": 9179509.43,
+   "storage_cost": 611224.13,
+   "net": 8568285.3,
+   "net_per_t": 8568.29,
+   "gain_vs_harvest_per_t": 1763.65,
+   "x": [
+    300.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    258.8,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    700.0,
+    573.7,
+    470.1,
+    385.3,
+    315.8,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "sold_t": 558.78,
+   "rule_months": "Oct,Nov,Sep",
+   "oracle_net_per_t": null,
+   "forecast_objective_per_t": null
+  },
+  {
+   "year": 2019,
+   "scenario": "B",
+   "strategy": "calendar_rule_hindsight_OctNov",
+   "revenue": 7537898.71,
+   "storage_cost": 675920.37,
+   "net": 6861978.33,
+   "net_per_t": 6861.98,
+   "gain_vs_harvest_per_t": 57.34,
+   "x": [
+    300.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    212.1,
+    0.0,
+    0.0
+   ],
+   "s": [
+    700.0,
+    573.7,
+    470.1,
+    385.3,
+    315.8,
+    258.8,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "sold_t": 512.08,
+   "rule_months": "Oct,Nov",
+   "oracle_net_per_t": null,
+   "forecast_objective_per_t": null
+  },
+  {
+   "year": 2019,
+   "scenario": "C",
+   "strategy": "calendar_rule_exante",
+   "revenue": 19366138.79,
+   "storage_cost": 2620712.66,
+   "net": 16745426.13,
+   "net_per_t": 16745.43,
+   "gain_vs_harvest_per_t": 9940.79,
+   "x": [
+    300.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    300.0,
+    300.0,
+    31.3,
+    0.0
+   ],
+   "s": [
+    700.0,
+    687.2,
+    674.5,
+    662.2,
+    650.0,
+    338.1,
+    31.9,
+    0.0,
+    0.0
+   ],
+   "sold_t": 931.3,
+   "rule_months": "Oct,Nov,Sep",
+   "oracle_net_per_t": null,
+   "forecast_objective_per_t": null
+  },
+  {
+   "year": 2019,
+   "scenario": "C",
+   "strategy": "calendar_rule_hindsight_OctNov",
+   "revenue": 23045348.59,
+   "storage_cost": 3051136.45,
+   "net": 19994212.14,
+   "net_per_t": 19994.21,
+   "gain_vs_harvest_per_t": 13189.58,
+   "x": [
+    300.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    300.0,
+    300.0,
+    20.0
+   ],
+   "s": [
+    700.0,
+    687.2,
+    674.5,
+    662.2,
+    650.0,
+    638.1,
+    326.4,
+    20.4,
+    0.0
+   ],
+   "sold_t": 920.02,
+   "rule_months": "Oct,Nov",
+   "oracle_net_per_t": null,
+   "forecast_objective_per_t": null
+  },
+  {
+   "year": 2019,
+   "scenario": "A",
+   "strategy": "forecast_plan",
+   "revenue": 6804633.49,
+   "storage_cost": 0.0,
+   "net": 6804633.49,
+   "net_per_t": 6804.63,
+   "gain_vs_harvest_per_t": 0.0,
+   "x": [
+    1000.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "sold_t": 1000.0,
+   "rule_months": null,
+   "oracle_net_per_t": 6804.63,
+   "forecast_objective_per_t": 5150.42
+  },
+  {
+   "year": 2019,
+   "scenario": "B",
+   "strategy": "forecast_plan",
+   "revenue": 6804633.49,
+   "storage_cost": 0.0,
+   "net": 6804633.49,
+   "net_per_t": 6804.63,
+   "gain_vs_harvest_per_t": 0.0,
+   "x": [
+    1000.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "sold_t": 1000.0,
+   "rule_months": null,
+   "oracle_net_per_t": 8568.29,
+   "forecast_objective_per_t": 5150.42
+  },
+  {
+   "year": 2019,
+   "scenario": "B",
+   "strategy": "rolling_replan",
+   "revenue": 6804633.49,
+   "storage_cost": 0.0,
+   "net": 6804633.49,
+   "net_per_t": 6804.63,
+   "gain_vs_harvest_per_t": 0.0,
+   "x": [
+    1000.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "sold_t": 1000.0,
+   "rule_months": null,
+   "oracle_net_per_t": 8568.29,
+   "forecast_objective_per_t": null
+  },
+  {
+   "year": 2019,
+   "scenario": "B",
+   "strategy": "perfect_foresight",
+   "revenue": 9179509.3,
+   "storage_cost": 611224.13,
+   "net": 8568285.17,
+   "net_per_t": 8568.29,
+   "gain_vs_harvest_per_t": 1763.65,
+   "x": [
+    300.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    258.8,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    700.0,
+    573.7,
+    470.1,
+    385.3,
+    315.8,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "sold_t": 558.78,
+   "rule_months": null,
+   "oracle_net_per_t": 8568.29,
+   "forecast_objective_per_t": null
+  },
+  {
+   "year": 2019,
+   "scenario": "C",
+   "strategy": "forecast_plan",
+   "revenue": 11490472.68,
+   "storage_cost": 1616783.57,
+   "net": 9873689.11,
+   "net_per_t": 9873.69,
+   "gain_vs_harvest_per_t": 3069.06,
+   "x": [
+    300.0,
+    0.0,
+    57.6,
+    300.0,
+    300.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    700.0,
+    687.2,
+    616.9,
+    305.6,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "sold_t": 957.62,
+   "rule_months": null,
+   "oracle_net_per_t": 26243.56,
+   "forecast_objective_per_t": 6215.5
+  },
+  {
+   "year": 2019,
+   "scenario": "C",
+   "strategy": "rolling_replan",
+   "revenue": 11490473.71,
+   "storage_cost": 1616783.93,
+   "net": 9873689.78,
+   "net_per_t": 9873.69,
+   "gain_vs_harvest_per_t": 3069.06,
+   "x": [
+    300.0,
+    0.0,
+    57.6,
+    300.0,
+    300.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    700.0,
+    687.2,
+    616.9,
+    305.6,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "sold_t": 957.62,
+   "rule_months": null,
+   "oracle_net_per_t": 26243.56,
+   "forecast_objective_per_t": null
+  },
+  {
+   "year": 2019,
+   "scenario": "C",
+   "strategy": "perfect_foresight",
+   "revenue": 29690978.84,
+   "storage_cost": 3447421.0,
+   "net": 26243557.84,
+   "net_per_t": 26243.56,
+   "gain_vs_harvest_per_t": 19438.92,
+   "x": [
+    300.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    9.6,
+    0.0,
+    300.0,
+    300.0
+   ],
+   "s": [
+    700.0,
+    687.2,
+    674.5,
+    662.2,
+    650.0,
+    628.5,
+    616.9,
+    305.6,
+    0.0
+   ],
+   "sold_t": 909.63,
+   "rule_months": null,
+   "oracle_net_per_t": 26243.56,
+   "forecast_objective_per_t": null
+  },
+  {
+   "year": 2020,
+   "scenario": "B",
+   "strategy": "calendar_rule_exante",
+   "revenue": 8744079.71,
+   "storage_cost": 611224.13,
+   "net": 8132855.58,
+   "net_per_t": 8132.86,
+   "gain_vs_harvest_per_t": -1863.95,
+   "x": [
+    300.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    258.8,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    700.0,
+    573.7,
+    470.1,
+    385.3,
+    315.8,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "sold_t": 558.78,
+   "rule_months": "Oct,Nov,Sep",
+   "oracle_net_per_t": null,
+   "forecast_objective_per_t": null
+  },
+  {
+   "year": 2020,
+   "scenario": "B",
+   "strategy": "calendar_rule_hindsight_OctNov",
+   "revenue": 9832443.09,
+   "storage_cost": 675920.37,
+   "net": 9156522.72,
+   "net_per_t": 9156.52,
+   "gain_vs_harvest_per_t": -840.29,
+   "x": [
+    300.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    212.1,
+    0.0,
+    0.0
+   ],
+   "s": [
+    700.0,
+    573.7,
+    470.1,
+    385.3,
+    315.8,
+    258.8,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "sold_t": 512.08,
+   "rule_months": "Oct,Nov",
+   "oracle_net_per_t": null,
+   "forecast_objective_per_t": null
+  },
+  {
+   "year": 2020,
+   "scenario": "C",
+   "strategy": "calendar_rule_exante",
+   "revenue": 20420294.75,
+   "storage_cost": 2620712.66,
+   "net": 17799582.09,
+   "net_per_t": 17799.58,
+   "gain_vs_harvest_per_t": 7802.77,
+   "x": [
+    300.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    300.0,
+    300.0,
+    31.3,
+    0.0
+   ],
+   "s": [
+    700.0,
+    687.2,
+    674.5,
+    662.2,
+    650.0,
+    338.1,
+    31.9,
+    0.0,
+    0.0
+   ],
+   "sold_t": 931.3,
+   "rule_months": "Oct,Nov,Sep",
+   "oracle_net_per_t": null,
+   "forecast_objective_per_t": null
+  },
+  {
+   "year": 2020,
+   "scenario": "C",
+   "strategy": "calendar_rule_hindsight_OctNov",
+   "revenue": 23598944.53,
+   "storage_cost": 3051136.45,
+   "net": 20547808.07,
+   "net_per_t": 20547.81,
+   "gain_vs_harvest_per_t": 10551.0,
+   "x": [
+    300.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    300.0,
+    300.0,
+    20.0
+   ],
+   "s": [
+    700.0,
+    687.2,
+    674.5,
+    662.2,
+    650.0,
+    638.1,
+    326.4,
+    20.4,
+    0.0
+   ],
+   "sold_t": 920.02,
+   "rule_months": "Oct,Nov",
+   "oracle_net_per_t": null,
+   "forecast_objective_per_t": null
+  },
+  {
+   "year": 2020,
+   "scenario": "A",
+   "strategy": "forecast_plan",
+   "revenue": 9996808.54,
+   "storage_cost": 0.0,
+   "net": 9996808.54,
+   "net_per_t": 9996.81,
+   "gain_vs_harvest_per_t": 0.0,
+   "x": [
+    1000.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "sold_t": 1000.0,
+   "rule_months": null,
+   "oracle_net_per_t": 9996.81,
+   "forecast_objective_per_t": 7339.37
+  },
+  {
+   "year": 2020,
+   "scenario": "B",
+   "strategy": "forecast_plan",
+   "revenue": 9996808.54,
+   "storage_cost": 0.0,
+   "net": 9996808.54,
+   "net_per_t": 9996.81,
+   "gain_vs_harvest_per_t": 0.0,
+   "x": [
+    1000.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "sold_t": 1000.0,
+   "rule_months": null,
+   "oracle_net_per_t": 9996.81,
+   "forecast_objective_per_t": 7339.37
+  },
+  {
+   "year": 2020,
+   "scenario": "B",
+   "strategy": "rolling_replan",
+   "revenue": 9996808.54,
+   "storage_cost": 0.0,
+   "net": 9996808.54,
+   "net_per_t": 9996.81,
+   "gain_vs_harvest_per_t": 0.0,
+   "x": [
+    1000.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "sold_t": 1000.0,
+   "rule_months": null,
+   "oracle_net_per_t": 9996.81,
+   "forecast_objective_per_t": null
+  },
+  {
+   "year": 2020,
+   "scenario": "B",
+   "strategy": "perfect_foresight",
+   "revenue": 9996808.54,
+   "storage_cost": 0.0,
+   "net": 9996808.54,
+   "net_per_t": 9996.81,
+   "gain_vs_harvest_per_t": 0.0,
+   "x": [
+    1000.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "sold_t": 1000.0,
+   "rule_months": null,
+   "oracle_net_per_t": 9996.81,
+   "forecast_objective_per_t": null
+  },
+  {
+   "year": 2020,
+   "scenario": "C",
+   "strategy": "forecast_plan",
+   "revenue": 17467511.39,
+   "storage_cost": 2606168.74,
+   "net": 14861342.65,
+   "net_per_t": 14861.34,
+   "gain_vs_harvest_per_t": 4864.53,
+   "x": [
+    300.0,
+    0.0,
+    0.0,
+    0.0,
+    300.0,
+    0.0,
+    31.7,
+    300.0,
+    0.0
+   ],
+   "s": [
+    700.0,
+    687.2,
+    674.5,
+    662.2,
+    350.0,
+    343.6,
+    305.6,
+    0.0,
+    0.0
+   ],
+   "sold_t": 931.69,
+   "rule_months": null,
+   "oracle_net_per_t": 20622.77,
+   "forecast_objective_per_t": 10354.03
+  },
+  {
+   "year": 2020,
+   "scenario": "C",
+   "strategy": "rolling_replan",
+   "revenue": 17163165.11,
+   "storage_cost": 2583574.83,
+   "net": 14579590.28,
+   "net_per_t": 14579.59,
+   "gain_vs_harvest_per_t": 4582.78,
+   "x": [
+    300.0,
+    0.0,
+    0.0,
+    0.0,
+    300.0,
+    32.3,
+    0.0,
+    300.0,
+    0.0
+   ],
+   "s": [
+    700.0,
+    687.2,
+    674.5,
+    662.2,
+    350.0,
+    311.3,
+    305.6,
+    0.0,
+    0.0
+   ],
+   "sold_t": 932.28,
+   "rule_months": null,
+   "oracle_net_per_t": 20622.77,
+   "forecast_objective_per_t": null
+  },
+  {
+   "year": 2020,
+   "scenario": "C",
+   "strategy": "perfect_foresight",
+   "revenue": 23630268.92,
+   "storage_cost": 3007499.7,
+   "net": 20622769.21,
+   "net_per_t": 20622.77,
+   "gain_vs_harvest_per_t": 10625.96,
+   "x": [
+    300.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    21.2,
+    300.0,
+    300.0,
+    0.0
+   ],
+   "s": [
+    700.0,
+    687.2,
+    674.5,
+    662.2,
+    650.0,
+    616.9,
+    305.6,
+    0.0,
+    0.0
+   ],
+   "sold_t": 921.17,
+   "rule_months": null,
+   "oracle_net_per_t": 20622.77,
+   "forecast_objective_per_t": null
+  },
+  {
+   "year": 2021,
+   "scenario": "B",
+   "strategy": "calendar_rule_exante",
+   "revenue": 6058421.32,
+   "storage_cost": 611224.13,
+   "net": 5447197.19,
+   "net_per_t": 5447.2,
+   "gain_vs_harvest_per_t": -2704.61,
+   "x": [
+    300.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    258.8,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    700.0,
+    573.7,
+    470.1,
+    385.3,
+    315.8,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "sold_t": 558.78,
+   "rule_months": "Oct,Nov,Sep",
+   "oracle_net_per_t": null,
+   "forecast_objective_per_t": null
+  },
+  {
+   "year": 2021,
+   "scenario": "B",
+   "strategy": "calendar_rule_hindsight_OctNov",
+   "revenue": 7363048.7,
+   "storage_cost": 675920.37,
+   "net": 6687128.33,
+   "net_per_t": 6687.13,
+   "gain_vs_harvest_per_t": -1464.68,
+   "x": [
+    300.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    212.1,
+    0.0,
+    0.0
+   ],
+   "s": [
+    700.0,
+    573.7,
+    470.1,
+    385.3,
+    315.8,
+    258.8,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "sold_t": 512.08,
+   "rule_months": "Oct,Nov",
+   "oracle_net_per_t": null,
+   "forecast_objective_per_t": null
+  },
+  {
+   "year": 2021,
+   "scenario": "C",
+   "strategy": "calendar_rule_exante",
+   "revenue": 14223444.94,
+   "storage_cost": 2620712.66,
+   "net": 11602732.28,
+   "net_per_t": 11602.73,
+   "gain_vs_harvest_per_t": 3450.93,
+   "x": [
+    300.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    300.0,
+    300.0,
+    31.3,
+    0.0
+   ],
+   "s": [
+    700.0,
+    687.2,
+    674.5,
+    662.2,
+    650.0,
+    338.1,
+    31.9,
+    0.0,
+    0.0
+   ],
+   "sold_t": 931.3,
+   "rule_months": "Oct,Nov,Sep",
+   "oracle_net_per_t": null,
+   "forecast_objective_per_t": null
+  },
+  {
+   "year": 2021,
+   "scenario": "C",
+   "strategy": "calendar_rule_hindsight_OctNov",
+   "revenue": 15866027.73,
+   "storage_cost": 3051136.45,
+   "net": 12814891.28,
+   "net_per_t": 12814.89,
+   "gain_vs_harvest_per_t": 4663.08,
+   "x": [
+    300.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    300.0,
+    300.0,
+    20.0
+   ],
+   "s": [
+    700.0,
+    687.2,
+    674.5,
+    662.2,
+    650.0,
+    638.1,
+    326.4,
+    20.4,
+    0.0
+   ],
+   "sold_t": 920.02,
+   "rule_months": "Oct,Nov",
+   "oracle_net_per_t": null,
+   "forecast_objective_per_t": null
+  },
+  {
+   "year": 2021,
+   "scenario": "A",
+   "strategy": "forecast_plan",
+   "revenue": 8151806.91,
+   "storage_cost": 0.0,
+   "net": 8151806.91,
+   "net_per_t": 8151.81,
+   "gain_vs_harvest_per_t": 0.0,
+   "x": [
+    1000.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "sold_t": 1000.0,
+   "rule_months": null,
+   "oracle_net_per_t": 8151.81,
+   "forecast_objective_per_t": 8598.63
+  },
+  {
+   "year": 2021,
+   "scenario": "B",
+   "strategy": "forecast_plan",
+   "revenue": 8151806.91,
+   "storage_cost": 0.0,
+   "net": 8151806.91,
+   "net_per_t": 8151.81,
+   "gain_vs_harvest_per_t": 0.0,
+   "x": [
+    1000.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "sold_t": 1000.0,
+   "rule_months": null,
+   "oracle_net_per_t": 8749.01,
+   "forecast_objective_per_t": 8598.63
+  },
+  {
+   "year": 2021,
+   "scenario": "B",
+   "strategy": "rolling_replan",
+   "revenue": 8151806.91,
+   "storage_cost": 0.0,
+   "net": 8151806.91,
+   "net_per_t": 8151.81,
+   "gain_vs_harvest_per_t": 0.0,
+   "x": [
+    1000.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "sold_t": 1000.0,
+   "rule_months": null,
+   "oracle_net_per_t": 8749.01,
+   "forecast_objective_per_t": null
+  },
+  {
+   "year": 2021,
+   "scenario": "B",
+   "strategy": "perfect_foresight",
+   "revenue": 8952193.41,
+   "storage_cost": 203182.16,
+   "net": 8749011.24,
+   "net_per_t": 8749.01,
+   "gain_vs_harvest_per_t": 597.2,
+   "x": [
+    553.3,
+    0.0,
+    300.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    446.7,
+    366.1,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "sold_t": 853.33,
+   "rule_months": null,
+   "oracle_net_per_t": 8749.01,
+   "forecast_objective_per_t": null
+  },
+  {
+   "year": 2021,
+   "scenario": "C",
+   "strategy": "forecast_plan",
+   "revenue": 15769391.76,
+   "storage_cost": 3007499.7,
+   "net": 12761892.06,
+   "net_per_t": 12761.89,
+   "gain_vs_harvest_per_t": 4610.09,
+   "x": [
+    300.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    21.2,
+    300.0,
+    300.0,
+    0.0
+   ],
+   "s": [
+    700.0,
+    687.2,
+    674.5,
+    662.2,
+    650.0,
+    616.9,
+    305.6,
+    0.0,
+    0.0
+   ],
+   "sold_t": 921.17,
+   "rule_months": null,
+   "oracle_net_per_t": 12843.79,
+   "forecast_objective_per_t": 12649.89
+  },
+  {
+   "year": 2021,
+   "scenario": "C",
+   "strategy": "rolling_replan",
+   "revenue": 15769393.69,
+   "storage_cost": 3007500.26,
+   "net": 12761893.43,
+   "net_per_t": 12761.89,
+   "gain_vs_harvest_per_t": 4610.09,
+   "x": [
+    300.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    21.2,
+    300.0,
+    300.0,
+    0.0
+   ],
+   "s": [
+    700.0,
+    687.2,
+    674.5,
+    662.2,
+    650.0,
+    616.9,
+    305.6,
+    0.0,
+    0.0
+   ],
+   "sold_t": 921.16,
+   "rule_months": null,
+   "oracle_net_per_t": 12843.79,
+   "forecast_objective_per_t": null
+  },
+  {
+   "year": 2021,
+   "scenario": "C",
+   "strategy": "perfect_foresight",
+   "revenue": 15805161.59,
+   "storage_cost": 2961369.98,
+   "net": 12843791.61,
+   "net_per_t": 12843.79,
+   "gain_vs_harvest_per_t": 4691.98,
+   "x": [
+    300.0,
+    0.0,
+    22.4,
+    0.0,
+    0.0,
+    0.0,
+    300.0,
+    300.0,
+    0.0
+   ],
+   "s": [
+    700.0,
+    687.2,
+    652.2,
+    640.2,
+    628.5,
+    616.9,
+    305.6,
+    0.0,
+    0.0
+   ],
+   "sold_t": 922.37,
+   "rule_months": null,
+   "oracle_net_per_t": 12843.79,
+   "forecast_objective_per_t": null
+  },
+  {
+   "year": 2022,
+   "scenario": "B",
+   "strategy": "calendar_rule_exante",
+   "revenue": 5192406.95,
+   "storage_cost": 611224.13,
+   "net": 4581182.82,
+   "net_per_t": 4581.18,
+   "gain_vs_harvest_per_t": -3381.1,
+   "x": [
+    300.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    258.8,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    700.0,
+    573.7,
+    470.1,
+    385.3,
+    315.8,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "sold_t": 558.78,
+   "rule_months": "Oct,Nov,Sep",
+   "oracle_net_per_t": null,
+   "forecast_objective_per_t": null
+  },
+  {
+   "year": 2022,
+   "scenario": "B",
+   "strategy": "calendar_rule_hindsight_OctNov",
+   "revenue": 6048838.5,
+   "storage_cost": 675920.37,
+   "net": 5372918.12,
+   "net_per_t": 5372.92,
+   "gain_vs_harvest_per_t": -2589.36,
+   "x": [
+    300.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    212.1,
+    0.0,
+    0.0
+   ],
+   "s": [
+    700.0,
+    573.7,
+    470.1,
+    385.3,
+    315.8,
+    258.8,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "sold_t": 512.08,
+   "rule_months": "Oct,Nov",
+   "oracle_net_per_t": null,
+   "forecast_objective_per_t": null
+  },
+  {
+   "year": 2022,
+   "scenario": "C",
+   "strategy": "calendar_rule_exante",
+   "revenue": 11368596.53,
+   "storage_cost": 2620712.66,
+   "net": 8747883.88,
+   "net_per_t": 8747.88,
+   "gain_vs_harvest_per_t": 785.61,
+   "x": [
+    300.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    300.0,
+    300.0,
+    31.3,
+    0.0
+   ],
+   "s": [
+    700.0,
+    687.2,
+    674.5,
+    662.2,
+    650.0,
+    338.1,
+    31.9,
+    0.0,
+    0.0
+   ],
+   "sold_t": 931.3,
+   "rule_months": "Oct,Nov,Sep",
+   "oracle_net_per_t": null,
+   "forecast_objective_per_t": null
+  },
+  {
+   "year": 2022,
+   "scenario": "C",
+   "strategy": "calendar_rule_hindsight_OctNov",
+   "revenue": 13119779.4,
+   "storage_cost": 3051136.45,
+   "net": 10068642.95,
+   "net_per_t": 10068.64,
+   "gain_vs_harvest_per_t": 2106.37,
+   "x": [
+    300.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    300.0,
+    300.0,
+    20.0
+   ],
+   "s": [
+    700.0,
+    687.2,
+    674.5,
+    662.2,
+    650.0,
+    638.1,
+    326.4,
+    20.4,
+    0.0
+   ],
+   "sold_t": 920.02,
+   "rule_months": "Oct,Nov",
+   "oracle_net_per_t": null,
+   "forecast_objective_per_t": null
+  },
+  {
+   "year": 2022,
+   "scenario": "A",
+   "strategy": "forecast_plan",
+   "revenue": 7962277.93,
+   "storage_cost": 0.0,
+   "net": 7962277.93,
+   "net_per_t": 7962.28,
+   "gain_vs_harvest_per_t": 0.0,
+   "x": [
+    1000.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "sold_t": 1000.0,
+   "rule_months": null,
+   "oracle_net_per_t": 7962.28,
+   "forecast_objective_per_t": 9175.05
+  },
+  {
+   "year": 2022,
+   "scenario": "B",
+   "strategy": "forecast_plan",
+   "revenue": 7962277.93,
+   "storage_cost": 0.0,
+   "net": 7962277.93,
+   "net_per_t": 7962.28,
+   "gain_vs_harvest_per_t": 0.0,
+   "x": [
+    1000.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "sold_t": 1000.0,
+   "rule_months": null,
+   "oracle_net_per_t": 7962.28,
+   "forecast_objective_per_t": 9175.05
+  },
+  {
+   "year": 2022,
+   "scenario": "B",
+   "strategy": "rolling_replan",
+   "revenue": 7962277.93,
+   "storage_cost": 0.0,
+   "net": 7962277.93,
+   "net_per_t": 7962.28,
+   "gain_vs_harvest_per_t": 0.0,
+   "x": [
+    1000.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "sold_t": 1000.0,
+   "rule_months": null,
+   "oracle_net_per_t": 7962.28,
+   "forecast_objective_per_t": null
+  },
+  {
+   "year": 2022,
+   "scenario": "B",
+   "strategy": "perfect_foresight",
+   "revenue": 7962277.93,
+   "storage_cost": 0.0,
+   "net": 7962277.93,
+   "net_per_t": 7962.28,
+   "gain_vs_harvest_per_t": 0.0,
+   "x": [
+    1000.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "sold_t": 1000.0,
+   "rule_months": null,
+   "oracle_net_per_t": 7962.28,
+   "forecast_objective_per_t": null
+  },
+  {
+   "year": 2022,
+   "scenario": "C",
+   "strategy": "forecast_plan",
+   "revenue": 13087732.74,
+   "storage_cost": 3007499.7,
+   "net": 10080233.04,
+   "net_per_t": 10080.23,
+   "gain_vs_harvest_per_t": 2117.96,
+   "x": [
+    300.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    21.2,
+    300.0,
+    300.0,
+    0.0
+   ],
+   "s": [
+    700.0,
+    687.2,
+    674.5,
+    662.2,
+    650.0,
+    616.9,
+    305.6,
+    0.0,
+    0.0
+   ],
+   "sold_t": 921.17,
+   "rule_months": null,
+   "oracle_net_per_t": 10145.01,
+   "forecast_objective_per_t": 13815.03
+  },
+  {
+   "year": 2022,
+   "scenario": "C",
+   "strategy": "rolling_replan",
+   "revenue": 13087734.19,
+   "storage_cost": 3007500.26,
+   "net": 10080233.93,
+   "net_per_t": 10080.23,
+   "gain_vs_harvest_per_t": 2117.96,
+   "x": [
+    300.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    21.2,
+    300.0,
+    300.0,
+    0.0
+   ],
+   "s": [
+    700.0,
+    687.2,
+    674.5,
+    662.2,
+    650.0,
+    616.9,
+    305.6,
+    0.0,
+    0.0
+   ],
+   "sold_t": 921.16,
+   "rule_months": null,
+   "oracle_net_per_t": 10145.01,
+   "forecast_objective_per_t": null
+  },
+  {
+   "year": 2022,
+   "scenario": "C",
+   "strategy": "perfect_foresight",
+   "revenue": 13106379.24,
+   "storage_cost": 2961369.98,
+   "net": 10145009.26,
+   "net_per_t": 10145.01,
+   "gain_vs_harvest_per_t": 2182.73,
+   "x": [
+    300.0,
+    0.0,
+    22.4,
+    0.0,
+    0.0,
+    0.0,
+    300.0,
+    300.0,
+    0.0
+   ],
+   "s": [
+    700.0,
+    687.2,
+    652.2,
+    640.2,
+    628.5,
+    616.9,
+    305.6,
+    0.0,
+    0.0
+   ],
+   "sold_t": 922.37,
+   "rule_months": null,
+   "oracle_net_per_t": 10145.01,
+   "forecast_objective_per_t": null
+  },
+  {
+   "year": 2023,
+   "scenario": "B",
+   "strategy": "calendar_rule_exante",
+   "revenue": 6414356.06,
+   "storage_cost": 611224.13,
+   "net": 5803131.93,
+   "net_per_t": 5803.13,
+   "gain_vs_harvest_per_t": -131.91,
+   "x": [
+    300.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    258.8,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    700.0,
+    573.7,
+    470.1,
+    385.3,
+    315.8,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "sold_t": 558.78,
+   "rule_months": "Oct,Nov,Sep",
+   "oracle_net_per_t": null,
+   "forecast_objective_per_t": null
+  },
+  {
+   "year": 2023,
+   "scenario": "B",
+   "strategy": "calendar_rule_hindsight_OctNov",
+   "revenue": 7363077.6,
+   "storage_cost": 675920.37,
+   "net": 6687157.23,
+   "net_per_t": 6687.16,
+   "gain_vs_harvest_per_t": 752.12,
+   "x": [
+    300.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    212.1,
+    0.0,
+    0.0
+   ],
+   "s": [
+    700.0,
+    573.7,
+    470.1,
+    385.3,
+    315.8,
+    258.8,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "sold_t": 512.08,
+   "rule_months": "Oct,Nov",
+   "oracle_net_per_t": null,
+   "forecast_objective_per_t": null
+  },
+  {
+   "year": 2023,
+   "scenario": "C",
+   "strategy": "calendar_rule_exante",
+   "revenue": 16055181.07,
+   "storage_cost": 2620712.66,
+   "net": 13434468.41,
+   "net_per_t": 13434.47,
+   "gain_vs_harvest_per_t": 7499.43,
+   "x": [
+    300.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    300.0,
+    300.0,
+    31.3,
+    0.0
+   ],
+   "s": [
+    700.0,
+    687.2,
+    674.5,
+    662.2,
+    650.0,
+    338.1,
+    31.9,
+    0.0,
+    0.0
+   ],
+   "sold_t": 931.3,
+   "rule_months": "Oct,Nov,Sep",
+   "oracle_net_per_t": null,
+   "forecast_objective_per_t": null
+  },
+  {
+   "year": 2023,
+   "scenario": "C",
+   "strategy": "calendar_rule_hindsight_OctNov",
+   "revenue": 19720898.2,
+   "storage_cost": 3051136.45,
+   "net": 16669761.75,
+   "net_per_t": 16669.76,
+   "gain_vs_harvest_per_t": 10734.72,
+   "x": [
+    300.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    300.0,
+    300.0,
+    20.0
+   ],
+   "s": [
+    700.0,
+    687.2,
+    674.5,
+    662.2,
+    650.0,
+    638.1,
+    326.4,
+    20.4,
+    0.0
+   ],
+   "sold_t": 920.02,
+   "rule_months": "Oct,Nov",
+   "oracle_net_per_t": null,
+   "forecast_objective_per_t": null
+  },
+  {
+   "year": 2023,
+   "scenario": "A",
+   "strategy": "forecast_plan",
+   "revenue": 5935040.47,
+   "storage_cost": 0.0,
+   "net": 5935040.47,
+   "net_per_t": 5935.04,
+   "gain_vs_harvest_per_t": 0.0,
+   "x": [
+    1000.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "sold_t": 1000.0,
+   "rule_months": null,
+   "oracle_net_per_t": 5935.04,
+   "forecast_objective_per_t": 8554.38
+  },
+  {
+   "year": 2023,
+   "scenario": "B",
+   "strategy": "forecast_plan",
+   "revenue": 5935040.47,
+   "storage_cost": 0.0,
+   "net": 5935040.47,
+   "net_per_t": 5935.04,
+   "gain_vs_harvest_per_t": 0.0,
+   "x": [
+    1000.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "sold_t": 1000.0,
+   "rule_months": null,
+   "oracle_net_per_t": 6687.16,
+   "forecast_objective_per_t": 8554.38
+  },
+  {
+   "year": 2023,
+   "scenario": "B",
+   "strategy": "rolling_replan",
+   "revenue": 5935040.47,
+   "storage_cost": 0.0,
+   "net": 5935040.47,
+   "net_per_t": 5935.04,
+   "gain_vs_harvest_per_t": 0.0,
+   "x": [
+    1000.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "sold_t": 1000.0,
+   "rule_months": null,
+   "oracle_net_per_t": 6687.16,
+   "forecast_objective_per_t": null
+  },
+  {
+   "year": 2023,
+   "scenario": "B",
+   "strategy": "perfect_foresight",
+   "revenue": 7363077.48,
+   "storage_cost": 675920.37,
+   "net": 6687157.1,
+   "net_per_t": 6687.16,
+   "gain_vs_harvest_per_t": 752.12,
+   "x": [
+    300.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    212.1,
+    0.0,
+    0.0
+   ],
+   "s": [
+    700.0,
+    573.7,
+    470.1,
+    385.3,
+    315.8,
+    258.8,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "sold_t": 512.08,
+   "rule_months": null,
+   "oracle_net_per_t": 6687.16,
+   "forecast_objective_per_t": null
+  },
+  {
+   "year": 2023,
+   "scenario": "C",
+   "strategy": "forecast_plan",
+   "revenue": 19660891.82,
+   "storage_cost": 2992407.0,
+   "net": 16668484.82,
+   "net_per_t": 16668.48,
+   "gain_vs_harvest_per_t": 10733.44,
+   "x": [
+    300.0,
+    0.0,
+    0.0,
+    0.0,
+    21.6,
+    0.0,
+    300.0,
+    300.0,
+    0.0
+   ],
+   "s": [
+    700.0,
+    687.2,
+    674.5,
+    662.2,
+    628.5,
+    616.9,
+    305.6,
+    0.0,
+    0.0
+   ],
+   "sold_t": 921.56,
+   "rule_months": null,
+   "oracle_net_per_t": 16690.45,
+   "forecast_objective_per_t": 12485.58
+  },
+  {
+   "year": 2023,
+   "scenario": "C",
+   "strategy": "rolling_replan",
+   "revenue": 19660895.22,
+   "storage_cost": 2992407.63,
+   "net": 16668487.58,
+   "net_per_t": 16668.49,
+   "gain_vs_harvest_per_t": 10733.45,
+   "x": [
+    300.0,
+    0.0,
+    0.0,
+    0.0,
+    21.6,
+    0.0,
+    300.0,
+    300.0,
+    0.0
+   ],
+   "s": [
+    700.0,
+    687.2,
+    674.5,
+    662.2,
+    628.5,
+    616.9,
+    305.6,
+    0.0,
+    0.0
+   ],
+   "sold_t": 921.56,
+   "rule_months": null,
+   "oracle_net_per_t": 16690.45,
+   "forecast_objective_per_t": null
+  },
+  {
+   "year": 2023,
+   "scenario": "C",
+   "strategy": "perfect_foresight",
+   "revenue": 19697946.76,
+   "storage_cost": 3007499.7,
+   "net": 16690447.05,
+   "net_per_t": 16690.45,
+   "gain_vs_harvest_per_t": 10755.41,
+   "x": [
+    300.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    21.2,
+    300.0,
+    300.0,
+    0.0
+   ],
+   "s": [
+    700.0,
+    687.2,
+    674.5,
+    662.2,
+    650.0,
+    616.9,
+    305.6,
+    0.0,
+    0.0
+   ],
+   "sold_t": 921.17,
+   "rule_months": null,
+   "oracle_net_per_t": 16690.45,
+   "forecast_objective_per_t": null
+  },
+  {
+   "year": 2024,
+   "scenario": "B",
+   "strategy": "calendar_rule_exante",
+   "revenue": 13020323.7,
+   "storage_cost": 611224.13,
+   "net": 12409099.57,
+   "net_per_t": 12409.1,
+   "gain_vs_harvest_per_t": 822.24,
+   "x": [
+    300.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    258.8,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    700.0,
+    573.7,
+    470.1,
+    385.3,
+    315.8,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "sold_t": 558.78,
+   "rule_months": "Oct,Nov,Sep",
+   "oracle_net_per_t": null,
+   "forecast_objective_per_t": null
+  },
+  {
+   "year": 2024,
+   "scenario": "B",
+   "strategy": "calendar_rule_hindsight_OctNov",
+   "revenue": 10074561.36,
+   "storage_cost": 675920.37,
+   "net": 9398640.98,
+   "net_per_t": 9398.64,
+   "gain_vs_harvest_per_t": -2188.22,
+   "x": [
+    300.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    212.1,
+    0.0,
+    0.0
+   ],
+   "s": [
+    700.0,
+    573.7,
+    470.1,
+    385.3,
+    315.8,
+    258.8,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "sold_t": 512.08,
+   "rule_months": "Oct,Nov",
+   "oracle_net_per_t": null,
+   "forecast_objective_per_t": null
+  },
+  {
+   "year": 2024,
+   "scenario": "C",
+   "strategy": "calendar_rule_exante",
+   "revenue": 24941697.89,
+   "storage_cost": 2620712.66,
+   "net": 22320985.23,
+   "net_per_t": 22320.99,
+   "gain_vs_harvest_per_t": 10734.13,
+   "x": [
+    300.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    300.0,
+    300.0,
+    31.3,
+    0.0
+   ],
+   "s": [
+    700.0,
+    687.2,
+    674.5,
+    662.2,
+    650.0,
+    338.1,
+    31.9,
+    0.0,
+    0.0
+   ],
+   "sold_t": 931.3,
+   "rule_months": "Oct,Nov,Sep",
+   "oracle_net_per_t": null,
+   "forecast_objective_per_t": null
+  },
+  {
+   "year": 2024,
+   "scenario": "C",
+   "strategy": "calendar_rule_hindsight_OctNov",
+   "revenue": 23582368.17,
+   "storage_cost": 3051136.45,
+   "net": 20531231.72,
+   "net_per_t": 20531.23,
+   "gain_vs_harvest_per_t": 8944.37,
+   "x": [
+    300.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    300.0,
+    300.0,
+    20.0
+   ],
+   "s": [
+    700.0,
+    687.2,
+    674.5,
+    662.2,
+    650.0,
+    638.1,
+    326.4,
+    20.4,
+    0.0
+   ],
+   "sold_t": 920.02,
+   "rule_months": "Oct,Nov",
+   "oracle_net_per_t": null,
+   "forecast_objective_per_t": null
+  },
+  {
+   "year": 2024,
+   "scenario": "A",
+   "strategy": "forecast_plan",
+   "revenue": 11586857.89,
+   "storage_cost": 0.0,
+   "net": 11586857.89,
+   "net_per_t": 11586.86,
+   "gain_vs_harvest_per_t": 0.0,
+   "x": [
+    1000.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "sold_t": 1000.0,
+   "rule_months": null,
+   "oracle_net_per_t": 11586.86,
+   "forecast_objective_per_t": 8473.57
+  },
+  {
+   "year": 2024,
+   "scenario": "B",
+   "strategy": "forecast_plan",
+   "revenue": 11586857.89,
+   "storage_cost": 0.0,
+   "net": 11586857.89,
+   "net_per_t": 11586.86,
+   "gain_vs_harvest_per_t": 0.0,
+   "x": [
+    1000.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "sold_t": 1000.0,
+   "rule_months": null,
+   "oracle_net_per_t": 13075.24,
+   "forecast_objective_per_t": 8473.57
+  },
+  {
+   "year": 2024,
+   "scenario": "B",
+   "strategy": "rolling_replan",
+   "revenue": 11586857.89,
+   "storage_cost": 0.0,
+   "net": 11586857.89,
+   "net_per_t": 11586.86,
+   "gain_vs_harvest_per_t": 0.0,
+   "x": [
+    1000.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "sold_t": 1000.0,
+   "rule_months": null,
+   "oracle_net_per_t": 13075.24,
+   "forecast_objective_per_t": null
+  },
+  {
+   "year": 2024,
+   "scenario": "B",
+   "strategy": "perfect_foresight",
+   "revenue": 13499630.69,
+   "storage_cost": 424385.92,
+   "net": 13075244.77,
+   "net_per_t": 13075.24,
+   "gain_vs_harvest_per_t": 1488.39,
+   "x": [
+    300.0,
+    0.0,
+    300.0,
+    0.0,
+    0.0,
+    93.7,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    700.0,
+    573.7,
+    170.1,
+    139.4,
+    114.3,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "sold_t": 693.66,
+   "rule_months": null,
+   "oracle_net_per_t": 13075.24,
+   "forecast_objective_per_t": null
+  },
+  {
+   "year": 2024,
+   "scenario": "C",
+   "strategy": "forecast_plan",
+   "revenue": 23820762.7,
+   "storage_cost": 3007499.7,
+   "net": 20813263.0,
+   "net_per_t": 20813.26,
+   "gain_vs_harvest_per_t": 9226.41,
+   "x": [
+    300.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    21.2,
+    300.0,
+    300.0,
+    0.0
+   ],
+   "s": [
+    700.0,
+    687.2,
+    674.5,
+    662.2,
+    650.0,
+    616.9,
+    305.6,
+    0.0,
+    0.0
+   ],
+   "sold_t": 921.17,
+   "rule_months": null,
+   "oracle_net_per_t": 22792.96,
+   "forecast_objective_per_t": 13251.15
+  },
+  {
+   "year": 2024,
+   "scenario": "C",
+   "strategy": "rolling_replan",
+   "revenue": 23820763.83,
+   "storage_cost": 3007500.26,
+   "net": 20813263.57,
+   "net_per_t": 20813.26,
+   "gain_vs_harvest_per_t": 9226.41,
+   "x": [
+    300.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    21.2,
+    300.0,
+    300.0,
+    0.0
+   ],
+   "s": [
+    700.0,
+    687.2,
+    674.5,
+    662.2,
+    650.0,
+    616.9,
+    305.6,
+    0.0,
+    0.0
+   ],
+   "sold_t": 921.16,
+   "rule_months": null,
+   "oracle_net_per_t": 22792.96,
+   "forecast_objective_per_t": null
+  },
+  {
+   "year": 2024,
+   "scenario": "C",
+   "strategy": "perfect_foresight",
+   "revenue": 25567440.16,
+   "storage_cost": 2774483.05,
+   "net": 22792957.12,
+   "net_per_t": 22792.96,
+   "gain_vs_harvest_per_t": 11206.1,
+   "x": [
+    300.0,
+    0.0,
+    0.0,
+    0.0,
+    27.3,
+    300.0,
+    0.0,
+    300.0,
+    0.0
+   ],
+   "s": [
+    700.0,
+    687.2,
+    674.5,
+    662.2,
+    622.7,
+    311.3,
+    305.6,
+    0.0,
+    0.0
+   ],
+   "sold_t": 927.27,
+   "rule_months": null,
+   "oracle_net_per_t": 22792.96,
+   "forecast_objective_per_t": null
+  }
+ ],
+ "tests_main": {
+  "H2_B_vs_A": {
+   "n_seasons": 2,
+   "mean_diff_rs_per_t": 0.0,
+   "median_diff_rs_per_t": 0.0,
+   "min_diff_rs_per_t": 0.0,
+   "max_diff_rs_per_t": 0.0,
+   "wins": 0,
+   "ties": 2,
+   "paired_t_one_sided_p": null,
+   "wilcoxon_one_sided_p": null,
+   "note": "not testable: every season identical (the B plan never stores, so it equals harvest sale)"
+  },
+  "C_vs_A": {
+   "n_seasons": 2,
+   "mean_diff_rs_per_t": 9980.0,
+   "median_diff_rs_per_t": 9980.0,
+   "min_diff_rs_per_t": 9226.0,
+   "max_diff_rs_per_t": 10733.0,
+   "wins": 2,
+   "ties": 0,
+   "paired_t_one_sided_p": null,
+   "wilcoxon_one_sided_p": null,
+   "note": "too few seasons for a meaningful test; numbers reported descriptively"
+  },
+  "H3_C_vs_B": {
+   "n_seasons": 2,
+   "mean_diff_rs_per_t": 9980.0,
+   "median_diff_rs_per_t": 9980.0,
+   "min_diff_rs_per_t": 9226.0,
+   "max_diff_rs_per_t": 10733.0,
+   "wins": 2,
+   "ties": 0,
+   "paired_t_one_sided_p": null,
+   "wilcoxon_one_sided_p": null,
+   "note": "too few seasons for a meaningful test; numbers reported descriptively"
+  }
+ },
+ "tests_robust": {
+  "H2_B_vs_A": {
+   "n_seasons": 8,
+   "mean_diff_rs_per_t": 0.0,
+   "median_diff_rs_per_t": 0.0,
+   "min_diff_rs_per_t": 0.0,
+   "max_diff_rs_per_t": 0.0,
+   "wins": 0,
+   "ties": 8,
+   "paired_t_one_sided_p": null,
+   "wilcoxon_one_sided_p": null,
+   "note": "not testable: every season identical (the B plan never stores, so it equals harvest sale)"
+  },
+  "C_vs_A": {
+   "n_seasons": 8,
+   "mean_diff_rs_per_t": 4546.0,
+   "median_diff_rs_per_t": 3840.0,
+   "min_diff_rs_per_t": -1181.0,
+   "max_diff_rs_per_t": 10733.0,
+   "wins": 7,
+   "ties": 0,
+   "paired_t_one_sided_p": 0.0062,
+   "wilcoxon_one_sided_p": 0.0078
+  },
+  "H3_C_vs_B": {
+   "n_seasons": 8,
+   "mean_diff_rs_per_t": 4546.0,
+   "median_diff_rs_per_t": 3840.0,
+   "min_diff_rs_per_t": -1181.0,
+   "max_diff_rs_per_t": 10733.0,
+   "wins": 7,
+   "ties": 0,
+   "paired_t_one_sided_p": 0.0062,
+   "wilcoxon_one_sided_p": 0.0078
+  }
+ },
+ "strategy_summary_2017_2024": {
+  "A|forecast_plan": {
+   "mean": 0.0,
+   "median": 0.0,
+   "min": 0.0,
+   "max": 0.0,
+   "wins": 0,
+   "losses": 0,
+   "n": 8
+  },
+  "B|calendar_rule_exante": {
+   "mean": -1149.0,
+   "median": -1165.0,
+   "min": -3381.0,
+   "max": 1764.0,
+   "wins": 2,
+   "losses": 6,
+   "n": 8
+  },
+  "B|calendar_rule_hindsight_OctNov": {
+   "mean": -1152.0,
+   "median": -1152.0,
+   "min": -3051.0,
+   "max": 752.0,
+   "wins": 3,
+   "losses": 5,
+   "n": 8
+  },
+  "B|forecast_plan": {
+   "mean": 0.0,
+   "median": 0.0,
+   "min": 0.0,
+   "max": 0.0,
+   "wins": 0,
+   "losses": 0,
+   "n": 8
+  },
+  "B|perfect_foresight": {
+   "mean": 791.0,
+   "median": 675.0,
+   "min": 0.0,
+   "max": 1764.0,
+   "wins": 5,
+   "losses": 0,
+   "n": 8
+  },
+  "B|rolling_replan": {
+   "mean": 0.0,
+   "median": 0.0,
+   "min": 0.0,
+   "max": 0.0,
+   "wins": 0,
+   "losses": 0,
+   "n": 8
+  },
+  "C|calendar_rule_exante": {
+   "mean": 5508.0,
+   "median": 6336.0,
+   "min": -1324.0,
+   "max": 10734.0,
+   "wins": 7,
+   "losses": 1,
+   "n": 8
+  },
+  "C|calendar_rule_hindsight_OctNov": {
+   "mean": 7110.0,
+   "median": 8571.0,
+   "min": -1507.0,
+   "max": 13190.0,
+   "wins": 7,
+   "losses": 1,
+   "n": 8
+  },
+  "C|forecast_plan": {
+   "mean": 4546.0,
+   "median": 3840.0,
+   "min": -1181.0,
+   "max": 10733.0,
+   "wins": 7,
+   "losses": 1,
+   "n": 8
+  },
+  "C|perfect_foresight": {
+   "mean": 8558.0,
+   "median": 9828.0,
+   "min": 532.0,
+   "max": 19439.0,
+   "wins": 8,
+   "losses": 0,
+   "n": 8
+  },
+  "C|rolling_replan": {
+   "mean": 4511.0,
+   "median": 3826.0,
+   "min": -1181.0,
+   "max": 10733.0,
+   "wins": 7,
+   "losses": 1,
+   "n": 8
+  }
+ },
+ "strategy_summary_2023_2024": {
+  "A|forecast_plan": 0.0,
+  "B|calendar_rule_exante": 345.0,
+  "B|calendar_rule_hindsight_OctNov": -718.0,
+  "B|forecast_plan": 0.0,
+  "B|perfect_foresight": 1120.0,
+  "B|rolling_replan": 0.0,
+  "C|calendar_rule_exante": 9117.0,
+  "C|calendar_rule_hindsight_OctNov": 9840.0,
+  "C|forecast_plan": 9980.0,
+  "C|perfect_foresight": 10981.0,
+  "C|rolling_replan": 9980.0
+ },
+ "planned_vs_realised": [
+  {
+   "year": 2017,
+   "scenario": "A",
+   "forecast_objective_per_t": 5279.0,
+   "net_per_t": 5147.0,
+   "oracle_net_per_t": 5147.0
+  },
+  {
+   "year": 2017,
+   "scenario": "B",
+   "forecast_objective_per_t": 5279.0,
+   "net_per_t": 5147.0,
+   "oracle_net_per_t": 6874.0
+  },
+  {
+   "year": 2017,
+   "scenario": "C",
+   "forecast_objective_per_t": 6526.0,
+   "net_per_t": 8076.0,
+   "oracle_net_per_t": 14177.0
+  },
+  {
+   "year": 2018,
+   "scenario": "A",
+   "forecast_objective_per_t": 6202.0,
+   "net_per_t": 6711.0,
+   "oracle_net_per_t": 6711.0
+  },
+  {
+   "year": 2018,
+   "scenario": "B",
+   "forecast_objective_per_t": 6202.0,
+   "net_per_t": 6711.0,
+   "oracle_net_per_t": 6711.0
+  },
+  {
+   "year": 2018,
+   "scenario": "C",
+   "forecast_objective_per_t": 8521.0,
+   "net_per_t": 5530.0,
+   "oracle_net_per_t": 7243.0
+  },
+  {
+   "year": 2019,
+   "scenario": "A",
+   "forecast_objective_per_t": 5150.0,
+   "net_per_t": 6805.0,
+   "oracle_net_per_t": 6805.0
+  },
+  {
+   "year": 2019,
+   "scenario": "B",
+   "forecast_objective_per_t": 5150.0,
+   "net_per_t": 6805.0,
+   "oracle_net_per_t": 8568.0
+  },
+  {
+   "year": 2019,
+   "scenario": "C",
+   "forecast_objective_per_t": 6215.0,
+   "net_per_t": 9874.0,
+   "oracle_net_per_t": 26244.0
+  },
+  {
+   "year": 2020,
+   "scenario": "A",
+   "forecast_objective_per_t": 7339.0,
+   "net_per_t": 9997.0,
+   "oracle_net_per_t": 9997.0
+  },
+  {
+   "year": 2020,
+   "scenario": "B",
+   "forecast_objective_per_t": 7339.0,
+   "net_per_t": 9997.0,
+   "oracle_net_per_t": 9997.0
+  },
+  {
+   "year": 2020,
+   "scenario": "C",
+   "forecast_objective_per_t": 10354.0,
+   "net_per_t": 14861.0,
+   "oracle_net_per_t": 20623.0
+  },
+  {
+   "year": 2021,
+   "scenario": "A",
+   "forecast_objective_per_t": 8599.0,
+   "net_per_t": 8152.0,
+   "oracle_net_per_t": 8152.0
+  },
+  {
+   "year": 2021,
+   "scenario": "B",
+   "forecast_objective_per_t": 8599.0,
+   "net_per_t": 8152.0,
+   "oracle_net_per_t": 8749.0
+  },
+  {
+   "year": 2021,
+   "scenario": "C",
+   "forecast_objective_per_t": 12650.0,
+   "net_per_t": 12762.0,
+   "oracle_net_per_t": 12844.0
+  },
+  {
+   "year": 2022,
+   "scenario": "A",
+   "forecast_objective_per_t": 9175.0,
+   "net_per_t": 7962.0,
+   "oracle_net_per_t": 7962.0
+  },
+  {
+   "year": 2022,
+   "scenario": "B",
+   "forecast_objective_per_t": 9175.0,
+   "net_per_t": 7962.0,
+   "oracle_net_per_t": 7962.0
+  },
+  {
+   "year": 2022,
+   "scenario": "C",
+   "forecast_objective_per_t": 13815.0,
+   "net_per_t": 10080.0,
+   "oracle_net_per_t": 10145.0
+  },
+  {
+   "year": 2023,
+   "scenario": "A",
+   "forecast_objective_per_t": 8554.0,
+   "net_per_t": 5935.0,
+   "oracle_net_per_t": 5935.0
+  },
+  {
+   "year": 2023,
+   "scenario": "B",
+   "forecast_objective_per_t": 8554.0,
+   "net_per_t": 5935.0,
+   "oracle_net_per_t": 6687.0
+  },
+  {
+   "year": 2023,
+   "scenario": "C",
+   "forecast_objective_per_t": 12486.0,
+   "net_per_t": 16668.0,
+   "oracle_net_per_t": 16690.0
+  },
+  {
+   "year": 2024,
+   "scenario": "A",
+   "forecast_objective_per_t": 8474.0,
+   "net_per_t": 11587.0,
+   "oracle_net_per_t": 11587.0
+  },
+  {
+   "year": 2024,
+   "scenario": "B",
+   "forecast_objective_per_t": 8474.0,
+   "net_per_t": 11587.0,
+   "oracle_net_per_t": 13075.0
+  },
+  {
+   "year": 2024,
+   "scenario": "C",
+   "forecast_objective_per_t": 13251.0,
+   "net_per_t": 20813.0,
+   "oracle_net_per_t": 22793.0
+  }
+ ],
+ "calendar_rule_months": [
+  {
+   "year": 2017,
+   "rule_months": "Oct,Nov,Sep"
+  },
+  {
+   "year": 2018,
+   "rule_months": "Oct,Nov,Sep"
+  },
+  {
+   "year": 2019,
+   "rule_months": "Oct,Nov,Sep"
+  },
+  {
+   "year": 2020,
+   "rule_months": "Oct,Nov,Sep"
+  },
+  {
+   "year": 2021,
+   "rule_months": "Oct,Nov,Sep"
+  },
+  {
+   "year": 2022,
+   "rule_months": "Oct,Nov,Sep"
+  },
+  {
+   "year": 2023,
+   "rule_months": "Oct,Nov,Sep"
+  },
+  {
+   "year": 2024,
+   "rule_months": "Oct,Nov,Sep"
+  }
+ ],
+ "decision_value_by_forecast_method_2017_2024": {
+  "naive": {
+   "A": 0.0,
+   "B": 0.0,
+   "C": 0.0
+  },
+  "seasonal_naive": {
+   "A": 0.0,
+   "B": -854.0,
+   "C": 3980.0
+  },
+  "moving_average_12": {
+   "A": 0.0,
+   "B": 0.0,
+   "C": 0.0
+  },
+  "seasonal_moving_average": {
+   "A": 0.0,
+   "B": 0.0,
+   "C": 4009.0
+  },
+  "seasonal_ses": {
+   "A": 0.0,
+   "B": 0.0,
+   "C": 4294.0
+  },
+  "holt_winters": {
+   "A": 0.0,
+   "B": 0.0,
+   "C": 4546.0
+  },
+  "regression_trend_season": {
+   "A": 0.0,
+   "B": 0.0,
+   "C": 4546.0
+  },
+  "regression_level_season": {
+   "A": 0.0,
+   "B": -269.0,
+   "C": 5155.0
+  },
+  "seasonal_moving_average_long": {
+   "A": 0.0,
+   "B": 0.0,
+   "C": 6182.0
+  },
+  "seasonal_ses_long": {
+   "A": 0.0,
+   "B": 0.0,
+   "C": 6006.0
+  }
+ },
+ "backtest_nasik_2023_2024": [
+  {
+   "year": 2023,
+   "scenario": "A",
+   "net_per_t": 6589.0,
+   "gain_vs_harvest_per_t": 0.0
+  },
+  {
+   "year": 2023,
+   "scenario": "B",
+   "net_per_t": 6589.0,
+   "gain_vs_harvest_per_t": 0.0
+  },
+  {
+   "year": 2023,
+   "scenario": "C",
+   "net_per_t": 18099.0,
+   "gain_vs_harvest_per_t": 11510.0
+  },
+  {
+   "year": 2024,
+   "scenario": "A",
+   "net_per_t": 13159.0,
+   "gain_vs_harvest_per_t": 0.0
+  },
+  {
+   "year": 2024,
+   "scenario": "B",
+   "net_per_t": 13159.0,
+   "gain_vs_harvest_per_t": 0.0
+  },
+  {
+   "year": 2024,
+   "scenario": "C",
+   "net_per_t": 26536.0,
+   "gain_vs_harvest_per_t": 13377.0
+  }
+ ],
+ "plan_2024": {
+  "forecast_rs_t": [
+   8474.0,
+   8673.0,
+   11495.0,
+   12934.0,
+   16329.0,
+   17416.0,
+   21506.0,
+   22988.0,
+   18820.0
+  ],
+  "actual_rs_t": [
+   11587.0,
+   13614.0,
+   21898.0,
+   24295.0,
+   29215.0,
+   36881.0,
+   31113.0,
+   34101.0,
+   27081.0
+  ],
+  "A": {
+   "status": "Optimal",
+   "x": [
+    1000.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "objective": 8473566.847257232,
+   "revenue": 8473566.847257232,
+   "storage_cost": 0.0,
+   "sold_total": 1000.0,
+   "lost_total": 0.0,
+   "scipy_objective": 8473566.847257232,
+   "objective_match": true,
+   "objective_abs_diff_rs": 0.0,
+   "shadow_capacity_by_month": null,
+   "shadow_capacity_total": null,
+   "shadow_handling_by_month": null,
+   "shadow_min_harvest_sale": null,
+   "shadow_extra_tonne_harvest": null,
+   "marginal_values": {
+    "applicable": false,
+    "note": "Scenario A: selling all at harvest fixes every decision (C = 0, L = Q), so there are no meaningful shadow prices."
+   }
+  },
+  "B": {
+   "status": "Optimal",
+   "x": [
+    1000.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "s": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "objective": 8473566.847257232,
+   "revenue": 8473566.847257232,
+   "storage_cost": 0.0,
+   "sold_total": 1000.0,
+   "lost_total": 0.0,
+   "scipy_objective": 8473566.847257232,
+   "objective_match": true,
+   "objective_abs_diff_rs": 0.0,
+   "shadow_capacity_by_month": [
+    -0.0,
+    -0.0,
+    -0.0,
+    -0.0,
+    -0.0,
+    -0.0,
+    -0.0,
+    -0.0,
+    -0.0
+   ],
+   "shadow_capacity_total": 0.0,
+   "shadow_handling_by_month": [
+    -0.0,
+    -0.0,
+    -0.0,
+    -0.0,
+    -0.0,
+    -0.0,
+    -0.0,
+    -0.0
+   ],
+   "shadow_min_harvest_sale": -0.0,
+   "shadow_extra_tonne_harvest": 8473.57,
+   "marginal_values": {
+    "applicable": true,
+    "capacity_C": {
+     "gain_if_plus_1t": 0.0,
+     "loss_if_minus_1t": -0.0
+    },
+    "loan_sale_L": {
+     "gain_if_plus_1t": 0.0,
+     "loss_if_minus_1t": -0.0
+    },
+    "harvest_Q": {
+     "gain_if_plus_1t": 8473.6,
+     "loss_if_minus_1t": 8473.6
+    },
+    "handling_cap_U": {
+     "gain_if_plus_1t": 0.0,
+     "loss_if_minus_1t": -0.0
+    },
+    "degenerate_C_equals_Q_minus_L": false
+   }
+  },
+  "C": {
+   "status": "Optimal",
+   "x": [
+    300.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    21.165389,
+    300.0,
+    300.0,
+    0.0
+   ],
+   "s": [
+    700.0,
+    687.15579,
+    674.54726,
+    662.17007,
+    650.02,
+    616.92748,
+    305.60755,
+    0.0,
+    0.0
+   ],
+   "objective": 13251152.54803165,
+   "revenue": 16258652.25303165,
+   "storage_cost": 3007499.7049999996,
+   "sold_total": 921.165389,
+   "lost_total": 78.834611,
+   "scipy_objective": 13251152.53992751,
+   "objective_match": true,
+   "objective_abs_diff_rs": 0.0081,
+   "shadow_capacity_by_month": [
+    4028.42,
+    -0.0,
+    -0.0,
+    -0.0,
+    -0.0,
+    -0.0,
+    -0.0,
+    -0.0,
+    -0.0
+   ],
+   "shadow_capacity_total": 4028.42,
+   "shadow_handling_by_month": [
+    -0.0,
+    -0.0,
+    -0.0,
+    -0.0,
+    -0.0,
+    3050.84,
+    3474.79,
+    -0.0
+   ],
+   "shadow_min_harvest_sale": -0.0,
+   "shadow_extra_tonne_harvest": 8473.57,
+   "marginal_values": {
+    "applicable": true,
+    "capacity_C": {
+     "gain_if_plus_1t": 4028.4,
+     "loss_if_minus_1t": 4028.4
+    },
+    "loan_sale_L": {
+     "gain_if_plus_1t": 0.0,
+     "loss_if_minus_1t": -0.0
+    },
+    "harvest_Q": {
+     "gain_if_plus_1t": 8473.6,
+     "loss_if_minus_1t": 8473.6
+    },
+    "handling_cap_U": {
+     "gain_if_plus_1t": 6525.6,
+     "loss_if_minus_1t": 6525.6
+    },
+    "degenerate_C_equals_Q_minus_L": false
+   }
+  }
+ },
+ "sensitivity_2017_2024": {
+  "delta_B": {
+   "0.06": 3172.0,
+   "0.10": 890.0,
+   "0.14": -508.0,
+   "0.18": 0.0,
+   "0.22": 0.0,
+   "0.26": 0.0
+  },
+  "delta_C": {
+   "0.005": 5514.0,
+   "0.018": 4568.0,
+   "0.030": 3444.0,
+   "0.050": 2389.0,
+   "0.080": 374.0
+  },
+  "h_B": {
+   "0": -734.0,
+   "125": -238.0,
+   "250": 0.0,
+   "500": 0.0,
+   "750": 0.0,
+   "1000": 0.0
+  },
+  "h_C": {
+   "0": 7971.0,
+   "350": 6301.0,
+   "700": 4546.0,
+   "1050": 3041.0,
+   "1400": 1069.0,
+   "2000": 0.0
+  },
+  "C_capacity_B": {
+   "300": 0.0,
+   "500": 0.0,
+   "700": 0.0,
+   "900": 0.0,
+   "1000": 0.0
+  },
+  "C_capacity_C": {
+   "300": 1770.0,
+   "500": 3161.0,
+   "700": 4546.0,
+   "900": 4797.0,
+   "1000": 4797.0
+  },
+  "L_B": {
+   "100": 0.0,
+   "300": 0.0,
+   "500": 0.0,
+   "700": 0.0
+  },
+  "L_C": {
+   "100": 4546.0,
+   "300": 4546.0,
+   "500": 3161.0,
+   "700": 1770.0
+  },
+  "U_C": {
+   "150": 4132.0,
+   "300": 4546.0,
+   "500": 4314.0,
+   "1000": 4131.0
+  },
+  "grid_delta_h": {
+   "0.02": {
+    "0": 7844.0,
+    "250": 6686.0,
+    "500": 5234.0,
+    "750": 4240.0,
+    "1000": 3119.0
+   },
+   "0.06": {
+    "0": 4556.0,
+    "250": 3172.0,
+    "500": 2481.0,
+    "750": 1039.0,
+    "1000": 199.0
+   },
+   "0.10": {
+    "0": 1941.0,
+    "250": 890.0,
+    "500": -43.0,
+    "750": -529.0,
+    "1000": -228.0
+   },
+   "0.14": {
+    "0": 327.0,
+    "250": -508.0,
+    "500": -219.0,
+    "750": 0.0,
+    "1000": 0.0
+   },
+   "0.18": {
+    "0": -730.0,
+    "250": 0.0,
+    "500": 0.0,
+    "750": 0.0,
+    "1000": 0.0
+   },
+   "0.22": {
+    "0": 0.0,
+    "250": 0.0,
+    "500": 0.0,
+    "750": 0.0,
+    "1000": 0.0
+   }
+  },
+  "breakeven_delta_B": 0.1243
+ },
+ "industry40": {
+  "uplift_C_over_B_rs_per_t_harvest": 4546.0,
+  "uplift_C_over_B_rs_per_kg": 4.55,
+  "uplift_C_over_B_rs_per_t_capacity_per_season": 6495.0,
+  "capex_B_rs_per_t_capacity": 7000.0,
+  "capital_recovery_factor_10y_10pct": 0.1627,
+  "base_case": {
+   "capex_C_rs_per_t": 16667.0,
+   "extra_capex_rs_per_t_capacity": 9667.0,
+   "annualised_extra_capex_rs_per_t": 1573.0,
+   "simple_payback_seasons": 1.49,
+   "net_annual_benefit_rs_per_t_capacity": 4921.0
+  },
+  "capex_range": [
+   {
+    "capex_C_rs_per_t": 8000.0,
+    "extra_capex_rs_per_t_capacity": 1000.0,
+    "annualised_extra_capex_rs_per_t": 163.0,
+    "simple_payback_seasons": 0.15,
+    "net_annual_benefit_rs_per_t_capacity": 6332.0
+   },
+   {
+    "capex_C_rs_per_t": 16667.0,
+    "extra_capex_rs_per_t_capacity": 9667.0,
+    "annualised_extra_capex_rs_per_t": 1573.0,
+    "simple_payback_seasons": 1.49,
+    "net_annual_benefit_rs_per_t_capacity": 4921.0
+   },
+   {
+    "capex_C_rs_per_t": 50000.0,
+    "extra_capex_rs_per_t_capacity": 43000.0,
+    "annualised_extra_capex_rs_per_t": 6998.0,
+    "simple_payback_seasons": 6.62,
+    "net_annual_benefit_rs_per_t_capacity": -503.0
+   }
+  ],
+  "fpo_annual_uplift_rs_lakh": 45.5,
+  "seasons": 8,
+  "uplift_by_season": {
+   "2017": 2929.0,
+   "2018": -1181.0,
+   "2019": 3069.0,
+   "2020": 4865.0,
+   "2021": 4610.0,
+   "2022": 2118.0,
+   "2023": 10733.0,
+   "2024": 9226.0
+  }
+ },
+ "industry40_2023_2024_only": {
+  "uplift_C_over_B_rs_per_t_harvest": 9980.0,
+  "uplift_C_over_B_rs_per_kg": 9.98,
+  "uplift_C_over_B_rs_per_t_capacity_per_season": 14257.0,
+  "capex_B_rs_per_t_capacity": 7000.0,
+  "capital_recovery_factor_10y_10pct": 0.1627,
+  "base_case": {
+   "capex_C_rs_per_t": 16667.0,
+   "extra_capex_rs_per_t_capacity": 9667.0,
+   "annualised_extra_capex_rs_per_t": 1573.0,
+   "simple_payback_seasons": 0.68,
+   "net_annual_benefit_rs_per_t_capacity": 12684.0
+  },
+  "capex_range": [
+   {
+    "capex_C_rs_per_t": 8000.0,
+    "extra_capex_rs_per_t_capacity": 1000.0,
+    "annualised_extra_capex_rs_per_t": 163.0,
+    "simple_payback_seasons": 0.07,
+    "net_annual_benefit_rs_per_t_capacity": 14094.0
+   },
+   {
+    "capex_C_rs_per_t": 16667.0,
+    "extra_capex_rs_per_t_capacity": 9667.0,
+    "annualised_extra_capex_rs_per_t": 1573.0,
+    "simple_payback_seasons": 0.68,
+    "net_annual_benefit_rs_per_t_capacity": 12684.0
+   },
+   {
+    "capex_C_rs_per_t": 50000.0,
+    "extra_capex_rs_per_t_capacity": 43000.0,
+    "annualised_extra_capex_rs_per_t": 6998.0,
+    "simple_payback_seasons": 3.02,
+    "net_annual_benefit_rs_per_t_capacity": 7259.0
+   }
+  ],
+  "fpo_annual_uplift_rs_lakh": 99.8,
+  "seasons": 2,
+  "uplift_by_season": {
+   "2023": 10733.0,
+   "2024": 9226.0
+  }
+ },
+ "weather": {
+  "source": "NASA POWER monthly point API, 20.15N 74.23E (Lasalgaon), 1996-2024; T2M, RH2M, PRECTOTCORR",
+  "h4_rain_price_link": {
+   "n_seasons": 29,
+   "years": "1996-2024",
+   "leave_one_out": {
+    "beta_min": 0.145,
+    "beta_max": 0.206,
+    "p_max": 0.0952,
+    "p_max_when_dropping": 2019,
+    "seasons_whose_removal_lifts_p_above_0_05": [
+     2005,
+     2018,
+     2019
+    ]
+   },
+   "subperiods": {
+    "1996_2013": {
+     "n": 18,
+     "beta_per_100mm_log": 0.134,
+     "p": 0.2143
+    },
+    "2014_2024": {
+     "n": 11,
+     "beta_per_100mm_log": 0.273,
+     "p": 0.1112
+    }
+   },
+   "beta_per_mm": 0.00181,
+   "beta_per_100mm_log": 0.181,
+   "rise_multiplier_per_100mm": 1.198,
+   "se_ols": 0.00082,
+   "p_ols": 0.0361,
+   "p_robust_HC1": 0.0025,
+   "r2": 0.153,
+   "ci95_ols_per_100mm": [
+    0.013,
+    0.349
+   ],
+   "spearman_rho": 0.46,
+   "spearman_p": 0.012,
+   "placebo_jun_sep_monsoon": {
+    "beta_per_100mm_log": 0.073,
+    "p": 0.1117,
+    "r2": 0.091
+   },
+   "wet_third": {
+    "mean_rain_mm": 338.0,
+    "median_rise_pct": 208.0,
+    "n": 10
+   },
+   "dry_third": {
+    "mean_rain_mm": 137.0,
+    "median_rise_pct": 123.0,
+    "n": 10
+   },
+   "mean_rain_sep_oct_mm": 237.0,
+   "table": [
+    {
+     "year": 1996,
+     "rise_log": 0.497,
+     "rise_pct": 64.436,
+     "rain_sep_oct_mm": 230.0,
+     "rain_jun_sep_mm": 611.2,
+     "rh_sep_oct_pct": 81.4,
+     "source": "NHRDF Lasalgaon"
+    },
+    {
+     "year": 1997,
+     "rise_log": 1.074,
+     "rise_pct": 192.679,
+     "rain_sep_oct_mm": 128.7,
+     "rain_jun_sep_mm": 584.1,
+     "rh_sep_oct_pct": 75.5,
+     "source": "NHRDF Lasalgaon"
+    },
+    {
+     "year": 1998,
+     "rise_log": 1.941,
+     "rise_pct": 596.382,
+     "rain_sep_oct_mm": 288.3,
+     "rain_jun_sep_mm": 784.9,
+     "rh_sep_oct_pct": 86.2,
+     "source": "NHRDF Lasalgaon"
+    },
+    {
+     "year": 1999,
+     "rise_log": 0.233,
+     "rise_pct": 26.257,
+     "rain_sep_oct_mm": 239.6,
+     "rain_jun_sep_mm": 496.1,
+     "rh_sep_oct_pct": 78.0,
+     "source": "NHRDF Lasalgaon"
+    },
+    {
+     "year": 2000,
+     "rise_log": 0.893,
+     "rise_pct": 144.182,
+     "rain_sep_oct_mm": 73.7,
+     "rain_jun_sep_mm": 548.6,
+     "rh_sep_oct_pct": 68.1,
+     "source": "NHRDF Lasalgaon"
+    },
+    {
+     "year": 2001,
+     "rise_log": 0.771,
+     "rise_pct": 116.096,
+     "rain_sep_oct_mm": 191.9,
+     "rain_jun_sep_mm": 520.4,
+     "rh_sep_oct_pct": 76.9,
+     "source": "NHRDF Lasalgaon"
+    },
+    {
+     "year": 2002,
+     "rise_log": 0.824,
+     "rise_pct": 127.872,
+     "rain_sep_oct_mm": 90.4,
+     "rain_jun_sep_mm": 551.7,
+     "rh_sep_oct_pct": 68.8,
+     "source": "NHRDF Lasalgaon"
+    },
+    {
+     "year": 2003,
+     "rise_log": 0.781,
+     "rise_pct": 118.339,
+     "rain_sep_oct_mm": 103.6,
+     "rain_jun_sep_mm": 643.9,
+     "rh_sep_oct_pct": 76.6,
+     "source": "NHRDF Lasalgaon"
+    },
+    {
+     "year": 2004,
+     "rise_log": 0.304,
+     "rise_pct": 35.466,
+     "rain_sep_oct_mm": 238.7,
+     "rain_jun_sep_mm": 713.1,
+     "rh_sep_oct_pct": 79.9,
+     "source": "NHRDF Lasalgaon"
+    },
+    {
+     "year": 2005,
+     "rise_log": 1.26,
+     "rise_pct": 252.716,
+     "rain_sep_oct_mm": 433.8,
+     "rain_jun_sep_mm": 1105.7,
+     "rh_sep_oct_pct": 82.6,
+     "source": "NHRDF Lasalgaon"
+    },
+    {
+     "year": 2006,
+     "rise_log": 0.896,
+     "rise_pct": 144.872,
+     "rain_sep_oct_mm": 290.1,
+     "rain_jun_sep_mm": 1066.2,
+     "rh_sep_oct_pct": 82.5,
+     "source": "NHRDF Lasalgaon"
+    },
+    {
+     "year": 2007,
+     "rise_log": 0.634,
+     "rise_pct": 88.567,
+     "rain_sep_oct_mm": 218.2,
+     "rain_jun_sep_mm": 913.0,
+     "rh_sep_oct_pct": 78.9,
+     "source": "NHRDF Lasalgaon"
+    },
+    {
+     "year": 2008,
+     "rise_log": 1.162,
+     "rise_pct": 219.608,
+     "rain_sep_oct_mm": 404.7,
+     "rain_jun_sep_mm": 803.7,
+     "rh_sep_oct_pct": 79.9,
+     "source": "NHRDF Lasalgaon"
+    },
+    {
+     "year": 2009,
+     "rise_log": 1.059,
+     "rise_pct": 188.319,
+     "rain_sep_oct_mm": 193.1,
+     "rain_jun_sep_mm": 529.2,
+     "rh_sep_oct_pct": 74.6,
+     "source": "NHRDF Lasalgaon"
+    },
+    {
+     "year": 2010,
+     "rise_log": 1.145,
+     "rise_pct": 214.304,
+     "rain_sep_oct_mm": 195.4,
+     "rain_jun_sep_mm": 743.2,
+     "rh_sep_oct_pct": 83.3,
+     "source": "NHRDF Lasalgaon"
+    },
+    {
+     "year": 2011,
+     "rise_log": 0.283,
+     "rise_pct": 32.725,
+     "rain_sep_oct_mm": 175.2,
+     "rain_jun_sep_mm": 645.6,
+     "rh_sep_oct_pct": 80.9,
+     "source": "NHRDF Lasalgaon"
+    },
+    {
+     "year": 2012,
+     "rise_log": 0.918,
+     "rise_pct": 150.45,
+     "rain_sep_oct_mm": 199.1,
+     "rain_jun_sep_mm": 487.0,
+     "rh_sep_oct_pct": 77.6,
+     "source": "NHRDF Lasalgaon"
+    },
+    {
+     "year": 2013,
+     "rise_log": 1.22,
+     "rise_pct": 238.703,
+     "rain_sep_oct_mm": 253.6,
+     "rain_jun_sep_mm": 729.5,
+     "rh_sep_oct_pct": 82.9,
+     "source": "NHRDF Lasalgaon"
+    },
+    {
+     "year": 2014,
+     "rise_log": 0.558,
+     "rise_pct": 74.802,
+     "rain_sep_oct_mm": 164.0,
+     "rain_jun_sep_mm": 664.7,
+     "rh_sep_oct_pct": 78.0,
+     "source": "Maharashtra composite"
+    },
+    {
+     "year": 2015,
+     "rise_log": 0.744,
+     "rise_pct": 110.501,
+     "rain_sep_oct_mm": 322.1,
+     "rain_jun_sep_mm": 635.6,
+     "rh_sep_oct_pct": 73.7,
+     "source": "Maharashtra composite"
+    },
+    {
+     "year": 2016,
+     "rise_log": 0.123,
+     "rise_pct": 13.121,
+     "rain_sep_oct_mm": 239.5,
+     "rain_jun_sep_mm": 836.5,
+     "rh_sep_oct_pct": 79.8,
+     "source": "Maharashtra composite"
+    },
+    {
+     "year": 2017,
+     "rise_log": 1.562,
+     "rise_pct": 376.961,
+     "rain_sep_oct_mm": 266.3,
+     "rain_jun_sep_mm": 811.2,
+     "rh_sep_oct_pct": 77.3,
+     "source": "Maharashtra composite"
+    },
+    {
+     "year": 2018,
+     "rise_log": 0.298,
+     "rise_pct": 34.672,
+     "rain_sep_oct_mm": 55.2,
+     "rain_jun_sep_mm": 525.2,
+     "rh_sep_oct_pct": 64.5,
+     "source": "Maharashtra composite"
+    },
+    {
+     "year": 2019,
+     "rise_log": 1.748,
+     "rise_pct": 474.1,
+     "rain_sep_oct_mm": 380.9,
+     "rain_jun_sep_mm": 951.9,
+     "rh_sep_oct_pct": 87.5,
+     "source": "Maharashtra composite"
+    },
+    {
+     "year": 2020,
+     "rise_log": 1.089,
+     "rise_pct": 197.123,
+     "rain_sep_oct_mm": 362.3,
+     "rain_jun_sep_mm": 1029.8,
+     "rh_sep_oct_pct": 85.2,
+     "source": "Maharashtra composite"
+    },
+    {
+     "year": 2021,
+     "rise_log": 0.946,
+     "rise_pct": 157.665,
+     "rain_sep_oct_mm": 256.7,
+     "rain_jun_sep_mm": 623.3,
+     "rh_sep_oct_pct": 82.9,
+     "source": "Maharashtra composite"
+    },
+    {
+     "year": 2022,
+     "rise_log": 0.697,
+     "rise_pct": 100.75,
+     "rain_sep_oct_mm": 370.9,
+     "rain_jun_sep_mm": 976.9,
+     "rh_sep_oct_pct": 85.6,
+     "source": "Maharashtra composite"
+    },
+    {
+     "year": 2023,
+     "rise_log": 1.484,
+     "rise_pct": 341.092,
+     "rain_sep_oct_mm": 241.0,
+     "rain_jun_sep_mm": 628.4,
+     "rh_sep_oct_pct": 78.0,
+     "source": "Maharashtra composite"
+    },
+    {
+     "year": 2024,
+     "rise_log": 0.977,
+     "rise_pct": 165.516,
+     "rain_sep_oct_mm": 265.6,
+     "rain_jun_sep_mm": 958.6,
+     "rh_sep_oct_pct": 85.2,
+     "source": "Maharashtra composite"
+    }
+   ]
+  },
+  "climatology_2014_2024": {
+   "Jan": {
+    "t2m_c": 20.4,
+    "rh2m_pct": 44.9,
+    "rain_mm": 3.0
+   },
+   "Feb": {
+    "t2m_c": 23.6,
+    "rh2m_pct": 31.7,
+    "rain_mm": 2.0
+   },
+   "Mar": {
+    "t2m_c": 27.2,
+    "rh2m_pct": 30.7,
+    "rain_mm": 13.0
+   },
+   "Apr": {
+    "t2m_c": 30.8,
+    "rh2m_pct": 29.4,
+    "rain_mm": 6.0
+   },
+   "May": {
+    "t2m_c": 31.4,
+    "rh2m_pct": 42.5,
+    "rain_mm": 17.0
+   },
+   "Jun": {
+    "t2m_c": 28.2,
+    "rh2m_pct": 67.7,
+    "rain_mm": 132.0
+   },
+   "Jul": {
+    "t2m_c": 25.4,
+    "rh2m_pct": 82.4,
+    "rain_mm": 258.0
+   },
+   "Aug": {
+    "t2m_c": 24.7,
+    "rh2m_pct": 84.4,
+    "rain_mm": 196.0
+   },
+   "Sep": {
+    "t2m_c": 24.5,
+    "rh2m_pct": 85.0,
+    "rain_mm": 199.0
+   },
+   "Oct": {
+    "t2m_c": 23.9,
+    "rh2m_pct": 74.7,
+    "rain_mm": 67.0
+   },
+   "Nov": {
+    "t2m_c": 21.6,
+    "rh2m_pct": 65.6,
+    "rain_mm": 15.0
+   },
+   "Dec": {
+    "t2m_c": 20.3,
+    "rh2m_pct": 56.2,
+    "rain_mm": 9.0
+   }
+  },
+  "realtime_replan_nov_dec": {
+   "B": {
+    "mean_price_only": 0.0,
+    "mean_price_plus_rain": 0.0,
+    "mean_value_of_rain_feed": 0.0,
+    "seasons_rain_helps": 0,
+    "seasons_rain_hurts": 0,
+    "by_season": [
+     {
+      "year": 2017,
+      "rain_sep_oct_mm": 266.3,
+      "rain_multiplier": 1.053,
+      "stock_entering_nov_t": 0.0,
+      "price_only": 0.0,
+      "price_only_nov_dec_sales": [
+       0.0,
+       0.0
+      ],
+      "price_plus_rain": 0.0,
+      "price_plus_rain_nov_dec_sales": [
+       0.0,
+       0.0
+      ]
+     },
+     {
+      "year": 2018,
+      "rain_sep_oct_mm": 55.2,
+      "rain_multiplier": 0.796,
+      "stock_entering_nov_t": 0.0,
+      "price_only": 0.0,
+      "price_only_nov_dec_sales": [
+       0.0,
+       0.0
+      ],
+      "price_plus_rain": 0.0,
+      "price_plus_rain_nov_dec_sales": [
+       0.0,
+       0.0
+      ]
+     },
+     {
+      "year": 2019,
+      "rain_sep_oct_mm": 380.9,
+      "rain_multiplier": 1.303,
+      "stock_entering_nov_t": 0.0,
+      "price_only": 0.0,
+      "price_only_nov_dec_sales": [
+       0.0,
+       0.0
+      ],
+      "price_plus_rain": 0.0,
+      "price_plus_rain_nov_dec_sales": [
+       0.0,
+       0.0
+      ]
+     },
+     {
+      "year": 2020,
+      "rain_sep_oct_mm": 362.3,
+      "rain_multiplier": 1.332,
+      "stock_entering_nov_t": 0.0,
+      "price_only": 0.0,
+      "price_only_nov_dec_sales": [
+       0.0,
+       0.0
+      ],
+      "price_plus_rain": 0.0,
+      "price_plus_rain_nov_dec_sales": [
+       0.0,
+       0.0
+      ]
+     },
+     {
+      "year": 2021,
+      "rain_sep_oct_mm": 256.7,
+      "rain_multiplier": 1.057,
+      "stock_entering_nov_t": 0.0,
+      "price_only": 0.0,
+      "price_only_nov_dec_sales": [
+       0.0,
+       0.0
+      ],
+      "price_plus_rain": 0.0,
+      "price_plus_rain_nov_dec_sales": [
+       0.0,
+       0.0
+      ]
+     },
+     {
+      "year": 2022,
+      "rain_sep_oct_mm": 370.9,
+      "rain_multiplier": 1.33,
+      "stock_entering_nov_t": 0.0,
+      "price_only": 0.0,
+      "price_only_nov_dec_sales": [
+       0.0,
+       0.0
+      ],
+      "price_plus_rain": 0.0,
+      "price_plus_rain_nov_dec_sales": [
+       0.0,
+       0.0
+      ]
+     },
+     {
+      "year": 2023,
+      "rain_sep_oct_mm": 241.0,
+      "rain_multiplier": 1.009,
+      "stock_entering_nov_t": 0.0,
+      "price_only": 0.0,
+      "price_only_nov_dec_sales": [
+       0.0,
+       0.0
+      ],
+      "price_plus_rain": 0.0,
+      "price_plus_rain_nov_dec_sales": [
+       0.0,
+       0.0
+      ]
+     },
+     {
+      "year": 2024,
+      "rain_sep_oct_mm": 265.6,
+      "rain_multiplier": 1.055,
+      "stock_entering_nov_t": 0.0,
+      "price_only": 0.0,
+      "price_only_nov_dec_sales": [
+       0.0,
+       0.0
+      ],
+      "price_plus_rain": 0.0,
+      "price_plus_rain_nov_dec_sales": [
+       0.0,
+       0.0
+      ]
+     }
+    ]
+   },
+   "C": {
+    "mean_price_only": 4546.0,
+    "mean_price_plus_rain": 4546.0,
+    "mean_value_of_rain_feed": 0.0,
+    "seasons_rain_helps": 0,
+    "seasons_rain_hurts": 0,
+    "by_season": [
+     {
+      "year": 2017,
+      "rain_sep_oct_mm": 266.3,
+      "rain_multiplier": 1.053,
+      "stock_entering_nov_t": 0.0,
+      "price_only": 2929.3,
+      "price_only_nov_dec_sales": [
+       0.0,
+       0.0
+      ],
+      "price_plus_rain": 2929.3,
+      "price_plus_rain_nov_dec_sales": [
+       0.0,
+       0.0
+      ]
+     },
+     {
+      "year": 2018,
+      "rain_sep_oct_mm": 55.2,
+      "rain_multiplier": 0.796,
+      "stock_entering_nov_t": 0.0,
+      "price_only": -1180.9,
+      "price_only_nov_dec_sales": [
+       0.0,
+       0.0
+      ],
+      "price_plus_rain": -1180.9,
+      "price_plus_rain_nov_dec_sales": [
+       0.0,
+       0.0
+      ]
+     },
+     {
+      "year": 2019,
+      "rain_sep_oct_mm": 380.9,
+      "rain_multiplier": 1.303,
+      "stock_entering_nov_t": 0.0,
+      "price_only": 3069.1,
+      "price_only_nov_dec_sales": [
+       0.0,
+       0.0
+      ],
+      "price_plus_rain": 3069.1,
+      "price_plus_rain_nov_dec_sales": [
+       0.0,
+       0.0
+      ]
+     },
+     {
+      "year": 2020,
+      "rain_sep_oct_mm": 362.3,
+      "rain_multiplier": 1.332,
+      "stock_entering_nov_t": 300.0,
+      "price_only": 4864.5,
+      "price_only_nov_dec_sales": [
+       300.0,
+       0.0
+      ],
+      "price_plus_rain": 4864.5,
+      "price_plus_rain_nov_dec_sales": [
+       300.0,
+       0.0
+      ]
+     },
+     {
+      "year": 2021,
+      "rain_sep_oct_mm": 256.7,
+      "rain_multiplier": 1.057,
+      "stock_entering_nov_t": 300.0,
+      "price_only": 4610.1,
+      "price_only_nov_dec_sales": [
+       300.0,
+       0.0
+      ],
+      "price_plus_rain": 4610.1,
+      "price_plus_rain_nov_dec_sales": [
+       300.0,
+       0.0
+      ]
+     },
+     {
+      "year": 2022,
+      "rain_sep_oct_mm": 370.9,
+      "rain_multiplier": 1.33,
+      "stock_entering_nov_t": 300.0,
+      "price_only": 2118.0,
+      "price_only_nov_dec_sales": [
+       300.0,
+       0.0
+      ],
+      "price_plus_rain": 2118.0,
+      "price_plus_rain_nov_dec_sales": [
+       300.0,
+       0.0
+      ]
+     },
+     {
+      "year": 2023,
+      "rain_sep_oct_mm": 241.0,
+      "rain_multiplier": 1.009,
+      "stock_entering_nov_t": 300.0,
+      "price_only": 10733.4,
+      "price_only_nov_dec_sales": [
+       300.0,
+       0.0
+      ],
+      "price_plus_rain": 10733.4,
+      "price_plus_rain_nov_dec_sales": [
+       300.0,
+       0.0
+      ]
+     },
+     {
+      "year": 2024,
+      "rain_sep_oct_mm": 265.6,
+      "rain_multiplier": 1.055,
+      "stock_entering_nov_t": 300.0,
+      "price_only": 9226.4,
+      "price_only_nov_dec_sales": [
+       300.0,
+       0.0
+      ],
+      "price_plus_rain": 9226.4,
+      "price_plus_rain_nov_dec_sales": [
+       300.0,
+       0.0
+      ]
+     }
+    ]
+   }
+  }
+ },
+ "value_of_loss_information": {
+  "with_forecast_prices": {
+   "B": {
+    "book_delta": 0.1805,
+    "price_source": "forecast",
+    "grid": [
+     {
+      "delta_true": 0.04,
+      "blind": 0.0,
+      "sensor": 0.0,
+      "calibrated": 4691.0,
+      "voi_sensor": 0.0,
+      "voi_calibrated": 4691.0,
+      "sensor_beats_blind_seasons": 0,
+      "sensor_worse_seasons": 0
+     },
+     {
+      "delta_true": 0.06,
+      "blind": 0.0,
+      "sensor": 0.0,
+      "calibrated": 3172.0,
+      "voi_sensor": 0.0,
+      "voi_calibrated": 3172.0,
+      "sensor_beats_blind_seasons": 0,
+      "sensor_worse_seasons": 0
+     },
+     {
+      "delta_true": 0.08,
+      "blind": 0.0,
+      "sensor": 0.0,
+      "calibrated": 2200.0,
+      "voi_sensor": 0.0,
+      "voi_calibrated": 2200.0,
+      "sensor_beats_blind_seasons": 0,
+      "sensor_worse_seasons": 0
+     },
+     {
+      "delta_true": 0.1,
+      "blind": 0.0,
+      "sensor": 0.0,
+      "calibrated": 890.0,
+      "voi_sensor": 0.0,
+      "voi_calibrated": 890.0,
+      "sensor_beats_blind_seasons": 0,
+      "sensor_worse_seasons": 0
+     },
+     {
+      "delta_true": 0.12,
+      "blind": 0.0,
+      "sensor": 0.0,
+      "calibrated": 191.0,
+      "voi_sensor": 0.0,
+      "voi_calibrated": 191.0,
+      "sensor_beats_blind_seasons": 0,
+      "sensor_worse_seasons": 0
+     },
+     {
+      "delta_true": 0.14,
+      "blind": 0.0,
+      "sensor": 0.0,
+      "calibrated": -508.0,
+      "voi_sensor": 0.0,
+      "voi_calibrated": -508.0,
+      "sensor_beats_blind_seasons": 0,
+      "sensor_worse_seasons": 0
+     },
+     {
+      "delta_true": 0.1805,
+      "blind": 0.0,
+      "sensor": 0.0,
+      "calibrated": 0.0,
+      "voi_sensor": 0.0,
+      "voi_calibrated": 0.0,
+      "sensor_beats_blind_seasons": 0,
+      "sensor_worse_seasons": 0
+     },
+     {
+      "delta_true": 0.22,
+      "blind": 0.0,
+      "sensor": 0.0,
+      "calibrated": 0.0,
+      "voi_sensor": 0.0,
+      "voi_calibrated": 0.0,
+      "sensor_beats_blind_seasons": 0,
+      "sensor_worse_seasons": 0
+     }
+    ],
+    "by_season": [
+     {
+      "year": 2017,
+      "delta_true": 0.0,
+      "blind": 0.0,
+      "sensor": 0.0,
+      "calibrated": 3711.1
+     },
+     {
+      "year": 2017,
+      "delta_true": 0.1,
+      "blind": 0.0,
+      "sensor": 0.0,
+      "calibrated": 3358.7
+     },
+     {
+      "year": 2017,
+      "delta_true": 0.1,
+      "blind": 0.0,
+      "sensor": 0.0,
+      "calibrated": 3053.8
+     },
+     {
+      "year": 2017,
+      "delta_true": 0.1,
+      "blind": 0.0,
+      "sensor": 0.0,
+      "calibrated": 2757.6
+     },
+     {
+      "year": 2017,
+      "delta_true": 0.1,
+      "blind": 0.0,
+      "sensor": 0.0,
+      "calibrated": 2469.7
+     },
+     {
+      "year": 2017,
+      "delta_true": 0.1,
+      "blind": 0.0,
+      "sensor": 0.0,
+      "calibrated": -855.6
+     },
+     {
+      "year": 2017,
+      "delta_true": 0.2,
+      "blind": 0.0,
+      "sensor": 0.0,
+      "calibrated": 0.0
+     },
+     {
+      "year": 2017,
+      "delta_true": 0.2,
+      "blind": 0.0,
+      "sensor": 0.0,
+      "calibrated": 0.0
+     },
+     {
+      "year": 2018,
+      "delta_true": 0.0,
+      "blind": 0.0,
+      "sensor": 0.0,
+      "calibrated": -338.8
+     },
+     {
+      "year": 2018,
+      "delta_true": 0.1,
+      "blind": 0.0,
+      "sensor": 0.0,
+      "calibrated": -718.0
+     },
+     {
+      "year": 2018,
+      "delta_true": 0.1,
+      "blind": 0.0,
+      "sensor": 0.0,
+      "calibrated": -141.6
+     },
+     {
+      "year": 2018,
+      "delta_true": 0.1,
+      "blind": 0.0,
+      "sensor": 0.0,
+      "calibrated": -576.2
+     },
+     {
+      "year": 2018,
+      "delta_true": 0.1,
+      "blind": 0.0,
+      "sensor": 0.0,
+      "calibrated": -998.6
+     },
+     {
+      "year": 2018,
+      "delta_true": 0.1,
+      "blind": 0.0,
+      "sensor": 0.0,
+      "calibrated": -1309.2
+     },
+     {
+      "year": 2018,
+      "delta_true": 0.2,
+      "blind": 0.0,
+      "sensor": 0.0,
+      "calibrated": 0.0
+     },
+     {
+      "year": 2018,
+      "delta_true": 0.2,
+      "blind": 0.0,
+      "sensor": 0.0,
+      "calibrated": 0.0
+     },
+     {
+      "year": 2019,
+      "delta_true": 0.0,
+      "blind": 0.0,
+      "sensor": 0.0,
+      "calibrated": 3607.5
+     },
+     {
+      "year": 2019,
+      "delta_true": 0.1,
+      "blind": 0.0,
+      "sensor": 0.0,
+      "calibrated": 3017.4
+     },
+     {
+      "year": 2019,
+      "delta_true": 0.1,
+      "blind": 0.0,
+      "sensor": 0.0,
+      "calibrated": 2513.0
+     },
+     {
+      "year": 2019,
+      "delta_true": 0.1,
+      "blind": 0.0,
+      "sensor": 0.0,
+      "calibrated": 2023.1
+     },
+     {
+      "year": 2019,
+      "delta_true": 0.1,
+      "blind": 0.0,
+      "sensor": 0.0,
+      "calibrated": 1425.7
+     },
+     {
+      "year": 2019,
+      "delta_true": 0.1,
+      "blind": 0.0,
+      "sensor": 0.0,
+      "calibrated": 1071.4
+     },
+     {
+      "year": 2019,
+      "delta_true": 0.2,
+      "blind": 0.0,
+      "sensor": 0.0,
+      "calibrated": 0.0
+     },
+     {
+      "year": 2019,
+      "delta_true": 0.2,
+      "blind": 0.0,
+      "sensor": 0.0,
+      "calibrated": 0.0
+     },
+     {
+      "year": 2020,
+      "delta_true": 0.0,
+      "blind": 0.0,
+      "sensor": 0.0,
+      "calibrated": 4199.9
+     },
+     {
+      "year": 2020,
+      "delta_true": 0.1,
+      "blind": 0.0,
+      "sensor": 0.0,
+      "calibrated": 397.9
+     },
+     {
+      "year": 2020,
+      "delta_true": 0.1,
+      "blind": 0.0,
+      "sensor": 0.0,
+      "calibrated": -601.3
+     },
+     {
+      "year": 2020,
+      "delta_true": 0.1,
+      "blind": 0.0,
+      "sensor": 0.0,
+      "calibrated": -3444.4
+     },
+     {
+      "year": 2020,
+      "delta_true": 0.1,
+      "blind": 0.0,
+      "sensor": 0.0,
+      "calibrated": -3704.0
+     },
+     {
+      "year": 2020,
+      "delta_true": 0.1,
+      "blind": 0.0,
+      "sensor": 0.0,
+      "calibrated": -2974.0
+     },
+     {
+      "year": 2020,
+      "delta_true": 0.2,
+      "blind": 0.0,
+      "sensor": 0.0,
+      "calibrated": 0.0
+     },
+     {
+      "year": 2020,
+      "delta_true": 0.2,
+      "blind": 0.0,
+      "sensor": 0.0,
+      "calibrated": 0.0
+     },
+     {
+      "year": 2021,
+      "delta_true": 0.0,
+      "blind": 0.0,
+      "sensor": 0.0,
+      "calibrated": 4796.4
+     },
+     {
+      "year": 2021,
+      "delta_true": 0.1,
+      "blind": 0.0,
+      "sensor": 0.0,
+      "calibrated": 3178.8
+     },
+     {
+      "year": 2021,
+      "delta_true": 0.1,
+      "blind": 0.0,
+      "sensor": 0.0,
+      "calibrated": 1608.1
+     },
+     {
+      "year": 2021,
+      "delta_true": 0.1,
+      "blind": 0.0,
+      "sensor": 0.0,
+      "calibrated": -269.2
+     },
+     {
+      "year": 2021,
+      "delta_true": 0.1,
+      "blind": 0.0,
+      "sensor": 0.0,
+      "calibrated": -770.9
+     },
+     {
+      "year": 2021,
+      "delta_true": 0.1,
+      "blind": 0.0,
+      "sensor": 0.0,
+      "calibrated": 0.0
+     },
+     {
+      "year": 2021,
+      "delta_true": 0.2,
+      "blind": 0.0,
+      "sensor": 0.0,
+      "calibrated": 0.0
+     },
+     {
+      "year": 2021,
+      "delta_true": 0.2,
+      "blind": 0.0,
+      "sensor": 0.0,
+      "calibrated": 0.0
+     },
+     {
+      "year": 2022,
+      "delta_true": 0.0,
+      "blind": 0.0,
+      "sensor": 0.0,
+      "calibrated": 2753.2
+     },
+     {
+      "year": 2022,
+      "delta_true": 0.1,
+      "blind": 0.0,
+      "sensor": 0.0,
+      "calibrated": 1686.7
+     },
+     {
+      "year": 2022,
+      "delta_true": 0.1,
+      "blind": 0.0,
+      "sensor": 0.0,
+      "calibrated": 399.4
+     },
+     {
+      "year": 2022,
+      "delta_true": 0.1,
+      "blind": 0.0,
+      "sensor": 0.0,
+      "calibrated": -788.4
+     },
+     {
+      "year": 2022,
+      "delta_true": 0.1,
+      "blind": 0.0,
+      "sensor": 0.0,
+      "calibrated": -1164.1
+     },
+     {
+      "year": 2022,
+      "delta_true": 0.1,
+      "blind": 0.0,
+      "sensor": 0.0,
+      "calibrated": 0.0
+     },
+     {
+      "year": 2022,
+      "delta_true": 0.2,
+      "blind": 0.0,
+      "sensor": 0.0,
+      "calibrated": 0.0
+     },
+     {
+      "year": 2022,
+      "delta_true": 0.2,
+      "blind": 0.0,
+      "sensor": 0.0,
+      "calibrated": 0.0
+     },
+     {
+      "year": 2023,
+      "delta_true": 0.0,
+      "blind": 0.0,
+      "sensor": 0.0,
+      "calibrated": 10379.3
+     },
+     {
+      "year": 2023,
+      "delta_true": 0.1,
+      "blind": 0.0,
+      "sensor": 0.0,
+      "calibrated": 8317.7
+     },
+     {
+      "year": 2023,
+      "delta_true": 0.1,
+      "blind": 0.0,
+      "sensor": 0.0,
+      "calibrated": 6529.7
+     },
+     {
+      "year": 2023,
+      "delta_true": 0.1,
+      "blind": 0.0,
+      "sensor": 0.0,
+      "calibrated": 4374.3
+     },
+     {
+      "year": 2023,
+      "delta_true": 0.1,
+      "blind": 0.0,
+      "sensor": 0.0,
+      "calibrated": 1371.5
+     },
+     {
+      "year": 2023,
+      "delta_true": 0.1,
+      "blind": 0.0,
+      "sensor": 0.0,
+      "calibrated": 0.0
+     },
+     {
+      "year": 2023,
+      "delta_true": 0.2,
+      "blind": 0.0,
+      "sensor": 0.0,
+      "calibrated": 0.0
+     },
+     {
+      "year": 2023,
+      "delta_true": 0.2,
+      "blind": 0.0,
+      "sensor": 0.0,
+      "calibrated": 0.0
+     },
+     {
+      "year": 2024,
+      "delta_true": 0.0,
+      "blind": 0.0,
+      "sensor": 0.0,
+      "calibrated": 8415.8
+     },
+     {
+      "year": 2024,
+      "delta_true": 0.1,
+      "blind": 0.0,
+      "sensor": 0.0,
+      "calibrated": 6135.9
+     },
+     {
+      "year": 2024,
+      "delta_true": 0.1,
+      "blind": 0.0,
+      "sensor": 0.0,
+      "calibrated": 4235.1
+     },
+     {
+      "year": 2024,
+      "delta_true": 0.1,
+      "blind": 0.0,
+      "sensor": 0.0,
+      "calibrated": 3042.4
+     },
+     {
+      "year": 2024,
+      "delta_true": 0.1,
+      "blind": 0.0,
+      "sensor": 0.0,
+      "calibrated": 2899.6
+     },
+     {
+      "year": 2024,
+      "delta_true": 0.1,
+      "blind": 0.0,
+      "sensor": 0.0,
+      "calibrated": 0.0
+     },
+     {
+      "year": 2024,
+      "delta_true": 0.2,
+      "blind": 0.0,
+      "sensor": 0.0,
+      "calibrated": 0.0
+     },
+     {
+      "year": 2024,
+      "delta_true": 0.2,
+      "blind": 0.0,
+      "sensor": 0.0,
+      "calibrated": 0.0
+     }
+    ]
+   },
+   "C": {
+    "book_delta": 0.0183,
+    "price_source": "forecast",
+    "grid": [
+     {
+      "delta_true": 0.005,
+      "blind": 5404.0,
+      "sensor": 5514.0,
+      "calibrated": 5514.0,
+      "voi_sensor": 110.0,
+      "voi_calibrated": 110.0,
+      "sensor_beats_blind_seasons": 5,
+      "sensor_worse_seasons": 3
+     },
+     {
+      "delta_true": 0.0183,
+      "blind": 4549.0,
+      "sensor": 4549.0,
+      "calibrated": 4549.0,
+      "voi_sensor": 0.0,
+      "voi_calibrated": 0.0,
+      "sensor_beats_blind_seasons": 3,
+      "sensor_worse_seasons": 3
+     },
+     {
+      "delta_true": 0.03,
+      "blind": 3712.0,
+      "sensor": 3444.0,
+      "calibrated": 3444.0,
+      "voi_sensor": -268.0,
+      "voi_calibrated": -268.0,
+      "sensor_beats_blind_seasons": 5,
+      "sensor_worse_seasons": 3
+     },
+     {
+      "delta_true": 0.05,
+      "blind": 2435.0,
+      "sensor": 2389.0,
+      "calibrated": 2389.0,
+      "voi_sensor": -46.0,
+      "voi_calibrated": -46.0,
+      "sensor_beats_blind_seasons": 5,
+      "sensor_worse_seasons": 3
+     },
+     {
+      "delta_true": 0.08,
+      "blind": 828.0,
+      "sensor": 407.0,
+      "calibrated": 374.0,
+      "voi_sensor": -421.0,
+      "voi_calibrated": -454.0,
+      "sensor_beats_blind_seasons": 4,
+      "sensor_worse_seasons": 4
+     },
+     {
+      "delta_true": 0.1,
+      "blind": -64.0,
+      "sensor": -621.0,
+      "calibrated": -791.0,
+      "voi_sensor": -557.0,
+      "voi_calibrated": -727.0,
+      "sensor_beats_blind_seasons": 4,
+      "sensor_worse_seasons": 4
+     },
+     {
+      "delta_true": 0.12,
+      "blind": -829.0,
+      "sensor": -841.0,
+      "calibrated": -616.0,
+      "voi_sensor": -13.0,
+      "voi_calibrated": 213.0,
+      "sensor_beats_blind_seasons": 4,
+      "sensor_worse_seasons": 4
+     },
+     {
+      "delta_true": 0.15,
+      "blind": -1849.0,
+      "sensor": -1234.0,
+      "calibrated": 0.0,
+      "voi_sensor": 615.0,
+      "voi_calibrated": 1849.0,
+      "sensor_beats_blind_seasons": 5,
+      "sensor_worse_seasons": 3
+     }
+    ],
+    "by_season": [
+     {
+      "year": 2017,
+      "delta_true": 0.0,
+      "blind": 3580.9,
+      "sensor": 3116.6,
+      "calibrated": 3116.6
+     },
+     {
+      "year": 2017,
+      "delta_true": 0.0,
+      "blind": 2931.5,
+      "sensor": 2930.0,
+      "calibrated": 2930.0
+     },
+     {
+      "year": 2017,
+      "delta_true": 0.0,
+      "blind": 2482.7,
+      "sensor": 2764.5,
+      "calibrated": 2764.5
+     },
+     {
+      "year": 2017,
+      "delta_true": 0.0,
+      "blind": 1760.9,
+      "sensor": 2474.0,
+      "calibrated": 2474.0
+     },
+     {
+      "year": 2017,
+      "delta_true": 0.1,
+      "blind": 779.9,
+      "sensor": 2022.2,
+      "calibrated": 2022.2
+     },
+     {
+      "year": 2017,
+      "delta_true": 0.1,
+      "blind": 190.3,
+      "sensor": -1209.5,
+      "calibrated": 0.0
+     },
+     {
+      "year": 2017,
+      "delta_true": 0.1,
+      "blind": -350.5,
+      "sensor": -1254.6,
+      "calibrated": 0.0
+     },
+     {
+      "year": 2017,
+      "delta_true": 0.2,
+      "blind": -1075.1,
+      "sensor": -1419.7,
+      "calibrated": 0.0
+     },
+     {
+      "year": 2018,
+      "delta_true": 0.0,
+      "blind": -1056.3,
+      "sensor": -824.7,
+      "calibrated": -824.7
+     },
+     {
+      "year": 2018,
+      "delta_true": 0.0,
+      "blind": -1180.5,
+      "sensor": -1179.6,
+      "calibrated": -1179.6
+     },
+     {
+      "year": 2018,
+      "delta_true": 0.0,
+      "blind": -1464.2,
+      "sensor": -1436.5,
+      "calibrated": -1436.5
+     },
+     {
+      "year": 2018,
+      "delta_true": 0.0,
+      "blind": -1823.2,
+      "sensor": -506.0,
+      "calibrated": -506.0
+     },
+     {
+      "year": 2018,
+      "delta_true": 0.1,
+      "blind": -2268.4,
+      "sensor": -1159.7,
+      "calibrated": -1034.5
+     },
+     {
+      "year": 2018,
+      "delta_true": 0.1,
+      "blind": -2525.2,
+      "sensor": -1552.6,
+      "calibrated": -1354.3
+     },
+     {
+      "year": 2018,
+      "delta_true": 0.1,
+      "blind": -2752.4,
+      "sensor": -1934.1,
+      "calibrated": -1710.4
+     },
+     {
+      "year": 2018,
+      "delta_true": 0.2,
+      "blind": -3042.3,
+      "sensor": -2519.6,
+      "calibrated": 0.0
+     },
+     {
+      "year": 2019,
+      "delta_true": 0.0,
+      "blind": 4460.4,
+      "sensor": 4428.6,
+      "calibrated": 4428.6
+     },
+     {
+      "year": 2019,
+      "delta_true": 0.0,
+      "blind": 3073.8,
+      "sensor": 3070.4,
+      "calibrated": 3070.3
+     },
+     {
+      "year": 2019,
+      "delta_true": 0.0,
+      "blind": 2655.6,
+      "sensor": 2759.8,
+      "calibrated": 2759.8
+     },
+     {
+      "year": 2019,
+      "delta_true": 0.0,
+      "blind": 1987.5,
+      "sensor": 2234.6,
+      "calibrated": 2234.6
+     },
+     {
+      "year": 2019,
+      "delta_true": 0.1,
+      "blind": 1079.8,
+      "sensor": 1740.8,
+      "calibrated": 1358.2
+     },
+     {
+      "year": 2019,
+      "delta_true": 0.1,
+      "blind": 534.4,
+      "sensor": 1269.1,
+      "calibrated": 0.0
+     },
+     {
+      "year": 2019,
+      "delta_true": 0.1,
+      "blind": 34.4,
+      "sensor": 790.5,
+      "calibrated": 0.0
+     },
+     {
+      "year": 2019,
+      "delta_true": 0.2,
+      "blind": -635.1,
+      "sensor": -164.2,
+      "calibrated": 0.0
+     },
+     {
+      "year": 2020,
+      "delta_true": 0.0,
+      "blind": 5770.5,
+      "sensor": 6355.8,
+      "calibrated": 6355.8
+     },
+     {
+      "year": 2020,
+      "delta_true": 0.0,
+      "blind": 4867.6,
+      "sensor": 4869.8,
+      "calibrated": 4869.8
+     },
+     {
+      "year": 2020,
+      "delta_true": 0.0,
+      "blind": 3605.3,
+      "sensor": 836.2,
+      "calibrated": 836.2
+     },
+     {
+      "year": 2020,
+      "delta_true": 0.0,
+      "blind": 1690.5,
+      "sensor": -354.9,
+      "calibrated": -354.9
+     },
+     {
+      "year": 2020,
+      "delta_true": 0.1,
+      "blind": -660.9,
+      "sensor": -4195.4,
+      "calibrated": -4195.4
+     },
+     {
+      "year": 2020,
+      "delta_true": 0.1,
+      "blind": -1925.3,
+      "sensor": -4171.2,
+      "calibrated": -2719.5
+     },
+     {
+      "year": 2020,
+      "delta_true": 0.1,
+      "blind": -2979.2,
+      "sensor": -4455.5,
+      "calibrated": -3216.8
+     },
+     {
+      "year": 2020,
+      "delta_true": 0.2,
+      "blind": -4218.6,
+      "sensor": -4727.7,
+      "calibrated": 0.0
+     },
+     {
+      "year": 2021,
+      "delta_true": 0.0,
+      "blind": 5538.0,
+      "sensor": 5353.2,
+      "calibrated": 5353.2
+     },
+     {
+      "year": 2021,
+      "delta_true": 0.0,
+      "blind": 4613.3,
+      "sensor": 4612.8,
+      "calibrated": 4612.8
+     },
+     {
+      "year": 2021,
+      "delta_true": 0.0,
+      "blind": 3803.0,
+      "sensor": 3770.0,
+      "calibrated": 3770.0
+     },
+     {
+      "year": 2021,
+      "delta_true": 0.0,
+      "blind": 2567.1,
+      "sensor": 1837.8,
+      "calibrated": 1837.8
+     },
+     {
+      "year": 2021,
+      "delta_true": 0.1,
+      "blind": 1030.3,
+      "sensor": -919.2,
+      "calibrated": -919.2
+     },
+     {
+      "year": 2021,
+      "delta_true": 0.1,
+      "blind": 191.8,
+      "sensor": -1424.2,
+      "calibrated": -750.7
+     },
+     {
+      "year": 2021,
+      "delta_true": 0.1,
+      "blind": -516.5,
+      "sensor": -769.7,
+      "calibrated": 0.0
+     },
+     {
+      "year": 2021,
+      "delta_true": 0.2,
+      "blind": -1726.4,
+      "sensor": -417.2,
+      "calibrated": 0.0
+     },
+     {
+      "year": 2022,
+      "delta_true": 0.0,
+      "blind": 2679.2,
+      "sensor": 2682.9,
+      "calibrated": 2682.9
+     },
+     {
+      "year": 2022,
+      "delta_true": 0.0,
+      "blind": 2119.9,
+      "sensor": 2120.0,
+      "calibrated": 2120.0
+     },
+     {
+      "year": 2022,
+      "delta_true": 0.0,
+      "blind": 1428.8,
+      "sensor": 1521.6,
+      "calibrated": 1521.6
+     },
+     {
+      "year": 2022,
+      "delta_true": 0.0,
+      "blind": 374.6,
+      "sensor": 453.4,
+      "calibrated": 453.4
+     },
+     {
+      "year": 2022,
+      "delta_true": 0.1,
+      "blind": -932.9,
+      "sensor": -1402.2,
+      "calibrated": -1402.2
+     },
+     {
+      "year": 2022,
+      "delta_true": 0.1,
+      "blind": -1644.2,
+      "sensor": -1581.9,
+      "calibrated": -1505.2
+     },
+     {
+      "year": 2022,
+      "delta_true": 0.1,
+      "blind": -2243.3,
+      "sensor": -2054.2,
+      "calibrated": 0.0
+     },
+     {
+      "year": 2022,
+      "delta_true": 0.2,
+      "blind": -3118.4,
+      "sensor": -1026.7,
+      "calibrated": 0.0
+     },
+     {
+      "year": 2023,
+      "delta_true": 0.0,
+      "blind": 11683.7,
+      "sensor": 11723.3,
+      "calibrated": 11723.3
+     },
+     {
+      "year": 2023,
+      "delta_true": 0.0,
+      "blind": 10736.7,
+      "sensor": 10736.7,
+      "calibrated": 10736.7
+     },
+     {
+      "year": 2023,
+      "delta_true": 0.0,
+      "blind": 9394.4,
+      "sensor": 9640.9,
+      "calibrated": 9640.9
+     },
+     {
+      "year": 2023,
+      "delta_true": 0.0,
+      "blind": 7337.9,
+      "sensor": 7547.0,
+      "calibrated": 7547.0
+     },
+     {
+      "year": 2023,
+      "delta_true": 0.1,
+      "blind": 4767.8,
+      "sensor": 3860.5,
+      "calibrated": 3860.5
+     },
+     {
+      "year": 2023,
+      "delta_true": 0.1,
+      "blind": 3356.4,
+      "sensor": 931.0,
+      "calibrated": 0.0
+     },
+     {
+      "year": 2023,
+      "delta_true": 0.1,
+      "blind": 2156.8,
+      "sensor": 251.0,
+      "calibrated": 0.0
+     },
+     {
+      "year": 2023,
+      "delta_true": 0.2,
+      "blind": 719.9,
+      "sensor": -613.0,
+      "calibrated": 0.0
+     },
+     {
+      "year": 2024,
+      "delta_true": 0.0,
+      "blind": 10575.0,
+      "sensor": 11275.5,
+      "calibrated": 11275.5
+     },
+     {
+      "year": 2024,
+      "delta_true": 0.0,
+      "blind": 9231.0,
+      "sensor": 9233.8,
+      "calibrated": 9233.8
+     },
+     {
+      "year": 2024,
+      "delta_true": 0.0,
+      "blind": 7791.1,
+      "sensor": 7693.6,
+      "calibrated": 7693.6
+     },
+     {
+      "year": 2024,
+      "delta_true": 0.0,
+      "blind": 5585.8,
+      "sensor": 5427.7,
+      "calibrated": 5427.7
+     },
+     {
+      "year": 2024,
+      "delta_true": 0.1,
+      "blind": 2827.3,
+      "sensor": 3305.1,
+      "calibrated": 3305.1
+     },
+     {
+      "year": 2024,
+      "delta_true": 0.1,
+      "blind": 1310.8,
+      "sensor": 2770.4,
+      "calibrated": 0.0
+     },
+     {
+      "year": 2024,
+      "delta_true": 0.1,
+      "blind": 20.7,
+      "sensor": 2695.7,
+      "calibrated": 0.0
+     },
+     {
+      "year": 2024,
+      "delta_true": 0.2,
+      "blind": -1695.9,
+      "sensor": 1017.1,
+      "calibrated": 0.0
+     }
+    ]
+   }
+  },
+  "with_perfect_price_foresight": {
+   "B": {
+    "book_delta": 0.1805,
+    "price_source": "actual",
+    "grid": [
+     {
+      "delta_true": 0.04,
+      "blind": 4701.0,
+      "sensor": 6471.0,
+      "calibrated": 8374.0,
+      "voi_sensor": 1770.0,
+      "voi_calibrated": 3674.0,
+      "sensor_beats_blind_seasons": 5,
+      "sensor_worse_seasons": 0
+     },
+     {
+      "delta_true": 0.06,
+      "blind": 3788.0,
+      "sensor": 5323.0,
+      "calibrated": 6738.0,
+      "voi_sensor": 1535.0,
+      "voi_calibrated": 2949.0,
+      "sensor_beats_blind_seasons": 5,
+      "sensor_worse_seasons": 0
+     },
+     {
+      "delta_true": 0.08,
+      "blind": 3008.0,
+      "sensor": 4300.0,
+      "calibrated": 5306.0,
+      "voi_sensor": 1292.0,
+      "voi_calibrated": 2298.0,
+      "sensor_beats_blind_seasons": 5,
+      "sensor_worse_seasons": 0
+     },
+     {
+      "delta_true": 0.1,
+      "blind": 2362.0,
+      "sensor": 3380.0,
+      "calibrated": 4030.0,
+      "voi_sensor": 1017.0,
+      "voi_calibrated": 1667.0,
+      "sensor_beats_blind_seasons": 5,
+      "sensor_worse_seasons": 0
+     },
+     {
+      "delta_true": 0.12,
+      "blind": 1834.0,
+      "sensor": 2571.0,
+      "calibrated": 2958.0,
+      "voi_sensor": 737.0,
+      "voi_calibrated": 1124.0,
+      "sensor_beats_blind_seasons": 5,
+      "sensor_worse_seasons": 0
+     },
+     {
+      "delta_true": 0.14,
+      "blind": 1406.0,
+      "sensor": 1868.0,
+      "calibrated": 2054.0,
+      "voi_sensor": 462.0,
+      "voi_calibrated": 648.0,
+      "sensor_beats_blind_seasons": 5,
+      "sensor_worse_seasons": 0
+     },
+     {
+      "delta_true": 0.1805,
+      "blind": 790.0,
+      "sensor": 790.0,
+      "calibrated": 790.0,
+      "voi_sensor": 0.0,
+      "voi_calibrated": 0.0,
+      "sensor_beats_blind_seasons": 0,
+      "sensor_worse_seasons": 0
+     },
+     {
+      "delta_true": 0.22,
+      "blind": 106.0,
+      "sensor": 144.0,
+      "calibrated": 231.0,
+      "voi_sensor": 38.0,
+      "voi_calibrated": 125.0,
+      "sensor_beats_blind_seasons": 2,
+      "sensor_worse_seasons": 0
+     }
+    ],
+    "by_season": [
+     {
+      "year": 2017,
+      "delta_true": 0.0,
+      "blind": 7589.3,
+      "sensor": 8995.3,
+      "calibrated": 8995.3
+     },
+     {
+      "year": 2017,
+      "delta_true": 0.1,
+      "blind": 6173.4,
+      "sensor": 7206.3,
+      "calibrated": 7206.3
+     },
+     {
+      "year": 2017,
+      "delta_true": 0.1,
+      "blind": 4998.7,
+      "sensor": 5824.5,
+      "calibrated": 5824.5
+     },
+     {
+      "year": 2017,
+      "delta_true": 0.1,
+      "blind": 4033.1,
+      "sensor": 4544.4,
+      "calibrated": 4544.4
+     },
+     {
+      "year": 2017,
+      "delta_true": 0.1,
+      "blind": 3247.9,
+      "sensor": 3583.0,
+      "calibrated": 3583.0
+     },
+     {
+      "year": 2017,
+      "delta_true": 0.1,
+      "blind": 2617.8,
+      "sensor": 2843.0,
+      "calibrated": 2843.0
+     },
+     {
+      "year": 2017,
+      "delta_true": 0.2,
+      "blind": 1726.3,
+      "sensor": 1726.3,
+      "calibrated": 1726.3
+     },
+     {
+      "year": 2017,
+      "delta_true": 0.2,
+      "blind": 764.6,
+      "sensor": 764.6,
+      "calibrated": 764.6
+     },
+     {
+      "year": 2018,
+      "delta_true": 0.0,
+      "blind": 0.0,
+      "sensor": 0.0,
+      "calibrated": 989.5
+     },
+     {
+      "year": 2018,
+      "delta_true": 0.1,
+      "blind": 0.0,
+      "sensor": 0.0,
+      "calibrated": 713.1
+     },
+     {
+      "year": 2018,
+      "delta_true": 0.1,
+      "blind": 0.0,
+      "sensor": 0.0,
+      "calibrated": 420.7
+     },
+     {
+      "year": 2018,
+      "delta_true": 0.1,
+      "blind": 0.0,
+      "sensor": 0.0,
+      "calibrated": 130.5
+     },
+     {
+      "year": 2018,
+      "delta_true": 0.1,
+      "blind": 0.0,
+      "sensor": 0.0,
+      "calibrated": 0.0
+     },
+     {
+      "year": 2018,
+      "delta_true": 0.1,
+      "blind": 0.0,
+      "sensor": 0.0,
+      "calibrated": 0.0
+     },
+     {
+      "year": 2018,
+      "delta_true": 0.2,
+      "blind": 0.0,
+      "sensor": 0.0,
+      "calibrated": 0.0
+     },
+     {
+      "year": 2018,
+      "delta_true": 0.2,
+      "blind": 0.0,
+      "sensor": 0.0,
+      "calibrated": 0.0
+     },
+     {
+      "year": 2019,
+      "delta_true": 0.0,
+      "blind": 15297.0,
+      "sensor": 17933.1,
+      "calibrated": 17933.1
+     },
+     {
+      "year": 2019,
+      "delta_true": 0.1,
+      "blind": 12124.5,
+      "sensor": 14787.6,
+      "calibrated": 14787.6
+     },
+     {
+      "year": 2019,
+      "delta_true": 0.1,
+      "blind": 9463.9,
+      "sensor": 11977.9,
+      "calibrated": 11977.9
+     },
+     {
+      "year": 2019,
+      "delta_true": 0.1,
+      "blind": 7249.9,
+      "sensor": 9467.6,
+      "calibrated": 9467.6
+     },
+     {
+      "year": 2019,
+      "delta_true": 0.1,
+      "blind": 5424.2,
+      "sensor": 7030.4,
+      "calibrated": 7030.4
+     },
+     {
+      "year": 2019,
+      "delta_true": 0.1,
+      "blind": 3934.6,
+      "sensor": 4950.1,
+      "calibrated": 4950.1
+     },
+     {
+      "year": 2019,
+      "delta_true": 0.2,
+      "blind": 1762.1,
+      "sensor": 1762.1,
+      "calibrated": 1762.1
+     },
+     {
+      "year": 2019,
+      "delta_true": 0.2,
+      "blind": 245.6,
+      "sensor": 245.6,
+      "calibrated": 245.6
+     },
+     {
+      "year": 2020,
+      "delta_true": 0.0,
+      "blind": 0.0,
+      "sensor": 0.0,
+      "calibrated": 10054.6
+     },
+     {
+      "year": 2020,
+      "delta_true": 0.1,
+      "blind": 0.0,
+      "sensor": 0.0,
+      "calibrated": 7789.6
+     },
+     {
+      "year": 2020,
+      "delta_true": 0.1,
+      "blind": 0.0,
+      "sensor": 0.0,
+      "calibrated": 5781.5
+     },
+     {
+      "year": 2020,
+      "delta_true": 0.1,
+      "blind": 0.0,
+      "sensor": 0.0,
+      "calibrated": 4097.6
+     },
+     {
+      "year": 2020,
+      "delta_true": 0.1,
+      "blind": 0.0,
+      "sensor": 0.0,
+      "calibrated": 2653.2
+     },
+     {
+      "year": 2020,
+      "delta_true": 0.1,
+      "blind": 0.0,
+      "sensor": 0.0,
+      "calibrated": 1382.6
+     },
+     {
+      "year": 2020,
+      "delta_true": 0.2,
+      "blind": 0.0,
+      "sensor": 0.0,
+      "calibrated": 0.0
+     },
+     {
+      "year": 2020,
+      "delta_true": 0.2,
+      "blind": 0.0,
+      "sensor": 0.0,
+      "calibrated": 0.0
+     },
+     {
+      "year": 2021,
+      "delta_true": 0.0,
+      "blind": 2141.6,
+      "sensor": 3660.4,
+      "calibrated": 5055.0
+     },
+     {
+      "year": 2021,
+      "delta_true": 0.1,
+      "blind": 1740.6,
+      "sensor": 2901.6,
+      "calibrated": 4027.6
+     },
+     {
+      "year": 2021,
+      "delta_true": 0.1,
+      "blind": 1417.0,
+      "sensor": 2089.2,
+      "calibrated": 3114.5
+     },
+     {
+      "year": 2021,
+      "delta_true": 0.1,
+      "blind": 1159.1,
+      "sensor": 1475.3,
+      "calibrated": 2235.0
+     },
+     {
+      "year": 2021,
+      "delta_true": 0.1,
+      "blind": 956.7,
+      "sensor": 1190.4,
+      "calibrated": 1570.5
+     },
+     {
+      "year": 2021,
+      "delta_true": 0.1,
+      "blind": 800.9,
+      "sensor": 963.0,
+      "calibrated": 1065.7
+     },
+     {
+      "year": 2021,
+      "delta_true": 0.2,
+      "blind": 596.8,
+      "sensor": 596.8,
+      "calibrated": 596.9
+     },
+     {
+      "year": 2021,
+      "delta_true": 0.2,
+      "blind": 183.4,
+      "sensor": 183.4,
+      "calibrated": 202.5
+     },
+     {
+      "year": 2022,
+      "delta_true": 0.0,
+      "blind": 0.0,
+      "sensor": 0.0,
+      "calibrated": 2790.2
+     },
+     {
+      "year": 2022,
+      "delta_true": 0.1,
+      "blind": 0.0,
+      "sensor": 0.0,
+      "calibrated": 1686.7
+     },
+     {
+      "year": 2022,
+      "delta_true": 0.1,
+      "blind": 0.0,
+      "sensor": 0.0,
+      "calibrated": 821.8
+     },
+     {
+      "year": 2022,
+      "delta_true": 0.1,
+      "blind": 0.0,
+      "sensor": 0.0,
+      "calibrated": 212.2
+     },
+     {
+      "year": 2022,
+      "delta_true": 0.1,
+      "blind": 0.0,
+      "sensor": 0.0,
+      "calibrated": 58.0
+     },
+     {
+      "year": 2022,
+      "delta_true": 0.1,
+      "blind": 0.0,
+      "sensor": 0.0,
+      "calibrated": 0.0
+     },
+     {
+      "year": 2022,
+      "delta_true": 0.2,
+      "blind": 0.0,
+      "sensor": 0.0,
+      "calibrated": 0.0
+     },
+     {
+      "year": 2022,
+      "delta_true": 0.2,
+      "blind": 0.0,
+      "sensor": 0.0,
+      "calibrated": 0.0
+     },
+     {
+      "year": 2023,
+      "delta_true": 0.0,
+      "blind": 6335.7,
+      "sensor": 10655.7,
+      "calibrated": 10655.7
+     },
+     {
+      "year": 2023,
+      "delta_true": 0.1,
+      "blind": 5196.2,
+      "sensor": 8813.4,
+      "calibrated": 8813.4
+     },
+     {
+      "year": 2023,
+      "delta_true": 0.1,
+      "blind": 4073.5,
+      "sensor": 7133.7,
+      "calibrated": 7133.7
+     },
+     {
+      "year": 2023,
+      "delta_true": 0.1,
+      "blind": 3132.7,
+      "sensor": 5601.9,
+      "calibrated": 5601.9
+     },
+     {
+      "year": 2023,
+      "delta_true": 0.1,
+      "blind": 2350.6,
+      "sensor": 4177.2,
+      "calibrated": 4177.2
+     },
+     {
+      "year": 2023,
+      "delta_true": 0.1,
+      "blind": 1706.6,
+      "sensor": 2857.8,
+      "calibrated": 2857.8
+     },
+     {
+      "year": 2023,
+      "delta_true": 0.2,
+      "blind": 750.7,
+      "sensor": 750.7,
+      "calibrated": 750.7
+     },
+     {
+      "year": 2023,
+      "delta_true": 0.2,
+      "blind": -621.4,
+      "sensor": -546.4,
+      "calibrated": 0.0
+     },
+     {
+      "year": 2024,
+      "delta_true": 0.0,
+      "blind": 6240.6,
+      "sensor": 10522.4,
+      "calibrated": 10522.4
+     },
+     {
+      "year": 2024,
+      "delta_true": 0.1,
+      "blind": 5071.9,
+      "sensor": 8876.9,
+      "calibrated": 8876.9
+     },
+     {
+      "year": 2024,
+      "delta_true": 0.1,
+      "blind": 4109.5,
+      "sensor": 7375.5,
+      "calibrated": 7375.5
+     },
+     {
+      "year": 2024,
+      "delta_true": 0.1,
+      "blind": 3324.7,
+      "sensor": 5947.5,
+      "calibrated": 5947.5
+     },
+     {
+      "year": 2024,
+      "delta_true": 0.1,
+      "blind": 2691.9,
+      "sensor": 4588.9,
+      "calibrated": 4588.9
+     },
+     {
+      "year": 2024,
+      "delta_true": 0.1,
+      "blind": 2188.8,
+      "sensor": 3330.2,
+      "calibrated": 3330.2
+     },
+     {
+      "year": 2024,
+      "delta_true": 0.2,
+      "blind": 1487.1,
+      "sensor": 1487.1,
+      "calibrated": 1487.1
+     },
+     {
+      "year": 2024,
+      "delta_true": 0.2,
+      "blind": 275.2,
+      "sensor": 501.2,
+      "calibrated": 636.6
+     }
+    ]
+   },
+   "C": {
+    "book_delta": 0.0183,
+    "price_source": "actual",
+    "grid": [
+     {
+      "delta_true": 0.005,
+      "blind": 9110.0,
+      "sensor": 9624.0,
+      "calibrated": 9624.0,
+      "voi_sensor": 514.0,
+      "voi_calibrated": 515.0,
+      "sensor_beats_blind_seasons": 8,
+      "sensor_worse_seasons": 0
+     },
+     {
+      "delta_true": 0.0183,
+      "blind": 8560.0,
+      "sensor": 8562.0,
+      "calibrated": 8562.0,
+      "voi_sensor": 2.0,
+      "voi_calibrated": 2.0,
+      "sensor_beats_blind_seasons": 5,
+      "sensor_worse_seasons": 0
+     },
+     {
+      "delta_true": 0.03,
+      "blind": 7384.0,
+      "sensor": 7551.0,
+      "calibrated": 7551.0,
+      "voi_sensor": 167.0,
+      "voi_calibrated": 167.0,
+      "sensor_beats_blind_seasons": 8,
+      "sensor_worse_seasons": 0
+     },
+     {
+      "delta_true": 0.05,
+      "blind": 5593.0,
+      "sensor": 5964.0,
+      "calibrated": 5965.0,
+      "voi_sensor": 371.0,
+      "voi_calibrated": 372.0,
+      "sensor_beats_blind_seasons": 8,
+      "sensor_worse_seasons": 0
+     },
+     {
+      "delta_true": 0.08,
+      "blind": 3377.0,
+      "sensor": 3922.0,
+      "calibrated": 4000.0,
+      "voi_sensor": 545.0,
+      "voi_calibrated": 623.0,
+      "sensor_beats_blind_seasons": 8,
+      "sensor_worse_seasons": 0
+     },
+     {
+      "delta_true": 0.1,
+      "blind": 2173.0,
+      "sensor": 2782.0,
+      "calibrated": 2921.0,
+      "voi_sensor": 609.0,
+      "voi_calibrated": 748.0,
+      "sensor_beats_blind_seasons": 7,
+      "sensor_worse_seasons": 0
+     },
+     {
+      "delta_true": 0.12,
+      "blind": 1155.0,
+      "sensor": 1785.0,
+      "calibrated": 1977.0,
+      "voi_sensor": 631.0,
+      "voi_calibrated": 823.0,
+      "sensor_beats_blind_seasons": 7,
+      "sensor_worse_seasons": 0
+     },
+     {
+      "delta_true": 0.15,
+      "blind": -194.0,
+      "sensor": 552.0,
+      "calibrated": 893.0,
+      "voi_sensor": 746.0,
+      "voi_calibrated": 1087.0,
+      "sensor_beats_blind_seasons": 8,
+      "sensor_worse_seasons": 0
+     }
+    ],
+    "by_season": [
+     {
+      "year": 2017,
+      "delta_true": 0.0,
+      "blind": 8856.1,
+      "sensor": 10294.0,
+      "calibrated": 10294.0
+     },
+     {
+      "year": 2017,
+      "delta_true": 0.0,
+      "blind": 9029.7,
+      "sensor": 9034.9,
+      "calibrated": 9034.9
+     },
+     {
+      "year": 2017,
+      "delta_true": 0.0,
+      "blind": 7854.2,
+      "sensor": 7868.3,
+      "calibrated": 7868.3
+     },
+     {
+      "year": 2017,
+      "delta_true": 0.0,
+      "blind": 6082.1,
+      "sensor": 6149.5,
+      "calibrated": 6149.5
+     },
+     {
+      "year": 2017,
+      "delta_true": 0.1,
+      "blind": 3936.4,
+      "sensor": 4228.2,
+      "calibrated": 4228.2
+     },
+     {
+      "year": 2017,
+      "delta_true": 0.1,
+      "blind": 2798.9,
+      "sensor": 3193.4,
+      "calibrated": 3193.4
+     },
+     {
+      "year": 2017,
+      "delta_true": 0.1,
+      "blind": 1757.3,
+      "sensor": 2389.1,
+      "calibrated": 2389.1
+     },
+     {
+      "year": 2017,
+      "delta_true": 0.2,
+      "blind": 298.4,
+      "sensor": 1443.3,
+      "calibrated": 1443.3
+     },
+     {
+      "year": 2018,
+      "delta_true": 0.0,
+      "blind": 579.2,
+      "sensor": 693.9,
+      "calibrated": 698.7
+     },
+     {
+      "year": 2018,
+      "delta_true": 0.0,
+      "blind": 532.5,
+      "sensor": 532.9,
+      "calibrated": 533.0
+     },
+     {
+      "year": 2018,
+      "delta_true": 0.0,
+      "blind": 364.0,
+      "sensor": 374.7,
+      "calibrated": 380.5
+     },
+     {
+      "year": 2018,
+      "delta_true": 0.0,
+      "blind": 86.8,
+      "sensor": 105.7,
+      "calibrated": 113.1
+     },
+     {
+      "year": 2018,
+      "delta_true": 0.1,
+      "blind": -301.4,
+      "sensor": -294.6,
+      "calibrated": 0.0
+     },
+     {
+      "year": 2018,
+      "delta_true": 0.1,
+      "blind": -542.3,
+      "sensor": -542.3,
+      "calibrated": 0.0
+     },
+     {
+      "year": 2018,
+      "delta_true": 0.1,
+      "blind": -769.3,
+      "sensor": -769.3,
+      "calibrated": 0.0
+     },
+     {
+      "year": 2018,
+      "delta_true": 0.2,
+      "blind": -1084.3,
+      "sensor": -1076.4,
+      "calibrated": 0.0
+     },
+     {
+      "year": 2019,
+      "delta_true": 0.0,
+      "blind": 19264.4,
+      "sensor": 21207.1,
+      "calibrated": 21207.1
+     },
+     {
+      "year": 2019,
+      "delta_true": 0.0,
+      "blind": 19438.3,
+      "sensor": 19445.3,
+      "calibrated": 19445.3
+     },
+     {
+      "year": 2019,
+      "delta_true": 0.0,
+      "blind": 16996.7,
+      "sensor": 17488.7,
+      "calibrated": 17488.7
+     },
+     {
+      "year": 2019,
+      "delta_true": 0.0,
+      "blind": 13302.0,
+      "sensor": 14273.4,
+      "calibrated": 14273.4
+     },
+     {
+      "year": 2019,
+      "delta_true": 0.1,
+      "blind": 8796.1,
+      "sensor": 10090.2,
+      "calibrated": 10090.2
+     },
+     {
+      "year": 2019,
+      "delta_true": 0.1,
+      "blind": 6385.5,
+      "sensor": 7674.3,
+      "calibrated": 7674.3
+     },
+     {
+      "year": 2019,
+      "delta_true": 0.1,
+      "blind": 4446.4,
+      "sensor": 5349.4,
+      "calibrated": 5349.4
+     },
+     {
+      "year": 2019,
+      "delta_true": 0.2,
+      "blind": 2150.3,
+      "sensor": 2503.7,
+      "calibrated": 2503.7
+     },
+     {
+      "year": 2020,
+      "delta_true": 0.0,
+      "blind": 11684.0,
+      "sensor": 11838.5,
+      "calibrated": 11838.5
+     },
+     {
+      "year": 2020,
+      "delta_true": 0.0,
+      "blind": 10629.6,
+      "sensor": 10630.3,
+      "calibrated": 10630.3
+     },
+     {
+      "year": 2020,
+      "delta_true": 0.0,
+      "blind": 9150.7,
+      "sensor": 9374.9,
+      "calibrated": 9374.9
+     },
+     {
+      "year": 2020,
+      "delta_true": 0.0,
+      "blind": 6883.6,
+      "sensor": 7084.9,
+      "calibrated": 7084.9
+     },
+     {
+      "year": 2020,
+      "delta_true": 0.1,
+      "blind": 4047.2,
+      "sensor": 4175.6,
+      "calibrated": 4175.6
+     },
+     {
+      "year": 2020,
+      "delta_true": 0.1,
+      "blind": 2487.5,
+      "sensor": 2589.2,
+      "calibrated": 2589.2
+     },
+     {
+      "year": 2020,
+      "delta_true": 0.1,
+      "blind": 1160.3,
+      "sensor": 1236.0,
+      "calibrated": 1236.0
+     },
+     {
+      "year": 2020,
+      "delta_true": 0.2,
+      "blind": -621.1,
+      "sensor": -526.1,
+      "calibrated": 0.0
+     },
+     {
+      "year": 2021,
+      "delta_true": 0.0,
+      "blind": 5605.4,
+      "sensor": 5606.6,
+      "calibrated": 5606.6
+     },
+     {
+      "year": 2021,
+      "delta_true": 0.0,
+      "blind": 4695.1,
+      "sensor": 4695.4,
+      "calibrated": 4695.4
+     },
+     {
+      "year": 2021,
+      "delta_true": 0.0,
+      "blind": 3897.5,
+      "sensor": 4097.3,
+      "calibrated": 4097.3
+     },
+     {
+      "year": 2021,
+      "delta_true": 0.0,
+      "blind": 2681.0,
+      "sensor": 3237.8,
+      "calibrated": 3237.8
+     },
+     {
+      "year": 2021,
+      "delta_true": 0.1,
+      "blind": 1168.5,
+      "sensor": 1927.0,
+      "calibrated": 1927.0
+     },
+     {
+      "year": 2021,
+      "delta_true": 0.1,
+      "blind": 343.1,
+      "sensor": 1223.3,
+      "calibrated": 1223.3
+     },
+     {
+      "year": 2021,
+      "delta_true": 0.1,
+      "blind": -354.2,
+      "sensor": 758.7,
+      "calibrated": 773.7
+     },
+     {
+      "year": 2021,
+      "delta_true": 0.2,
+      "blind": -1509.2,
+      "sensor": 419.8,
+      "calibrated": 519.0
+     },
+     {
+      "year": 2022,
+      "delta_true": 0.0,
+      "blind": 2735.2,
+      "sensor": 2881.2,
+      "calibrated": 2881.2
+     },
+     {
+      "year": 2022,
+      "delta_true": 0.0,
+      "blind": 2184.6,
+      "sensor": 2185.4,
+      "calibrated": 2185.4
+     },
+     {
+      "year": 2022,
+      "delta_true": 0.0,
+      "blind": 1504.3,
+      "sensor": 1521.6,
+      "calibrated": 1521.6
+     },
+     {
+      "year": 2022,
+      "delta_true": 0.0,
+      "blind": 466.8,
+      "sensor": 611.2,
+      "calibrated": 611.2
+     },
+     {
+      "year": 2022,
+      "delta_true": 0.1,
+      "blind": -820.0,
+      "sensor": -299.5,
+      "calibrated": 26.1
+     },
+     {
+      "year": 2022,
+      "delta_true": 0.1,
+      "blind": -1520.2,
+      "sensor": -571.0,
+      "calibrated": 0.0
+     },
+     {
+      "year": 2022,
+      "delta_true": 0.1,
+      "blind": -2110.1,
+      "sensor": -750.9,
+      "calibrated": 0.0
+     },
+     {
+      "year": 2022,
+      "delta_true": 0.2,
+      "blind": -2955.7,
+      "sensor": -1026.7,
+      "calibrated": 0.0
+     },
+     {
+      "year": 2023,
+      "delta_true": 0.0,
+      "blind": 11710.8,
+      "sensor": 11723.3,
+      "calibrated": 11723.3
+     },
+     {
+      "year": 2023,
+      "delta_true": 0.0,
+      "blind": 10758.7,
+      "sensor": 10758.9,
+      "calibrated": 10758.9
+     },
+     {
+      "year": 2023,
+      "delta_true": 0.0,
+      "blind": 9409.1,
+      "sensor": 9749.7,
+      "calibrated": 9749.7
+     },
+     {
+      "year": 2023,
+      "delta_true": 0.0,
+      "blind": 7341.0,
+      "sensor": 7902.3,
+      "calibrated": 7902.3
+     },
+     {
+      "year": 2023,
+      "delta_true": 0.1,
+      "blind": 4755.4,
+      "sensor": 5437.0,
+      "calibrated": 5437.0
+     },
+     {
+      "year": 2023,
+      "delta_true": 0.1,
+      "blind": 3334.9,
+      "sensor": 3975.9,
+      "calibrated": 3975.9
+     },
+     {
+      "year": 2023,
+      "delta_true": 0.1,
+      "blind": 2127.1,
+      "sensor": 2625.0,
+      "calibrated": 2625.0
+     },
+     {
+      "year": 2023,
+      "delta_true": 0.2,
+      "blind": 680.3,
+      "sensor": 838.1,
+      "calibrated": 838.1
+     },
+     {
+      "year": 2024,
+      "delta_true": 0.0,
+      "blind": 12442.1,
+      "sensor": 12745.0,
+      "calibrated": 12745.0
+     },
+     {
+      "year": 2024,
+      "delta_true": 0.0,
+      "blind": 11210.3,
+      "sensor": 11211.6,
+      "calibrated": 11211.6
+     },
+     {
+      "year": 2024,
+      "delta_true": 0.0,
+      "blind": 9895.9,
+      "sensor": 9931.1,
+      "calibrated": 9931.1
+     },
+     {
+      "year": 2024,
+      "delta_true": 0.0,
+      "blind": 7897.5,
+      "sensor": 8345.8,
+      "calibrated": 8345.8
+     },
+     {
+      "year": 2024,
+      "delta_true": 0.1,
+      "blind": 5431.2,
+      "sensor": 6112.1,
+      "calibrated": 6112.1
+     },
+     {
+      "year": 2024,
+      "delta_true": 0.1,
+      "blind": 4097.4,
+      "sensor": 4714.3,
+      "calibrated": 4714.3
+     },
+     {
+      "year": 2024,
+      "delta_true": 0.1,
+      "blind": 2980.4,
+      "sensor": 3444.8,
+      "calibrated": 3444.8
+     },
+     {
+      "year": 2024,
+      "delta_true": 0.2,
+      "blind": 1487.9,
+      "sensor": 1841.8,
+      "calibrated": 1841.8
+     }
+    ]
+   }
+  }
+ }
+}
