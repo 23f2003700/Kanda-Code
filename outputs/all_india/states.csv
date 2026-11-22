@@ -1,0 +1,16 @@
+state,markets,C_wins,C_gain_mean,C_minus_B_mean,nov_over_apr,mape_test
+West Bengal,1,1,6996.0,6996.0,2.4,20.5
+Himachal Pradesh,1,1,5759.9,5759.9,2.1,20.8
+Kerala,22,22,5626.0,5626.0,1.9,23.3
+Jammu and Kashmir,2,2,5155.0,5155.0,1.8,25.0
+Maharashtra,18,18,4521.8,4570.2,2.8,28.8
+NCT of Delhi,1,1,4293.2,4293.2,2.0,26.2
+Gujarat,2,2,3799.3,3799.3,2.2,25.2
+Telangana,3,3,3514.5,3514.5,2.5,28.4
+Rajasthan,1,1,3458.0,3458.0,1.6,20.7
+Odisha,3,3,3439.4,3439.4,1.7,23.6
+Punjab,13,13,3321.5,3321.5,1.9,23.2
+Uttar Pradesh,39,38,2671.3,2671.3,1.9,23.7
+Haryana,5,4,2599.3,2599.3,1.9,24.5
+Karnataka,4,4,2205.1,2228.3,2.3,28.4
+Uttrakhand,3,1,680.1,680.1,1.8,19.3

@@ -1,0 +1,121 @@
+{
+  "method": "regression_trend_season",
+  "seasons": [
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024
+  ],
+  "coverage_rule": ">= 95% of months 2014-2024 and >= 6 scored seasons",
+  "markets": 118,
+  "states": 15,
+  "market_seasons": 829,
+  "C_beats_harvest_markets": 114,
+  "C_gain_vs_harvest_mean": 3692.035910180734,
+  "C_gain_vs_harvest_median": 3590.373257482215,
+  "C_gain_wilcoxon_p": 5.575290382228939e-21,
+  "C_gain_t_p": 4.7737929865280025e-39,
+  "C_beats_B_markets": 114,
+  "C_minus_B_mean": 3700.203972342128,
+  "C_minus_B_wilcoxon_p": 5.575290382228939e-21,
+  "B_markets_ever_storing": 4,
+  "B_gain_vs_harvest_mean": -8.16806216139429,
+  "C_gain_by_season": {
+    "2017": 1877.0,
+    "2018": -666.9,
+    "2019": 4708.3,
+    "2020": 2673.6,
+    "2021": 3044.4,
+    "2022": -1163.2,
+    "2023": 8594.1,
+    "2024": 10590.6
+  },
+  "C_gain_seasons_positive": 6,
+  "C_gain_season_t_p": 0.03907436356116056,
+  "C_minus_B_by_season": {
+    "2017": 1896.8,
+    "2018": -653.6,
+    "2019": 4708.3,
+    "2020": 2712.3,
+    "2021": 3044.4,
+    "2022": -1163.2,
+    "2023": 8594.1,
+    "2024": 10590.6
+  },
+  "C_minus_B_season_t_p": 0.03856639260416437,
+  "C_market_season_win_rate": 0.7056694813027744,
+  "mape_test_median": 24.147575778584304,
+  "harvest_low_markets": 112,
+  "C_win_rate_harvest_low": 0.9732142857142857,
+  "C_win_rate_other": 0.8333333333333334,
+  "spearman_swing_vs_gain": {
+    "rho": 0.4092374889982069,
+    "p": 4.198819375235086e-06
+  },
+  "losing_markets": [
+    {
+      "state": "Haryana",
+      "market": "Pehowa",
+      "C_gain_vs_harvest": -730.76,
+      "nov_over_apr": 1.25,
+      "trough_month": 5
+    },
+    {
+      "state": "Uttar Pradesh",
+      "market": "Shahjahanpur",
+      "C_gain_vs_harvest": -308.61,
+      "nov_over_apr": 1.63,
+      "trough_month": 6
+    },
+    {
+      "state": "Uttrakhand",
+      "market": "Dehradoon",
+      "C_gain_vs_harvest": -84.38,
+      "nov_over_apr": 1.65,
+      "trough_month": 5
+    },
+    {
+      "state": "Uttrakhand",
+      "market": "Vikasnagar",
+      "C_gain_vs_harvest": -272.76,
+      "nov_over_apr": 1.78,
+      "trough_month": 5
+    }
+  ],
+  "stress_extra_costs": {
+    "assumptions": "1% fee, Rs 500/t selling cost, 1%/month quality discount; cold storage (C)",
+    "markets": 118,
+    "C_beats_harvest_markets": 105,
+    "C_gain_vs_harvest_mean": 2366.615290112908,
+    "C_gain_by_season": {
+      "2017": 989.6,
+      "2018": -902.8,
+      "2019": 3199.0,
+      "2020": 214.3,
+      "2021": 1826.0,
+      "2022": -1905.3,
+      "2023": 6774.8,
+      "2024": 8626.1
+    },
+    "C_gain_season_t_p": 0.11392228644289233,
+    "losing_markets": [
+      "Pehowa (Haryana)",
+      "Hubli (Amaragol) (Karnataka)",
+      "Chelakkara (Kerala)",
+      "Irinjalakkuda (Kerala)",
+      "Kondotty (Kerala)",
+      "Perinthalmanna (Kerala)",
+      "Bargarh (Odisha)",
+      "Amritsar(Amritsar Mewa Mandi) (Punjab)",
+      "Badayoun (Uttar Pradesh)",
+      "Bareilly (Uttar Pradesh)",
+      "Shahjahanpur (Uttar Pradesh)",
+      "Dehradoon (Uttrakhand)",
+      "Vikasnagar (Uttrakhand)"
+    ]
+  }
+}

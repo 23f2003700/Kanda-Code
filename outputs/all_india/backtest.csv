@@ -1,0 +1,1659 @@
+year,scenario,mape_pct,harvest_net_per_t,net_per_t,gain_vs_harvest_per_t,oracle_gain_per_t,stored,state,district,market
+2017,B,39.09,6349.00,6349.00,0.00,0.00,False,Gujarat,Morbi,Morbi
+2017,C,39.09,6349.00,6749.01,400.00,5983.09,True,Gujarat,Morbi,Morbi
+2018,B,23.43,6112.40,6112.40,0.00,0.00,False,Gujarat,Morbi,Morbi
+2018,C,23.43,6112.40,5105.15,-1007.25,728.03,True,Gujarat,Morbi,Morbi
+2021,B,18.11,7500.00,7500.00,0.00,1289.83,False,Gujarat,Morbi,Morbi
+2021,C,18.11,7500.00,10816.84,3316.84,4951.20,True,Gujarat,Morbi,Morbi
+2022,B,52.63,9310.36,9310.36,0.00,0.00,False,Gujarat,Morbi,Morbi
+2022,C,52.63,9310.36,6210.25,-3100.10,0.00,True,Gujarat,Morbi,Morbi
+2023,B,19.03,6098.53,6098.53,0.00,259.74,False,Gujarat,Morbi,Morbi
+2023,C,19.03,6098.53,14145.64,8047.11,8063.36,True,Gujarat,Morbi,Morbi
+2024,B,28.87,10540.55,10540.55,0.00,440.05,False,Gujarat,Morbi,Morbi
+2024,C,28.87,10540.55,17116.00,6575.45,9583.17,True,Gujarat,Morbi,Morbi
+2017,B,39.07,7457.75,7457.75,0.00,1043.25,False,Gujarat,VadodaraBaroda,Padra
+2017,C,39.07,7457.75,10391.13,2933.38,10772.86,True,Gujarat,VadodaraBaroda,Padra
+2018,B,23.69,9643.40,9643.40,0.00,0.00,False,Gujarat,VadodaraBaroda,Padra
+2018,C,23.69,9643.40,8258.12,-1385.27,714.78,True,Gujarat,VadodaraBaroda,Padra
+2021,B,14.27,11726.59,11726.59,0.00,797.04,False,Gujarat,VadodaraBaroda,Padra
+2021,C,14.27,11726.59,17153.09,5426.50,6084.81,True,Gujarat,VadodaraBaroda,Padra
+2022,B,34.68,11922.20,11922.20,0.00,0.00,False,Gujarat,VadodaraBaroda,Padra
+2022,C,34.68,11922.20,12989.34,1067.14,1124.74,True,Gujarat,VadodaraBaroda,Padra
+2023,B,16.47,10901.51,10901.51,0.00,0.00,False,Gujarat,VadodaraBaroda,Padra
+2023,C,16.47,10901.51,22138.04,11236.53,11285.64,True,Gujarat,VadodaraBaroda,Padra
+2024,B,36.62,16526.66,16526.66,0.00,368.86,False,Gujarat,VadodaraBaroda,Padra
+2024,C,36.62,16526.66,28608.52,12081.86,13871.72,True,Gujarat,VadodaraBaroda,Padra
+2017,B,36.36,8292.76,8292.76,0.00,0.00,False,Haryana,Ambala,Naraingarh
+2017,C,36.36,8292.76,11902.83,3610.08,10587.24,True,Haryana,Ambala,Naraingarh
+2018,B,35.19,8516.17,8516.17,0.00,0.00,False,Haryana,Ambala,Naraingarh
+2018,C,35.19,8516.17,8396.40,-119.77,2406.94,True,Haryana,Ambala,Naraingarh
+2020,B,34.50,14604.00,14604.00,0.00,0.00,False,Haryana,Ambala,Naraingarh
+2020,C,34.50,14604.00,21837.36,7233.36,7233.36,True,Haryana,Ambala,Naraingarh
+2021,B,23.88,11265.80,11265.80,0.00,391.66,False,Haryana,Ambala,Naraingarh
+2021,C,23.88,11265.80,14936.20,3670.40,4561.47,True,Haryana,Ambala,Naraingarh
+2022,B,64.71,10079.00,10079.00,0.00,0.00,False,Haryana,Ambala,Naraingarh
+2022,C,64.71,10079.00,9242.23,-836.77,0.00,True,Haryana,Ambala,Naraingarh
+2023,B,12.68,9041.58,9041.58,0.00,0.00,False,Haryana,Ambala,Naraingarh
+2023,C,12.68,9041.58,17808.04,8766.46,8814.85,True,Haryana,Ambala,Naraingarh
+2024,B,32.82,15300.41,15300.41,0.00,0.00,False,Haryana,Ambala,Naraingarh
+2024,C,32.82,15300.41,24679.04,9378.63,10340.37,True,Haryana,Ambala,Naraingarh
+2017,B,31.57,8216.01,8216.01,0.00,18.78,False,Haryana,Faridabad,Ballabhgarh
+2017,C,31.57,8216.01,8216.01,0.00,6099.31,False,Haryana,Faridabad,Ballabhgarh
+2018,B,23.58,9270.70,9270.70,0.00,0.00,False,Haryana,Faridabad,Ballabhgarh
+2018,C,23.58,9270.70,8844.86,-425.84,820.89,True,Haryana,Faridabad,Ballabhgarh
+2020,B,21.96,14494.19,14494.19,0.00,0.00,False,Haryana,Faridabad,Ballabhgarh
+2020,C,21.96,14494.19,18073.91,3579.73,4348.88,True,Haryana,Faridabad,Ballabhgarh
+2021,B,16.44,11208.11,11208.11,0.00,0.00,False,Haryana,Faridabad,Ballabhgarh
+2021,C,16.44,11208.11,13365.77,2157.66,3167.88,True,Haryana,Faridabad,Ballabhgarh
+2022,B,51.78,9580.58,9580.58,0.00,0.00,False,Haryana,Faridabad,Ballabhgarh
+2022,C,51.78,9580.58,8041.10,-1539.47,0.00,True,Haryana,Faridabad,Ballabhgarh
+2023,B,19.80,8701.58,8701.58,0.00,0.00,False,Haryana,Faridabad,Ballabhgarh
+2023,C,19.80,8701.58,14705.24,6003.66,8141.07,True,Haryana,Faridabad,Ballabhgarh
+2024,B,36.19,14910.02,14910.02,0.00,446.17,False,Haryana,Faridabad,Ballabhgarh
+2024,C,36.19,14910.02,21372.01,6461.99,10630.82,True,Haryana,Faridabad,Ballabhgarh
+2017,B,30.69,7703.65,7703.65,0.00,1025.65,False,Haryana,Gurgaon,Gurgaon
+2017,C,30.69,7703.65,9578.65,1875.01,8508.83,True,Haryana,Gurgaon,Gurgaon
+2018,B,33.74,10197.24,10197.24,0.00,0.00,False,Haryana,Gurgaon,Gurgaon
+2018,C,33.74,10197.24,8327.46,-1869.78,0.00,True,Haryana,Gurgaon,Gurgaon
+2021,B,18.83,11742.49,11742.49,0.00,0.00,False,Haryana,Gurgaon,Gurgaon
+2021,C,18.83,11742.49,14138.31,2395.82,4110.18,True,Haryana,Gurgaon,Gurgaon
+2022,B,63.03,11836.35,11836.35,0.00,0.00,False,Haryana,Gurgaon,Gurgaon
+2022,C,63.03,11836.35,9093.20,-2743.15,0.00,True,Haryana,Gurgaon,Gurgaon
+2023,B,20.16,8064.03,8064.03,0.00,0.00,False,Haryana,Gurgaon,Gurgaon
+2023,C,20.16,8064.03,13767.87,5703.85,5729.92,True,Haryana,Gurgaon,Gurgaon
+2024,B,28.83,13024.98,13024.98,0.00,0.00,False,Haryana,Gurgaon,Gurgaon
+2024,C,28.83,13024.98,20151.06,7126.08,8868.73,True,Haryana,Gurgaon,Gurgaon
+2017,B,25.61,10909.09,10909.09,0.00,0.00,False,Haryana,Kurukshetra,Pehowa
+2017,C,25.61,10909.09,9848.48,-1060.61,395.64,True,Haryana,Kurukshetra,Pehowa
+2018,B,35.17,14662.86,14662.86,0.00,0.00,False,Haryana,Kurukshetra,Pehowa
+2018,C,35.17,14662.86,9877.41,-4785.45,0.00,True,Haryana,Kurukshetra,Pehowa
+2019,B,18.80,14150.00,14150.00,0.00,0.00,False,Haryana,Kurukshetra,Pehowa
+2019,C,18.80,14150.00,14150.00,0.00,21.80,False,Haryana,Kurukshetra,Pehowa
+2020,B,21.18,17431.37,17431.37,0.00,0.00,False,Haryana,Kurukshetra,Pehowa
+2020,C,21.18,17431.37,17431.37,0.00,3180.24,False,Haryana,Kurukshetra,Pehowa
+2021,B,18.32,15356.16,15356.16,0.00,0.00,False,Haryana,Kurukshetra,Pehowa
+2021,C,18.32,15356.16,15356.16,0.00,0.00,False,Haryana,Kurukshetra,Pehowa
+2022,B,13.85,13984.62,13984.62,0.00,0.00,False,Haryana,Kurukshetra,Pehowa
+2022,C,13.85,13984.62,13984.62,0.00,0.00,False,Haryana,Kurukshetra,Pehowa
+2023,B,15.12,13078.26,13078.26,0.00,0.00,False,Haryana,Kurukshetra,Pehowa
+2023,C,15.12,13078.26,13078.26,0.00,156.88,False,Haryana,Kurukshetra,Pehowa
+2024,B,27.86,16183.72,16183.72,0.00,0.00,False,Haryana,Kurukshetra,Pehowa
+2024,C,27.86,16183.72,16183.72,0.00,9908.26,False,Haryana,Kurukshetra,Pehowa
+2017,B,41.60,6123.60,6123.60,0.00,0.00,False,Haryana,Kurukshetra,Shahabad
+2017,C,41.60,6123.60,6123.60,0.00,9443.82,False,Haryana,Kurukshetra,Shahabad
+2018,B,21.20,7611.09,7611.09,0.00,0.00,False,Haryana,Kurukshetra,Shahabad
+2018,C,21.20,7611.09,7103.14,-507.95,1001.20,True,Haryana,Kurukshetra,Shahabad
+2020,B,20.18,13381.18,13381.18,0.00,0.00,False,Haryana,Kurukshetra,Shahabad
+2020,C,20.18,13381.18,21050.76,7669.58,7669.58,True,Haryana,Kurukshetra,Shahabad
+2021,B,23.35,10339.74,10339.74,0.00,921.54,False,Haryana,Kurukshetra,Shahabad
+2021,C,23.35,10339.74,14439.51,4099.77,5746.80,True,Haryana,Kurukshetra,Shahabad
+2022,B,51.37,9814.33,9814.33,0.00,0.00,False,Haryana,Kurukshetra,Shahabad
+2022,C,51.37,9814.33,9513.82,-300.51,177.33,True,Haryana,Kurukshetra,Shahabad
+2023,B,15.20,8634.59,8634.59,0.00,59.86,False,Haryana,Kurukshetra,Shahabad
+2023,C,15.20,8634.59,18842.60,10208.01,10223.57,True,Haryana,Kurukshetra,Shahabad
+2024,B,38.53,15850.64,15850.64,0.00,889.26,False,Haryana,Kurukshetra,Shahabad
+2024,C,38.53,15850.64,28264.50,12413.85,13868.03,True,Haryana,Kurukshetra,Shahabad
+2017,B,37.39,10640.50,10640.50,0.00,0.00,False,Himachal Pradesh,Mandi,Dhanotu (Mandi)
+2017,C,37.39,10640.50,12852.49,2211.99,11396.33,True,Himachal Pradesh,Mandi,Dhanotu (Mandi)
+2018,B,24.05,12679.91,12679.91,0.00,0.00,False,Himachal Pradesh,Mandi,Dhanotu (Mandi)
+2018,C,24.05,12679.91,12073.18,-606.72,1059.95,True,Himachal Pradesh,Mandi,Dhanotu (Mandi)
+2019,B,36.81,11526.39,11526.39,0.00,379.55,False,Himachal Pradesh,Mandi,Dhanotu (Mandi)
+2019,C,36.81,11526.39,20287.96,8761.57,21172.43,True,Himachal Pradesh,Mandi,Dhanotu (Mandi)
+2020,B,22.96,18263.56,18263.56,0.00,0.00,False,Himachal Pradesh,Mandi,Dhanotu (Mandi)
+2020,C,22.96,18263.56,29201.08,10937.52,11141.80,True,Himachal Pradesh,Mandi,Dhanotu (Mandi)
+2021,B,15.27,16847.58,16847.58,0.00,0.00,False,Himachal Pradesh,Mandi,Dhanotu (Mandi)
+2021,C,15.27,16847.58,20922.91,4075.33,5761.44,True,Himachal Pradesh,Mandi,Dhanotu (Mandi)
+2022,B,41.92,15918.69,15918.69,0.00,0.00,False,Himachal Pradesh,Mandi,Dhanotu (Mandi)
+2022,C,41.92,15918.69,15529.63,-389.06,0.00,True,Himachal Pradesh,Mandi,Dhanotu (Mandi)
+2023,B,12.23,14199.05,14199.05,0.00,0.00,False,Himachal Pradesh,Mandi,Dhanotu (Mandi)
+2023,C,12.23,14199.05,25766.48,11567.43,11612.49,True,Himachal Pradesh,Mandi,Dhanotu (Mandi)
+2024,B,29.40,22909.33,22909.33,0.00,0.00,False,Himachal Pradesh,Mandi,Dhanotu (Mandi)
+2024,C,29.40,22909.33,32430.67,9521.33,11422.06,True,Himachal Pradesh,Mandi,Dhanotu (Mandi)
+2017,B,30.90,11201.34,11201.34,0.00,0.00,False,Jammu and Kashmir,Jammu,Narwal Jammu (F&V)
+2017,C,30.90,11201.34,13918.70,2717.36,11314.98,True,Jammu and Kashmir,Jammu,Narwal Jammu (F&V)
+2018,B,36.75,11925.53,11925.53,0.00,0.00,False,Jammu and Kashmir,Jammu,Narwal Jammu (F&V)
+2018,C,36.75,11925.53,10539.07,-1386.46,301.91,True,Jammu and Kashmir,Jammu,Narwal Jammu (F&V)
+2020,B,29.99,17879.87,17879.87,0.00,0.00,False,Jammu and Kashmir,Jammu,Narwal Jammu (F&V)
+2020,C,29.99,17879.87,22417.19,4537.32,11082.05,True,Jammu and Kashmir,Jammu,Narwal Jammu (F&V)
+2021,B,13.20,15647.37,15647.37,0.00,0.00,False,Jammu and Kashmir,Jammu,Narwal Jammu (F&V)
+2021,C,13.20,15647.37,20254.78,4607.41,5177.50,True,Jammu and Kashmir,Jammu,Narwal Jammu (F&V)
+2022,B,36.52,14715.55,14715.55,0.00,0.00,False,Jammu and Kashmir,Jammu,Narwal Jammu (F&V)
+2022,C,36.52,14715.55,14101.61,-613.94,0.00,True,Jammu and Kashmir,Jammu,Narwal Jammu (F&V)
+2023,B,18.30,12038.17,12038.17,0.00,0.00,False,Jammu and Kashmir,Jammu,Narwal Jammu (F&V)
+2023,C,18.30,12038.17,24796.15,12757.98,12843.11,True,Jammu and Kashmir,Jammu,Narwal Jammu (F&V)
+2024,B,33.31,21234.99,21234.99,0.00,0.00,False,Jammu and Kashmir,Jammu,Narwal Jammu (F&V)
+2024,C,33.31,21234.99,33139.33,11904.35,12482.27,True,Jammu and Kashmir,Jammu,Narwal Jammu (F&V)
+2018,B,24.84,12857.14,12857.14,0.00,0.00,False,Jammu and Kashmir,Udhampur,Udhampur
+2018,C,24.84,12857.14,12717.94,-139.20,842.39,True,Jammu and Kashmir,Udhampur,Udhampur
+2020,B,27.34,16920.13,16920.13,0.00,0.00,False,Jammu and Kashmir,Udhampur,Udhampur
+2020,C,27.34,16920.13,24985.34,8065.21,11484.50,True,Jammu and Kashmir,Udhampur,Udhampur
+2021,B,18.25,18000.00,18000.00,0.00,0.00,False,Jammu and Kashmir,Udhampur,Udhampur
+2021,C,18.25,18000.00,20985.78,2985.78,4154.13,True,Jammu and Kashmir,Udhampur,Udhampur
+2022,B,34.43,17171.66,17171.66,0.00,0.00,False,Jammu and Kashmir,Udhampur,Udhampur
+2022,C,34.43,17171.66,16218.74,-952.92,0.00,True,Jammu and Kashmir,Udhampur,Udhampur
+2023,B,14.38,13459.22,13459.22,0.00,0.00,False,Jammu and Kashmir,Udhampur,Udhampur
+2023,C,14.38,13459.22,23633.07,10173.85,10569.34,True,Jammu and Kashmir,Udhampur,Udhampur
+2024,B,34.08,23226.97,23226.97,0.00,0.00,False,Jammu and Kashmir,Udhampur,Udhampur
+2024,C,34.08,23226.97,35362.27,12135.29,13175.19,True,Jammu and Kashmir,Udhampur,Udhampur
+2017,B,40.08,7014.46,7014.46,0.00,845.32,False,Karnataka,Bangalore,Bangalore
+2017,C,40.08,7014.46,9493.70,2479.24,10685.69,True,Karnataka,Bangalore,Bangalore
+2018,B,31.21,7007.41,7007.41,0.00,0.00,False,Karnataka,Bangalore,Bangalore
+2018,C,31.21,7007.41,6814.91,-192.50,969.98,True,Karnataka,Bangalore,Bangalore
+2019,B,45.00,7777.27,7777.27,0.00,5800.94,False,Karnataka,Bangalore,Bangalore
+2019,C,45.00,7777.27,11068.20,3290.93,31885.44,True,Karnataka,Bangalore,Bangalore
+2020,B,37.44,10781.52,10781.52,0.00,575.38,False,Karnataka,Bangalore,Bangalore
+2020,C,37.44,10781.52,17198.51,6417.00,14725.43,True,Karnataka,Bangalore,Bangalore
+2021,B,18.15,10019.50,10019.50,0.00,654.44,False,Karnataka,Bangalore,Bangalore
+2021,C,18.15,10019.50,14937.95,4918.45,5107.55,True,Karnataka,Bangalore,Bangalore
+2022,B,54.00,9858.50,9858.50,0.00,0.00,False,Karnataka,Bangalore,Bangalore
+2022,C,54.00,9858.50,10209.51,351.01,877.21,True,Karnataka,Bangalore,Bangalore
+2023,B,18.00,9337.20,9337.20,0.00,0.00,False,Karnataka,Bangalore,Bangalore
+2023,C,18.00,9337.20,20648.35,11311.15,11401.35,True,Karnataka,Bangalore,Bangalore
+2024,B,32.87,13975.64,13975.64,0.00,504.19,False,Karnataka,Bangalore,Bangalore
+2024,C,32.87,13975.64,23619.13,9643.49,10019.09,True,Karnataka,Bangalore,Bangalore
+2017,B,34.86,5644.60,4903.24,-741.36,1135.86,True,Karnataka,Bijapur,Bijapur
+2017,C,34.86,5644.60,7765.43,2120.83,6323.39,True,Karnataka,Bijapur,Bijapur
+2018,B,66.04,5708.63,5708.63,0.00,0.00,False,Karnataka,Bijapur,Bijapur
+2018,C,66.04,5708.63,4039.10,-1669.53,165.80,True,Karnataka,Bijapur,Bijapur
+2019,B,44.39,5293.21,5293.21,0.00,6667.17,False,Karnataka,Bijapur,Bijapur
+2019,C,44.39,5293.21,7892.81,2599.59,23842.19,True,Karnataka,Bijapur,Bijapur
+2020,B,57.33,7117.42,7117.42,0.00,0.00,False,Karnataka,Bijapur,Bijapur
+2020,C,57.33,7117.42,8470.00,1352.58,7538.28,True,Karnataka,Bijapur,Bijapur
+2021,B,17.11,6383.40,6383.40,0.00,1093.93,False,Karnataka,Bijapur,Bijapur
+2021,C,17.11,6383.40,8242.00,1858.60,3096.75,True,Karnataka,Bijapur,Bijapur
+2022,B,32.36,6894.79,6894.79,0.00,0.00,False,Karnataka,Bijapur,Bijapur
+2022,C,32.36,6894.79,7522.02,627.23,630.67,True,Karnataka,Bijapur,Bijapur
+2023,B,24.71,5217.46,5217.46,0.00,923.99,False,Karnataka,Bijapur,Bijapur
+2023,C,24.71,5217.46,11655.34,6437.88,8316.33,True,Karnataka,Bijapur,Bijapur
+2024,B,37.94,11393.74,11393.74,0.00,446.18,False,Karnataka,Bijapur,Bijapur
+2024,C,37.94,11393.74,18240.65,6846.91,7993.62,True,Karnataka,Bijapur,Bijapur
+2017,B,38.04,6149.55,6149.55,0.00,1021.02,False,Karnataka,Davangere,Davangere
+2017,C,38.04,6149.55,8419.88,2270.32,6421.66,True,Karnataka,Davangere,Davangere
+2018,B,24.60,6675.12,6675.12,0.00,0.00,False,Karnataka,Davangere,Davangere
+2018,C,24.60,6675.12,6830.49,155.37,427.91,True,Karnataka,Davangere,Davangere
+2019,B,46.85,7363.10,7363.10,0.00,1430.24,False,Karnataka,Davangere,Davangere
+2019,C,46.85,7363.10,10810.56,3447.46,15339.18,True,Karnataka,Davangere,Davangere
+2020,B,50.53,8388.70,8388.70,0.00,0.00,False,Karnataka,Davangere,Davangere
+2020,C,50.53,8388.70,5642.98,-2745.72,3835.15,True,Karnataka,Davangere,Davangere
+2021,B,21.96,8198.40,8198.40,0.00,0.00,False,Karnataka,Davangere,Davangere
+2021,C,21.96,8198.40,7316.93,-881.47,617.47,True,Karnataka,Davangere,Davangere
+2022,B,24.59,10453.69,10453.69,0.00,0.00,False,Karnataka,Davangere,Davangere
+2022,C,24.59,10453.69,9371.44,-1082.25,0.00,True,Karnataka,Davangere,Davangere
+2023,B,25.73,8688.95,8688.95,0.00,0.00,False,Karnataka,Davangere,Davangere
+2023,C,25.73,8688.95,8890.49,201.55,7385.33,True,Karnataka,Davangere,Davangere
+2024,B,38.58,12122.24,12122.24,0.00,0.00,False,Karnataka,Davangere,Davangere
+2024,C,38.58,12122.24,18848.41,6726.17,8985.15,True,Karnataka,Davangere,Davangere
+2017,B,37.96,5280.11,5280.11,0.00,668.86,False,Karnataka,Dharwad,Hubli (Amaragol)
+2017,C,37.96,5280.11,6993.08,1712.97,5461.47,True,Karnataka,Dharwad,Hubli (Amaragol)
+2018,B,39.82,6187.70,6187.70,0.00,0.00,False,Karnataka,Dharwad,Hubli (Amaragol)
+2018,C,39.82,6187.70,6013.13,-174.56,283.05,True,Karnataka,Dharwad,Hubli (Amaragol)
+2019,B,36.24,6185.85,6185.85,0.00,2712.28,False,Karnataka,Dharwad,Hubli (Amaragol)
+2019,C,36.24,6185.85,7721.58,1535.73,16903.83,True,Karnataka,Dharwad,Hubli (Amaragol)
+2020,B,43.56,17473.66,17473.66,0.00,0.00,False,Karnataka,Dharwad,Hubli (Amaragol)
+2020,C,43.56,17473.66,9856.36,-7617.31,1096.07,True,Karnataka,Dharwad,Hubli (Amaragol)
+2021,B,21.56,7601.81,7601.81,0.00,249.15,False,Karnataka,Dharwad,Hubli (Amaragol)
+2021,C,21.56,7601.81,7999.79,397.99,1861.28,True,Karnataka,Dharwad,Hubli (Amaragol)
+2022,B,51.45,7757.32,7757.32,0.00,0.00,False,Karnataka,Dharwad,Hubli (Amaragol)
+2022,C,51.45,7757.32,6433.90,-1323.42,0.00,True,Karnataka,Dharwad,Hubli (Amaragol)
+2023,B,23.57,5723.93,5723.93,0.00,0.00,False,Karnataka,Dharwad,Hubli (Amaragol)
+2023,C,23.57,5723.93,9209.41,3485.48,4491.99,True,Karnataka,Dharwad,Hubli (Amaragol)
+2024,B,26.68,8186.41,8186.41,0.00,676.85,False,Karnataka,Dharwad,Hubli (Amaragol)
+2024,C,26.68,8186.41,14248.18,6061.77,6392.40,True,Karnataka,Dharwad,Hubli (Amaragol)
+2017,B,31.63,35311.00,35311.00,0.00,0.00,False,Kerala,Ernakulam,Aluva
+2017,C,31.63,35311.00,29775.89,-5535.11,5029.84,True,Kerala,Ernakulam,Aluva
+2018,B,43.96,21226.24,21226.24,0.00,0.00,False,Kerala,Ernakulam,Aluva
+2018,C,43.96,21226.24,26381.65,5155.41,6502.41,True,Kerala,Ernakulam,Aluva
+2019,B,19.54,23037.67,23037.67,0.00,390.46,False,Kerala,Ernakulam,Aluva
+2019,C,19.54,23037.67,28235.50,5197.83,18958.04,True,Kerala,Ernakulam,Aluva
+2020,B,28.43,36361.28,36361.28,0.00,0.00,False,Kerala,Ernakulam,Aluva
+2020,C,28.43,36361.28,39996.96,3635.68,14503.92,True,Kerala,Ernakulam,Aluva
+2021,B,33.94,30588.61,30588.61,0.00,0.00,False,Kerala,Ernakulam,Aluva
+2021,C,33.94,30588.61,32160.54,1571.94,5043.49,True,Kerala,Ernakulam,Aluva
+2022,B,100.19,18996.02,18996.02,0.00,0.00,False,Kerala,Ernakulam,Aluva
+2022,C,100.19,18996.02,20173.89,1177.87,1472.04,True,Kerala,Ernakulam,Aluva
+2023,B,40.26,17346.35,17346.35,0.00,0.00,False,Kerala,Ernakulam,Aluva
+2023,C,40.26,17346.35,25305.62,7959.27,12675.16,True,Kerala,Ernakulam,Aluva
+2024,B,20.54,22615.87,22615.87,0.00,460.15,False,Kerala,Ernakulam,Aluva
+2024,C,20.54,22615.87,38018.62,15402.75,19886.78,True,Kerala,Ernakulam,Aluva
+2017,B,32.50,12069.77,12069.77,0.00,0.00,False,Kerala,Ernakulam,Perumbavoor
+2017,C,32.50,12069.77,15240.79,3171.02,15540.37,True,Kerala,Ernakulam,Perumbavoor
+2018,B,23.93,13641.71,13641.71,0.00,0.00,False,Kerala,Ernakulam,Perumbavoor
+2018,C,23.93,13641.71,13033.32,-608.39,1193.05,True,Kerala,Ernakulam,Perumbavoor
+2021,B,26.05,15219.78,15219.78,0.00,0.00,False,Kerala,Ernakulam,Perumbavoor
+2021,C,26.05,15219.78,21498.64,6278.86,6579.59,True,Kerala,Ernakulam,Perumbavoor
+2022,B,22.01,23777.78,23777.78,0.00,0.00,False,Kerala,Ernakulam,Perumbavoor
+2022,C,22.01,23777.78,20862.81,-2914.97,0.00,True,Kerala,Ernakulam,Perumbavoor
+2023,B,25.98,19662.79,19662.79,0.00,0.00,False,Kerala,Ernakulam,Perumbavoor
+2023,C,25.98,19662.79,29110.65,9447.86,11364.19,True,Kerala,Ernakulam,Perumbavoor
+2024,B,43.89,22660.79,22660.79,0.00,0.00,False,Kerala,Ernakulam,Perumbavoor
+2024,C,43.89,22660.79,38635.96,15975.17,17517.11,True,Kerala,Ernakulam,Perumbavoor
+2017,B,25.50,13952.38,13952.38,0.00,0.00,False,Kerala,Ernakulam,Thrippunithura
+2017,C,25.50,13952.38,20519.21,6566.82,15704.56,True,Kerala,Ernakulam,Thrippunithura
+2018,B,18.64,17897.44,17897.44,0.00,0.00,False,Kerala,Ernakulam,Thrippunithura
+2018,C,18.64,17897.44,18492.34,594.90,2306.10,True,Kerala,Ernakulam,Thrippunithura
+2019,B,36.95,17804.88,17804.88,0.00,3708.90,False,Kerala,Ernakulam,Thrippunithura
+2019,C,36.95,17804.88,36538.47,18733.59,43668.43,True,Kerala,Ernakulam,Thrippunithura
+2020,B,27.70,23176.47,23176.47,0.00,0.00,False,Kerala,Ernakulam,Thrippunithura
+2020,C,27.70,23176.47,35456.65,12280.18,16578.72,True,Kerala,Ernakulam,Thrippunithura
+2021,B,12.36,21219.51,21219.51,0.00,0.00,False,Kerala,Ernakulam,Thrippunithura
+2021,C,12.36,21219.51,28549.09,7329.58,8942.19,True,Kerala,Ernakulam,Thrippunithura
+2022,B,35.67,24040.00,24040.00,0.00,0.00,False,Kerala,Ernakulam,Thrippunithura
+2022,C,35.67,24040.00,22488.16,-1551.84,680.01,True,Kerala,Ernakulam,Thrippunithura
+2023,B,11.16,19138.89,19138.89,0.00,0.00,False,Kerala,Ernakulam,Thrippunithura
+2023,C,11.16,19138.89,34014.87,14875.98,14875.98,True,Kerala,Ernakulam,Thrippunithura
+2024,B,26.77,26894.74,26894.74,0.00,0.00,False,Kerala,Ernakulam,Thrippunithura
+2024,C,26.77,26894.74,44351.88,17457.15,17538.63,True,Kerala,Ernakulam,Thrippunithura
+2017,B,28.11,13500.00,13500.00,0.00,0.00,False,Kerala,KozhikodeCalicut,Kallachi
+2017,C,28.11,13500.00,18109.85,4609.85,13591.71,True,Kerala,KozhikodeCalicut,Kallachi
+2018,B,25.82,14333.33,14333.33,0.00,0.00,False,Kerala,KozhikodeCalicut,Kallachi
+2018,C,25.82,14333.33,13956.39,-376.94,1515.63,True,Kerala,KozhikodeCalicut,Kallachi
+2019,B,33.21,14000.00,14000.00,0.00,0.00,False,Kerala,KozhikodeCalicut,Kallachi
+2019,C,33.21,14000.00,24408.06,10408.06,17544.19,True,Kerala,KozhikodeCalicut,Kallachi
+2021,B,15.43,18291.67,18291.67,0.00,1104.18,False,Kerala,KozhikodeCalicut,Kallachi
+2021,C,15.43,18291.67,23721.88,5430.21,8314.40,True,Kerala,KozhikodeCalicut,Kallachi
+2022,B,32.69,18700.00,18700.00,0.00,0.00,False,Kerala,KozhikodeCalicut,Kallachi
+2022,C,32.69,18700.00,20322.80,1622.80,1719.51,True,Kerala,KozhikodeCalicut,Kallachi
+2023,B,16.26,17789.47,17789.47,0.00,0.00,False,Kerala,KozhikodeCalicut,Kallachi
+2023,C,16.26,17789.47,29471.27,11681.79,12853.14,True,Kerala,KozhikodeCalicut,Kallachi
+2024,B,31.99,23647.06,23647.06,0.00,184.43,False,Kerala,KozhikodeCalicut,Kallachi
+2024,C,31.99,23647.06,41819.14,18172.09,18371.98,True,Kerala,KozhikodeCalicut,Kallachi
+2017,B,32.95,11026.88,11026.88,0.00,117.22,False,Kerala,KozhikodeCalicut,Palayam
+2017,C,32.95,11026.88,13880.80,2853.92,12370.83,True,Kerala,KozhikodeCalicut,Palayam
+2018,B,21.02,12613.64,12613.64,0.00,0.00,False,Kerala,KozhikodeCalicut,Palayam
+2018,C,21.02,12613.64,12255.52,-358.12,1710.84,True,Kerala,KozhikodeCalicut,Palayam
+2020,B,35.02,18390.76,18390.76,0.00,0.00,False,Kerala,KozhikodeCalicut,Palayam
+2020,C,35.02,18390.76,25064.97,6674.21,18514.56,True,Kerala,KozhikodeCalicut,Palayam
+2021,B,13.56,16495.69,16495.69,0.00,0.00,False,Kerala,KozhikodeCalicut,Palayam
+2021,C,13.56,16495.69,22863.99,6368.30,6748.34,True,Kerala,KozhikodeCalicut,Palayam
+2022,B,36.24,16303.28,16303.28,0.00,0.00,False,Kerala,KozhikodeCalicut,Palayam
+2022,C,36.24,16303.28,17672.91,1369.63,1464.01,True,Kerala,KozhikodeCalicut,Palayam
+2023,B,15.68,14433.79,14433.79,0.00,0.00,False,Kerala,KozhikodeCalicut,Palayam
+2023,C,15.68,14433.79,27729.22,13295.43,14398.44,True,Kerala,KozhikodeCalicut,Palayam
+2024,B,35.99,20547.77,20547.77,0.00,592.04,False,Kerala,KozhikodeCalicut,Palayam
+2024,C,35.99,20547.77,39106.58,18558.81,18900.82,True,Kerala,KozhikodeCalicut,Palayam
+2018,B,22.52,15543.86,15543.86,0.00,0.00,False,Kerala,KozhikodeCalicut,Thamarassery
+2018,C,22.52,15543.86,13602.65,-1941.21,17.85,True,Kerala,KozhikodeCalicut,Thamarassery
+2020,B,33.40,19666.67,19666.67,0.00,0.00,False,Kerala,KozhikodeCalicut,Thamarassery
+2020,C,33.40,19666.67,24672.29,5005.62,13261.04,True,Kerala,KozhikodeCalicut,Thamarassery
+2021,B,10.76,16213.11,16213.11,0.00,0.00,False,Kerala,KozhikodeCalicut,Thamarassery
+2021,C,10.76,16213.11,23225.70,7012.58,7169.07,True,Kerala,KozhikodeCalicut,Thamarassery
+2022,B,29.21,18900.99,18900.99,0.00,0.00,False,Kerala,KozhikodeCalicut,Thamarassery
+2022,C,29.21,18900.99,19410.95,509.96,1180.59,True,Kerala,KozhikodeCalicut,Thamarassery
+2023,B,14.98,16952.38,16952.38,0.00,0.00,False,Kerala,KozhikodeCalicut,Thamarassery
+2023,C,14.98,16952.38,30313.96,13361.58,13536.31,True,Kerala,KozhikodeCalicut,Thamarassery
+2024,B,37.89,23406.25,23406.25,0.00,0.00,False,Kerala,KozhikodeCalicut,Thamarassery
+2024,C,37.89,23406.25,41525.40,18119.15,18464.15,True,Kerala,KozhikodeCalicut,Thamarassery
+2017,B,25.68,15000.00,15000.00,0.00,0.00,False,Kerala,Malappuram,Kondotty
+2017,C,25.68,15000.00,16284.35,1284.35,8373.02,True,Kerala,Malappuram,Kondotty
+2018,B,27.79,20398.12,20398.12,0.00,0.00,False,Kerala,Malappuram,Kondotty
+2018,C,27.79,20398.12,17730.67,-2667.45,707.20,True,Kerala,Malappuram,Kondotty
+2020,B,24.02,38220.69,38220.69,0.00,0.00,False,Kerala,Malappuram,Kondotty
+2020,C,24.02,38220.69,26529.35,-11691.34,2953.59,True,Kerala,Malappuram,Kondotty
+2021,B,17.60,19421.32,19421.32,0.00,0.00,False,Kerala,Malappuram,Kondotty
+2021,C,17.60,19421.32,24788.51,5367.19,5526.45,True,Kerala,Malappuram,Kondotty
+2022,B,31.25,23523.81,23523.81,0.00,0.00,False,Kerala,Malappuram,Kondotty
+2022,C,31.25,23523.81,21211.91,-2311.90,167.45,True,Kerala,Malappuram,Kondotty
+2023,B,17.03,22995.67,22995.67,0.00,0.00,False,Kerala,Malappuram,Kondotty
+2023,C,17.03,22995.67,27493.20,4497.53,7476.84,True,Kerala,Malappuram,Kondotty
+2024,B,19.99,24053.69,24053.69,0.00,0.00,False,Kerala,Malappuram,Kondotty
+2024,C,19.99,24053.69,39263.64,15209.95,16040.78,True,Kerala,Malappuram,Kondotty
+2017,B,28.12,14663.64,14663.64,0.00,0.00,False,Kerala,Malappuram,Kottakkal
+2017,C,28.12,14663.64,17426.12,2762.48,13462.65,True,Kerala,Malappuram,Kottakkal
+2018,B,28.95,15216.00,15216.00,0.00,0.00,False,Kerala,Malappuram,Kottakkal
+2018,C,28.95,15216.00,14828.72,-387.28,1467.71,True,Kerala,Malappuram,Kottakkal
+2020,B,31.84,22116.19,22116.19,0.00,0.00,False,Kerala,Malappuram,Kottakkal
+2020,C,31.84,22116.19,28138.26,6022.07,15631.19,True,Kerala,Malappuram,Kottakkal
+2021,B,9.94,18857.83,18857.83,0.00,0.00,False,Kerala,Malappuram,Kottakkal
+2021,C,9.94,18857.83,24829.31,5971.48,6053.45,True,Kerala,Malappuram,Kottakkal
+2022,B,27.75,22378.26,22378.26,0.00,0.00,False,Kerala,Malappuram,Kottakkal
+2022,C,27.75,22378.26,21827.84,-550.43,0.00,True,Kerala,Malappuram,Kottakkal
+2023,B,15.36,17657.81,17657.81,0.00,0.00,False,Kerala,Malappuram,Kottakkal
+2023,C,15.36,17657.81,31115.41,13457.60,16690.20,True,Kerala,Malappuram,Kottakkal
+2024,B,27.77,26370.76,26370.76,0.00,0.00,False,Kerala,Malappuram,Kottakkal
+2024,C,27.77,26370.76,39397.39,13026.63,14133.65,True,Kerala,Malappuram,Kottakkal
+2017,B,28.83,14000.00,14000.00,0.00,0.00,False,Kerala,Malappuram,Manjeri
+2017,C,28.83,14000.00,18810.62,4810.62,11939.52,True,Kerala,Malappuram,Manjeri
+2018,B,29.64,15000.00,15000.00,0.00,0.00,False,Kerala,Malappuram,Manjeri
+2018,C,29.64,15000.00,13789.15,-1210.85,1057.17,True,Kerala,Malappuram,Manjeri
+2020,B,36.15,21795.86,21795.86,0.00,0.00,False,Kerala,Malappuram,Manjeri
+2020,C,36.15,21795.86,26424.36,4628.50,16374.78,True,Kerala,Malappuram,Manjeri
+2021,B,11.05,15437.50,15437.50,0.00,0.00,False,Kerala,Malappuram,Manjeri
+2021,C,11.05,15437.50,23230.10,7792.60,7935.08,True,Kerala,Malappuram,Manjeri
+2022,B,33.93,18980.00,18980.00,0.00,0.00,False,Kerala,Malappuram,Manjeri
+2022,C,33.93,18980.00,19454.23,474.23,1133.76,True,Kerala,Malappuram,Manjeri
+2023,B,15.40,15799.41,15799.41,0.00,0.00,False,Kerala,Malappuram,Manjeri
+2023,C,15.40,15799.41,28670.02,12870.61,13855.48,True,Kerala,Malappuram,Manjeri
+2024,B,35.86,20600.00,20600.00,0.00,808.16,False,Kerala,Malappuram,Manjeri
+2024,C,35.86,20600.00,39585.46,18985.46,21300.63,True,Kerala,Malappuram,Manjeri
+2017,B,22.94,14000.00,14000.00,0.00,0.00,False,Kerala,Malappuram,Perinthalmanna
+2017,C,22.94,14000.00,19568.62,5568.62,11526.87,True,Kerala,Malappuram,Perinthalmanna
+2018,B,18.78,19227.44,19227.44,0.00,0.00,False,Kerala,Malappuram,Perinthalmanna
+2018,C,18.78,19227.44,16736.54,-2490.90,0.00,True,Kerala,Malappuram,Perinthalmanna
+2019,B,20.08,14335.33,14335.33,0.00,0.00,False,Kerala,Malappuram,Perinthalmanna
+2019,C,20.08,14335.33,19427.31,5091.98,21503.34,True,Kerala,Malappuram,Perinthalmanna
+2020,B,34.73,36000.00,36000.00,0.00,0.00,False,Kerala,Malappuram,Perinthalmanna
+2020,C,34.73,36000.00,41749.29,5749.29,17422.50,True,Kerala,Malappuram,Perinthalmanna
+2021,B,21.96,27541.57,27541.57,0.00,0.00,False,Kerala,Malappuram,Perinthalmanna
+2021,C,21.96,27541.57,26780.03,-761.54,193.42,True,Kerala,Malappuram,Perinthalmanna
+2022,B,56.86,24300.59,24300.59,0.00,0.00,False,Kerala,Malappuram,Perinthalmanna
+2022,C,56.86,24300.59,18419.39,-5881.20,0.00,True,Kerala,Malappuram,Perinthalmanna
+2024,B,28.47,35450.70,35450.70,0.00,0.00,False,Kerala,Malappuram,Perinthalmanna
+2024,C,28.47,35450.70,35703.60,252.90,740.99,True,Kerala,Malappuram,Perinthalmanna
+2017,B,29.53,15902.17,15902.17,0.00,0.00,False,Kerala,Malappuram,Thirurrangadi
+2017,C,29.53,15902.17,15724.13,-178.05,12318.16,True,Kerala,Malappuram,Thirurrangadi
+2018,B,22.75,13642.51,13642.51,0.00,0.00,False,Kerala,Malappuram,Thirurrangadi
+2018,C,22.75,13642.51,14453.76,811.25,2964.92,True,Kerala,Malappuram,Thirurrangadi
+2020,B,27.30,28688.89,28688.89,0.00,0.00,False,Kerala,Malappuram,Thirurrangadi
+2020,C,27.30,28688.89,39028.31,10339.43,10668.07,True,Kerala,Malappuram,Thirurrangadi
+2021,B,26.53,16782.26,16782.26,0.00,0.00,False,Kerala,Malappuram,Thirurrangadi
+2021,C,26.53,16782.26,19119.69,2337.43,2337.43,True,Kerala,Malappuram,Thirurrangadi
+2022,B,27.47,24047.43,24047.43,0.00,0.00,False,Kerala,Malappuram,Thirurrangadi
+2022,C,27.47,24047.43,18852.08,-5195.35,0.00,True,Kerala,Malappuram,Thirurrangadi
+2023,B,12.70,23107.14,23107.14,0.00,0.00,False,Kerala,Malappuram,Thirurrangadi
+2023,C,12.70,23107.14,27417.33,4310.19,4310.19,True,Kerala,Malappuram,Thirurrangadi
+2024,B,34.91,26862.07,26862.07,0.00,0.00,False,Kerala,Malappuram,Thirurrangadi
+2024,C,34.91,26862.07,42533.33,15671.26,16016.48,True,Kerala,Malappuram,Thirurrangadi
+2018,B,44.75,20132.08,20132.08,0.00,435.94,False,Kerala,Palakad,Koduvayoor
+2018,C,44.75,20132.08,24855.19,4723.12,6838.31,True,Kerala,Palakad,Koduvayoor
+2020,B,27.88,43315.79,43315.79,0.00,0.00,False,Kerala,Palakad,Koduvayoor
+2020,C,27.88,43315.79,44713.29,1397.50,13824.56,True,Kerala,Palakad,Koduvayoor
+2021,B,28.26,33001.71,33001.71,0.00,0.00,False,Kerala,Palakad,Koduvayoor
+2021,C,28.26,33001.71,32967.70,-34.01,4059.53,True,Kerala,Palakad,Koduvayoor
+2022,B,36.57,24248.06,24248.06,0.00,0.00,False,Kerala,Palakad,Koduvayoor
+2022,C,36.57,24248.06,37681.79,13433.73,14031.44,True,Kerala,Palakad,Koduvayoor
+2023,B,12.41,33211.68,33211.68,0.00,18.95,False,Kerala,Palakad,Koduvayoor
+2023,C,12.41,33211.68,49386.37,16174.69,16232.86,True,Kerala,Palakad,Koduvayoor
+2024,B,6.32,36508.72,36508.72,0.00,0.00,False,Kerala,Palakad,Koduvayoor
+2024,C,6.32,36508.72,45320.45,8811.73,9274.60,True,Kerala,Palakad,Koduvayoor
+2017,B,42.35,36538.17,36538.17,0.00,0.00,False,Kerala,Palakad,Palakkad
+2017,C,42.35,36538.17,25197.31,-11340.86,7302.60,True,Kerala,Palakad,Palakkad
+2018,B,28.41,20750.00,20750.00,0.00,943.69,False,Kerala,Palakad,Palakkad
+2018,C,28.41,20750.00,21808.19,1058.19,8745.47,True,Kerala,Palakad,Palakkad
+2019,B,31.18,24530.61,24530.61,0.00,1936.84,False,Kerala,Palakad,Palakkad
+2019,C,31.18,24530.61,35290.49,10759.87,49013.66,True,Kerala,Palakad,Palakkad
+2020,B,24.24,37050.78,37050.78,0.00,0.00,False,Kerala,Palakad,Palakkad
+2020,C,24.24,37050.78,47799.00,10748.22,16433.87,True,Kerala,Palakad,Palakkad
+2021,B,35.06,35554.00,35554.00,0.00,0.00,False,Kerala,Palakad,Palakkad
+2021,C,35.06,35554.00,36857.38,1303.38,4395.21,True,Kerala,Palakad,Palakkad
+2022,B,31.89,25056.78,25056.78,0.00,0.00,False,Kerala,Palakad,Palakkad
+2022,C,31.89,25056.78,41986.78,16930.00,16930.00,True,Kerala,Palakad,Palakkad
+2023,B,13.63,31415.58,31415.58,0.00,1885.60,False,Kerala,Palakad,Palakkad
+2023,C,13.63,31415.58,48615.30,17199.71,21649.45,True,Kerala,Palakad,Palakkad
+2024,B,12.90,41352.15,41352.15,0.00,0.00,False,Kerala,Palakad,Palakkad
+2024,C,12.90,41352.15,53367.69,12015.54,13596.51,True,Kerala,Palakad,Palakkad
+2017,B,43.28,40989.29,40989.29,0.00,0.00,False,Kerala,Palakad,Pattambi
+2017,C,43.28,40989.29,26884.77,-14104.52,4455.35,True,Kerala,Palakad,Pattambi
+2018,B,29.54,21695.83,21695.83,0.00,613.15,False,Kerala,Palakad,Pattambi
+2018,C,29.54,21695.83,24746.05,3050.21,8341.98,True,Kerala,Palakad,Pattambi
+2019,B,25.38,25656.25,25656.25,0.00,948.96,False,Kerala,Palakad,Pattambi
+2019,C,25.38,25656.25,29617.93,3961.68,45416.34,True,Kerala,Palakad,Pattambi
+2021,B,31.22,32007.84,32007.84,0.00,0.00,False,Kerala,Palakad,Pattambi
+2021,C,31.22,32007.84,30261.17,-1746.67,6862.29,True,Kerala,Palakad,Pattambi
+2022,B,48.91,21262.31,21262.31,0.00,0.00,False,Kerala,Palakad,Pattambi
+2022,C,48.91,21262.31,33354.11,12091.80,12371.42,True,Kerala,Palakad,Pattambi
+2023,B,8.21,29479.73,29479.73,0.00,0.00,False,Kerala,Palakad,Pattambi
+2023,C,8.21,29479.73,43788.62,14308.89,14356.14,True,Kerala,Palakad,Pattambi
+2024,B,12.52,32207.26,32207.26,0.00,48.91,False,Kerala,Palakad,Pattambi
+2024,C,12.52,32207.26,45029.82,12822.56,12822.56,True,Kerala,Palakad,Pattambi
+2017,B,29.06,13503.50,13503.50,0.00,0.00,False,Kerala,Thirssur,Chalakudy
+2017,C,29.06,13503.50,16474.06,2970.57,14594.80,True,Kerala,Thirssur,Chalakudy
+2018,B,19.99,16652.63,16652.63,0.00,0.00,False,Kerala,Thirssur,Chalakudy
+2018,C,19.99,16652.63,14112.99,-2539.64,520.80,True,Kerala,Thirssur,Chalakudy
+2019,B,37.60,13649.35,13649.35,0.00,6037.15,False,Kerala,Thirssur,Chalakudy
+2019,C,37.60,13649.35,17815.09,4165.74,39184.80,True,Kerala,Thirssur,Chalakudy
+2020,B,21.19,18400.00,18400.00,0.00,0.00,False,Kerala,Thirssur,Chalakudy
+2020,C,21.19,18400.00,30229.79,11829.79,17235.71,True,Kerala,Thirssur,Chalakudy
+2021,B,11.70,19935.06,19935.06,0.00,0.00,False,Kerala,Thirssur,Chalakudy
+2021,C,11.70,19935.06,23830.15,3895.08,5214.15,True,Kerala,Thirssur,Chalakudy
+2022,B,30.10,19000.00,19000.00,0.00,0.00,False,Kerala,Thirssur,Chalakudy
+2022,C,30.10,19000.00,20678.61,1678.61,2001.42,True,Kerala,Thirssur,Chalakudy
+2023,B,21.94,24650.00,24650.00,0.00,0.00,False,Kerala,Thirssur,Chalakudy
+2023,C,21.94,24650.00,36545.86,11895.86,11895.86,True,Kerala,Thirssur,Chalakudy
+2024,B,39.64,27311.22,27311.22,0.00,0.00,False,Kerala,Thirssur,Chalakudy
+2024,C,39.64,27311.22,47530.70,20219.47,20657.40,True,Kerala,Thirssur,Chalakudy
+2017,B,26.56,17509.43,17509.43,0.00,0.00,False,Kerala,Thirssur,Chavakkad
+2017,C,26.56,17509.43,23516.29,6006.85,16633.20,True,Kerala,Thirssur,Chavakkad
+2018,B,30.05,20129.03,20129.03,0.00,0.00,False,Kerala,Thirssur,Chavakkad
+2018,C,30.05,20129.03,18827.27,-1301.76,1180.93,True,Kerala,Thirssur,Chavakkad
+2020,B,31.98,24826.09,24826.09,0.00,0.00,False,Kerala,Thirssur,Chavakkad
+2020,C,31.98,24826.09,32931.42,8105.33,17205.40,True,Kerala,Thirssur,Chavakkad
+2021,B,11.46,23600.00,23600.00,0.00,0.00,False,Kerala,Thirssur,Chavakkad
+2021,C,11.46,23600.00,28477.04,4877.04,8968.34,True,Kerala,Thirssur,Chavakkad
+2022,B,26.55,26894.74,26894.74,0.00,0.00,False,Kerala,Thirssur,Chavakkad
+2022,C,26.55,26894.74,27380.84,486.10,930.69,True,Kerala,Thirssur,Chavakkad
+2023,B,10.82,23764.71,23764.71,0.00,0.00,False,Kerala,Thirssur,Chavakkad
+2023,C,10.82,23764.71,34708.65,10943.94,11372.00,True,Kerala,Thirssur,Chavakkad
+2024,B,26.07,29186.99,29186.99,0.00,0.00,False,Kerala,Thirssur,Chavakkad
+2024,C,26.07,29186.99,46472.45,17285.45,17287.91,True,Kerala,Thirssur,Chavakkad
+2017,B,17.00,18710.61,18710.61,0.00,0.00,False,Kerala,Thirssur,Chelakkara
+2017,C,17.00,18710.61,18264.36,-446.25,7212.01,True,Kerala,Thirssur,Chelakkara
+2018,B,11.37,18665.18,18665.18,0.00,0.00,False,Kerala,Thirssur,Chelakkara
+2018,C,11.37,18665.18,19510.87,845.69,845.69,True,Kerala,Thirssur,Chelakkara
+2020,B,28.03,27854.95,27854.95,0.00,0.00,False,Kerala,Thirssur,Chelakkara
+2020,C,28.03,27854.95,23952.35,-3902.59,10509.96,True,Kerala,Thirssur,Chelakkara
+2021,B,11.58,25920.00,25920.00,0.00,0.00,False,Kerala,Thirssur,Chelakkara
+2021,C,11.58,25920.00,26752.35,832.35,1704.24,True,Kerala,Thirssur,Chelakkara
+2022,B,23.89,27857.51,27857.51,0.00,0.00,False,Kerala,Thirssur,Chelakkara
+2022,C,23.89,27857.51,22633.78,-5223.73,733.05,True,Kerala,Thirssur,Chelakkara
+2023,B,14.98,20586.92,20586.92,0.00,0.00,False,Kerala,Thirssur,Chelakkara
+2023,C,14.98,20586.92,29038.00,8451.08,8451.08,True,Kerala,Thirssur,Chelakkara
+2024,B,30.70,27789.47,27789.47,0.00,0.00,False,Kerala,Thirssur,Chelakkara
+2024,C,30.70,27789.47,43535.09,15745.61,15889.62,True,Kerala,Thirssur,Chelakkara
+2017,B,22.71,18375.00,18375.00,0.00,0.00,False,Kerala,Thirssur,Irinjalakkuda
+2017,C,22.71,18375.00,20258.65,1883.65,10393.32,True,Kerala,Thirssur,Irinjalakkuda
+2018,B,30.96,26857.14,26857.14,0.00,0.00,False,Kerala,Thirssur,Irinjalakkuda
+2018,C,30.96,26857.14,21568.23,-5288.92,0.00,True,Kerala,Thirssur,Irinjalakkuda
+2020,B,35.40,30428.57,30428.57,0.00,0.00,False,Kerala,Thirssur,Irinjalakkuda
+2020,C,35.40,30428.57,39526.96,9098.39,9301.90,True,Kerala,Thirssur,Irinjalakkuda
+2021,B,19.56,28750.00,28750.00,0.00,0.00,False,Kerala,Thirssur,Irinjalakkuda
+2021,C,19.56,28750.00,28707.26,-42.74,1514.78,True,Kerala,Thirssur,Irinjalakkuda
+2022,B,23.16,32631.58,32631.58,0.00,0.00,False,Kerala,Thirssur,Irinjalakkuda
+2022,C,23.16,32631.58,24389.24,-8242.33,0.00,True,Kerala,Thirssur,Irinjalakkuda
+2023,B,17.88,24083.33,24083.33,0.00,0.00,False,Kerala,Thirssur,Irinjalakkuda
+2023,C,17.88,24083.33,29176.97,5093.64,5104.35,True,Kerala,Thirssur,Irinjalakkuda
+2024,B,18.59,25700.00,25700.00,0.00,0.00,False,Kerala,Thirssur,Irinjalakkuda
+2024,C,18.59,25700.00,37749.85,12049.85,12183.33,True,Kerala,Thirssur,Irinjalakkuda
+2017,B,31.28,10416.67,10416.67,0.00,1033.46,False,Kerala,Thirssur,Kodungalloor
+2017,C,31.28,10416.67,14959.72,4543.06,14050.47,True,Kerala,Thirssur,Kodungalloor
+2018,B,25.56,12646.34,12646.34,0.00,0.00,False,Kerala,Thirssur,Kodungalloor
+2018,C,25.56,12646.34,12398.74,-247.60,1922.40,True,Kerala,Thirssur,Kodungalloor
+2020,B,35.28,21460.99,21460.99,0.00,0.00,False,Kerala,Thirssur,Kodungalloor
+2020,C,35.28,21460.99,27203.90,5742.91,16294.01,True,Kerala,Thirssur,Kodungalloor
+2021,B,16.53,16244.90,16244.90,0.00,927.73,False,Kerala,Thirssur,Kodungalloor
+2021,C,16.53,16244.90,22975.69,6730.79,6839.44,True,Kerala,Thirssur,Kodungalloor
+2023,B,16.42,14181.82,14181.82,0.00,0.00,False,Kerala,Thirssur,Kodungalloor
+2023,C,16.42,14181.82,28991.40,14809.58,14882.11,True,Kerala,Thirssur,Kodungalloor
+2024,B,36.88,21375.33,21375.33,0.00,195.13,False,Kerala,Thirssur,Kodungalloor
+2024,C,36.88,21375.33,42450.57,21075.24,21247.00,True,Kerala,Thirssur,Kodungalloor
+2017,B,31.74,11927.97,11927.97,0.00,471.95,False,Kerala,Thirssur,Thrissur
+2017,C,31.74,11927.97,16169.06,4241.10,14840.89,True,Kerala,Thirssur,Thrissur
+2018,B,25.44,13681.82,13681.82,0.00,0.00,False,Kerala,Thirssur,Thrissur
+2018,C,25.44,13681.82,13501.07,-180.74,2916.25,True,Kerala,Thirssur,Thrissur
+2020,B,35.48,22209.18,22209.18,0.00,0.00,False,Kerala,Thirssur,Thrissur
+2020,C,35.48,22209.18,29157.65,6948.47,16348.17,True,Kerala,Thirssur,Thrissur
+2021,B,11.36,18779.66,18779.66,0.00,0.00,False,Kerala,Thirssur,Thrissur
+2021,C,11.36,18779.66,24252.11,5472.45,5718.79,True,Kerala,Thirssur,Thrissur
+2022,B,32.63,18062.94,18062.94,0.00,0.00,False,Kerala,Thirssur,Thrissur
+2022,C,32.63,18062.94,19576.51,1513.57,1610.31,True,Kerala,Thirssur,Thrissur
+2023,B,59.31,43720.93,43720.93,0.00,1178.89,False,Kerala,Thirssur,Thrissur
+2023,C,59.31,43720.93,59948.08,16227.15,19579.60,True,Kerala,Thirssur,Thrissur
+2024,B,33.41,39144.74,39144.74,0.00,273.20,False,Kerala,Thirssur,Thrissur
+2024,C,33.41,39144.74,49640.02,10495.28,13162.99,True,Kerala,Thirssur,Thrissur
+2017,B,26.31,15938.40,15938.40,0.00,0.00,False,Kerala,Thirssur,Wadakkanchery
+2017,C,26.31,15938.40,19869.90,3931.50,15541.06,True,Kerala,Thirssur,Wadakkanchery
+2018,B,23.77,19625.00,19625.00,0.00,0.00,False,Kerala,Thirssur,Wadakkanchery
+2018,C,23.77,19625.00,18876.62,-748.38,1139.45,True,Kerala,Thirssur,Wadakkanchery
+2019,B,31.01,19149.86,19149.86,0.00,0.00,False,Kerala,Thirssur,Wadakkanchery
+2019,C,31.01,19149.86,34551.89,15402.02,20425.94,True,Kerala,Thirssur,Wadakkanchery
+2020,B,30.47,25028.90,25028.90,0.00,0.00,False,Kerala,Thirssur,Wadakkanchery
+2020,C,30.47,25028.90,31515.24,6486.34,15719.88,True,Kerala,Thirssur,Wadakkanchery
+2021,B,12.25,22543.23,22543.23,0.00,0.00,False,Kerala,Thirssur,Wadakkanchery
+2021,C,12.25,22543.23,28294.39,5751.16,6125.23,True,Kerala,Thirssur,Wadakkanchery
+2022,B,29.83,22379.31,22379.31,0.00,0.00,False,Kerala,Thirssur,Wadakkanchery
+2022,C,29.83,22379.31,23655.16,1275.85,1332.88,True,Kerala,Thirssur,Wadakkanchery
+2023,B,14.53,19920.00,19920.00,0.00,0.00,False,Kerala,Thirssur,Wadakkanchery
+2023,C,14.53,19920.00,33894.22,13974.22,14160.90,True,Kerala,Thirssur,Wadakkanchery
+2024,B,29.21,27444.44,27444.44,0.00,0.00,False,Kerala,Thirssur,Wadakkanchery
+2024,C,29.21,27444.44,42135.69,14691.25,18308.49,True,Kerala,Thirssur,Wadakkanchery
+2017,B,27.03,17512.02,17512.02,0.00,0.00,False,Kerala,Thiruvananthapuram,Vamanapuram
+2017,C,27.03,17512.02,19185.22,1673.20,15098.04,True,Kerala,Thiruvananthapuram,Vamanapuram
+2018,B,26.47,18733.33,18733.33,0.00,0.00,False,Kerala,Thiruvananthapuram,Vamanapuram
+2018,C,26.47,18733.33,17084.29,-1649.04,0.00,True,Kerala,Thiruvananthapuram,Vamanapuram
+2020,B,29.48,30000.00,30000.00,0.00,0.00,False,Kerala,Thiruvananthapuram,Vamanapuram
+2020,C,29.48,30000.00,45997.59,15997.59,22411.15,True,Kerala,Thiruvananthapuram,Vamanapuram
+2021,B,15.46,27863.21,27863.21,0.00,0.00,False,Kerala,Thiruvananthapuram,Vamanapuram
+2021,C,15.46,27863.21,31924.90,4061.69,5226.89,True,Kerala,Thiruvananthapuram,Vamanapuram
+2022,B,29.57,27256.88,27256.88,0.00,0.00,False,Kerala,Thiruvananthapuram,Vamanapuram
+2022,C,29.57,27256.88,22461.54,-4795.34,0.00,True,Kerala,Thiruvananthapuram,Vamanapuram
+2023,B,14.52,31413.79,31413.79,0.00,0.00,False,Kerala,Thiruvananthapuram,Vamanapuram
+2023,C,14.52,31413.79,38262.50,6848.71,6882.81,True,Kerala,Thiruvananthapuram,Vamanapuram
+2024,B,26.18,28913.04,28913.04,0.00,0.00,False,Kerala,Thiruvananthapuram,Vamanapuram
+2024,C,26.18,28913.04,38686.68,9773.64,12184.80,True,Kerala,Thiruvananthapuram,Vamanapuram
+2017,B,44.49,3420.43,3420.43,0.00,1335.11,False,Maharashtra,Ahmednagar,Jamkhed
+2017,C,44.49,3420.43,5492.39,2071.96,7194.79,True,Maharashtra,Ahmednagar,Jamkhed
+2019,B,45.31,5719.84,5719.84,0.00,2296.82,False,Maharashtra,Ahmednagar,Jamkhed
+2019,C,45.31,5719.84,7217.22,1497.38,15691.68,True,Maharashtra,Ahmednagar,Jamkhed
+2021,B,13.44,5966.60,5966.60,0.00,153.50,False,Maharashtra,Ahmednagar,Jamkhed
+2021,C,13.44,5966.60,7634.95,1668.35,2175.77,True,Maharashtra,Ahmednagar,Jamkhed
+2022,B,27.68,6841.55,6841.55,0.00,0.00,False,Maharashtra,Ahmednagar,Jamkhed
+2022,C,27.68,6841.55,6464.55,-377.01,276.23,True,Maharashtra,Ahmednagar,Jamkhed
+2023,B,14.26,5873.34,5873.34,0.00,0.00,False,Maharashtra,Ahmednagar,Jamkhed
+2023,C,14.26,5873.34,11701.22,5827.88,5827.88,True,Maharashtra,Ahmednagar,Jamkhed
+2024,B,38.47,8619.20,8619.20,0.00,630.29,False,Maharashtra,Ahmednagar,Jamkhed
+2024,C,38.47,8619.20,13813.53,5194.33,7810.16,True,Maharashtra,Ahmednagar,Jamkhed
+2018,B,44.86,6095.13,6095.13,0.00,34.01,False,Maharashtra,Ahmednagar,Kopargaon
+2018,C,44.86,6095.13,5213.46,-881.68,1572.07,True,Maharashtra,Ahmednagar,Kopargaon
+2019,B,59.11,7401.92,7401.92,0.00,10848.51,False,Maharashtra,Ahmednagar,Kopargaon
+2019,C,59.11,7401.92,10561.28,3159.36,43682.85,True,Maharashtra,Ahmednagar,Kopargaon
+2020,B,49.88,12610.04,12610.04,0.00,0.00,False,Maharashtra,Ahmednagar,Kopargaon
+2020,C,49.88,12610.04,16598.03,3988.00,11695.41,True,Maharashtra,Ahmednagar,Kopargaon
+2021,B,15.11,8897.40,8897.40,0.00,957.85,False,Maharashtra,Ahmednagar,Kopargaon
+2021,C,15.11,8897.40,14135.09,5237.69,6484.50,True,Maharashtra,Ahmednagar,Kopargaon
+2022,B,49.35,8324.18,8324.18,0.00,0.00,False,Maharashtra,Ahmednagar,Kopargaon
+2022,C,49.35,8324.18,10040.70,1716.53,1766.17,True,Maharashtra,Ahmednagar,Kopargaon
+2023,B,22.76,6820.39,6820.39,0.00,1117.09,False,Maharashtra,Ahmednagar,Kopargaon
+2023,C,22.76,6820.39,18932.44,12112.05,12112.05,True,Maharashtra,Ahmednagar,Kopargaon
+2024,B,42.29,12805.93,12805.93,0.00,1802.07,False,Maharashtra,Ahmednagar,Kopargaon
+2024,C,42.29,12805.93,25679.92,12873.99,14631.46,True,Maharashtra,Ahmednagar,Kopargaon
+2017,B,38.14,5000.00,5000.00,0.00,1733.52,False,Maharashtra,Ahmednagar,Newasa(Ghodegaon)
+2017,C,38.14,5000.00,8138.61,3138.61,11653.83,True,Maharashtra,Ahmednagar,Newasa(Ghodegaon)
+2018,B,41.64,6452.84,6452.84,0.00,0.00,False,Maharashtra,Ahmednagar,Newasa(Ghodegaon)
+2018,C,41.64,6452.84,5369.79,-1083.05,917.55,True,Maharashtra,Ahmednagar,Newasa(Ghodegaon)
+2019,B,52.91,6557.92,6557.92,0.00,2549.24,False,Maharashtra,Ahmednagar,Newasa(Ghodegaon)
+2019,C,52.91,6557.92,13654.60,7096.68,20335.23,True,Maharashtra,Ahmednagar,Newasa(Ghodegaon)
+2022,B,29.88,8979.88,8979.88,0.00,0.00,False,Maharashtra,Ahmednagar,Newasa(Ghodegaon)
+2022,C,29.88,8979.88,10457.44,1477.56,1551.09,True,Maharashtra,Ahmednagar,Newasa(Ghodegaon)
+2023,B,21.55,6156.18,6156.18,0.00,1616.82,False,Maharashtra,Ahmednagar,Newasa(Ghodegaon)
+2023,C,21.55,6156.18,19947.63,13791.45,13791.45,True,Maharashtra,Ahmednagar,Newasa(Ghodegaon)
+2024,B,36.29,11093.08,11093.08,0.00,1928.34,False,Maharashtra,Ahmednagar,Newasa(Ghodegaon)
+2024,C,36.29,11093.08,26833.95,15740.87,15740.87,True,Maharashtra,Ahmednagar,Newasa(Ghodegaon)
+2017,B,40.14,5005.29,5005.29,0.00,1785.33,False,Maharashtra,Ahmednagar,Parner
+2017,C,40.14,5005.29,8011.33,3006.03,9987.79,True,Maharashtra,Ahmednagar,Parner
+2018,B,24.01,7061.57,7061.57,0.00,0.00,False,Maharashtra,Ahmednagar,Parner
+2018,C,24.01,7061.57,6523.23,-538.34,0.00,True,Maharashtra,Ahmednagar,Parner
+2019,B,39.47,7249.11,7249.11,0.00,3362.57,False,Maharashtra,Ahmednagar,Parner
+2019,C,39.47,7249.11,8695.78,1446.67,20540.04,True,Maharashtra,Ahmednagar,Parner
+2021,B,16.05,8642.80,8642.80,0.00,870.81,False,Maharashtra,Ahmednagar,Parner
+2021,C,16.05,8642.80,10791.58,2148.77,6043.65,True,Maharashtra,Ahmednagar,Parner
+2022,B,34.82,8789.55,8789.55,0.00,0.00,False,Maharashtra,Ahmednagar,Parner
+2022,C,34.82,8789.55,10717.61,1928.06,2018.98,True,Maharashtra,Ahmednagar,Parner
+2023,B,20.99,7058.50,7058.50,0.00,275.32,False,Maharashtra,Ahmednagar,Parner
+2023,C,20.99,7058.50,17893.16,10834.66,10834.66,True,Maharashtra,Ahmednagar,Parner
+2024,B,41.41,12626.70,12626.70,0.00,1466.60,False,Maharashtra,Ahmednagar,Parner
+2024,C,41.41,12626.70,25065.44,12438.74,13475.09,True,Maharashtra,Ahmednagar,Parner
+2017,B,43.41,4984.93,4984.93,0.00,2091.02,False,Maharashtra,Ahmednagar,Rahata
+2017,C,43.41,4984.93,8214.39,3229.47,10919.05,True,Maharashtra,Ahmednagar,Rahata
+2018,B,36.82,5692.05,5692.05,0.00,0.00,False,Maharashtra,Ahmednagar,Rahata
+2018,C,36.82,5692.05,4737.26,-954.79,1004.35,True,Maharashtra,Ahmednagar,Rahata
+2019,B,51.96,6542.93,6542.93,0.00,2968.39,False,Maharashtra,Ahmednagar,Rahata
+2019,C,51.96,6542.93,9005.91,2462.98,23898.16,True,Maharashtra,Ahmednagar,Rahata
+2021,B,20.96,8172.26,8172.26,0.00,1393.33,False,Maharashtra,Ahmednagar,Rahata
+2021,C,20.96,8172.26,15863.75,7691.49,8312.83,True,Maharashtra,Ahmednagar,Rahata
+2022,B,24.30,8489.04,8489.04,0.00,0.00,False,Maharashtra,Ahmednagar,Rahata
+2022,C,24.30,8489.04,12491.80,4002.77,4064.54,True,Maharashtra,Ahmednagar,Rahata
+2023,B,16.06,6984.85,6984.85,0.00,481.91,False,Maharashtra,Ahmednagar,Rahata
+2023,C,16.06,6984.85,17121.38,10136.53,10136.53,True,Maharashtra,Ahmednagar,Rahata
+2024,B,41.34,11891.66,11891.66,0.00,2127.67,False,Maharashtra,Ahmednagar,Rahata
+2024,C,41.34,11891.66,27144.45,15252.79,15966.38,True,Maharashtra,Ahmednagar,Rahata
+2017,B,40.94,4876.81,4876.81,0.00,905.42,False,Maharashtra,Ahmednagar,Sangamner
+2017,C,40.94,4876.81,6892.26,2015.45,6973.02,True,Maharashtra,Ahmednagar,Sangamner
+2018,B,27.96,5824.75,5824.75,0.00,0.00,False,Maharashtra,Ahmednagar,Sangamner
+2018,C,27.96,5824.75,4765.37,-1059.39,494.34,True,Maharashtra,Ahmednagar,Sangamner
+2019,B,47.50,6171.66,6171.66,0.00,3718.87,False,Maharashtra,Ahmednagar,Sangamner
+2019,C,47.50,6171.66,8238.02,2066.37,22085.40,True,Maharashtra,Ahmednagar,Sangamner
+2020,B,34.10,7250.00,7250.00,0.00,0.00,False,Maharashtra,Ahmednagar,Sangamner
+2020,C,34.10,7250.00,10963.56,3713.56,7482.62,True,Maharashtra,Ahmednagar,Sangamner
+2021,B,14.38,7775.00,7775.00,0.00,401.00,False,Maharashtra,Ahmednagar,Sangamner
+2021,C,14.38,7775.00,10490.13,2715.13,3388.09,True,Maharashtra,Ahmednagar,Sangamner
+2022,B,18.10,7333.47,7333.47,0.00,0.00,False,Maharashtra,Ahmednagar,Sangamner
+2022,C,18.10,7333.47,9345.80,2012.33,2056.68,True,Maharashtra,Ahmednagar,Sangamner
+2023,B,12.68,6273.40,6273.40,0.00,0.00,False,Maharashtra,Ahmednagar,Sangamner
+2023,C,12.68,6273.40,13032.34,6758.94,6777.69,True,Maharashtra,Ahmednagar,Sangamner
+2024,B,38.63,9226.33,9226.33,0.00,1310.09,False,Maharashtra,Ahmednagar,Sangamner
+2024,C,38.63,9226.33,19812.08,10585.75,11095.89,True,Maharashtra,Ahmednagar,Sangamner
+2017,B,42.92,4144.40,3636.69,-507.71,2539.91,True,Maharashtra,Ahmednagar,Shrirampur
+2017,C,42.92,4144.40,7995.35,3850.95,10369.09,True,Maharashtra,Ahmednagar,Shrirampur
+2018,B,45.95,5216.70,3704.55,-1512.16,37.80,True,Maharashtra,Ahmednagar,Shrirampur
+2018,C,45.95,5216.70,4646.00,-570.70,1327.61,True,Maharashtra,Ahmednagar,Shrirampur
+2019,B,54.04,7108.87,7108.87,0.00,3026.30,False,Maharashtra,Ahmednagar,Shrirampur
+2019,C,54.04,7108.87,9188.80,2079.93,24464.29,True,Maharashtra,Ahmednagar,Shrirampur
+2020,B,48.58,5500.00,5500.00,0.00,2199.87,False,Maharashtra,Ahmednagar,Shrirampur
+2020,C,48.58,5500.00,12680.50,7180.50,13706.85,True,Maharashtra,Ahmednagar,Shrirampur
+2021,B,19.38,7717.45,7717.45,0.00,818.79,False,Maharashtra,Ahmednagar,Shrirampur
+2021,C,19.38,7717.45,12623.89,4906.44,5366.93,True,Maharashtra,Ahmednagar,Shrirampur
+2022,B,46.09,7220.53,7220.53,0.00,0.00,False,Maharashtra,Ahmednagar,Shrirampur
+2022,C,46.09,7220.53,7887.97,667.45,1011.78,True,Maharashtra,Ahmednagar,Shrirampur
+2023,B,26.64,5979.59,5979.59,0.00,994.85,False,Maharashtra,Ahmednagar,Shrirampur
+2023,C,26.64,5979.59,16800.80,10821.21,10935.79,True,Maharashtra,Ahmednagar,Shrirampur
+2017,B,41.83,3987.55,3987.55,0.00,737.90,False,Maharashtra,Chattrapati Sambhajinagar,Chattrapati Sambhajinagar
+2017,C,41.83,3987.55,5154.49,1166.94,5579.16,True,Maharashtra,Chattrapati Sambhajinagar,Chattrapati Sambhajinagar
+2018,B,29.38,5079.26,5079.26,0.00,0.00,False,Maharashtra,Chattrapati Sambhajinagar,Chattrapati Sambhajinagar
+2018,C,29.38,5079.26,4518.26,-561.00,60.75,True,Maharashtra,Chattrapati Sambhajinagar,Chattrapati Sambhajinagar
+2019,B,57.11,5451.43,5451.43,0.00,1433.19,False,Maharashtra,Chattrapati Sambhajinagar,Chattrapati Sambhajinagar
+2019,C,57.11,5451.43,7330.97,1879.55,13475.04,True,Maharashtra,Chattrapati Sambhajinagar,Chattrapati Sambhajinagar
+2020,B,48.35,7443.87,7443.87,0.00,0.00,False,Maharashtra,Chattrapati Sambhajinagar,Chattrapati Sambhajinagar
+2020,C,48.35,7443.87,6633.08,-810.79,6968.91,True,Maharashtra,Chattrapati Sambhajinagar,Chattrapati Sambhajinagar
+2021,B,20.09,5574.74,5574.74,0.00,482.97,False,Maharashtra,Chattrapati Sambhajinagar,Chattrapati Sambhajinagar
+2021,C,20.09,5574.74,6621.43,1046.69,2849.05,True,Maharashtra,Chattrapati Sambhajinagar,Chattrapati Sambhajinagar
+2022,B,48.00,5571.04,5571.04,0.00,0.00,False,Maharashtra,Chattrapati Sambhajinagar,Chattrapati Sambhajinagar
+2022,C,48.00,5571.04,5410.48,-160.57,0.00,True,Maharashtra,Chattrapati Sambhajinagar,Chattrapati Sambhajinagar
+2023,B,29.70,4171.86,4171.86,0.00,1061.62,False,Maharashtra,Chattrapati Sambhajinagar,Chattrapati Sambhajinagar
+2023,C,29.70,4171.86,12676.32,8504.46,8506.82,True,Maharashtra,Chattrapati Sambhajinagar,Chattrapati Sambhajinagar
+2024,B,43.93,8784.15,8784.15,0.00,1347.98,False,Maharashtra,Chattrapati Sambhajinagar,Chattrapati Sambhajinagar
+2024,C,43.93,8784.15,13404.74,4620.59,7976.87,True,Maharashtra,Chattrapati Sambhajinagar,Chattrapati Sambhajinagar
+2017,B,47.24,4512.38,4512.38,0.00,1942.38,False,Maharashtra,Dhule,Dhule
+2017,C,47.24,4512.38,7152.03,2639.66,9488.35,True,Maharashtra,Dhule,Dhule
+2018,B,26.38,5577.13,5577.13,0.00,0.00,False,Maharashtra,Dhule,Dhule
+2018,C,26.38,5577.13,6122.99,545.86,1186.42,True,Maharashtra,Dhule,Dhule
+2019,B,55.65,6823.70,6823.70,0.00,2731.52,False,Maharashtra,Dhule,Dhule
+2019,C,55.65,6823.70,10542.88,3719.18,22062.68,True,Maharashtra,Dhule,Dhule
+2020,B,49.68,4700.00,4700.00,0.00,5361.74,False,Maharashtra,Dhule,Dhule
+2020,C,49.68,4700.00,15019.85,10319.85,19390.71,True,Maharashtra,Dhule,Dhule
+2021,B,15.12,6828.35,6828.35,0.00,1102.39,False,Maharashtra,Dhule,Dhule
+2021,C,15.12,6828.35,12408.26,5579.91,5627.43,True,Maharashtra,Dhule,Dhule
+2022,B,67.93,6292.31,6292.31,0.00,0.00,False,Maharashtra,Dhule,Dhule
+2022,C,67.93,6292.31,7945.09,1652.78,1693.21,True,Maharashtra,Dhule,Dhule
+2023,B,22.61,6307.08,6307.08,0.00,827.19,False,Maharashtra,Dhule,Dhule
+2023,C,22.61,6307.08,16493.90,10186.81,10214.22,True,Maharashtra,Dhule,Dhule
+2024,B,48.73,11635.35,11635.35,0.00,1349.15,False,Maharashtra,Dhule,Dhule
+2024,C,48.73,11635.35,25386.15,13750.80,13889.08,True,Maharashtra,Dhule,Dhule
+2017,B,40.96,5347.20,5347.20,0.00,720.13,False,Maharashtra,Jalgaon,Jalgaon
+2017,C,40.96,5347.20,6617.62,1270.42,5883.08,True,Maharashtra,Jalgaon,Jalgaon
+2018,B,31.78,4297.53,4297.53,0.00,138.52,False,Maharashtra,Jalgaon,Jalgaon
+2018,C,31.78,4297.53,4230.64,-66.89,956.29,True,Maharashtra,Jalgaon,Jalgaon
+2019,B,46.93,4999.69,4999.69,0.00,1507.75,False,Maharashtra,Jalgaon,Jalgaon
+2019,C,46.93,4999.69,6473.33,1473.64,15001.10,True,Maharashtra,Jalgaon,Jalgaon
+2020,B,48.09,5643.96,5643.96,0.00,669.12,False,Maharashtra,Jalgaon,Jalgaon
+2020,C,48.09,5643.96,11426.03,5782.08,10137.07,True,Maharashtra,Jalgaon,Jalgaon
+2021,B,18.83,6199.35,6199.35,0.00,786.50,False,Maharashtra,Jalgaon,Jalgaon
+2021,C,18.83,6199.35,9408.34,3208.99,3671.25,True,Maharashtra,Jalgaon,Jalgaon
+2022,B,50.92,5634.28,5634.28,0.00,0.00,False,Maharashtra,Jalgaon,Jalgaon
+2022,C,50.92,5634.28,5837.20,202.93,243.62,True,Maharashtra,Jalgaon,Jalgaon
+2023,B,19.17,5500.21,5500.21,0.00,229.98,False,Maharashtra,Jalgaon,Jalgaon
+2023,C,19.17,5500.21,13853.58,8353.38,8389.51,True,Maharashtra,Jalgaon,Jalgaon
+2024,B,40.82,8928.40,8928.40,0.00,1174.07,False,Maharashtra,Jalgaon,Jalgaon
+2024,C,40.82,8928.40,15527.13,6598.72,8112.60,True,Maharashtra,Jalgaon,Jalgaon
+2017,B,32.19,8933.33,8933.33,0.00,0.00,False,Maharashtra,Nagpur,Kamthi
+2017,C,32.19,8933.33,9924.42,991.08,9932.66,True,Maharashtra,Nagpur,Kamthi
+2018,B,12.49,11333.33,11333.33,0.00,0.00,False,Maharashtra,Nagpur,Kamthi
+2018,C,12.49,11333.33,9674.76,-1658.57,0.00,True,Maharashtra,Nagpur,Kamthi
+2021,B,22.60,18000.00,18000.00,0.00,0.00,False,Maharashtra,Nagpur,Kamthi
+2021,C,22.60,18000.00,16927.10,-1072.90,1377.32,True,Maharashtra,Nagpur,Kamthi
+2022,B,79.38,11684.21,11684.21,0.00,0.00,False,Maharashtra,Nagpur,Kamthi
+2022,C,79.38,11684.21,10219.89,-1464.32,0.00,True,Maharashtra,Nagpur,Kamthi
+2023,B,13.06,14060.61,14060.61,0.00,0.00,False,Maharashtra,Nagpur,Kamthi
+2023,C,13.06,14060.61,22043.79,7983.18,8413.36,True,Maharashtra,Nagpur,Kamthi
+2024,B,36.05,19590.16,19590.16,0.00,435.35,False,Maharashtra,Nagpur,Kamthi
+2024,C,36.05,19590.16,28959.85,9369.69,10299.81,True,Maharashtra,Nagpur,Kamthi
+2017,B,43.25,7519.15,7519.15,0.00,26.44,False,Maharashtra,Nagpur,Nagpur
+2017,C,43.25,7519.15,8499.64,980.48,9329.89,True,Maharashtra,Nagpur,Nagpur
+2018,B,36.75,8309.23,8309.23,0.00,0.00,False,Maharashtra,Nagpur,Nagpur
+2018,C,36.75,8309.23,6577.15,-1732.09,373.46,True,Maharashtra,Nagpur,Nagpur
+2019,B,52.17,8942.55,8942.55,0.00,1423.16,False,Maharashtra,Nagpur,Nagpur
+2019,C,52.17,8942.55,17062.14,8119.59,22645.13,True,Maharashtra,Nagpur,Nagpur
+2021,B,13.76,10682.23,10682.23,0.00,657.80,False,Maharashtra,Nagpur,Nagpur
+2021,C,13.76,10682.23,18655.55,7973.31,8001.10,True,Maharashtra,Nagpur,Nagpur
+2022,B,45.18,10638.69,10638.69,0.00,0.00,False,Maharashtra,Nagpur,Nagpur
+2022,C,45.18,10638.69,12985.90,2347.21,2357.22,True,Maharashtra,Nagpur,Nagpur
+2023,B,22.27,8986.63,8986.63,0.00,1351.26,False,Maharashtra,Nagpur,Nagpur
+2023,C,22.27,8986.63,25937.16,16950.53,17003.61,True,Maharashtra,Nagpur,Nagpur
+2024,B,28.23,14105.67,14105.67,0.00,2594.17,False,Maharashtra,Nagpur,Nagpur
+2024,C,28.23,14105.67,26033.30,11927.64,14557.94,True,Maharashtra,Nagpur,Nagpur
+2017,B,43.93,6074.53,6074.53,0.00,2124.47,False,Maharashtra,Pune,Junnar
+2017,C,43.93,6074.53,10327.55,4253.02,13367.57,True,Maharashtra,Pune,Junnar
+2018,B,50.13,7477.43,7477.43,0.00,0.00,False,Maharashtra,Pune,Junnar
+2018,C,50.13,7477.43,6844.90,-632.52,1566.48,True,Maharashtra,Pune,Junnar
+2019,B,45.41,8001.79,8001.79,0.00,3545.81,False,Maharashtra,Pune,Junnar
+2019,C,45.41,8001.79,21089.19,13087.40,27062.05,True,Maharashtra,Pune,Junnar
+2021,B,22.83,9474.95,9474.95,0.00,1293.82,False,Maharashtra,Pune,Junnar
+2021,C,22.83,9474.95,13064.90,3589.95,5085.20,True,Maharashtra,Pune,Junnar
+2022,B,36.82,9228.26,9228.26,0.00,0.00,False,Maharashtra,Pune,Junnar
+2022,C,36.82,9228.26,12192.93,2964.67,3075.22,True,Maharashtra,Pune,Junnar
+2023,B,15.49,8262.21,8262.21,0.00,54.79,False,Maharashtra,Pune,Junnar
+2023,C,15.49,8262.21,18393.61,10131.40,10274.86,True,Maharashtra,Pune,Junnar
+2024,B,40.85,12636.63,12636.63,0.00,2614.79,False,Maharashtra,Pune,Junnar
+2024,C,40.85,12636.63,32763.83,20127.20,20127.20,True,Maharashtra,Pune,Junnar
+2017,B,44.47,5350.78,4523.27,-827.51,1715.27,True,Maharashtra,Pune,Pune
+2017,C,44.47,5350.78,8270.68,2919.90,9182.52,True,Maharashtra,Pune,Pune
+2018,B,37.82,5585.52,5585.52,0.00,0.00,False,Maharashtra,Pune,Pune
+2018,C,37.82,5585.52,5358.89,-226.62,1142.54,True,Maharashtra,Pune,Pune
+2019,B,46.18,5942.75,5942.75,0.00,1946.86,False,Maharashtra,Pune,Pune
+2019,C,46.18,5942.75,10573.42,4630.68,15610.47,True,Maharashtra,Pune,Pune
+2020,B,43.73,12857.08,12857.08,0.00,0.00,False,Maharashtra,Pune,Pune
+2020,C,43.73,12857.08,13730.07,872.99,5291.72,True,Maharashtra,Pune,Pune
+2021,B,17.40,8346.50,8346.50,0.00,182.08,False,Maharashtra,Pune,Pune
+2021,C,17.40,8346.50,9504.19,1157.69,3152.84,True,Maharashtra,Pune,Pune
+2022,B,32.82,7989.05,7989.05,0.00,0.00,False,Maharashtra,Pune,Pune
+2022,C,32.82,7989.05,9107.11,1118.06,1177.77,True,Maharashtra,Pune,Pune
+2023,B,18.03,6331.71,6331.71,0.00,708.82,False,Maharashtra,Pune,Pune
+2023,C,18.03,6331.71,16990.22,10658.52,10748.80,True,Maharashtra,Pune,Pune
+2024,B,42.64,10501.92,10501.92,0.00,1933.89,False,Maharashtra,Pune,Pune
+2024,C,42.64,10501.92,23572.73,13070.81,14952.83,True,Maharashtra,Pune,Pune
+2017,B,34.72,8816.00,8816.00,0.00,0.00,False,Maharashtra,Satara,Karad
+2017,C,34.72,8816.00,11181.36,2365.36,11865.06,True,Maharashtra,Satara,Karad
+2018,B,38.57,9669.54,9669.54,0.00,0.00,False,Maharashtra,Satara,Karad
+2018,C,38.57,9669.54,9007.52,-662.01,536.09,True,Maharashtra,Satara,Karad
+2019,B,35.44,7364.94,7364.94,0.00,6629.25,False,Maharashtra,Satara,Karad
+2019,C,35.44,7364.94,16722.80,9357.86,36019.24,True,Maharashtra,Satara,Karad
+2020,B,36.59,18575.76,18575.76,0.00,0.00,False,Maharashtra,Satara,Karad
+2020,C,36.59,18575.76,16410.73,-2165.03,12596.20,True,Maharashtra,Satara,Karad
+2021,B,12.96,14011.66,14011.66,0.00,0.00,False,Maharashtra,Satara,Karad
+2021,C,12.96,14011.66,18240.78,4229.12,5047.91,True,Maharashtra,Satara,Karad
+2022,B,47.50,12350.00,12350.00,0.00,0.00,False,Maharashtra,Satara,Karad
+2022,C,47.50,12350.00,12785.35,435.35,1601.05,True,Maharashtra,Satara,Karad
+2023,B,17.99,11820.75,11820.75,0.00,0.00,False,Maharashtra,Satara,Karad
+2023,C,17.99,11820.75,25362.20,13541.44,13541.44,True,Maharashtra,Satara,Karad
+2024,B,28.36,14462.11,14462.11,0.00,2435.03,False,Maharashtra,Satara,Karad
+2024,C,28.36,14462.11,27011.69,12549.58,15738.40,True,Maharashtra,Satara,Karad
+2017,B,42.76,4929.05,4929.05,0.00,1794.93,False,Maharashtra,Satara,Lonand
+2017,C,42.76,4929.05,7636.29,2707.24,8767.93,True,Maharashtra,Satara,Lonand
+2018,B,29.68,6117.30,6117.30,0.00,0.00,False,Maharashtra,Satara,Lonand
+2018,C,29.68,6117.30,5866.83,-250.47,870.76,True,Maharashtra,Satara,Lonand
+2019,B,51.72,6306.36,6306.36,0.00,1935.35,False,Maharashtra,Satara,Lonand
+2019,C,51.72,6306.36,10115.85,3809.49,15513.23,True,Maharashtra,Satara,Lonand
+2021,B,16.55,9538.06,9538.06,0.00,117.52,False,Maharashtra,Satara,Lonand
+2021,C,16.55,9538.06,13596.03,4057.97,4124.19,True,Maharashtra,Satara,Lonand
+2022,B,27.55,8346.29,8346.29,0.00,0.00,False,Maharashtra,Satara,Lonand
+2022,C,27.55,8346.29,10205.28,1858.99,1880.40,True,Maharashtra,Satara,Lonand
+2023,B,23.05,7598.35,7598.35,0.00,908.93,False,Maharashtra,Satara,Lonand
+2023,C,23.05,7598.35,19004.08,11405.73,11405.73,True,Maharashtra,Satara,Lonand
+2024,B,33.86,11465.91,11465.91,0.00,425.36,False,Maharashtra,Satara,Lonand
+2024,C,33.86,11465.91,20015.76,8549.85,9680.88,True,Maharashtra,Satara,Lonand
+2017,B,37.65,4772.98,4772.98,0.00,1220.07,False,Maharashtra,Satara,Satara
+2017,C,37.65,4772.98,5605.82,832.85,9039.41,True,Maharashtra,Satara,Satara
+2018,B,22.75,6529.91,6529.91,0.00,0.00,False,Maharashtra,Satara,Satara
+2018,C,22.75,6529.91,5654.20,-875.71,796.72,True,Maharashtra,Satara,Satara
+2019,B,51.19,5692.47,5692.47,0.00,4964.41,False,Maharashtra,Satara,Satara
+2019,C,51.19,5692.47,9487.22,3794.75,25952.12,True,Maharashtra,Satara,Satara
+2020,B,42.68,12936.02,9102.66,-3833.36,0.00,True,Maharashtra,Satara,Satara
+2020,C,42.68,12936.02,15191.29,2255.27,7016.68,True,Maharashtra,Satara,Satara
+2021,B,17.94,10063.58,10063.58,0.00,35.79,False,Maharashtra,Satara,Satara
+2021,C,17.94,10063.58,11138.73,1075.15,3695.07,True,Maharashtra,Satara,Satara
+2022,B,18.55,9429.39,9429.39,0.00,0.00,False,Maharashtra,Satara,Satara
+2022,C,18.55,9429.39,10928.60,1499.22,1555.26,True,Maharashtra,Satara,Satara
+2023,B,21.78,8197.17,8197.17,0.00,0.00,False,Maharashtra,Satara,Satara
+2023,C,21.78,8197.17,17180.30,8983.14,9108.84,True,Maharashtra,Satara,Satara
+2024,B,40.56,12828.09,12828.09,0.00,1777.58,False,Maharashtra,Satara,Satara
+2024,C,40.56,12828.09,23901.27,11073.18,13400.13,True,Maharashtra,Satara,Satara
+2017,B,41.34,4002.76,4002.76,0.00,431.73,False,Maharashtra,Sholapur,Solapur
+2017,C,41.34,4002.76,4955.97,953.22,6386.85,True,Maharashtra,Sholapur,Solapur
+2018,B,17.31,4929.46,4929.46,0.00,0.00,False,Maharashtra,Sholapur,Solapur
+2018,C,17.31,4929.46,4844.56,-84.89,215.48,True,Maharashtra,Sholapur,Solapur
+2019,B,51.75,5753.95,5753.95,0.00,2001.34,False,Maharashtra,Sholapur,Solapur
+2019,C,51.75,5753.95,7634.47,1880.52,11927.30,True,Maharashtra,Sholapur,Solapur
+2021,B,18.15,5467.70,5467.70,0.00,147.65,False,Maharashtra,Sholapur,Solapur
+2021,C,18.15,5467.70,8343.44,2875.73,5361.56,True,Maharashtra,Sholapur,Solapur
+2022,B,17.95,6524.57,6524.57,0.00,0.00,False,Maharashtra,Sholapur,Solapur
+2022,C,17.95,6524.57,7740.18,1215.61,1260.16,True,Maharashtra,Sholapur,Solapur
+2023,B,25.65,4042.95,4042.95,0.00,1754.27,False,Maharashtra,Sholapur,Solapur
+2023,C,25.65,4042.95,14751.28,10708.33,10823.57,True,Maharashtra,Sholapur,Solapur
+2024,B,43.54,11905.40,11905.40,0.00,1941.50,False,Maharashtra,Sholapur,Solapur
+2024,C,43.54,11905.40,15325.93,3420.53,10143.04,True,Maharashtra,Sholapur,Solapur
+2017,B,39.80,8184.97,8184.97,0.00,1062.34,False,NCT of Delhi,Delhi,Shahdara
+2017,C,39.80,8184.97,10997.85,2812.88,9990.47,True,NCT of Delhi,Delhi,Shahdara
+2018,B,24.29,8702.40,8702.40,0.00,0.00,False,NCT of Delhi,Delhi,Shahdara
+2018,C,24.29,8702.40,8711.49,9.09,1447.88,True,NCT of Delhi,Delhi,Shahdara
+2021,B,19.95,11447.52,11447.52,0.00,490.66,False,NCT of Delhi,Delhi,Shahdara
+2021,C,19.95,11447.52,14423.14,2975.61,5178.53,True,NCT of Delhi,Delhi,Shahdara
+2022,B,36.63,12204.41,12204.41,0.00,0.00,False,NCT of Delhi,Delhi,Shahdara
+2022,C,36.63,12204.41,11151.91,-1052.50,0.00,True,NCT of Delhi,Delhi,Shahdara
+2023,B,16.90,9370.24,9370.24,0.00,0.00,False,NCT of Delhi,Delhi,Shahdara
+2023,C,16.90,9370.24,19477.24,10107.00,10133.91,True,NCT of Delhi,Delhi,Shahdara
+2024,B,35.58,15042.53,15042.53,0.00,191.83,False,NCT of Delhi,Delhi,Shahdara
+2024,C,35.58,15042.53,25949.80,10907.26,11989.95,True,NCT of Delhi,Delhi,Shahdara
+2017,B,13.64,14147.18,14147.18,0.00,0.00,False,Odisha,Bargarh,Bargarh
+2017,C,13.64,14147.18,18014.30,3867.12,5522.63,True,Odisha,Bargarh,Bargarh
+2018,B,28.25,14883.06,14883.06,0.00,0.00,False,Odisha,Bargarh,Bargarh
+2018,C,28.25,14883.06,13823.62,-1059.43,223.97,True,Odisha,Bargarh,Bargarh
+2019,B,21.66,15993.47,15993.47,0.00,0.00,False,Odisha,Bargarh,Bargarh
+2019,C,21.66,15993.47,20854.08,4860.61,6691.26,True,Odisha,Bargarh,Bargarh
+2020,B,32.24,23972.96,23972.96,0.00,0.00,False,Odisha,Bargarh,Bargarh
+2020,C,32.24,23972.96,16826.83,-7146.13,6383.50,True,Odisha,Bargarh,Bargarh
+2021,B,37.56,20792.89,20792.89,0.00,0.00,False,Odisha,Bargarh,Bargarh
+2021,C,37.56,20792.89,15803.90,-4988.99,3267.60,True,Odisha,Bargarh,Bargarh
+2022,B,19.43,22491.71,22491.71,0.00,0.00,False,Odisha,Bargarh,Bargarh
+2022,C,19.43,22491.71,20819.63,-1672.08,600.71,True,Odisha,Bargarh,Bargarh
+2023,B,26.11,16673.89,16673.89,0.00,0.00,False,Odisha,Bargarh,Bargarh
+2023,C,26.11,16673.89,23379.96,6706.06,12500.16,True,Odisha,Bargarh,Bargarh
+2024,B,25.70,22583.57,22583.57,0.00,0.00,False,Odisha,Bargarh,Bargarh
+2024,C,25.70,22583.57,28027.29,5443.72,7665.02,True,Odisha,Bargarh,Bargarh
+2017,B,29.76,15054.89,15054.89,0.00,0.00,False,Odisha,Ganjam,Hinjilicut
+2017,C,29.76,15054.89,19793.87,4738.98,9495.70,True,Odisha,Ganjam,Hinjilicut
+2018,B,17.95,18382.00,18382.00,0.00,0.00,False,Odisha,Ganjam,Hinjilicut
+2018,C,17.95,18382.00,16783.05,-1598.95,0.00,True,Odisha,Ganjam,Hinjilicut
+2019,B,26.62,16247.18,16247.18,0.00,0.00,False,Odisha,Ganjam,Hinjilicut
+2019,C,26.62,16247.18,21581.18,5334.00,15705.48,True,Odisha,Ganjam,Hinjilicut
+2022,B,39.00,23588.96,23588.96,0.00,0.00,False,Odisha,Ganjam,Hinjilicut
+2022,C,39.00,23588.96,18728.17,-4860.80,0.00,True,Odisha,Ganjam,Hinjilicut
+2023,B,18.48,17166.35,17166.35,0.00,0.00,False,Odisha,Ganjam,Hinjilicut
+2023,C,18.48,17166.35,27633.55,10467.20,11564.32,True,Odisha,Ganjam,Hinjilicut
+2024,B,28.79,28167.33,28167.33,0.00,0.00,False,Odisha,Ganjam,Hinjilicut
+2024,C,28.79,28167.33,37014.48,8847.15,9414.90,True,Odisha,Ganjam,Hinjilicut
+2017,B,32.06,11188.52,11188.52,0.00,0.00,False,Odisha,Mayurbhanja,Udala
+2017,C,32.06,11188.52,13451.00,2262.47,12300.40,True,Odisha,Mayurbhanja,Udala
+2018,B,20.60,13889.61,13889.61,0.00,0.00,False,Odisha,Mayurbhanja,Udala
+2018,C,20.60,13889.61,12697.92,-1191.69,444.99,True,Odisha,Mayurbhanja,Udala
+2020,B,32.19,22640.39,22640.39,0.00,0.00,False,Odisha,Mayurbhanja,Udala
+2020,C,32.19,22640.39,28664.09,6023.70,15128.74,True,Odisha,Mayurbhanja,Udala
+2022,B,46.86,18553.00,18553.00,0.00,0.00,False,Odisha,Mayurbhanja,Udala
+2022,C,46.86,18553.00,18757.69,204.69,1344.53,True,Odisha,Mayurbhanja,Udala
+2023,B,11.22,18911.76,18911.76,0.00,0.00,False,Odisha,Mayurbhanja,Udala
+2023,C,11.22,18911.76,30403.58,11491.82,13792.91,True,Odisha,Mayurbhanja,Udala
+2024,B,27.08,24089.98,24089.98,0.00,0.00,False,Odisha,Mayurbhanja,Udala
+2024,C,27.08,24089.98,39773.11,15683.13,15910.26,True,Odisha,Mayurbhanja,Udala
+2017,B,34.16,7347.52,7347.52,0.00,0.00,False,Punjab,Amritsar,Amritsar(Amritsar Mewa Mandi)
+2017,C,34.16,7347.52,7347.52,0.00,4572.42,False,Punjab,Amritsar,Amritsar(Amritsar Mewa Mandi)
+2018,B,12.73,6905.41,6905.41,0.00,233.95,False,Punjab,Amritsar,Amritsar(Amritsar Mewa Mandi)
+2018,C,12.73,6905.41,6989.75,84.35,1175.02,True,Punjab,Amritsar,Amritsar(Amritsar Mewa Mandi)
+2020,B,25.74,10598.17,10598.17,0.00,0.00,False,Punjab,Amritsar,Amritsar(Amritsar Mewa Mandi)
+2020,C,25.74,10598.17,11416.18,818.00,4408.89,True,Punjab,Amritsar,Amritsar(Amritsar Mewa Mandi)
+2021,B,21.55,10267.79,10267.79,0.00,0.00,False,Punjab,Amritsar,Amritsar(Amritsar Mewa Mandi)
+2021,C,21.55,10267.79,10793.17,525.38,1415.52,True,Punjab,Amritsar,Amritsar(Amritsar Mewa Mandi)
+2022,B,37.46,9043.77,9043.77,0.00,0.00,False,Punjab,Amritsar,Amritsar(Amritsar Mewa Mandi)
+2022,C,37.46,9043.77,7150.72,-1893.06,0.00,True,Punjab,Amritsar,Amritsar(Amritsar Mewa Mandi)
+2023,B,21.94,6949.92,6949.92,0.00,0.00,False,Punjab,Amritsar,Amritsar(Amritsar Mewa Mandi)
+2023,C,21.94,6949.92,12034.91,5084.99,5127.64,True,Punjab,Amritsar,Amritsar(Amritsar Mewa Mandi)
+2017,B,41.07,6990.88,6990.88,0.00,1095.07,False,Punjab,Barnala,Barnala
+2017,C,41.07,6990.88,9358.09,2367.21,8767.28,True,Punjab,Barnala,Barnala
+2018,B,28.56,9333.47,9333.47,0.00,0.00,False,Punjab,Barnala,Barnala
+2018,C,28.56,9333.47,7693.80,-1639.67,211.40,True,Punjab,Barnala,Barnala
+2019,B,31.21,6758.06,6758.06,0.00,1629.12,False,Punjab,Barnala,Barnala
+2019,C,31.21,6758.06,8500.22,1742.16,13032.39,True,Punjab,Barnala,Barnala
+2020,B,32.88,12362.49,12362.49,0.00,0.00,False,Punjab,Barnala,Barnala
+2020,C,32.88,12362.49,14121.72,1759.23,7344.28,True,Punjab,Barnala,Barnala
+2021,B,19.83,11300.19,11300.19,0.00,134.10,False,Punjab,Barnala,Barnala
+2021,C,19.83,11300.19,13072.42,1772.23,3637.26,True,Punjab,Barnala,Barnala
+2022,B,42.50,9512.68,9512.68,0.00,0.00,False,Punjab,Barnala,Barnala
+2022,C,42.50,9512.68,8564.08,-948.60,0.00,True,Punjab,Barnala,Barnala
+2024,B,44.13,15016.02,15016.02,0.00,0.00,False,Punjab,Barnala,Barnala
+2024,C,44.13,15016.02,25018.73,10002.71,11376.84,True,Punjab,Barnala,Barnala
+2018,B,28.02,8957.29,8957.29,0.00,0.00,False,Punjab,Bhatinda,Bathinda
+2018,C,28.02,8957.29,7812.58,-1144.71,2595.04,True,Punjab,Bhatinda,Bathinda
+2020,B,25.01,17520.81,17520.81,0.00,0.00,False,Punjab,Bhatinda,Bathinda
+2020,C,25.01,17520.81,22100.02,4579.21,8616.70,True,Punjab,Bhatinda,Bathinda
+2021,B,15.13,12810.06,12810.06,0.00,160.58,False,Punjab,Bhatinda,Bathinda
+2021,C,15.13,12810.06,16194.12,3384.05,5591.44,True,Punjab,Bhatinda,Bathinda
+2022,B,49.92,12391.71,12391.71,0.00,0.00,False,Punjab,Bhatinda,Bathinda
+2022,C,49.92,12391.71,12000.06,-391.65,0.00,True,Punjab,Bhatinda,Bathinda
+2023,B,16.95,12151.72,12151.72,0.00,0.00,False,Punjab,Bhatinda,Bathinda
+2023,C,16.95,12151.72,18634.42,6482.70,8828.51,True,Punjab,Bhatinda,Bathinda
+2024,B,38.64,20424.10,20424.10,0.00,0.00,False,Punjab,Bhatinda,Bathinda
+2024,C,38.64,20424.10,30180.99,9756.89,10123.45,True,Punjab,Bhatinda,Bathinda
+2017,B,36.16,7796.13,7796.13,0.00,0.00,False,Punjab,Bhatinda,Raman
+2017,C,36.16,7796.13,9073.21,1277.08,10706.77,True,Punjab,Bhatinda,Raman
+2018,B,20.87,8900.47,8900.47,0.00,0.00,False,Punjab,Bhatinda,Raman
+2018,C,20.87,8900.47,8526.98,-373.49,2289.80,True,Punjab,Bhatinda,Raman
+2020,B,28.83,11968.14,11968.14,0.00,0.00,False,Punjab,Bhatinda,Raman
+2020,C,28.83,11968.14,18302.65,6334.51,13188.52,True,Punjab,Bhatinda,Raman
+2021,B,16.19,13819.61,13819.61,0.00,691.31,False,Punjab,Bhatinda,Raman
+2021,C,16.19,13819.61,19960.16,6140.55,6670.02,True,Punjab,Bhatinda,Raman
+2022,B,61.80,11656.99,11656.99,0.00,0.00,False,Punjab,Bhatinda,Raman
+2022,C,61.80,11656.99,10252.62,-1404.37,0.00,True,Punjab,Bhatinda,Raman
+2023,B,22.38,8661.76,8661.76,0.00,510.45,False,Punjab,Bhatinda,Raman
+2023,C,22.38,8661.76,20869.91,12208.15,12268.40,True,Punjab,Bhatinda,Raman
+2024,B,35.78,17600.86,17600.86,0.00,0.00,False,Punjab,Bhatinda,Raman
+2024,C,35.78,17600.86,29784.76,12183.91,12366.15,True,Punjab,Bhatinda,Raman
+2017,B,35.40,8248.04,8248.04,0.00,601.83,False,Punjab,Ferozpur,Firozepur City
+2017,C,35.40,8248.04,12834.54,4586.50,10714.37,True,Punjab,Ferozpur,Firozepur City
+2018,B,29.67,8812.82,8812.82,0.00,0.00,False,Punjab,Ferozpur,Firozepur City
+2018,C,29.67,8812.82,8047.47,-765.35,1054.37,True,Punjab,Ferozpur,Firozepur City
+2020,B,28.45,13448.91,13448.91,0.00,0.00,False,Punjab,Ferozpur,Firozepur City
+2020,C,28.45,13448.91,16358.82,2909.91,8443.20,True,Punjab,Ferozpur,Firozepur City
+2021,B,17.55,13133.07,13133.07,0.00,0.00,False,Punjab,Ferozpur,Firozepur City
+2021,C,17.55,13133.07,16666.79,3533.71,3979.87,True,Punjab,Ferozpur,Firozepur City
+2022,B,36.42,12990.44,12990.44,0.00,0.00,False,Punjab,Ferozpur,Firozepur City
+2022,C,36.42,12990.44,11523.50,-1466.94,127.42,True,Punjab,Ferozpur,Firozepur City
+2023,B,10.23,12555.22,12555.22,0.00,0.00,False,Punjab,Ferozpur,Firozepur City
+2023,C,10.23,12555.22,18932.77,6377.56,6598.26,True,Punjab,Ferozpur,Firozepur City
+2024,B,36.13,16624.03,16624.03,0.00,0.00,False,Punjab,Ferozpur,Firozepur City
+2024,C,36.13,16624.03,28528.33,11904.30,12479.52,True,Punjab,Ferozpur,Firozepur City
+2017,B,29.19,7699.52,7699.52,0.00,766.70,False,Punjab,Ferozpur,Zira
+2017,C,29.19,7699.52,12700.70,5001.19,6752.77,True,Punjab,Ferozpur,Zira
+2018,B,22.90,10745.76,10745.76,0.00,0.00,False,Punjab,Ferozpur,Zira
+2018,C,22.90,10745.76,8822.27,-1923.49,211.71,True,Punjab,Ferozpur,Zira
+2019,B,35.62,9854.64,9854.64,0.00,4437.09,False,Punjab,Ferozpur,Zira
+2019,C,35.62,9854.64,13702.40,3847.76,27339.08,True,Punjab,Ferozpur,Zira
+2020,B,32.41,24724.14,24724.14,0.00,0.00,False,Punjab,Ferozpur,Zira
+2020,C,32.41,24724.14,20262.18,-4461.96,0.00,True,Punjab,Ferozpur,Zira
+2021,B,15.11,13000.00,13000.00,0.00,0.00,False,Punjab,Ferozpur,Zira
+2021,C,15.11,13000.00,17009.80,4009.80,6141.81,True,Punjab,Ferozpur,Zira
+2022,B,43.40,13299.02,13299.02,0.00,0.00,False,Punjab,Ferozpur,Zira
+2022,C,43.40,13299.02,11525.72,-1773.29,0.00,True,Punjab,Ferozpur,Zira
+2023,B,17.63,11322.10,11322.10,0.00,0.00,False,Punjab,Ferozpur,Zira
+2023,C,17.63,11322.10,23978.22,12656.13,12656.13,True,Punjab,Ferozpur,Zira
+2024,B,32.92,19665.46,19665.46,0.00,0.00,False,Punjab,Ferozpur,Zira
+2024,C,32.92,19665.46,26687.63,7022.16,11965.83,True,Punjab,Ferozpur,Zira
+2017,B,32.28,10135.19,10135.19,0.00,372.32,False,Punjab,Moga,Dharamkot
+2017,C,32.28,10135.19,14814.71,4679.53,11446.51,True,Punjab,Moga,Dharamkot
+2018,B,32.64,11101.80,11101.80,0.00,0.00,False,Punjab,Moga,Dharamkot
+2018,C,32.64,11101.80,10537.77,-564.03,574.61,True,Punjab,Moga,Dharamkot
+2021,B,17.10,16556.79,16556.79,0.00,0.00,False,Punjab,Moga,Dharamkot
+2021,C,17.10,16556.79,21602.23,5045.45,5178.12,True,Punjab,Moga,Dharamkot
+2022,B,33.94,17415.00,17415.00,0.00,0.00,False,Punjab,Moga,Dharamkot
+2022,C,33.94,17415.00,15495.07,-1919.93,486.51,True,Punjab,Moga,Dharamkot
+2023,B,9.07,17725.29,17725.29,0.00,0.00,False,Punjab,Moga,Dharamkot
+2023,C,9.07,17725.29,24591.88,6866.59,7094.87,True,Punjab,Moga,Dharamkot
+2024,B,28.61,22379.47,22379.47,0.00,186.36,False,Punjab,Moga,Dharamkot
+2024,C,28.61,22379.47,31763.85,9384.38,11296.28,True,Punjab,Moga,Dharamkot
+2017,B,38.28,9300.07,9300.07,0.00,2.18,False,Punjab,Mohali,Kharar
+2017,C,38.28,9300.07,12108.34,2808.27,7982.17,True,Punjab,Mohali,Kharar
+2018,B,27.51,11301.09,11301.09,0.00,0.00,False,Punjab,Mohali,Kharar
+2018,C,27.51,11301.09,8997.25,-2303.83,361.59,True,Punjab,Mohali,Kharar
+2020,B,30.57,16225.32,16225.32,0.00,0.00,False,Punjab,Mohali,Kharar
+2020,C,30.57,16225.32,16080.13,-145.19,10776.20,True,Punjab,Mohali,Kharar
+2021,B,14.46,15793.38,15793.38,0.00,0.00,False,Punjab,Mohali,Kharar
+2021,C,14.46,15793.38,21861.49,6068.11,6128.18,True,Punjab,Mohali,Kharar
+2022,B,43.36,16497.65,16497.65,0.00,0.00,False,Punjab,Mohali,Kharar
+2022,C,43.36,16497.65,13583.80,-2913.85,0.00,True,Punjab,Mohali,Kharar
+2023,B,15.33,12567.64,12567.64,0.00,0.00,False,Punjab,Mohali,Kharar
+2023,C,15.33,12567.64,24127.99,11560.35,11610.86,True,Punjab,Mohali,Kharar
+2024,B,30.65,19508.51,19508.51,0.00,0.00,False,Punjab,Mohali,Kharar
+2024,C,30.65,19508.51,31295.59,11787.09,12059.72,True,Punjab,Mohali,Kharar
+2017,B,33.32,9305.43,9305.43,0.00,0.00,False,Punjab,Mohali,Lalru
+2017,C,33.32,9305.43,9305.43,0.00,5205.50,False,Punjab,Mohali,Lalru
+2018,B,17.05,9726.70,9726.70,0.00,0.00,False,Punjab,Mohali,Lalru
+2018,C,17.05,9726.70,7579.91,-2146.79,574.18,True,Punjab,Mohali,Lalru
+2019,B,40.36,9059.79,9059.79,0.00,90.45,False,Punjab,Mohali,Lalru
+2019,C,40.36,9059.79,9059.79,0.00,17553.14,False,Punjab,Mohali,Lalru
+2020,B,25.41,16960.45,16960.45,0.00,0.00,False,Punjab,Mohali,Lalru
+2020,C,25.41,16960.45,18312.89,1352.44,4564.60,True,Punjab,Mohali,Lalru
+2021,B,20.13,12005.05,12005.05,0.00,228.09,False,Punjab,Mohali,Lalru
+2021,C,20.13,12005.05,15795.53,3790.48,4859.34,True,Punjab,Mohali,Lalru
+2022,B,38.22,13846.03,13846.03,0.00,0.00,False,Punjab,Mohali,Lalru
+2022,C,38.22,13846.03,10729.16,-3116.87,0.00,True,Punjab,Mohali,Lalru
+2023,B,12.70,12817.74,12817.74,0.00,0.00,False,Punjab,Mohali,Lalru
+2023,C,12.70,12817.74,17889.81,5072.07,7004.16,True,Punjab,Mohali,Lalru
+2024,B,39.52,19959.11,19959.11,0.00,0.00,False,Punjab,Mohali,Lalru
+2024,C,39.52,19959.11,29641.86,9682.75,10008.49,True,Punjab,Mohali,Lalru
+2017,B,32.75,7324.17,7324.17,0.00,1218.31,False,Punjab,Muktsar,Malout
+2017,C,32.75,7324.17,12282.63,4958.46,12155.48,True,Punjab,Muktsar,Malout
+2018,B,36.84,10400.00,10400.00,0.00,0.00,False,Punjab,Muktsar,Malout
+2018,C,36.84,10400.00,8985.27,-1414.73,1038.12,True,Punjab,Muktsar,Malout
+2021,B,20.79,11950.33,11950.33,0.00,195.43,False,Punjab,Muktsar,Malout
+2021,C,20.79,11950.33,15200.30,3249.97,5054.45,True,Punjab,Muktsar,Malout
+2022,B,35.28,14506.17,14506.17,0.00,0.00,False,Punjab,Muktsar,Malout
+2022,C,35.28,14506.17,13112.89,-1393.29,0.00,True,Punjab,Muktsar,Malout
+2023,B,20.15,10202.99,10202.99,0.00,0.00,False,Punjab,Muktsar,Malout
+2023,C,20.15,10202.99,19200.43,8997.44,9581.28,True,Punjab,Muktsar,Malout
+2024,B,22.21,15716.26,15716.26,0.00,0.00,False,Punjab,Muktsar,Malout
+2024,C,22.21,15716.26,21245.15,5528.89,6456.89,True,Punjab,Muktsar,Malout
+2018,B,18.96,12719.70,12719.70,0.00,0.00,False,Punjab,Patiala,Dudhansadhan
+2018,C,18.96,12719.70,10371.36,-2348.34,0.00,True,Punjab,Patiala,Dudhansadhan
+2020,B,25.64,19300.65,19300.65,0.00,0.00,False,Punjab,Patiala,Dudhansadhan
+2020,C,25.64,19300.65,27969.88,8669.23,8681.05,True,Punjab,Patiala,Dudhansadhan
+2021,B,18.50,15203.70,15203.70,0.00,530.81,False,Punjab,Patiala,Dudhansadhan
+2021,C,18.50,15203.70,21915.93,6712.23,7677.54,True,Punjab,Patiala,Dudhansadhan
+2022,B,17.28,17902.44,17902.44,0.00,0.00,False,Punjab,Patiala,Dudhansadhan
+2022,C,17.28,17902.44,17164.44,-738.00,0.00,True,Punjab,Patiala,Dudhansadhan
+2023,B,14.67,18000.00,18000.00,0.00,0.00,False,Punjab,Patiala,Dudhansadhan
+2023,C,14.67,18000.00,28340.15,10340.15,10421.88,True,Punjab,Patiala,Dudhansadhan
+2024,B,29.40,23460.67,23460.67,0.00,0.00,False,Punjab,Patiala,Dudhansadhan
+2024,C,29.40,23460.67,34072.87,10612.20,10943.50,True,Punjab,Patiala,Dudhansadhan
+2017,B,35.24,8338.37,8338.37,0.00,0.00,False,Punjab,Patiala,Rajpura
+2017,C,35.24,8338.37,10400.92,2062.55,9244.96,True,Punjab,Patiala,Rajpura
+2018,B,24.71,8175.93,8175.93,0.00,0.00,False,Punjab,Patiala,Rajpura
+2018,C,24.71,8175.93,7800.58,-375.35,361.68,True,Punjab,Patiala,Rajpura
+2020,B,26.12,15626.32,15626.32,0.00,0.00,False,Punjab,Patiala,Rajpura
+2020,C,26.12,15626.32,15985.94,359.62,5647.31,True,Punjab,Patiala,Rajpura
+2021,B,18.49,12234.53,12234.53,0.00,0.00,False,Punjab,Patiala,Rajpura
+2021,C,18.49,12234.53,15852.92,3618.39,4320.71,True,Punjab,Patiala,Rajpura
+2022,B,38.10,12491.74,12491.74,0.00,0.00,False,Punjab,Patiala,Rajpura
+2022,C,38.10,12491.74,9783.08,-2708.66,113.12,True,Punjab,Patiala,Rajpura
+2023,B,10.66,12145.56,12145.56,0.00,0.00,False,Punjab,Patiala,Rajpura
+2023,C,10.66,12145.56,19249.13,7103.56,7151.43,True,Punjab,Patiala,Rajpura
+2024,B,35.11,15171.46,15171.46,0.00,0.00,False,Punjab,Patiala,Rajpura
+2024,C,35.11,15171.46,26614.08,11442.63,11858.01,True,Punjab,Patiala,Rajpura
+2018,B,24.26,8935.91,8935.91,0.00,0.00,False,Punjab,Patiala,Samana
+2018,C,24.26,8935.91,9208.92,273.01,2154.48,True,Punjab,Patiala,Samana
+2020,B,29.11,18301.62,18301.62,0.00,0.00,False,Punjab,Patiala,Samana
+2020,C,29.11,18301.62,16760.22,-1541.39,3948.84,True,Punjab,Patiala,Samana
+2021,B,16.49,12045.27,12045.27,0.00,520.09,False,Punjab,Patiala,Samana
+2021,C,16.49,12045.27,19799.20,7753.94,7858.88,True,Punjab,Patiala,Samana
+2022,B,36.82,12061.95,12061.95,0.00,0.00,False,Punjab,Patiala,Samana
+2022,C,36.82,12061.95,11822.41,-239.54,292.71,True,Punjab,Patiala,Samana
+2023,B,19.42,18143.47,18143.47,0.00,0.00,False,Punjab,Patiala,Samana
+2023,C,19.42,18143.47,21865.11,3721.64,4227.11,True,Punjab,Patiala,Samana
+2024,B,37.82,22441.67,22441.67,0.00,0.00,False,Punjab,Patiala,Samana
+2024,C,37.82,22441.67,29596.58,7154.91,7329.66,True,Punjab,Patiala,Samana
+2017,B,34.08,8018.58,8018.58,0.00,0.00,False,Rajasthan,Alwar,Alwar (F&V)
+2017,C,34.08,8018.58,11830.57,3811.99,6492.22,True,Rajasthan,Alwar,Alwar (F&V)
+2018,B,34.87,10778.51,10778.51,0.00,0.00,False,Rajasthan,Alwar,Alwar (F&V)
+2018,C,34.87,10778.51,11035.37,256.86,939.80,True,Rajasthan,Alwar,Alwar (F&V)
+2020,B,28.15,13676.39,13676.39,0.00,0.00,False,Rajasthan,Alwar,Alwar (F&V)
+2020,C,28.15,13676.39,14371.89,695.51,12043.96,True,Rajasthan,Alwar,Alwar (F&V)
+2021,B,17.46,11760.10,11760.10,0.00,196.56,False,Rajasthan,Alwar,Alwar (F&V)
+2021,C,17.46,11760.10,16810.04,5049.94,5736.32,True,Rajasthan,Alwar,Alwar (F&V)
+2022,B,47.22,12967.37,12967.37,0.00,0.00,False,Rajasthan,Alwar,Alwar (F&V)
+2022,C,47.22,12967.37,11585.55,-1381.82,190.68,True,Rajasthan,Alwar,Alwar (F&V)
+2023,B,13.69,11950.32,11950.32,0.00,0.00,False,Rajasthan,Alwar,Alwar (F&V)
+2023,C,13.69,11950.32,18178.91,6228.59,8089.62,True,Rajasthan,Alwar,Alwar (F&V)
+2024,B,27.64,18980.49,18980.49,0.00,0.00,False,Rajasthan,Alwar,Alwar (F&V)
+2024,C,27.64,18980.49,28525.51,9545.02,9804.63,True,Rajasthan,Alwar,Alwar (F&V)
+2017,B,32.30,6067.44,6067.44,0.00,1171.65,False,Telangana,Hyderabad,Bowenpally
+2017,C,32.30,6067.44,8924.55,2857.11,7030.35,True,Telangana,Hyderabad,Bowenpally
+2020,B,43.32,12613.12,12613.12,0.00,0.00,False,Telangana,Hyderabad,Bowenpally
+2020,C,43.32,12613.12,10798.76,-1814.36,4665.75,True,Telangana,Hyderabad,Bowenpally
+2021,B,10.82,9183.71,9183.71,0.00,239.89,False,Telangana,Hyderabad,Bowenpally
+2021,C,10.82,9183.71,11327.18,2143.47,3508.66,True,Telangana,Hyderabad,Bowenpally
+2022,B,40.00,8240.88,8240.88,0.00,0.00,False,Telangana,Hyderabad,Bowenpally
+2022,C,40.00,8240.88,9195.05,954.17,2342.99,True,Telangana,Hyderabad,Bowenpally
+2023,B,22.31,7584.61,7584.61,0.00,0.00,False,Telangana,Hyderabad,Bowenpally
+2023,C,22.31,7584.61,16494.98,8910.37,8990.59,True,Telangana,Hyderabad,Bowenpally
+2024,B,34.55,13198.38,13198.38,0.00,1836.18,False,Telangana,Hyderabad,Bowenpally
+2024,C,34.55,13198.38,18857.89,5659.51,10943.04,True,Telangana,Hyderabad,Bowenpally
+2017,B,38.88,5319.09,5319.09,0.00,873.11,False,Telangana,Hyderabad,Gudimalkapur
+2017,C,38.88,5319.09,7009.80,1690.71,6573.04,True,Telangana,Hyderabad,Gudimalkapur
+2019,B,38.22,6633.29,6633.29,0.00,24.69,False,Telangana,Hyderabad,Gudimalkapur
+2019,C,38.22,6633.29,9321.76,2688.47,6819.90,True,Telangana,Hyderabad,Gudimalkapur
+2020,B,36.71,10980.28,10980.28,0.00,0.00,False,Telangana,Hyderabad,Gudimalkapur
+2020,C,36.71,10980.28,9844.67,-1135.60,8389.54,True,Telangana,Hyderabad,Gudimalkapur
+2022,B,38.70,8677.05,8677.05,0.00,0.00,False,Telangana,Hyderabad,Gudimalkapur
+2022,C,38.70,8677.05,8050.76,-626.29,0.00,True,Telangana,Hyderabad,Gudimalkapur
+2023,B,21.18,6884.03,6884.03,0.00,0.00,False,Telangana,Hyderabad,Gudimalkapur
+2023,C,21.18,6884.03,13341.49,6457.47,7825.13,True,Telangana,Hyderabad,Gudimalkapur
+2024,B,24.45,10942.30,10942.30,0.00,925.58,False,Telangana,Hyderabad,Gudimalkapur
+2024,C,24.45,10942.30,14589.44,3647.14,7111.78,True,Telangana,Hyderabad,Gudimalkapur
+2017,B,41.63,5646.41,5646.41,0.00,1242.33,False,Telangana,Medak,Sadasivpet
+2017,C,41.63,5646.41,8449.00,2802.59,7544.36,True,Telangana,Medak,Sadasivpet
+2019,B,52.66,8829.81,8829.81,0.00,496.70,False,Telangana,Medak,Sadasivpet
+2019,C,52.66,8829.81,13752.26,4922.45,10534.83,True,Telangana,Medak,Sadasivpet
+2020,B,40.95,12290.31,12290.31,0.00,0.00,False,Telangana,Medak,Sadasivpet
+2020,C,40.95,12290.31,13110.89,820.58,10078.16,True,Telangana,Medak,Sadasivpet
+2021,B,15.31,9950.41,9950.41,0.00,1127.81,False,Telangana,Medak,Sadasivpet
+2021,C,15.31,9950.41,13077.75,3127.34,6403.58,True,Telangana,Medak,Sadasivpet
+2022,B,46.03,8364.65,8364.65,0.00,0.00,False,Telangana,Medak,Sadasivpet
+2022,C,46.03,8364.65,8535.81,171.16,3748.88,True,Telangana,Medak,Sadasivpet
+2023,B,41.34,5314.76,5314.76,0.00,2834.14,False,Telangana,Medak,Sadasivpet
+2023,C,41.34,5314.76,14964.27,9649.52,15890.89,True,Telangana,Medak,Sadasivpet
+2024,B,39.93,13379.85,13379.85,0.00,3227.39,False,Telangana,Medak,Sadasivpet
+2024,C,39.93,13379.85,29018.85,15639.00,15639.00,True,Telangana,Medak,Sadasivpet
+2017,B,37.09,8792.70,8792.70,0.00,0.00,False,Uttar Pradesh,Agra,Agra
+2017,C,37.09,8792.70,8911.26,118.56,9049.92,True,Uttar Pradesh,Agra,Agra
+2018,B,16.86,9480.04,9480.04,0.00,0.00,False,Uttar Pradesh,Agra,Agra
+2018,C,16.86,9480.04,10025.71,545.67,1212.63,True,Uttar Pradesh,Agra,Agra
+2020,B,28.55,16156.37,16156.37,0.00,0.00,False,Uttar Pradesh,Agra,Agra
+2020,C,28.55,16156.37,18091.06,1934.69,7515.61,True,Uttar Pradesh,Agra,Agra
+2021,B,15.35,15290.27,15290.27,0.00,0.00,False,Uttar Pradesh,Agra,Agra
+2021,C,15.35,15290.27,16895.39,1605.11,1793.67,True,Uttar Pradesh,Agra,Agra
+2022,B,46.87,15880.04,15880.04,0.00,0.00,False,Uttar Pradesh,Agra,Agra
+2022,C,46.87,15880.04,10872.45,-5007.58,0.00,True,Uttar Pradesh,Agra,Agra
+2023,B,19.12,11605.41,11605.41,0.00,0.00,False,Uttar Pradesh,Agra,Agra
+2023,C,19.12,11605.41,17506.86,5901.45,6384.06,True,Uttar Pradesh,Agra,Agra
+2024,B,34.13,16121.62,16121.62,0.00,0.00,False,Uttar Pradesh,Agra,Agra
+2024,C,34.13,16121.62,25618.46,9496.84,10163.29,True,Uttar Pradesh,Agra,Agra
+2017,B,32.46,8435.97,8435.97,0.00,0.00,False,Uttar Pradesh,Aligarh,Aligarh
+2017,C,32.46,8435.97,11386.87,2950.90,9041.12,True,Uttar Pradesh,Aligarh,Aligarh
+2018,B,21.24,9457.14,9457.14,0.00,0.00,False,Uttar Pradesh,Aligarh,Aligarh
+2018,C,21.24,9457.14,9840.20,383.06,1032.32,True,Uttar Pradesh,Aligarh,Aligarh
+2020,B,24.55,13761.90,13761.90,0.00,0.00,False,Uttar Pradesh,Aligarh,Aligarh
+2020,C,24.55,13761.90,18130.88,4368.97,8197.08,True,Uttar Pradesh,Aligarh,Aligarh
+2021,B,14.44,13786.20,13786.20,0.00,0.00,False,Uttar Pradesh,Aligarh,Aligarh
+2021,C,14.44,13786.20,15898.39,2112.20,2738.41,True,Uttar Pradesh,Aligarh,Aligarh
+2022,B,41.64,15971.70,15971.70,0.00,0.00,False,Uttar Pradesh,Aligarh,Aligarh
+2022,C,41.64,15971.70,11930.25,-4041.45,0.00,True,Uttar Pradesh,Aligarh,Aligarh
+2023,B,15.42,11843.30,11843.30,0.00,0.00,False,Uttar Pradesh,Aligarh,Aligarh
+2023,C,15.42,11843.30,17590.82,5747.52,6489.99,True,Uttar Pradesh,Aligarh,Aligarh
+2024,B,33.47,17440.48,17440.48,0.00,0.00,False,Uttar Pradesh,Aligarh,Aligarh
+2024,C,33.47,17440.48,25863.41,8422.93,8472.30,True,Uttar Pradesh,Aligarh,Aligarh
+2018,B,14.92,9563.39,9563.39,0.00,0.00,False,Uttar Pradesh,Aligarh,Khair
+2018,C,14.92,9563.39,10038.19,474.80,1027.77,True,Uttar Pradesh,Aligarh,Khair
+2020,B,24.02,14805.46,14805.46,0.00,0.00,False,Uttar Pradesh,Aligarh,Khair
+2020,C,24.02,14805.46,17460.39,2654.92,7622.94,True,Uttar Pradesh,Aligarh,Khair
+2021,B,22.66,14561.66,14561.66,0.00,0.00,False,Uttar Pradesh,Aligarh,Khair
+2021,C,22.66,14561.66,12898.13,-1663.53,1650.09,True,Uttar Pradesh,Aligarh,Khair
+2022,B,57.84,10473.75,10473.75,0.00,0.00,False,Uttar Pradesh,Aligarh,Khair
+2022,C,57.84,10473.75,8871.58,-1602.17,0.00,True,Uttar Pradesh,Aligarh,Khair
+2023,B,12.64,11664.93,11664.93,0.00,0.00,False,Uttar Pradesh,Aligarh,Khair
+2023,C,12.64,11664.93,17725.97,6061.04,6987.28,True,Uttar Pradesh,Aligarh,Khair
+2024,B,38.06,18123.58,18123.58,0.00,0.00,False,Uttar Pradesh,Aligarh,Khair
+2024,C,38.06,18123.58,24003.81,5880.24,5880.24,True,Uttar Pradesh,Aligarh,Khair
+2017,B,33.66,9585.58,9585.58,0.00,0.00,False,Uttar Pradesh,Azamgarh,Azamgarh
+2017,C,33.66,9585.58,11723.03,2137.44,8015.53,True,Uttar Pradesh,Azamgarh,Azamgarh
+2018,B,13.40,12414.85,12414.85,0.00,0.00,False,Uttar Pradesh,Azamgarh,Azamgarh
+2018,C,13.40,12414.85,11532.73,-882.12,484.88,True,Uttar Pradesh,Azamgarh,Azamgarh
+2020,B,28.68,14721.93,14721.93,0.00,0.00,False,Uttar Pradesh,Azamgarh,Azamgarh
+2020,C,28.68,14721.93,19482.05,4760.12,9640.90,True,Uttar Pradesh,Azamgarh,Azamgarh
+2021,B,15.68,14549.74,14549.74,0.00,0.00,False,Uttar Pradesh,Azamgarh,Azamgarh
+2021,C,15.68,14549.74,17724.13,3174.39,3329.14,True,Uttar Pradesh,Azamgarh,Azamgarh
+2022,B,44.41,13139.68,13139.68,0.00,0.00,False,Uttar Pradesh,Azamgarh,Azamgarh
+2022,C,44.41,13139.68,11031.07,-2108.61,0.00,True,Uttar Pradesh,Azamgarh,Azamgarh
+2023,B,14.04,12155.34,12155.34,0.00,0.00,False,Uttar Pradesh,Azamgarh,Azamgarh
+2023,C,14.04,12155.34,19898.15,7742.82,9348.55,True,Uttar Pradesh,Azamgarh,Azamgarh
+2024,B,31.85,16682.79,16682.79,0.00,0.00,False,Uttar Pradesh,Azamgarh,Azamgarh
+2024,C,31.85,16682.79,27354.09,10671.30,10873.34,True,Uttar Pradesh,Azamgarh,Azamgarh
+2017,B,28.65,6202.13,6202.13,0.00,0.00,False,Uttar Pradesh,Badaun,Badayoun
+2017,C,28.65,6202.13,7663.62,1461.49,5000.69,True,Uttar Pradesh,Badaun,Badayoun
+2018,B,13.53,7599.14,7599.14,0.00,0.00,False,Uttar Pradesh,Badaun,Badayoun
+2018,C,13.53,7599.14,8151.74,552.60,1850.42,True,Uttar Pradesh,Badaun,Badayoun
+2019,B,40.94,7520.55,7520.55,0.00,2224.97,False,Uttar Pradesh,Badaun,Badayoun
+2019,C,40.94,7520.55,11540.95,4020.40,19862.69,True,Uttar Pradesh,Badaun,Badayoun
+2020,B,32.20,17516.85,17516.85,0.00,0.00,False,Uttar Pradesh,Badaun,Badayoun
+2020,C,32.20,17516.85,12144.81,-5372.04,4482.84,True,Uttar Pradesh,Badaun,Badayoun
+2021,B,10.21,15261.12,15261.12,0.00,0.00,False,Uttar Pradesh,Badaun,Badayoun
+2021,C,10.21,15261.12,15389.50,128.38,135.32,True,Uttar Pradesh,Badaun,Badayoun
+2022,B,35.95,16326.44,16326.44,0.00,0.00,False,Uttar Pradesh,Badaun,Badayoun
+2022,C,35.95,16326.44,11187.20,-5139.24,0.00,True,Uttar Pradesh,Badaun,Badayoun
+2023,B,16.38,12013.02,12013.02,0.00,0.00,False,Uttar Pradesh,Badaun,Badayoun
+2023,C,16.38,12013.02,17975.56,5962.54,7445.76,True,Uttar Pradesh,Badaun,Badayoun
+2024,B,31.96,17605.25,17605.25,0.00,0.00,False,Uttar Pradesh,Badaun,Badayoun
+2024,C,31.96,17605.25,27304.82,9699.57,9818.33,True,Uttar Pradesh,Badaun,Badayoun
+2017,B,30.31,9235.15,9235.15,0.00,0.00,False,Uttar Pradesh,Bahraich,Bahraich
+2017,C,30.31,9235.15,12588.92,3353.76,10320.87,True,Uttar Pradesh,Bahraich,Bahraich
+2018,B,17.66,12557.19,12557.19,0.00,0.00,False,Uttar Pradesh,Bahraich,Bahraich
+2018,C,17.66,12557.19,11652.51,-904.67,1047.19,True,Uttar Pradesh,Bahraich,Bahraich
+2019,B,35.64,11195.94,11195.94,0.00,0.00,False,Uttar Pradesh,Bahraich,Bahraich
+2019,C,35.64,11195.94,15461.75,4265.81,19180.44,True,Uttar Pradesh,Bahraich,Bahraich
+2020,B,37.49,14747.16,14747.16,0.00,0.00,False,Uttar Pradesh,Bahraich,Bahraich
+2020,C,37.49,14747.16,20179.78,5432.62,10633.58,True,Uttar Pradesh,Bahraich,Bahraich
+2021,B,13.46,14263.71,14263.71,0.00,0.00,False,Uttar Pradesh,Bahraich,Bahraich
+2021,C,13.46,14263.71,18055.55,3791.84,3867.95,True,Uttar Pradesh,Bahraich,Bahraich
+2022,B,48.08,14183.75,14183.75,0.00,0.00,False,Uttar Pradesh,Bahraich,Bahraich
+2022,C,48.08,14183.75,11751.02,-2432.74,0.00,True,Uttar Pradesh,Bahraich,Bahraich
+2023,B,14.72,12773.34,12773.34,0.00,0.00,False,Uttar Pradesh,Bahraich,Bahraich
+2023,C,14.72,12773.34,20580.37,7807.03,8639.69,True,Uttar Pradesh,Bahraich,Bahraich
+2024,B,30.98,17976.93,17976.93,0.00,0.00,False,Uttar Pradesh,Bahraich,Bahraich
+2024,C,30.98,17976.93,28240.78,10263.85,10278.92,True,Uttar Pradesh,Bahraich,Bahraich
+2017,B,33.26,8800.00,8800.00,0.00,0.00,False,Uttar Pradesh,Bahraich,Naanpara
+2017,C,33.26,8800.00,12777.10,3977.10,9011.90,True,Uttar Pradesh,Bahraich,Naanpara
+2018,B,17.62,10992.53,10992.53,0.00,0.00,False,Uttar Pradesh,Bahraich,Naanpara
+2018,C,17.62,10992.53,9941.30,-1051.23,1144.16,True,Uttar Pradesh,Bahraich,Naanpara
+2020,B,34.61,14553.87,14553.87,0.00,0.00,False,Uttar Pradesh,Bahraich,Naanpara
+2020,C,34.61,14553.87,12900.11,-1653.76,10054.81,True,Uttar Pradesh,Bahraich,Naanpara
+2021,B,12.43,14329.70,14329.70,0.00,0.00,False,Uttar Pradesh,Bahraich,Naanpara
+2021,C,12.43,14329.70,17696.09,3366.39,3438.41,True,Uttar Pradesh,Bahraich,Naanpara
+2022,B,39.35,13801.94,13801.94,0.00,0.00,False,Uttar Pradesh,Bahraich,Naanpara
+2022,C,39.35,13801.94,11597.97,-2203.97,0.00,True,Uttar Pradesh,Bahraich,Naanpara
+2023,B,13.19,12648.99,12648.99,0.00,0.00,False,Uttar Pradesh,Bahraich,Naanpara
+2023,C,13.19,12648.99,20171.13,7522.14,8833.52,True,Uttar Pradesh,Bahraich,Naanpara
+2017,B,32.14,9467.70,9467.70,0.00,0.00,False,Uttar Pradesh,Ballia,Ballia
+2017,C,32.14,9467.70,9467.70,0.00,6635.89,False,Uttar Pradesh,Ballia,Ballia
+2018,B,13.28,10752.29,10752.29,0.00,0.00,False,Uttar Pradesh,Ballia,Ballia
+2018,C,13.28,10752.29,10963.62,211.33,1457.85,True,Uttar Pradesh,Ballia,Ballia
+2020,B,26.38,13898.76,13898.76,0.00,0.00,False,Uttar Pradesh,Ballia,Ballia
+2020,C,26.38,13898.76,17938.70,4039.94,9856.90,True,Uttar Pradesh,Ballia,Ballia
+2021,B,15.84,14552.63,14552.63,0.00,0.00,False,Uttar Pradesh,Ballia,Ballia
+2021,C,15.84,14552.63,18134.61,3581.98,3620.67,True,Uttar Pradesh,Ballia,Ballia
+2022,B,39.16,14395.13,14395.13,0.00,0.00,False,Uttar Pradesh,Ballia,Ballia
+2022,C,39.16,14395.13,11259.55,-3135.58,0.00,True,Uttar Pradesh,Ballia,Ballia
+2023,B,14.75,11845.21,11845.21,0.00,0.00,False,Uttar Pradesh,Ballia,Ballia
+2023,C,14.75,11845.21,19536.26,7691.05,9355.97,True,Uttar Pradesh,Ballia,Ballia
+2024,B,33.03,16567.33,16567.33,0.00,0.00,False,Uttar Pradesh,Ballia,Ballia
+2024,C,33.03,16567.33,27507.38,10940.06,10940.06,True,Uttar Pradesh,Ballia,Ballia
+2017,B,34.96,9336.92,9336.92,0.00,0.00,False,Uttar Pradesh,Barabanki,Barabanki
+2017,C,34.96,9336.92,12611.66,3274.74,9921.51,True,Uttar Pradesh,Barabanki,Barabanki
+2018,B,14.02,12460.66,12460.66,0.00,0.00,False,Uttar Pradesh,Barabanki,Barabanki
+2018,C,14.02,12460.66,11771.49,-689.17,383.72,True,Uttar Pradesh,Barabanki,Barabanki
+2019,B,33.88,9649.43,9649.43,0.00,995.96,False,Uttar Pradesh,Barabanki,Barabanki
+2019,C,33.88,9649.43,15558.33,5908.90,20950.66,True,Uttar Pradesh,Barabanki,Barabanki
+2020,B,32.52,13916.86,13916.86,0.00,0.00,False,Uttar Pradesh,Barabanki,Barabanki
+2020,C,32.52,13916.86,12767.16,-1149.71,9530.10,True,Uttar Pradesh,Barabanki,Barabanki
+2021,B,12.57,14148.31,14148.31,0.00,0.00,False,Uttar Pradesh,Barabanki,Barabanki
+2021,C,12.57,14148.31,15814.58,1666.28,2953.89,True,Uttar Pradesh,Barabanki,Barabanki
+2022,B,52.14,14806.85,14806.85,0.00,0.00,False,Uttar Pradesh,Barabanki,Barabanki
+2022,C,52.14,14806.85,10625.03,-4181.82,0.00,True,Uttar Pradesh,Barabanki,Barabanki
+2023,B,14.15,12503.65,12503.65,0.00,0.00,False,Uttar Pradesh,Barabanki,Barabanki
+2023,C,14.15,12503.65,19335.02,6831.37,8054.01,True,Uttar Pradesh,Barabanki,Barabanki
+2024,B,31.63,17733.89,17733.89,0.00,0.00,False,Uttar Pradesh,Barabanki,Barabanki
+2024,C,31.63,17733.89,27812.79,10078.89,10078.89,True,Uttar Pradesh,Barabanki,Barabanki
+2017,B,36.77,7000.00,7000.00,0.00,0.00,False,Uttar Pradesh,Bareilly,Anwala
+2017,C,36.77,7000.00,6178.75,-821.25,10007.20,True,Uttar Pradesh,Bareilly,Anwala
+2018,B,18.73,8752.43,8752.43,0.00,0.00,False,Uttar Pradesh,Bareilly,Anwala
+2018,C,18.73,8752.43,8659.09,-93.33,384.85,True,Uttar Pradesh,Bareilly,Anwala
+2019,B,38.55,8722.80,8722.80,0.00,0.00,False,Uttar Pradesh,Bareilly,Anwala
+2019,C,38.55,8722.80,9764.32,1041.51,14105.84,True,Uttar Pradesh,Bareilly,Anwala
+2020,B,31.54,13179.31,13179.31,0.00,0.00,False,Uttar Pradesh,Bareilly,Anwala
+2020,C,31.54,13179.31,10475.59,-2703.72,5233.30,True,Uttar Pradesh,Bareilly,Anwala
+2021,B,20.94,11518.88,11518.88,0.00,0.00,False,Uttar Pradesh,Bareilly,Anwala
+2021,C,20.94,11518.88,12028.91,510.03,4288.82,True,Uttar Pradesh,Bareilly,Anwala
+2022,B,42.54,10848.32,10848.32,0.00,0.00,False,Uttar Pradesh,Bareilly,Anwala
+2022,C,42.54,10848.32,8710.40,-2137.93,0.00,True,Uttar Pradesh,Bareilly,Anwala
+2023,B,23.13,9784.31,9784.31,0.00,0.00,False,Uttar Pradesh,Bareilly,Anwala
+2023,C,23.13,9784.31,18290.57,8506.26,10296.17,True,Uttar Pradesh,Bareilly,Anwala
+2024,B,34.81,15506.96,15506.96,0.00,0.00,False,Uttar Pradesh,Bareilly,Anwala
+2024,C,34.81,15506.96,22221.77,6714.81,7254.44,True,Uttar Pradesh,Bareilly,Anwala
+2017,B,34.87,8207.09,8207.09,0.00,0.00,False,Uttar Pradesh,Bareilly,Bareilly
+2017,C,34.87,8207.09,8207.09,0.00,8969.11,False,Uttar Pradesh,Bareilly,Bareilly
+2018,B,15.72,10191.07,10191.07,0.00,0.00,False,Uttar Pradesh,Bareilly,Bareilly
+2018,C,15.72,10191.07,9350.38,-840.69,66.57,True,Uttar Pradesh,Bareilly,Bareilly
+2019,B,28.08,7463.54,7463.54,0.00,341.29,False,Uttar Pradesh,Bareilly,Bareilly
+2019,C,28.08,7463.54,11169.87,3706.32,10800.89,True,Uttar Pradesh,Bareilly,Bareilly
+2020,B,30.52,17319.77,17319.77,0.00,0.00,False,Uttar Pradesh,Bareilly,Bareilly
+2020,C,30.52,17319.77,12216.88,-5102.89,4499.33,True,Uttar Pradesh,Bareilly,Bareilly
+2021,B,10.58,15088.83,15088.83,0.00,0.00,False,Uttar Pradesh,Bareilly,Bareilly
+2021,C,10.58,15088.83,15192.91,104.08,363.75,True,Uttar Pradesh,Bareilly,Bareilly
+2022,B,36.45,17418.68,17418.68,0.00,0.00,False,Uttar Pradesh,Bareilly,Bareilly
+2022,C,36.45,17418.68,10997.70,-6420.98,0.00,True,Uttar Pradesh,Bareilly,Bareilly
+2023,B,15.04,11340.28,11340.28,0.00,0.00,False,Uttar Pradesh,Bareilly,Bareilly
+2023,C,15.04,11340.28,17087.39,5747.11,6593.33,True,Uttar Pradesh,Bareilly,Bareilly
+2024,B,32.54,15831.41,15831.41,0.00,0.00,False,Uttar Pradesh,Bareilly,Bareilly
+2024,C,32.54,15831.41,25743.30,9911.89,9911.89,True,Uttar Pradesh,Bareilly,Bareilly
+2018,B,17.39,10987.56,10987.56,0.00,0.00,False,Uttar Pradesh,Deoria,Devariya
+2018,C,17.39,10987.56,10120.19,-867.37,478.60,True,Uttar Pradesh,Deoria,Devariya
+2020,B,28.82,16000.94,16000.94,0.00,0.00,False,Uttar Pradesh,Deoria,Devariya
+2020,C,28.82,16000.94,19437.50,3436.56,9188.04,True,Uttar Pradesh,Deoria,Devariya
+2021,B,14.72,14110.66,14110.66,0.00,0.00,False,Uttar Pradesh,Deoria,Devariya
+2021,C,14.72,14110.66,17616.19,3505.52,3831.12,True,Uttar Pradesh,Deoria,Devariya
+2022,B,42.96,12891.37,12891.37,0.00,0.00,False,Uttar Pradesh,Deoria,Devariya
+2022,C,42.96,12891.37,11057.74,-1833.63,0.00,True,Uttar Pradesh,Deoria,Devariya
+2023,B,13.38,12088.67,12088.67,0.00,0.00,False,Uttar Pradesh,Deoria,Devariya
+2023,C,13.38,12088.67,19650.29,7561.62,8672.94,True,Uttar Pradesh,Deoria,Devariya
+2024,B,33.90,16749.27,16749.27,0.00,0.00,False,Uttar Pradesh,Deoria,Devariya
+2024,C,33.90,16749.27,27661.34,10912.08,10986.31,True,Uttar Pradesh,Deoria,Devariya
+2017,B,22.10,8700.00,8700.00,0.00,0.00,False,Uttar Pradesh,Farukhabad,Farukhabad
+2017,C,22.10,8700.00,9817.93,1117.93,6703.94,True,Uttar Pradesh,Farukhabad,Farukhabad
+2018,B,22.70,12819.15,12819.15,0.00,0.00,False,Uttar Pradesh,Farukhabad,Farukhabad
+2018,C,22.70,12819.15,10329.69,-2489.46,0.00,True,Uttar Pradesh,Farukhabad,Farukhabad
+2020,B,23.85,13779.77,13779.77,0.00,0.00,False,Uttar Pradesh,Farukhabad,Farukhabad
+2020,C,23.85,13779.77,19239.43,5459.67,8833.83,True,Uttar Pradesh,Farukhabad,Farukhabad
+2021,B,25.08,14102.75,14102.75,0.00,0.00,False,Uttar Pradesh,Farukhabad,Farukhabad
+2021,C,25.08,14102.75,11958.11,-2144.63,1448.51,True,Uttar Pradesh,Farukhabad,Farukhabad
+2022,B,33.56,14690.54,14690.54,0.00,0.00,False,Uttar Pradesh,Farukhabad,Farukhabad
+2022,C,33.56,14690.54,10796.00,-3894.53,0.00,True,Uttar Pradesh,Farukhabad,Farukhabad
+2023,B,9.98,12305.13,12305.13,0.00,0.00,False,Uttar Pradesh,Farukhabad,Farukhabad
+2023,C,9.98,12305.13,17727.96,5422.82,6428.41,True,Uttar Pradesh,Farukhabad,Farukhabad
+2024,B,35.61,16771.50,16771.50,0.00,0.00,False,Uttar Pradesh,Farukhabad,Farukhabad
+2024,C,35.61,16771.50,27299.92,10528.42,10750.10,True,Uttar Pradesh,Farukhabad,Farukhabad
+2017,B,25.21,8313.48,8313.48,0.00,0.00,False,Uttar Pradesh,Fatehpur,Bindki
+2017,C,25.21,8313.48,8313.48,0.00,5543.82,False,Uttar Pradesh,Fatehpur,Bindki
+2018,B,20.05,10531.87,10531.87,0.00,0.00,False,Uttar Pradesh,Fatehpur,Bindki
+2018,C,20.05,10531.87,9851.93,-679.95,939.90,True,Uttar Pradesh,Fatehpur,Bindki
+2020,B,27.58,13234.74,13234.74,0.00,0.00,False,Uttar Pradesh,Fatehpur,Bindki
+2020,C,27.58,13234.74,23458.45,10223.71,10239.16,True,Uttar Pradesh,Fatehpur,Bindki
+2021,B,13.95,13322.37,13322.37,0.00,0.00,False,Uttar Pradesh,Fatehpur,Bindki
+2021,C,13.95,13322.37,15913.57,2591.20,3086.99,True,Uttar Pradesh,Fatehpur,Bindki
+2022,B,47.92,14002.99,14002.99,0.00,0.00,False,Uttar Pradesh,Fatehpur,Bindki
+2022,C,47.92,14002.99,10229.86,-3773.13,0.00,True,Uttar Pradesh,Fatehpur,Bindki
+2023,B,13.36,12163.78,12163.78,0.00,0.00,False,Uttar Pradesh,Fatehpur,Bindki
+2023,C,13.36,12163.78,19141.47,6977.69,7562.83,True,Uttar Pradesh,Fatehpur,Bindki
+2024,B,33.80,17668.24,17668.24,0.00,0.00,False,Uttar Pradesh,Fatehpur,Bindki
+2024,C,33.80,17668.24,28085.23,10416.99,10416.99,True,Uttar Pradesh,Fatehpur,Bindki
+2017,B,37.60,7425.82,7425.82,0.00,568.10,False,Uttar Pradesh,Fatehpur,Fatehpur
+2017,C,37.60,7425.82,7425.82,0.00,9661.25,False,Uttar Pradesh,Fatehpur,Fatehpur
+2018,B,30.17,8290.52,8290.52,0.00,13.23,False,Uttar Pradesh,Fatehpur,Fatehpur
+2018,C,30.17,8290.52,9115.16,824.64,2416.78,True,Uttar Pradesh,Fatehpur,Fatehpur
+2020,B,28.92,12793.36,12793.36,0.00,0.00,False,Uttar Pradesh,Fatehpur,Fatehpur
+2020,C,28.92,12793.36,17868.48,5075.12,10371.96,True,Uttar Pradesh,Fatehpur,Fatehpur
+2021,B,13.61,13346.48,13346.48,0.00,0.00,False,Uttar Pradesh,Fatehpur,Fatehpur
+2021,C,13.61,13346.48,16027.19,2680.71,3117.59,True,Uttar Pradesh,Fatehpur,Fatehpur
+2022,B,48.60,13130.13,13130.13,0.00,0.00,False,Uttar Pradesh,Fatehpur,Fatehpur
+2022,C,48.60,13130.13,9497.83,-3632.29,0.00,True,Uttar Pradesh,Fatehpur,Fatehpur
+2023,B,12.21,12123.64,12123.64,0.00,0.00,False,Uttar Pradesh,Fatehpur,Fatehpur
+2023,C,12.21,12123.64,19184.95,7061.31,7718.14,True,Uttar Pradesh,Fatehpur,Fatehpur
+2024,B,36.19,16988.67,16988.67,0.00,0.00,False,Uttar Pradesh,Fatehpur,Fatehpur
+2024,C,36.19,16988.67,28170.93,11182.26,11182.26,True,Uttar Pradesh,Fatehpur,Fatehpur
+2017,B,39.33,10898.28,10898.28,0.00,0.00,False,Uttar Pradesh,Ghaziabad,Ghaziabad
+2017,C,39.33,10898.28,13593.03,2694.75,8662.53,True,Uttar Pradesh,Ghaziabad,Ghaziabad
+2018,B,11.13,10424.44,10424.44,0.00,0.00,False,Uttar Pradesh,Ghaziabad,Ghaziabad
+2018,C,11.13,10424.44,11912.06,1487.62,2567.42,True,Uttar Pradesh,Ghaziabad,Ghaziabad
+2019,B,29.40,9734.04,9734.04,0.00,0.00,False,Uttar Pradesh,Ghaziabad,Ghaziabad
+2019,C,29.40,9734.04,15612.93,5878.90,17144.79,True,Uttar Pradesh,Ghaziabad,Ghaziabad
+2020,B,28.37,18398.33,18398.33,0.00,0.00,False,Uttar Pradesh,Ghaziabad,Ghaziabad
+2020,C,28.37,18398.33,21413.34,3015.01,7472.77,True,Uttar Pradesh,Ghaziabad,Ghaziabad
+2021,B,18.29,13892.29,13892.29,0.00,360.82,False,Uttar Pradesh,Ghaziabad,Ghaziabad
+2021,C,18.29,13892.29,17360.29,3468.00,4844.13,True,Uttar Pradesh,Ghaziabad,Ghaziabad
+2022,B,58.20,17182.31,17182.31,0.00,0.00,False,Uttar Pradesh,Ghaziabad,Ghaziabad
+2022,C,58.20,17182.31,13771.13,-3411.18,0.00,True,Uttar Pradesh,Ghaziabad,Ghaziabad
+2023,B,18.80,12462.38,12462.38,0.00,0.00,False,Uttar Pradesh,Ghaziabad,Ghaziabad
+2023,C,18.80,12462.38,20511.29,8048.90,8061.93,True,Uttar Pradesh,Ghaziabad,Ghaziabad
+2024,B,26.89,18254.35,18254.35,0.00,0.00,False,Uttar Pradesh,Ghaziabad,Ghaziabad
+2024,C,26.89,18254.35,28243.72,9989.37,9989.37,True,Uttar Pradesh,Ghaziabad,Ghaziabad
+2017,B,32.68,9086.77,9086.77,0.00,0.00,False,Uttar Pradesh,Ghaziabad,Hapur
+2017,C,32.68,9086.77,11977.44,2890.67,7181.30,True,Uttar Pradesh,Ghaziabad,Hapur
+2018,B,12.57,10649.56,10649.56,0.00,0.00,False,Uttar Pradesh,Ghaziabad,Hapur
+2018,C,12.57,10649.56,10894.99,245.43,987.68,True,Uttar Pradesh,Ghaziabad,Hapur
+2019,B,30.63,8565.22,8565.22,0.00,114.35,False,Uttar Pradesh,Ghaziabad,Hapur
+2019,C,30.63,8565.22,14051.77,5486.55,15630.72,True,Uttar Pradesh,Ghaziabad,Hapur
+2020,B,31.16,18143.62,18143.62,0.00,0.00,False,Uttar Pradesh,Ghaziabad,Hapur
+2020,C,31.16,18143.62,19227.12,1083.50,6552.58,True,Uttar Pradesh,Ghaziabad,Hapur
+2021,B,15.66,13052.20,13052.20,0.00,18.08,False,Uttar Pradesh,Ghaziabad,Hapur
+2021,C,15.66,13052.20,16914.62,3862.42,4970.88,True,Uttar Pradesh,Ghaziabad,Hapur
+2022,B,54.07,14135.75,14135.75,0.00,0.00,False,Uttar Pradesh,Ghaziabad,Hapur
+2022,C,54.07,14135.75,11958.87,-2176.87,0.00,True,Uttar Pradesh,Ghaziabad,Hapur
+2023,B,18.55,11123.65,11123.65,0.00,0.00,False,Uttar Pradesh,Ghaziabad,Hapur
+2023,C,18.55,11123.65,19089.69,7966.04,8022.15,True,Uttar Pradesh,Ghaziabad,Hapur
+2024,B,29.70,16810.66,16810.66,0.00,0.00,False,Uttar Pradesh,Ghaziabad,Hapur
+2024,C,29.70,16810.66,27546.71,10736.05,10765.85,True,Uttar Pradesh,Ghaziabad,Hapur
+2017,B,32.63,9222.70,9222.70,0.00,0.00,False,Uttar Pradesh,Ghazipur,Gazipur
+2017,C,32.63,9222.70,12576.85,3354.15,7862.63,True,Uttar Pradesh,Ghazipur,Gazipur
+2018,B,18.01,10508.76,10508.76,0.00,0.00,False,Uttar Pradesh,Ghazipur,Gazipur
+2018,C,18.01,10508.76,10339.58,-169.18,2034.57,True,Uttar Pradesh,Ghazipur,Gazipur
+2019,B,38.24,9452.43,9452.43,0.00,2551.13,False,Uttar Pradesh,Ghazipur,Gazipur
+2019,C,38.24,9452.43,14667.50,5215.07,23635.46,True,Uttar Pradesh,Ghazipur,Gazipur
+2020,B,28.36,15441.39,15441.39,0.00,0.00,False,Uttar Pradesh,Ghazipur,Gazipur
+2020,C,28.36,15441.39,13196.04,-2245.35,9876.84,True,Uttar Pradesh,Ghazipur,Gazipur
+2021,B,16.44,13792.03,13792.03,0.00,0.00,False,Uttar Pradesh,Ghazipur,Gazipur
+2021,C,16.44,13792.03,17857.06,4065.04,4114.17,True,Uttar Pradesh,Ghazipur,Gazipur
+2022,B,41.61,14381.76,14381.76,0.00,0.00,False,Uttar Pradesh,Ghazipur,Gazipur
+2022,C,41.61,14381.76,11303.21,-3078.56,0.00,True,Uttar Pradesh,Ghazipur,Gazipur
+2023,B,13.38,11785.65,11785.65,0.00,0.00,False,Uttar Pradesh,Ghazipur,Gazipur
+2023,C,13.38,11785.65,20458.21,8672.56,9547.54,True,Uttar Pradesh,Ghazipur,Gazipur
+2024,B,34.45,16527.66,16527.66,0.00,424.44,False,Uttar Pradesh,Ghazipur,Gazipur
+2024,C,34.45,16527.66,27275.58,10747.91,10747.91,True,Uttar Pradesh,Ghazipur,Gazipur
+2017,B,33.92,9119.91,9119.91,0.00,0.00,False,Uttar Pradesh,Gonda,Gonda
+2017,C,33.92,9119.91,9119.91,0.00,10717.83,False,Uttar Pradesh,Gonda,Gonda
+2018,B,16.51,12176.72,12176.72,0.00,0.00,False,Uttar Pradesh,Gonda,Gonda
+2018,C,16.51,12176.72,11134.60,-1042.12,86.37,True,Uttar Pradesh,Gonda,Gonda
+2020,B,29.27,14452.21,14452.21,0.00,0.00,False,Uttar Pradesh,Gonda,Gonda
+2020,C,29.27,14452.21,14004.34,-447.86,10226.93,True,Uttar Pradesh,Gonda,Gonda
+2021,B,13.11,14522.35,14522.35,0.00,0.00,False,Uttar Pradesh,Gonda,Gonda
+2021,C,13.11,14522.35,17614.99,3092.64,3151.42,True,Uttar Pradesh,Gonda,Gonda
+2022,B,36.52,16001.72,16001.72,0.00,0.00,False,Uttar Pradesh,Gonda,Gonda
+2022,C,36.52,16001.72,11952.69,-4049.03,0.00,True,Uttar Pradesh,Gonda,Gonda
+2023,B,12.31,12824.14,12824.14,0.00,0.00,False,Uttar Pradesh,Gonda,Gonda
+2023,C,12.31,12824.14,21196.89,8372.74,9168.85,True,Uttar Pradesh,Gonda,Gonda
+2024,B,33.57,17860.98,17860.98,0.00,0.00,False,Uttar Pradesh,Gonda,Gonda
+2024,C,33.57,17860.98,28455.84,10594.86,11420.46,True,Uttar Pradesh,Gonda,Gonda
+2017,B,29.74,9925.99,9925.99,0.00,0.00,False,Uttar Pradesh,Gorakhpur,Gorakhpur
+2017,C,29.74,9925.99,13261.98,3335.98,8150.69,True,Uttar Pradesh,Gorakhpur,Gorakhpur
+2018,B,21.41,11034.99,11034.99,0.00,0.00,False,Uttar Pradesh,Gorakhpur,Gorakhpur
+2018,C,21.41,11034.99,10450.36,-584.64,687.67,True,Uttar Pradesh,Gorakhpur,Gorakhpur
+2020,B,28.78,14972.24,14972.24,0.00,0.00,False,Uttar Pradesh,Gorakhpur,Gorakhpur
+2020,C,28.78,14972.24,20747.08,5774.84,10012.26,True,Uttar Pradesh,Gorakhpur,Gorakhpur
+2021,B,16.79,14512.56,14512.56,0.00,0.00,False,Uttar Pradesh,Gorakhpur,Gorakhpur
+2021,C,16.79,14512.56,17847.16,3334.60,3758.31,True,Uttar Pradesh,Gorakhpur,Gorakhpur
+2022,B,47.89,12319.58,12319.58,0.00,0.00,False,Uttar Pradesh,Gorakhpur,Gorakhpur
+2022,C,47.89,12319.58,10739.87,-1579.71,0.00,True,Uttar Pradesh,Gorakhpur,Gorakhpur
+2023,B,13.13,11906.24,11906.24,0.00,0.00,False,Uttar Pradesh,Gorakhpur,Gorakhpur
+2023,C,13.13,11906.24,19965.47,8059.23,8805.49,True,Uttar Pradesh,Gorakhpur,Gorakhpur
+2024,B,33.91,16775.30,16775.30,0.00,0.00,False,Uttar Pradesh,Gorakhpur,Gorakhpur
+2024,C,33.91,16775.30,27625.43,10850.13,11305.10,True,Uttar Pradesh,Gorakhpur,Gorakhpur
+2018,B,29.53,11642.49,11642.49,0.00,0.00,False,Uttar Pradesh,Gorakhpur,Sehjanwa
+2018,C,29.53,11642.49,10957.21,-685.29,364.43,True,Uttar Pradesh,Gorakhpur,Sehjanwa
+2020,B,28.64,16676.86,16676.86,0.00,0.00,False,Uttar Pradesh,Gorakhpur,Sehjanwa
+2020,C,28.64,16676.86,25218.04,8541.18,8613.52,True,Uttar Pradesh,Gorakhpur,Sehjanwa
+2021,B,15.41,14675.23,14675.23,0.00,0.00,False,Uttar Pradesh,Gorakhpur,Sehjanwa
+2021,C,15.41,14675.23,17957.32,3282.08,3473.12,True,Uttar Pradesh,Gorakhpur,Sehjanwa
+2022,B,43.59,12373.99,12373.99,0.00,0.00,False,Uttar Pradesh,Gorakhpur,Sehjanwa
+2022,C,43.59,12373.99,10819.81,-1554.18,48.01,True,Uttar Pradesh,Gorakhpur,Sehjanwa
+2023,B,16.01,12029.27,12029.27,0.00,0.00,False,Uttar Pradesh,Gorakhpur,Sehjanwa
+2023,C,16.01,12029.27,19850.17,7820.90,8588.27,True,Uttar Pradesh,Gorakhpur,Sehjanwa
+2024,B,37.48,17447.26,17447.26,0.00,2067.00,False,Uttar Pradesh,Gorakhpur,Sehjanwa
+2024,C,37.48,17447.26,25665.97,8218.71,9581.25,True,Uttar Pradesh,Gorakhpur,Sehjanwa
+2017,B,30.11,9538.58,9538.58,0.00,0.00,False,Uttar Pradesh,Hardoi,Hardoi
+2017,C,30.11,9538.58,9538.58,0.00,5386.31,False,Uttar Pradesh,Hardoi,Hardoi
+2018,B,15.86,15427.71,15427.71,0.00,0.00,False,Uttar Pradesh,Hardoi,Hardoi
+2018,C,15.86,15427.71,12676.87,-2750.85,0.00,True,Uttar Pradesh,Hardoi,Hardoi
+2020,B,25.05,13955.18,13955.18,0.00,0.00,False,Uttar Pradesh,Hardoi,Hardoi
+2020,C,25.05,13955.18,12665.19,-1289.99,7111.11,True,Uttar Pradesh,Hardoi,Hardoi
+2021,B,14.05,13238.12,13238.12,0.00,0.00,False,Uttar Pradesh,Hardoi,Hardoi
+2021,C,14.05,13238.12,15465.39,2227.27,3111.11,True,Uttar Pradesh,Hardoi,Hardoi
+2022,B,42.95,13512.07,13512.07,0.00,0.00,False,Uttar Pradesh,Hardoi,Hardoi
+2022,C,42.95,13512.07,10331.88,-3180.20,0.00,True,Uttar Pradesh,Hardoi,Hardoi
+2023,B,13.05,11523.15,11523.15,0.00,0.00,False,Uttar Pradesh,Hardoi,Hardoi
+2023,C,13.05,11523.15,18411.73,6888.58,8113.40,True,Uttar Pradesh,Hardoi,Hardoi
+2024,B,33.63,16578.92,16578.92,0.00,0.00,False,Uttar Pradesh,Hardoi,Hardoi
+2024,C,33.63,16578.92,27335.96,10757.05,10757.05,True,Uttar Pradesh,Hardoi,Hardoi
+2017,B,30.36,9282.96,9282.96,0.00,0.00,False,Uttar Pradesh,Hathras,Haathras
+2017,C,30.36,9282.96,12352.21,3069.25,9718.85,True,Uttar Pradesh,Hathras,Haathras
+2018,B,31.02,9782.33,9782.33,0.00,0.00,False,Uttar Pradesh,Hathras,Haathras
+2018,C,31.02,9782.33,9205.73,-576.61,343.66,True,Uttar Pradesh,Hathras,Haathras
+2020,B,22.07,12505.70,12505.70,0.00,0.00,False,Uttar Pradesh,Hathras,Haathras
+2020,C,22.07,12505.70,19684.21,7178.51,11283.26,True,Uttar Pradesh,Hathras,Haathras
+2021,B,14.47,12000.00,12000.00,0.00,0.00,False,Uttar Pradesh,Hathras,Haathras
+2021,C,14.47,12000.00,16019.09,4019.09,4263.99,True,Uttar Pradesh,Hathras,Haathras
+2022,B,46.00,18132.48,18132.48,0.00,0.00,False,Uttar Pradesh,Hathras,Haathras
+2022,C,46.00,18132.48,12333.42,-5799.07,0.00,True,Uttar Pradesh,Hathras,Haathras
+2023,B,18.35,11752.69,11752.69,0.00,0.00,False,Uttar Pradesh,Hathras,Haathras
+2023,C,18.35,11752.69,17739.81,5987.12,6821.71,True,Uttar Pradesh,Hathras,Haathras
+2024,B,32.54,17054.67,17054.67,0.00,0.00,False,Uttar Pradesh,Hathras,Haathras
+2024,C,32.54,17054.67,25852.77,8798.11,8840.65,True,Uttar Pradesh,Hathras,Haathras
+2017,B,33.76,9363.56,9363.56,0.00,0.00,False,Uttar Pradesh,Jaunpur,Jaunpur
+2017,C,33.76,9363.56,13160.81,3797.26,8835.77,True,Uttar Pradesh,Jaunpur,Jaunpur
+2018,B,17.76,11404.70,11404.70,0.00,0.00,False,Uttar Pradesh,Jaunpur,Jaunpur
+2018,C,17.76,11404.70,10862.32,-542.39,941.64,True,Uttar Pradesh,Jaunpur,Jaunpur
+2020,B,30.61,15224.78,15224.78,0.00,0.00,False,Uttar Pradesh,Jaunpur,Jaunpur
+2020,C,30.61,15224.78,19335.17,4110.39,9191.42,True,Uttar Pradesh,Jaunpur,Jaunpur
+2021,B,16.57,13295.35,13295.35,0.00,0.00,False,Uttar Pradesh,Jaunpur,Jaunpur
+2021,C,16.57,13295.35,17741.22,4445.87,4485.37,True,Uttar Pradesh,Jaunpur,Jaunpur
+2022,B,39.47,14765.44,14765.44,0.00,0.00,False,Uttar Pradesh,Jaunpur,Jaunpur
+2022,C,39.47,14765.44,11169.57,-3595.87,0.00,True,Uttar Pradesh,Jaunpur,Jaunpur
+2023,B,13.36,11804.33,11804.33,0.00,0.00,False,Uttar Pradesh,Jaunpur,Jaunpur
+2023,C,13.36,11804.33,20269.48,8465.14,9213.53,True,Uttar Pradesh,Jaunpur,Jaunpur
+2024,B,33.91,16870.94,16870.94,0.00,0.00,False,Uttar Pradesh,Jaunpur,Jaunpur
+2024,C,33.91,16870.94,27976.69,11105.75,11105.75,True,Uttar Pradesh,Jaunpur,Jaunpur
+2017,B,35.43,9186.25,9186.25,0.00,0.00,False,Uttar Pradesh,Jaunpur,Shahganj
+2017,C,35.43,9186.25,9186.25,0.00,7311.93,False,Uttar Pradesh,Jaunpur,Shahganj
+2018,B,10.47,10521.55,10521.55,0.00,0.00,False,Uttar Pradesh,Jaunpur,Shahganj
+2018,C,10.47,10521.55,11236.99,715.43,938.89,True,Uttar Pradesh,Jaunpur,Shahganj
+2020,B,32.13,15643.77,15643.77,0.00,0.00,False,Uttar Pradesh,Jaunpur,Shahganj
+2020,C,32.13,15643.77,18373.97,2730.20,7952.33,True,Uttar Pradesh,Jaunpur,Shahganj
+2021,B,17.49,12913.79,12913.79,0.00,0.00,False,Uttar Pradesh,Jaunpur,Shahganj
+2021,C,17.49,12913.79,17815.33,4901.54,4965.00,True,Uttar Pradesh,Jaunpur,Shahganj
+2022,B,36.79,15073.79,15073.79,0.00,0.00,False,Uttar Pradesh,Jaunpur,Shahganj
+2022,C,36.79,15073.79,10973.28,-4100.50,0.00,True,Uttar Pradesh,Jaunpur,Shahganj
+2023,B,13.52,11869.08,11869.08,0.00,0.00,False,Uttar Pradesh,Jaunpur,Shahganj
+2023,C,13.52,11869.08,19809.10,7940.02,9508.31,True,Uttar Pradesh,Jaunpur,Shahganj
+2024,B,33.53,16627.10,16627.10,0.00,0.00,False,Uttar Pradesh,Jaunpur,Shahganj
+2024,C,33.53,16627.10,27637.02,11009.92,11009.92,True,Uttar Pradesh,Jaunpur,Shahganj
+2017,B,24.86,9168.02,9168.02,0.00,0.00,False,Uttar Pradesh,Kanpur,Kanpur(Grain)
+2017,C,24.86,9168.02,9758.36,590.33,4644.02,True,Uttar Pradesh,Kanpur,Kanpur(Grain)
+2018,B,19.77,10795.74,10795.74,0.00,0.00,False,Uttar Pradesh,Kanpur,Kanpur(Grain)
+2018,C,19.77,10795.74,9042.09,-1753.64,0.00,True,Uttar Pradesh,Kanpur,Kanpur(Grain)
+2020,B,27.16,15052.20,15052.20,0.00,0.00,False,Uttar Pradesh,Kanpur,Kanpur(Grain)
+2020,C,27.16,15052.20,18317.61,3265.41,7313.85,True,Uttar Pradesh,Kanpur,Kanpur(Grain)
+2021,B,13.42,11739.81,11739.81,0.00,0.00,False,Uttar Pradesh,Kanpur,Kanpur(Grain)
+2021,C,13.42,11739.81,13614.38,1874.58,2959.28,True,Uttar Pradesh,Kanpur,Kanpur(Grain)
+2022,B,33.51,13454.60,13454.60,0.00,0.00,False,Uttar Pradesh,Kanpur,Kanpur(Grain)
+2022,C,33.51,13454.60,9493.70,-3960.90,0.00,True,Uttar Pradesh,Kanpur,Kanpur(Grain)
+2023,B,10.60,12608.97,12608.97,0.00,0.00,False,Uttar Pradesh,Kanpur,Kanpur(Grain)
+2023,C,10.60,12608.97,17611.10,5002.13,5417.77,True,Uttar Pradesh,Kanpur,Kanpur(Grain)
+2024,B,37.29,16888.16,16888.16,0.00,0.00,False,Uttar Pradesh,Kanpur,Kanpur(Grain)
+2024,C,37.29,16888.16,27085.91,10197.75,10270.99,True,Uttar Pradesh,Kanpur,Kanpur(Grain)
+2017,B,27.86,9583.42,9583.42,0.00,0.00,False,Uttar Pradesh,Lakhimpur,Lakhimpur
+2017,C,27.86,9583.42,9583.42,0.00,4930.77,False,Uttar Pradesh,Lakhimpur,Lakhimpur
+2018,B,9.42,10704.08,10704.08,0.00,0.00,False,Uttar Pradesh,Lakhimpur,Lakhimpur
+2018,C,9.42,10704.08,10179.98,-524.10,32.27,True,Uttar Pradesh,Lakhimpur,Lakhimpur
+2020,B,24.99,13809.68,13809.68,0.00,0.00,False,Uttar Pradesh,Lakhimpur,Lakhimpur
+2020,C,24.99,13809.68,15656.85,1847.17,7076.32,True,Uttar Pradesh,Lakhimpur,Lakhimpur
+2021,B,11.67,14239.37,14239.37,0.00,0.00,False,Uttar Pradesh,Lakhimpur,Lakhimpur
+2021,C,11.67,14239.37,16231.70,1992.33,2311.99,True,Uttar Pradesh,Lakhimpur,Lakhimpur
+2022,B,36.24,16559.52,16559.52,0.00,0.00,False,Uttar Pradesh,Lakhimpur,Lakhimpur
+2022,C,36.24,16559.52,11407.21,-5152.31,0.00,True,Uttar Pradesh,Lakhimpur,Lakhimpur
+2023,B,15.36,11538.95,11538.95,0.00,0.00,False,Uttar Pradesh,Lakhimpur,Lakhimpur
+2023,C,15.36,11538.95,18493.00,6954.05,8115.68,True,Uttar Pradesh,Lakhimpur,Lakhimpur
+2024,B,33.17,17432.87,17432.87,0.00,0.00,False,Uttar Pradesh,Lakhimpur,Lakhimpur
+2024,C,33.17,17432.87,27560.89,10128.02,10128.02,True,Uttar Pradesh,Lakhimpur,Lakhimpur
+2017,B,29.21,9509.75,9509.75,0.00,0.00,False,Uttar Pradesh,Lucknow,Lucknow
+2017,C,29.21,9509.75,9509.75,0.00,6123.77,False,Uttar Pradesh,Lucknow,Lucknow
+2018,B,19.79,9650.07,9650.07,0.00,0.00,False,Uttar Pradesh,Lucknow,Lucknow
+2018,C,19.79,9650.07,9560.90,-89.17,1108.50,True,Uttar Pradesh,Lucknow,Lucknow
+2020,B,27.36,14099.74,14099.74,0.00,0.00,False,Uttar Pradesh,Lucknow,Lucknow
+2020,C,27.36,14099.74,18003.95,3904.21,8904.74,True,Uttar Pradesh,Lucknow,Lucknow
+2021,B,11.81,14118.37,14118.37,0.00,0.00,False,Uttar Pradesh,Lucknow,Lucknow
+2021,C,11.81,14118.37,16304.25,2185.88,2449.76,True,Uttar Pradesh,Lucknow,Lucknow
+2022,B,44.58,16265.21,16265.21,0.00,0.00,False,Uttar Pradesh,Lucknow,Lucknow
+2022,C,44.58,16265.21,11561.56,-4703.65,0.00,True,Uttar Pradesh,Lucknow,Lucknow
+2023,B,14.05,13485.87,13485.87,0.00,0.00,False,Uttar Pradesh,Lucknow,Lucknow
+2023,C,14.05,13485.87,19847.51,6361.63,7232.95,True,Uttar Pradesh,Lucknow,Lucknow
+2024,B,31.57,17567.58,17567.58,0.00,0.00,False,Uttar Pradesh,Lucknow,Lucknow
+2024,C,31.57,17567.58,27637.69,10070.11,10070.11,True,Uttar Pradesh,Lucknow,Lucknow
+2018,B,14.64,10778.66,10778.66,0.00,0.00,False,Uttar Pradesh,Maharajganj,Partaval
+2018,C,14.64,10778.66,10186.23,-592.43,554.18,True,Uttar Pradesh,Maharajganj,Partaval
+2020,B,25.23,13488.31,13488.31,0.00,0.00,False,Uttar Pradesh,Maharajganj,Partaval
+2020,C,25.23,13488.31,19736.64,6248.33,12011.07,True,Uttar Pradesh,Maharajganj,Partaval
+2021,B,15.08,14598.01,14598.01,0.00,0.00,False,Uttar Pradesh,Maharajganj,Partaval
+2021,C,15.08,14598.01,17803.99,3205.98,3505.39,True,Uttar Pradesh,Maharajganj,Partaval
+2022,B,46.31,12810.00,12810.00,0.00,0.00,False,Uttar Pradesh,Maharajganj,Partaval
+2022,C,46.31,12810.00,10663.09,-2146.91,0.00,True,Uttar Pradesh,Maharajganj,Partaval
+2023,B,12.71,12155.47,12155.47,0.00,0.00,False,Uttar Pradesh,Maharajganj,Partaval
+2023,C,12.71,12155.47,19471.20,7315.73,8620.65,True,Uttar Pradesh,Maharajganj,Partaval
+2024,B,34.72,16694.39,16694.39,0.00,0.00,False,Uttar Pradesh,Maharajganj,Partaval
+2024,C,34.72,16694.39,27613.57,10919.18,11492.12,True,Uttar Pradesh,Maharajganj,Partaval
+2018,B,13.87,11214.74,11214.74,0.00,0.00,False,Uttar Pradesh,MauMaunathbhanjan,Kopaganj
+2018,C,13.87,11214.74,10525.47,-689.27,560.33,True,Uttar Pradesh,MauMaunathbhanjan,Kopaganj
+2020,B,28.21,13928.16,13928.16,0.00,0.00,False,Uttar Pradesh,MauMaunathbhanjan,Kopaganj
+2020,C,28.21,13928.16,13840.52,-87.63,10831.77,True,Uttar Pradesh,MauMaunathbhanjan,Kopaganj
+2021,B,16.79,14532.10,14532.10,0.00,0.00,False,Uttar Pradesh,MauMaunathbhanjan,Kopaganj
+2021,C,16.79,14532.10,17034.58,2502.49,2780.61,True,Uttar Pradesh,MauMaunathbhanjan,Kopaganj
+2022,B,70.38,12728.78,12728.78,0.00,0.00,False,Uttar Pradesh,MauMaunathbhanjan,Kopaganj
+2022,C,70.38,12728.78,9131.11,-3597.66,0.00,True,Uttar Pradesh,MauMaunathbhanjan,Kopaganj
+2023,B,12.55,12159.38,12159.38,0.00,0.00,False,Uttar Pradesh,MauMaunathbhanjan,Kopaganj
+2023,C,12.55,12159.38,20324.02,8164.64,9815.47,True,Uttar Pradesh,MauMaunathbhanjan,Kopaganj
+2024,B,25.34,16797.98,16797.98,0.00,0.00,False,Uttar Pradesh,MauMaunathbhanjan,Kopaganj
+2024,C,25.34,16797.98,21705.31,4907.33,5046.74,True,Uttar Pradesh,MauMaunathbhanjan,Kopaganj
+2017,B,30.16,9189.86,9189.86,0.00,0.00,False,Uttar Pradesh,Meerut,Meerut
+2017,C,30.16,9189.86,11378.15,2188.29,7274.77,True,Uttar Pradesh,Meerut,Meerut
+2018,B,13.27,12210.28,12210.28,0.00,0.00,False,Uttar Pradesh,Meerut,Meerut
+2018,C,13.27,12210.28,11454.47,-755.81,379.04,True,Uttar Pradesh,Meerut,Meerut
+2020,B,27.85,17488.32,17488.32,0.00,0.00,False,Uttar Pradesh,Meerut,Meerut
+2020,C,27.85,17488.32,21341.47,3853.15,7826.00,True,Uttar Pradesh,Meerut,Meerut
+2021,B,17.86,13963.28,13963.28,0.00,264.72,False,Uttar Pradesh,Meerut,Meerut
+2021,C,17.86,13963.28,18003.39,4040.11,5516.11,True,Uttar Pradesh,Meerut,Meerut
+2022,B,55.56,14621.82,14621.82,0.00,0.00,False,Uttar Pradesh,Meerut,Meerut
+2022,C,55.56,14621.82,12032.99,-2588.83,0.00,True,Uttar Pradesh,Meerut,Meerut
+2023,B,22.08,11977.61,11977.61,0.00,0.00,False,Uttar Pradesh,Meerut,Meerut
+2023,C,22.08,11977.61,19406.62,7429.01,7479.39,True,Uttar Pradesh,Meerut,Meerut
+2024,B,28.96,16923.88,16923.88,0.00,0.00,False,Uttar Pradesh,Meerut,Meerut
+2024,C,28.96,16923.88,27424.56,10500.69,10500.69,True,Uttar Pradesh,Meerut,Meerut
+2017,B,27.41,8841.17,8841.17,0.00,0.00,False,Uttar Pradesh,Muzaffarnagar,Muzzafarnagar
+2017,C,27.41,8841.17,11812.78,2971.61,7569.74,True,Uttar Pradesh,Muzaffarnagar,Muzzafarnagar
+2018,B,14.09,12288.13,12288.13,0.00,0.00,False,Uttar Pradesh,Muzaffarnagar,Muzzafarnagar
+2018,C,14.09,12288.13,11779.38,-508.76,583.11,True,Uttar Pradesh,Muzaffarnagar,Muzzafarnagar
+2020,B,30.51,17651.09,17651.09,0.00,0.00,False,Uttar Pradesh,Muzaffarnagar,Muzzafarnagar
+2020,C,30.51,17651.09,14245.79,-3405.30,7252.05,True,Uttar Pradesh,Muzaffarnagar,Muzzafarnagar
+2021,B,16.36,13534.66,13534.66,0.00,0.00,False,Uttar Pradesh,Muzaffarnagar,Muzzafarnagar
+2021,C,16.36,13534.66,17114.75,3580.09,4841.67,True,Uttar Pradesh,Muzaffarnagar,Muzzafarnagar
+2022,B,59.91,15344.83,15344.83,0.00,0.00,False,Uttar Pradesh,Muzaffarnagar,Muzzafarnagar
+2022,C,59.91,15344.83,12445.11,-2899.73,0.00,True,Uttar Pradesh,Muzaffarnagar,Muzzafarnagar
+2023,B,23.36,11942.86,11942.86,0.00,0.00,False,Uttar Pradesh,Muzaffarnagar,Muzzafarnagar
+2023,C,23.36,11942.86,19735.83,7792.96,7854.89,True,Uttar Pradesh,Muzaffarnagar,Muzzafarnagar
+2024,B,27.90,18005.78,18005.78,0.00,0.00,False,Uttar Pradesh,Muzaffarnagar,Muzzafarnagar
+2024,C,27.90,18005.78,28591.56,10585.78,10585.78,True,Uttar Pradesh,Muzaffarnagar,Muzzafarnagar
+2017,B,33.80,7055.56,7055.56,0.00,0.00,False,Uttar Pradesh,Pillibhit,Pilibhit
+2017,C,33.80,7055.56,7649.14,593.58,7032.56,True,Uttar Pradesh,Pillibhit,Pilibhit
+2018,B,16.65,10815.03,10815.03,0.00,0.00,False,Uttar Pradesh,Pillibhit,Pilibhit
+2018,C,16.65,10815.03,9680.82,-1134.20,0.00,True,Uttar Pradesh,Pillibhit,Pilibhit
+2019,B,29.97,7491.42,7491.42,0.00,820.55,False,Uttar Pradesh,Pillibhit,Pilibhit
+2019,C,29.97,7491.42,10934.14,3442.73,16252.32,True,Uttar Pradesh,Pillibhit,Pilibhit
+2020,B,30.91,17728.21,17728.21,0.00,0.00,False,Uttar Pradesh,Pillibhit,Pilibhit
+2020,C,30.91,17728.21,12429.41,-5298.80,4228.06,True,Uttar Pradesh,Pillibhit,Pilibhit
+2021,B,13.23,15482.81,15482.81,0.00,0.00,False,Uttar Pradesh,Pillibhit,Pilibhit
+2021,C,13.23,15482.81,15467.04,-15.77,175.80,True,Uttar Pradesh,Pillibhit,Pilibhit
+2022,B,38.30,16304.62,16304.62,0.00,0.00,False,Uttar Pradesh,Pillibhit,Pilibhit
+2022,C,38.30,16304.62,11154.94,-5149.68,0.00,True,Uttar Pradesh,Pillibhit,Pilibhit
+2023,B,13.33,12133.29,12133.29,0.00,0.00,False,Uttar Pradesh,Pillibhit,Pilibhit
+2023,C,13.33,12133.29,18039.67,5906.38,7842.93,True,Uttar Pradesh,Pillibhit,Pilibhit
+2024,B,32.51,18274.71,18274.71,0.00,0.00,False,Uttar Pradesh,Pillibhit,Pilibhit
+2024,C,32.51,18274.71,27425.40,9150.70,9150.70,True,Uttar Pradesh,Pillibhit,Pilibhit
+2017,B,30.81,9792.91,9792.91,0.00,0.00,False,Uttar Pradesh,Prayagraj,Allahabad
+2017,C,30.81,9792.91,12745.23,2952.31,6093.70,True,Uttar Pradesh,Prayagraj,Allahabad
+2018,B,20.52,10843.20,10843.20,0.00,0.00,False,Uttar Pradesh,Prayagraj,Allahabad
+2018,C,20.52,10843.20,10159.26,-683.94,236.34,True,Uttar Pradesh,Prayagraj,Allahabad
+2020,B,25.69,14795.96,14795.96,0.00,0.00,False,Uttar Pradesh,Prayagraj,Allahabad
+2020,C,25.69,14795.96,20061.48,5265.51,9358.95,True,Uttar Pradesh,Prayagraj,Allahabad
+2021,B,10.15,13563.53,13563.53,0.00,0.00,False,Uttar Pradesh,Prayagraj,Allahabad
+2021,C,10.15,13563.53,16620.13,3056.60,3221.40,True,Uttar Pradesh,Prayagraj,Allahabad
+2022,B,43.89,12405.43,12405.43,0.00,0.00,False,Uttar Pradesh,Prayagraj,Allahabad
+2022,C,43.89,12405.43,10255.97,-2149.46,0.08,True,Uttar Pradesh,Prayagraj,Allahabad
+2023,B,12.98,12599.28,12599.28,0.00,0.00,False,Uttar Pradesh,Prayagraj,Allahabad
+2023,C,12.98,12599.28,19377.98,6778.70,7347.17,True,Uttar Pradesh,Prayagraj,Allahabad
+2024,B,34.78,17496.92,17496.92,0.00,0.00,False,Uttar Pradesh,Prayagraj,Allahabad
+2024,C,34.78,17496.92,28005.75,10508.82,11006.03,True,Uttar Pradesh,Prayagraj,Allahabad
+2018,B,29.83,10338.19,10338.19,0.00,0.00,False,Uttar Pradesh,Prayagraj,Jasra
+2018,C,29.83,10338.19,9054.55,-1283.64,366.92,True,Uttar Pradesh,Prayagraj,Jasra
+2019,B,37.70,6857.02,6857.02,0.00,2075.35,False,Uttar Pradesh,Prayagraj,Jasra
+2019,C,37.70,6857.02,9905.50,3048.48,20512.47,True,Uttar Pradesh,Prayagraj,Jasra
+2020,B,26.71,14798.97,14798.97,0.00,0.00,False,Uttar Pradesh,Prayagraj,Jasra
+2020,C,26.71,14798.97,13231.97,-1566.99,9360.02,True,Uttar Pradesh,Prayagraj,Jasra
+2021,B,14.83,12985.44,12985.44,0.00,0.00,False,Uttar Pradesh,Prayagraj,Jasra
+2021,C,14.83,12985.44,15651.80,2666.36,2713.23,True,Uttar Pradesh,Prayagraj,Jasra
+2022,B,37.73,13189.53,13189.53,0.00,0.00,False,Uttar Pradesh,Prayagraj,Jasra
+2022,C,37.73,13189.53,10207.43,-2982.10,0.00,True,Uttar Pradesh,Prayagraj,Jasra
+2023,B,8.00,12405.99,12405.99,0.00,0.00,False,Uttar Pradesh,Prayagraj,Jasra
+2023,C,8.00,12405.99,18782.83,6376.84,6848.98,True,Uttar Pradesh,Prayagraj,Jasra
+2024,B,37.69,17340.29,17340.29,0.00,0.00,False,Uttar Pradesh,Prayagraj,Jasra
+2024,C,37.69,17340.29,28697.85,11357.56,11357.56,True,Uttar Pradesh,Prayagraj,Jasra
+2017,B,32.37,8783.82,8783.82,0.00,0.00,False,Uttar Pradesh,Saharanpur,Saharanpur
+2017,C,32.37,8783.82,10332.28,1548.47,7773.34,True,Uttar Pradesh,Saharanpur,Saharanpur
+2018,B,11.30,12172.12,12172.12,0.00,0.00,False,Uttar Pradesh,Saharanpur,Saharanpur
+2018,C,11.30,12172.12,11640.82,-531.30,544.07,True,Uttar Pradesh,Saharanpur,Saharanpur
+2020,B,29.86,18359.66,18359.66,0.00,0.00,False,Uttar Pradesh,Saharanpur,Saharanpur
+2020,C,29.86,18359.66,14365.61,-3994.05,6651.40,True,Uttar Pradesh,Saharanpur,Saharanpur
+2021,B,14.98,13537.13,13537.13,0.00,0.00,False,Uttar Pradesh,Saharanpur,Saharanpur
+2021,C,14.98,13537.13,17312.75,3775.62,4846.34,True,Uttar Pradesh,Saharanpur,Saharanpur
+2022,B,56.83,15408.22,15408.22,0.00,0.00,False,Uttar Pradesh,Saharanpur,Saharanpur
+2022,C,56.83,15408.22,12209.45,-3198.78,0.00,True,Uttar Pradesh,Saharanpur,Saharanpur
+2023,B,22.03,11931.34,11931.34,0.00,0.00,False,Uttar Pradesh,Saharanpur,Saharanpur
+2023,C,22.03,11931.34,19882.68,7951.35,8029.26,True,Uttar Pradesh,Saharanpur,Saharanpur
+2024,B,29.05,17924.18,17924.18,0.00,0.00,False,Uttar Pradesh,Saharanpur,Saharanpur
+2024,C,29.05,17924.18,28599.27,10675.09,10675.09,True,Uttar Pradesh,Saharanpur,Saharanpur
+2017,B,33.61,7862.89,7862.89,0.00,0.00,False,Uttar Pradesh,Shahjahanpur,Shahjahanpur
+2017,C,33.61,7862.89,10110.76,2247.87,6909.06,True,Uttar Pradesh,Shahjahanpur,Shahjahanpur
+2018,B,18.75,12352.91,12352.91,0.00,0.00,False,Uttar Pradesh,Shahjahanpur,Shahjahanpur
+2018,C,18.75,12352.91,10118.78,-2234.12,0.00,True,Uttar Pradesh,Shahjahanpur,Shahjahanpur
+2020,B,33.84,17613.29,17613.29,0.00,0.00,False,Uttar Pradesh,Shahjahanpur,Shahjahanpur
+2020,C,33.84,17613.29,12222.03,-5391.26,4451.18,True,Uttar Pradesh,Shahjahanpur,Shahjahanpur
+2021,B,16.08,15996.38,15996.38,0.00,0.00,False,Uttar Pradesh,Shahjahanpur,Shahjahanpur
+2021,C,16.08,15996.38,13855.05,-2141.33,0.00,True,Uttar Pradesh,Shahjahanpur,Shahjahanpur
+2022,B,34.81,16413.13,16413.13,0.00,0.00,False,Uttar Pradesh,Shahjahanpur,Shahjahanpur
+2022,C,34.81,16413.13,10975.09,-5438.04,0.00,True,Uttar Pradesh,Shahjahanpur,Shahjahanpur
+2023,B,15.70,12289.45,12289.45,0.00,0.00,False,Uttar Pradesh,Shahjahanpur,Shahjahanpur
+2023,C,15.70,12289.45,13864.98,1575.53,7218.52,True,Uttar Pradesh,Shahjahanpur,Shahjahanpur
+2024,B,31.34,17782.67,17782.67,0.00,0.00,False,Uttar Pradesh,Shahjahanpur,Shahjahanpur
+2024,C,31.34,17782.67,27003.78,9221.11,9221.11,True,Uttar Pradesh,Shahjahanpur,Shahjahanpur
+2017,B,36.36,8622.25,8622.25,0.00,0.00,False,Uttar Pradesh,Sitapur,Sitapur
+2017,C,36.36,8622.25,9478.42,856.17,4978.42,True,Uttar Pradesh,Sitapur,Sitapur
+2018,B,16.04,11326.56,11326.56,0.00,0.00,False,Uttar Pradesh,Sitapur,Sitapur
+2018,C,16.04,11326.56,10338.54,-988.03,0.00,True,Uttar Pradesh,Sitapur,Sitapur
+2020,B,25.35,16343.13,16343.13,0.00,0.00,False,Uttar Pradesh,Sitapur,Sitapur
+2020,C,25.35,16343.13,12787.29,-3555.84,5469.15,True,Uttar Pradesh,Sitapur,Sitapur
+2021,B,13.96,14625.01,14625.01,0.00,0.00,False,Uttar Pradesh,Sitapur,Sitapur
+2021,C,13.96,14625.01,16339.65,1714.64,2040.48,True,Uttar Pradesh,Sitapur,Sitapur
+2022,B,36.12,14479.13,14479.13,0.00,0.00,False,Uttar Pradesh,Sitapur,Sitapur
+2022,C,36.12,14479.13,10770.82,-3708.31,0.00,True,Uttar Pradesh,Sitapur,Sitapur
+2023,B,14.34,11681.61,11681.61,0.00,0.00,False,Uttar Pradesh,Sitapur,Sitapur
+2023,C,14.34,11681.61,18640.05,6958.45,8036.77,True,Uttar Pradesh,Sitapur,Sitapur
+2024,B,33.10,16737.81,16737.81,0.00,0.00,False,Uttar Pradesh,Sitapur,Sitapur
+2024,C,33.10,16737.81,27568.85,10831.04,10831.04,True,Uttar Pradesh,Sitapur,Sitapur
+2017,B,34.47,9913.35,9913.35,0.00,0.00,False,Uttar Pradesh,Unnao,Unnao
+2017,C,34.47,9913.35,9877.46,-35.89,5538.30,True,Uttar Pradesh,Unnao,Unnao
+2018,B,12.85,9387.51,9387.51,0.00,0.00,False,Uttar Pradesh,Unnao,Unnao
+2018,C,12.85,9387.51,9067.76,-319.75,343.30,True,Uttar Pradesh,Unnao,Unnao
+2020,B,28.45,13854.01,13854.01,0.00,0.00,False,Uttar Pradesh,Unnao,Unnao
+2020,C,28.45,13854.01,12190.14,-1663.87,7504.13,True,Uttar Pradesh,Unnao,Unnao
+2021,B,15.77,13593.24,13593.24,0.00,0.00,False,Uttar Pradesh,Unnao,Unnao
+2021,C,15.77,13593.24,15078.62,1485.38,3122.07,True,Uttar Pradesh,Unnao,Unnao
+2022,B,42.17,11762.39,11762.39,0.00,0.00,False,Uttar Pradesh,Unnao,Unnao
+2022,C,42.17,11762.39,10270.62,-1491.77,0.00,True,Uttar Pradesh,Unnao,Unnao
+2023,B,16.24,11145.62,11145.62,0.00,0.00,False,Uttar Pradesh,Unnao,Unnao
+2023,C,16.24,11145.62,13333.53,2187.91,8520.04,True,Uttar Pradesh,Unnao,Unnao
+2024,B,35.69,16952.82,16952.82,0.00,0.00,False,Uttar Pradesh,Unnao,Unnao
+2024,C,35.69,16952.82,27463.61,10510.78,10529.18,True,Uttar Pradesh,Unnao,Unnao
+2017,B,36.22,6717.26,6717.26,0.00,0.00,False,Uttrakhand,Dehradoon,Dehradoon
+2017,C,36.22,6717.26,9086.10,2368.84,6194.06,True,Uttrakhand,Dehradoon,Dehradoon
+2018,B,19.11,11446.04,11446.04,0.00,0.00,False,Uttrakhand,Dehradoon,Dehradoon
+2018,C,19.11,11446.04,9081.98,-2364.06,0.00,True,Uttrakhand,Dehradoon,Dehradoon
+2020,B,29.62,17981.95,17981.95,0.00,0.00,False,Uttrakhand,Dehradoon,Dehradoon
+2020,C,29.62,17981.95,13104.58,-4877.37,5390.97,True,Uttrakhand,Dehradoon,Dehradoon
+2021,B,22.29,11529.29,11529.29,0.00,0.00,False,Uttrakhand,Dehradoon,Dehradoon
+2021,C,22.29,11529.29,14326.55,2797.26,2969.78,True,Uttrakhand,Dehradoon,Dehradoon
+2022,B,43.69,11051.75,11051.75,0.00,0.00,False,Uttrakhand,Dehradoon,Dehradoon
+2022,C,43.69,11051.75,10212.22,-839.53,0.00,True,Uttrakhand,Dehradoon,Dehradoon
+2023,B,12.04,15963.66,15963.66,0.00,0.00,False,Uttrakhand,Dehradoon,Dehradoon
+2023,C,12.04,15963.66,18458.00,2494.33,2898.87,True,Uttrakhand,Dehradoon,Dehradoon
+2024,B,22.67,16357.93,16357.93,0.00,316.36,False,Uttrakhand,Dehradoon,Dehradoon
+2024,C,22.67,16357.93,16187.81,-170.12,4651.62,True,Uttrakhand,Dehradoon,Dehradoon
+2017,B,27.76,7090.95,7090.95,0.00,0.00,False,Uttrakhand,Dehradoon,Vikasnagar
+2017,C,27.76,7090.95,8093.38,1002.44,5777.92,True,Uttrakhand,Dehradoon,Vikasnagar
+2018,B,13.62,8933.72,8933.72,0.00,0.00,False,Uttrakhand,Dehradoon,Vikasnagar
+2018,C,13.62,8933.72,7995.53,-938.19,0.00,True,Uttrakhand,Dehradoon,Vikasnagar
+2019,B,33.07,8482.41,8482.41,0.00,0.00,False,Uttrakhand,Dehradoon,Vikasnagar
+2019,C,33.07,8482.41,8859.00,376.59,11201.54,True,Uttrakhand,Dehradoon,Vikasnagar
+2020,B,26.95,14971.16,14971.16,0.00,0.00,False,Uttrakhand,Dehradoon,Vikasnagar
+2020,C,26.95,14971.16,14337.23,-633.93,1736.99,True,Uttrakhand,Dehradoon,Vikasnagar
+2021,B,10.68,12948.48,12948.48,0.00,0.00,False,Uttrakhand,Dehradoon,Vikasnagar
+2021,C,10.68,12948.48,11677.65,-1270.82,0.00,True,Uttrakhand,Dehradoon,Vikasnagar
+2022,B,24.22,11859.81,11859.81,0.00,0.00,False,Uttrakhand,Dehradoon,Vikasnagar
+2022,C,24.22,11859.81,9226.34,-2633.47,0.00,True,Uttrakhand,Dehradoon,Vikasnagar
+2023,B,11.11,10658.36,10658.36,0.00,0.00,False,Uttrakhand,Dehradoon,Vikasnagar
+2023,C,11.11,10658.36,12045.13,1386.77,3957.30,True,Uttrakhand,Dehradoon,Vikasnagar
+2024,B,27.42,15345.62,15345.62,0.00,0.00,False,Uttrakhand,Dehradoon,Vikasnagar
+2024,C,27.42,15345.62,15874.21,528.59,3101.13,True,Uttrakhand,Dehradoon,Vikasnagar
+2017,B,21.35,7642.20,7642.20,0.00,0.00,False,Uttrakhand,UdhamSinghNagar,Sitarganj
+2017,C,21.35,7642.20,9244.03,1601.83,6660.59,True,Uttrakhand,UdhamSinghNagar,Sitarganj
+2018,B,24.83,11428.57,11428.57,0.00,0.00,False,Uttrakhand,UdhamSinghNagar,Sitarganj
+2018,C,24.83,11428.57,9173.85,-2254.73,647.60,True,Uttrakhand,UdhamSinghNagar,Sitarganj
+2020,B,22.77,18487.18,18487.18,0.00,0.00,False,Uttrakhand,UdhamSinghNagar,Sitarganj
+2020,C,22.77,18487.18,18792.41,305.23,471.68,True,Uttrakhand,UdhamSinghNagar,Sitarganj
+2021,B,22.15,12941.04,12941.04,0.00,325.05,False,Uttrakhand,UdhamSinghNagar,Sitarganj
+2021,C,22.15,12941.04,13566.47,625.43,3245.27,True,Uttrakhand,UdhamSinghNagar,Sitarganj
+2022,B,27.64,12861.11,12861.11,0.00,0.00,False,Uttrakhand,UdhamSinghNagar,Sitarganj
+2022,C,27.64,12861.11,11086.37,-1774.74,0.00,True,Uttrakhand,UdhamSinghNagar,Sitarganj
+2023,B,17.23,10818.54,10818.54,0.00,1012.53,False,Uttrakhand,UdhamSinghNagar,Sitarganj
+2023,C,17.23,10818.54,21965.84,11147.30,13414.69,True,Uttrakhand,UdhamSinghNagar,Sitarganj
+2024,B,28.13,17385.67,17385.67,0.00,0.00,False,Uttrakhand,UdhamSinghNagar,Sitarganj
+2024,C,28.13,17385.67,24516.48,7130.81,7491.14,True,Uttrakhand,UdhamSinghNagar,Sitarganj
+2017,B,35.87,8620.57,8620.57,0.00,1583.68,False,West Bengal,Kolkata,Bara Bazar (Posta Bazar)
+2017,C,35.87,8620.57,12585.38,3964.81,14851.26,True,West Bengal,Kolkata,Bara Bazar (Posta Bazar)
+2018,B,27.33,10754.00,10754.00,0.00,0.00,False,West Bengal,Kolkata,Bara Bazar (Posta Bazar)
+2018,C,27.33,10754.00,11176.65,422.65,2390.87,True,West Bengal,Kolkata,Bara Bazar (Posta Bazar)
+2020,B,34.78,15567.68,15567.68,0.00,0.00,False,West Bengal,Kolkata,Bara Bazar (Posta Bazar)
+2020,C,34.78,15567.68,22448.65,6880.98,15384.50,True,West Bengal,Kolkata,Bara Bazar (Posta Bazar)
+2021,B,12.04,14307.69,14307.69,0.00,531.77,False,West Bengal,Kolkata,Bara Bazar (Posta Bazar)
+2021,C,12.04,14307.69,20753.56,6445.86,6555.38,True,West Bengal,Kolkata,Bara Bazar (Posta Bazar)
+2022,B,38.05,13465.00,13465.00,0.00,0.00,False,West Bengal,Kolkata,Bara Bazar (Posta Bazar)
+2022,C,38.05,13465.00,16864.57,3399.57,3444.43,True,West Bengal,Kolkata,Bara Bazar (Posta Bazar)
+2023,B,9.08,13862.33,13862.33,0.00,0.00,False,West Bengal,Kolkata,Bara Bazar (Posta Bazar)
+2023,C,9.08,13862.33,26461.39,12599.06,13406.82,True,West Bengal,Kolkata,Bara Bazar (Posta Bazar)
+2024,B,31.87,20478.72,20478.72,0.00,314.55,False,West Bengal,Kolkata,Bara Bazar (Posta Bazar)
+2024,C,31.87,20478.72,35737.83,15259.10,15451.60,True,West Bengal,Kolkata,Bara Bazar (Posta Bazar)
