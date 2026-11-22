@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kanda Code · When should onion farmers sell? — Viva</title>
+<meta name="description" content="Kanda Code (IIT Madras BS, Industry 4.0): monthly onion price forecasting and a linear-programme sell-or-store plan, backtested on 8 seasons and 118 markets.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='44' fill='none' stroke='%23E2834F' stroke-width='8'/%3E%3Ccircle cx='50' cy='50' r='28' fill='none' stroke='%23B4407F' stroke-width='8'/%3E%3Ccircle cx='50' cy='50' r='10' fill='%23EDB94E'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=JetBrains+Mono:wght@500;600;700&family=Manrope:wght@500;600;700;800&family=Tiro+Devanagari+Marathi&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="deck.css?v=a237966aa6">
+</head>
+<body>
+<div id="stage">
+<div id="glow"></div>
+<div id="bar"></div>
+<div id="steps"></div>
+
+<!-- ======================================================== 1 · TITLE -->
+<section class="slide" id="title" data-speaker="0" data-section="Welcome">
+  <div class="gl" id="gl-title" style="left:820px;top:0;width:1100px;height:1080px"></div>
+  <div class="title-l">
+    <div class="logos">
+      <img class="iitm" src="assets/iitm-logo.png" alt="IIT Madras logo">
+      <span class="lsep"></span>
+      <span class="mark" data-mark></span>
+      <div class="brand-big"><b>Kanda Code</b><span>कांदा</span></div>
+    </div>
+    <p class="inst">IIT Madras BS · Industry 4.0 (MS4001) · Final project viva</p>
+    <h1 class="t1"><span class="w">When</span> <span class="w">should</span> <span class="w">onion</span> <span class="w">farmers</span> <em class="w">sell?</em></h1>
+    <p class="sub">A monthly price forecast and a linear-programme sell-or-store plan — backtested on <b data-v="KC.backtest.years.length"></b> real seasons and <b data-v="KC.ai.markets"></b> markets across India.</p>
+    <div class="team" id="team"></div>
+  </div>
+  <aside class="notes">Good morning. We are team Kanda Code — kanda is Marathi for onion. Our question is simple: when should an onion farmer sell? I'm Raghuram; with me are Parashmani, Kathan, Aaryan and Yash, and each of us presents one part.</aside>
+</section>
+
+<!-- ======================================================== 2 · PROBLEM -->
+<section class="slide" id="problem" data-speaker="0" data-section="The problem">
+  <header class="hd"><p class="kicker"><span class="num">02</span>The problem</p><h2>Farmers sell at the year’s <em>lowest</em> price</h2></header>
+  <div class="chart" id="c-season" style="left:120px;top:300px;width:1000px;height:560px"></div>
+  <div class="legend" style="left:120px;top:910px"><span><i style="background:var(--gold)"></i>Maharashtra price, each month ÷ that year’s mean (2014–24)</span><span><i class="dash"></i>Year average = 1.0×</span></div>
+  <div class="card" id="pb-paid" style="left:1200px;top:300px;width:600px">
+    <h3>At Lasalgaon (2022)</h3>
+    <p><b class="c-red">₹7–10/kg</b> paid to farmers against a cultivation cost of <b>₹22–25/kg</b>.</p>
+  </div>
+  <div class="card" id="pb-rot" style="left:1200px;top:478px;width:600px">
+    <h3>Why not just wait? Onions rot</h3>
+    <div class="row-lbl"><span>Ventilated <i>kanda chawl</i>, 120 days</span><b class="c-red">54.9%</b></div>
+    <div class="onions" id="on-chawl"></div>
+    <div class="row-lbl" style="margin-top:12px"><span>Cold store, 120 days</span><b class="c-green">5–7%</b></div>
+    <div class="onions" id="on-cold"></div>
+  </div>
+  <div class="card" id="pb-q" style="left:1200px;top:808px;width:600px;padding:24px 30px;border-color:rgba(237,185,78,.45);background:rgba(237,185,78,.07)">
+    <p style="color:var(--ink);font-size:25px"><b class="c-gold">The decision:</b> an FPO holds <b>1,000 t</b> at harvest. How many tonnes should it sell each month, April → December?</p>
+  </div>
+  <aside class="notes">This is Maharashtra's onion price, each month as a multiple of that year's average. April, right after the rabi harvest, is at 0.55; November is at 1.55. November beat April in all 11 years, by a median 148%. Yet farmers sell in April — at Lasalgaon they have been paid ₹7–10 a kilo against a cost of ₹22–25. [→] Why not wait? Onions rot: a ventilated chawl loses about 55% in 120 days, a cold store 5–7%. [→] So the decision: an FPO, a farmer producer organisation, holds 1,000 tonnes at harvest. How many tonnes should it sell each month, April to December?</aside>
+</section>
+
+<!-- ======================================================== 3 · APPROACH -->
+<section class="slide" id="approach" data-speaker="0" data-section="Our approach">
+  <header class="hd"><p class="kicker"><span class="num">03</span>Our approach</p><h2>Six steps, each one <em>tested</em></h2></header>
+  <div class="pipe" id="pipe"></div>
+  <div class="card hyp" style="left:120px"><div class="tag">H1</div><p>Prices fall when arrivals rise</p><p class="how">log–log regression, β &lt; 0</p><span class="verdict chip green">Supported</span></div>
+  <div class="card hyp" style="left:695px"><div class="tag">H2</div><p>A planned <i>chawl</i> beats selling everything at harvest</p><p class="how">LP plan vs harvest sale, 8 seasons</p><span class="verdict chip red">Rejected</span></div>
+  <div class="card hyp" style="left:1270px"><div class="tag">H3</div><p>Low-loss cold / IoT storage adds a material margin</p><p class="how">cold vs chawl, paired test</p><span class="verdict chip green">Supported</span></div>
+  <aside class="notes">How we answered it, and who did what: data, the price pattern, a forecast, a linear programme that makes the plan, a backtest on seasons the model never saw, and an all-India check. [→] Three hypotheses from our approved proposal: H1, price falls when arrivals rise; H2, a planned chawl beats selling at harvest; H3, low-loss storage adds real money. [→] The answers up front: H1 supported; H2 rejected — the chawl rots too fast; H3 supported.</aside>
+</section>
+
+<!-- ======================================================== 4 · DATA -->
+<section class="slide" id="data" data-speaker="0" data-section="Data">
+  <header class="hd"><p class="kicker"><span class="num">04</span>Data · real, public, checked</p><h2>965,314 mandi records → <em>one honest price</em></h2></header>
+  <div class="fun" id="f1" style="top:290px"><div class="barf" style="width:860px"></div><div class="v" data-count="KC.dq.rows_all_india"></div><div class="t">daily mandi records, all India, 2014–24 · Agmarknet (Mendeley)</div></div>
+  <div class="fun" id="f2" style="top:438px"><div class="barf" style="width:620px"></div><div class="v" data-count="KC.dq.rows_maharashtra"></div><div class="t">Maharashtra rows · <span data-v="KC.dq.markets_maharashtra"></span> markets</div></div>
+  <div class="fun" id="f3" style="top:586px"><div class="barf" style="width:520px"></div><div class="v" data-count="KC.dq.market_days_clean"></div><div class="t">clean market-days (one row each)</div></div>
+  <div class="fun" id="f4" style="top:734px"><div class="barf" style="width:330px"></div><div class="v" data-count="KC.monthly.length"></div><div class="t">monthly prices · 0 missing</div></div>
+  <div class="alert red" id="al1" style="left:780px;top:446px;max-width:420px"><b>Lasalgaon APMC: <span data-v="KC.dq.lasalgaon_rows_in_main_dataset"></span> rows.</b> So we built an arrival-weighted Maharashtra price.</div>
+  <div class="alert gold" id="al2" style="left:680px;top:594px;max-width:500px"><b>Trap avoided:</b> variety rows repeat the same tonnage — summing would double-count <b><span data-v="lakh(KC.dq.tonnes_double_counted_if_rows_summed)"></span> lakh t</b>.</div>
+  <div class="chart" id="c-valid" style="left:1250px;top:300px;width:560px;height:440px"></div>
+  <div class="card" id="val-card" style="left:1250px;top:800px;width:560px;padding:22px 28px"><p><span class="c-gold" style="font:800 46px var(--display)">r = <span data-v="KC.validation.r.toFixed(2)"></span></span>&nbsp; vs NHRDF Lasalgaon, <span data-v="KC.validation.months"></span> months</p></div>
+  <aside class="notes">Our data: 965,314 daily mandi records from Agmarknet, all India, 2014 to 2024, published on Mendeley; 91,898 are from Maharashtra. Our proposal targeted Lasalgaon, Asia's largest onion market — but it has zero rows in this dataset, so we built an arrival-weighted price for Maharashtra from 96 markets. [→] One trap: when a market reports several varieties, the same tonnage repeats in every row; summing would double-count 19.8 lakh tonnes. We keep one row per market-day: 85,346, giving 132 monthly prices, none missing. [→] Is it a fair stand-in? Against NHRDF's official Lasalgaon series the correlation is 0.99 over 66 months. Over to Parashmani.</aside>
+</section>
+
+<!-- ======================================================== 5 · 3D LANDSCAPE -->
+<section class="slide" id="landscape" data-speaker="1" data-section="Price patterns">
+  <header class="hd"><p class="kicker"><span class="num">05</span>11 years of real prices, in 3D</p><h2>A valley every April, a ridge every <em>autumn</em></h2></header>
+  <div class="gl" id="gl-land" style="left:60px;top:250px;width:1340px;height:780px"></div>
+  <div class="stack" style="left:1400px;top:330px;width:420px;height:520px">
+    <div class="card" id="ld1"><h3>What you see</h3><p>Each bar is one month, <b>2014–2024</b>. Height and colour = price in <b>₹/kg</b>. <span data-v="KC.monthly.length"></span> bars, all real.</p></div>
+    <div class="card" id="ld2"><h3>The pattern</h3><p><b class="c-gold">Every year</b> the price bottoms in <b>April</b> and peaks <b>Oct–Dec</b>. November beat April in <b class="c-gold"><span data-v="KC.eda.years_nov_above_apr"></span> of <span data-v="KC.eda.years"></span></b> years, median <b>+<span data-v="Math.round(KC.eda.median_rise)"></span>%</b>.</p></div>
+    <div class="card" id="ld3"><h3>But risky</h3><p>From <b class="c-sky">₹<span data-v="KC.eda.pmin.toFixed(1)"></span>/kg</b> (<span data-v="mname(KC.eda.pmin_m)"></span>) to <b class="c-red">₹<span data-v="KC.eda.pmax.toFixed(1)"></span>/kg</b> (<span data-v="mname(KC.eda.pmax_m)"></span>). A plan has to survive both.</p></div>
+  </div>
+  <aside class="notes">Each bar is one month of real price from 2014 to 2024; height and colour are rupees per kilo. [→] From the front the pattern is obvious: every year a valley in April and a ridge from October to December — November beat April in all 11 years. [→] But it is not a safe bet: December 2019 hit ₹50.6 a kilo, February 2019 was ₹4.5. A plan must handle both.</aside>
+</section>
+
+<!-- ======================================================== 6 · SEASONALITY + H1 -->
+<section class="slide" id="h1" data-speaker="1" data-section="Price patterns · H1">
+  <header class="hd"><p class="kicker"><span class="num">06</span>Why prices move · H1</p><h2>More onions arrive → the price <em>falls</em></h2></header>
+  <div class="chart" id="c-h1" style="left:120px;top:300px;width:900px;height:560px"></div>
+  <div class="legend" style="left:120px;top:910px"><span><i style="background:var(--copper)"></i>Arrivals (tonnes)</span><span><i style="background:var(--gold)"></i>Price</span><span class="c-muted">each ÷ its yearly mean, average 2014–24</span></div>
+  <div class="card" id="h1-card" style="left:1110px;top:300px;width:690px">
+    <h3>H1 test · log–log OLS</h3>
+    <p style="font:500 28px 'Cambria Math',Cambria,Georgia,serif;color:var(--ink);margin-bottom:18px">ln <i>P</i> = <b>β</b>·ln <i>A</i> + month + year effects</p>
+    <div style="display:flex;align-items:baseline;gap:26px"><span class="num-big c-gold">β = <span data-v="KC.h1.beta.toFixed(2)"></span></span><span class="chip green">Supported</span></div>
+    <p>HAC one-sided <b>p = <span data-v="KC.h1.p.toFixed(3)"></span></b>, n = <span data-v="KC.h1.n"></span> months. <b>10% more arrivals ≈ 4% lower price.</b></p>
+  </div>
+  <div class="card" id="h1-why" style="left:1110px;top:700px;width:690px;padding:24px 30px">
+    <p style="font-size:22px"><b class="c-gold">Why this method:</b> logs give the % effect directly; fixed effects strip season and inflation; HAC errors allow for autocorrelated months. <b>Honest caveat:</b> an association — with last month’s price added, β → <span data-v="KC.h1.beta_dyn.toFixed(2)"></span>.</p>
+  </div>
+  <aside class="notes">Why does the price move? The copper line is arrivals — tonnes reaching the markets — heavy from December to March as the crop comes in, low from August to November. [→] The price, in gold, is almost its mirror image. [→] H1 tests this: log price on log arrivals with month and year fixed effects, so season and inflation are removed, with HAC errors because months are autocorrelated. β is −0.44, p 0.007: ten percent more arrivals, about four percent lower price. H1 is supported. Honestly, it is an association — adding last month's price makes it vanish — so we use it to understand the market and let the forecast drive the plan. Kathan.</aside>
+</section>
+
+<!-- ======================================================== 7 · MODELS -->
+<section class="slide" id="models" data-speaker="2" data-section="Forecast">
+  <header class="hd"><p class="kicker"><span class="num">07</span>Forecast · model choice</p><h2>Ten models, chosen <em>without peeking</em></h2></header>
+  <div class="chart" id="c-models" style="left:120px;top:290px;width:1060px;height:640px"></div>
+  <div class="card" id="m-split" style="left:1260px;top:290px;width:540px;padding:26px 30px">
+    <h3>Forecast made each March for Apr–Dec</h3>
+    <div id="split" style="height:120px"></div>
+  </div>
+  <div class="card" id="m-test" style="left:1260px;top:510px;width:540px;padding:24px 30px">
+    <p style="font-size:23px"><b class="c-pink">◆ Test 2023–24:</b> two smoothing models scored lower here — <b>we did not switch.</b> Choosing after seeing the test is cheating.</p>
+  </div>
+  <div class="card" id="m-why" style="left:1260px;top:700px;width:540px;padding:24px 30px">
+    <p style="font-size:23px"><b class="c-gold">Why regression?</b> It is exactly <b>trend + a monthly shape</b> — what the plan needs. 13 parameters, interpretable, in the syllabus.</p>
+  </div>
+  <aside class="notes">The plan needs prices for April to December, forecast at the end of March. We compared ten syllabus methods: naive, seasonal naive, moving averages, exponential smoothing, Holt-Winters and regressions. We chose using validation seasons 2019 to 2022 only, and locked 2023 and 2024 away as the test. [→] Regression on trend plus month dummies won, at 36.9% error. On the test, two smoothing models did a little better — we did not switch, because choosing after seeing the test would be cheating. [→] It also suits the decision: the LP needs the shape of the season, and this model is exactly trend plus a monthly shape — 13 parameters, easy to explain.</aside>
+</section>
+
+<!-- ======================================================== 8 · FORECAST TEST -->
+<section class="slide" id="ftest" data-speaker="2" data-section="Forecast · test">
+  <header class="hd"><p class="kicker"><span class="num">08</span>Forecast vs reality · unseen seasons</p><h2>Too low — but it <em>rises at the right time</em></h2></header>
+  <div class="chart" id="c-f23" style="left:120px;top:290px;width:800px;height:500px"></div>
+  <div class="chart" id="c-f24" style="left:1000px;top:290px;width:800px;height:500px"></div>
+  <div class="legend" style="left:120px;top:822px"><span><i style="background:var(--gold)"></i>Actual price</span><span><i class="dash"></i>Forecast made in March (regression)</span></div>
+  <div id="f-metrics" style="position:absolute;left:120px;top:880px;width:1680px;display:flex;gap:24px">
+    <div class="card" style="position:relative;flex:1;padding:18px 28px"><p><b class="c-pink" style="font:800 44px var(--display)"><span data-v="KC.forecast.test.MAPE.toFixed(1)"></span>%</b>&nbsp; average error (MAPE)</p></div>
+    <div class="card" style="position:relative;flex:1;padding:18px 28px"><p><b class="c-sky" style="font:800 44px var(--display)"><span data-v="KC.forecast.test.bias_pct.toFixed(0)"></span>%</b>&nbsp; bias → conservative</p></div>
+    <div class="card" style="position:relative;flex:1.2;padding:18px 28px"><p><b class="c-green" style="font:800 44px var(--display)"><span data-v="Math.round(KC.forecast.test.direction_hit_pct*16/100)"></span> / 16</b>&nbsp; monthly moves in the right direction</p></div>
+  </div>
+  <aside class="notes">Here it is against reality, in two seasons it never saw. 2023: the dashed forecast sits below the gold actual, but rises at the right time. [→] 2024: the same. [→] Average error 29.5%, and 17% too low on average — conservative, which only makes storage look less attractive. But the month-to-month direction is right 15 times out of 16, and for a storage decision direction is what matters. Aaryan.</aside>
+</section>
+
+<!-- ======================================================== 9 · LP -->
+<section class="slide" id="lp" data-speaker="3" data-section="Sell-or-store LP">
+  <header class="hd"><p class="kicker"><span class="num">09</span>The decision model · linear programme</p><h2>Sell now, or <em>store and sell later?</em></h2></header>
+  <div class="chart" id="c-flow" style="left:120px;top:290px;width:820px;height:640px"></div>
+  <div class="eq" id="eq1" style="top:296px">
+    <p class="kicker" style="color:var(--dim)">Maximise</p>
+    <div class="e"><b>max</b> &nbsp;Σ<sub><i>t</i></sub> <i>p̂<sub>t</sub> x<sub>t</sub></i> − <i>h</i> Σ<sub><i>t</i></sub> <i>s<sub>t</sub></i> <span class="why">forecast revenue − holding cost</span></div>
+  </div>
+  <div class="eq" id="eq2" style="top:446px">
+    <p class="kicker" style="color:var(--dim)">Subject to</p>
+    <div class="cons">
+      <div class="e"><i>s<sub>t</sub></i> = (1−<i>δ</i>) <i>s<sub>t−1</sub></i> − <i>x<sub>t</sub></i></div><p class="why">stock balance with rot</p>
+      <div class="e"><i>s<sub>t</sub></i> ≤ <i>C</i> = <span data-v="n(KC.lp.C)"></span> t</div><p class="why">storage capacity</p>
+      <div class="e"><i>x</i><sub>Apr</sub> ≥ <i>L</i> = <span data-v="n(KC.lp.L)"></span> t</div><p class="why">crop-loan sale</p>
+      <div class="e"><i>x<sub>t</sub></i> ≤ <i>U</i> = <span data-v="n(KC.lp.U)"></span> t</div><p class="why">grading &amp; trucking / month</p>
+      <div class="e"><i>s</i><sub>Dec</sub> = 0, &nbsp;<i>x, s</i> ≥ 0</div><p class="why">empty store by December</p>
+    </div>
+  </div>
+  <div class="card" id="eq3" style="left:1000px;top:770px;width:800px;padding:20px 28px">
+    <table class="sc"><tr><th>Scenario</th><th>Loss δ / month</th><th>Cost h (₹/t·month)</th></tr>
+      <tr><td><span class="c-muted">A</span> Sell all at harvest</td><td>—</td><td>—</td></tr>
+      <tr><td><span class="c-copper">B</span> Kanda chawl</td><td data-v="pct(KC.scen.B.delta)"></td><td data-v="n(KC.scen.B.h)"></td></tr>
+      <tr><td><span class="c-green">C</span> Cold / IoT-monitored</td><td data-v="pct(KC.scen.C.delta)"></td><td data-v="n(KC.scen.C.h)"></td></tr></table>
+  </div>
+  <aside class="notes">Now the decision. 1,000 tonnes at harvest. At least 250 must be sold in April to repay crop loans. The rest can go into a 700-tonne store that loses δ per month, and the FPO can grade and truck at most 300 tonnes a month. [→] We maximise forecast revenue minus holding cost. [→] Subject to stock balance with rot, capacity, the loan sale, the handling cap, and an empty store by December. It is linear, so the solver gives a guaranteed optimum plus shadow prices — the value of relaxing each constraint. [→] Three scenarios: A sells everything at harvest; B is a chawl, 18% loss a month; C is cold or IoT-monitored storage, 1.8% a month but almost three times the cost.</aside>
+</section>
+
+<!-- ======================================================== 10 · PLAN 2024 -->
+<section class="slide" id="plan" data-speaker="3" data-section="Sell-or-store LP · 2024">
+  <header class="hd"><p class="kicker"><span class="num">10</span>The 2024 plan · made in March</p><h2>Cold store: hold, then sell in <em>Oct–Nov</em></h2></header>
+  <div class="chart" id="c-plan" style="left:120px;top:290px;width:1080px;height:600px"></div>
+  <div class="legend" style="left:120px;top:925px"><span><i style="background:var(--green)"></i>Tonnes sold (cold store)</span><span><i style="background:rgba(125,203,110,.35)"></i>Stock in store</span><span><i class="dash"></i>March price forecast</span></div>
+  <div class="card" id="pl1" style="left:1290px;top:290px;width:510px;padding:24px 30px"><h3>Cold / IoT (C)</h3><p>Sell <b>300</b> in April, store the rest, sell <b>300 + 300</b> in Oct–Nov. <b class="c-red"><span data-v="Math.round(KC.plan.C.lost)"></span> t</b> lost to rot.</p></div>
+  <div class="card" id="pl2" style="left:1290px;top:520px;width:510px;padding:24px 30px"><h3>Chawl (B)</h3><p>Optimal plan stores <b class="c-copper">nothing</b>: sell all 1,000 t in April. 18%/month rot eats the whole price rise.</p></div>
+  <div class="card" id="pl3" style="left:1290px;top:730px;width:510px;padding:24px 30px"><h3>Shadow prices · where to invest</h3><p>+1 t storage = <b class="c-gold">₹<span data-v="n(KC.plan.C.shadow_cap)"></span></b> · +1 t/month handling = <b class="c-gold">₹<span data-v="n(KC.plan.C.shadow_U)"></span></b> · loan rule ₹0</p></div>
+  <aside class="notes">This is the 2024 plan, made with the March forecast. [→] With cold storage: sell 300 in April, hold, then 300 in October and 300 in November, with 79 tonnes lost to rot. [→] With the chawl, the optimum is to store nothing and sell all 1,000 in April — 18% a month eats the price rise. [→] The shadow prices tell the FPO where to invest: one more tonne of storage is worth ₹4,028, one more tonne of monthly handling ₹6,526; the loan rule costs nothing.</aside>
+</section>
+
+<!-- ======================================================== 11 · BACKTEST -->
+<section class="slide" id="backtest" data-speaker="3" data-section="Backtest 2017–24">
+  <header class="hd"><p class="kicker"><span class="num">11</span>Backtest · real prices the model never saw</p><h2>Cold storage won <em>7 of 8</em> seasons</h2></header>
+  <div class="chart" id="c-bt" style="left:120px;top:290px;width:1080px;height:600px"></div>
+  <div class="legend" style="left:120px;top:925px"><span><i style="background:var(--green)"></i>Cold / IoT plan: gain over selling all at harvest (₹/t)</span><span><i style="background:var(--copper)"></i>Chawl plan</span></div>
+  <div class="card" id="bt1" style="left:1290px;top:290px;width:510px"><h3>Each season</h3><p>Forecast in March from past data only → LP plan → paid the <b>actual</b> prices.</p></div>
+  <div class="card" id="bt2" style="left:1290px;top:490px;width:510px"><h3>Result · H3</h3><div class="num-big c-green">+₹<span data-v="n(KC.backtest.test.mean_diff_rs_per_t)"></span><span style="font-size:36px">/t</span></div><p><b><span data-v="KC.backtest.test.wins"></span> of <span data-v="KC.backtest.test.n_seasons"></span></b> seasons · paired t <b>p = <span data-v="KC.backtest.test.paired_t_one_sided_p.toFixed(3)"></span></b></p></div>
+  <div class="card" id="bt3" style="left:1290px;top:760px;width:510px;padding:24px 30px;border-color:rgba(236,100,97,.4)"><p style="font-size:23px">A fixed “store till Oct–Nov” rule in a chawl <b class="c-red">loses ₹<span data-v="n(-KC.backtest.calendar_B)"></span>/t</b>. The model knows when <b>not</b> to store.</p></div>
+  <aside class="notes">Does it work on prices it never saw? For every season 2017 to 2024 we forecast in March from past data only, made the LP plan, and paid the actual prices. [→] Cold storage beat harvest sale in 7 of 8 seasons, by ₹4,546 a tonne on average; paired t-test p = 0.006. The chawl plan never stores, so it equals harvest sale — H2 rejected. [→] And the model protects the farmer: a simple "store and sell in October–November" rule with a chawl loses ₹1,149 a tonne. Yash.</aside>
+</section>
+
+<!-- ======================================================== 12 · ALL INDIA -->
+<section class="slide" id="india" data-speaker="4" data-section="All-India check">
+  <header class="hd"><p class="kicker"><span class="num">12</span>Does it work outside Maharashtra?</p><h2>Same model, <em><span data-v="KC.ai.markets"></span> markets</em>, <span data-v="KC.ai.states"></span> states</h2></header>
+  <div class="gl" id="gl-india" style="left:40px;top:230px;width:1180px;height:800px"></div>
+  <div class="stack" style="left:1250px;top:300px;width:550px;height:600px">
+    <div class="card" id="in1"><h3>Every dot</h3><p>An onion market in the dataset — <b><span data-v="KC.ai.cloud.length"></span></b> with coordinates. We keep the <b><span data-v="KC.ai.markets"></span></b> with ≥95% of months reported.</p></div>
+  </div>
+  <div class="card" id="in2" style="left:1250px;top:300px;width:550px"><h3>Cold store beat harvest sale</h3><div class="num-big c-green"><span data-v="KC.ai.wins"></span> <span style="font-size:44px;color:var(--muted)">of <span data-v="KC.ai.markets"></span></span></div><p>markets · mean <b>+₹<span data-v="n(KC.ai.gain)"></span>/t</b> · <span data-v="KC.ai.seasons_pos"></span>/8 seasons positive, <b>p = <span data-v="KC.ai.p.toFixed(2)"></span></b>. Chawl stored in only <b><span data-v="KC.ai.B_storing"></span></b>.</p></div>
+  <div class="card" id="in3" style="left:1250px;top:640px;width:550px;padding:24px 30px;border-color:rgba(237,185,78,.4)"><h3>Honest stress test</h3><p>+1% fee, ₹500/t selling cost, 1%/month quality loss: <b class="c-gold"><span data-v="KC.ai.stress.C_beats_harvest_markets"></span> of <span data-v="KC.ai.markets"></span></b> still win, but not significant (p = <span data-v="KC.ai.stress.C_gain_season_t_p.toFixed(2)"></span>).</p></div>
+  <aside class="notes">Does this only work in Maharashtra? Every dot is an onion market in the dataset. [→] We ran the same model, unchanged, on all 118 markets in 15 states with near-complete data. Each column is one market: green where cold storage beat harvest sale, red where it lost. [→] 114 of 118, plus ₹3,692 a tonne, positive in 6 of 8 seasons, p = 0.04, and the chawl stored in only 4 markets. With market fees and quality loss added, 105 still win, but no longer significantly — we report that honestly.</aside>
+</section>
+
+<!-- ======================================================== 13 · INDUSTRY 4.0 -->
+<section class="slide" id="value" data-speaker="4" data-section="Industry 4.0 value">
+  <header class="hd"><p class="kicker"><span class="num">13</span>Industry 4.0 · what smart storage is worth</p><h2>The money is in the <em>loss rate</em></h2></header>
+  <div class="chart" id="c-delta" style="left:120px;top:290px;width:1060px;height:600px"></div>
+  <div class="legend" style="left:120px;top:925px"><span><i style="background:var(--green)"></i>Cold-store costs (₹<span data-v="KC.scen.C.h"></span>/t·month)</span><span><i style="background:var(--copper)"></i>Chawl costs (₹<span data-v="KC.scen.B.h"></span>/t·month)</span><span class="c-muted">backtest 2017–24</span></div>
+  <div class="card" id="v1" style="left:1290px;top:290px;width:510px"><h3>Cold / IoT uplift</h3><div class="num-big c-green">₹<span data-v="n(KC.i40.uplift)"></span><span style="font-size:36px">/t</span></div><p>= ₹<span data-v="KC.i40.per_kg.toFixed(2)"></span> per kg, over a chawl</p></div>
+  <div class="card" id="v2" style="left:1290px;top:530px;width:510px"><h3>Payback</h3><div class="num-big c-gold"><span data-v="KC.i40.payback"></span><span style="font-size:36px"> seasons</span></div><p>extra capital ₹<span data-v="n(KC.i40.capex_C)"></span> vs ₹<span data-v="n(KC.i40.capex_B)"></span> per t</p></div>
+  <div class="card" id="v3" style="left:1290px;top:770px;width:510px;padding:24px 30px"><p>A 1,000 t FPO: about <b class="c-gold">₹<span data-v="KC.i40.lakh"></span> lakh / year</b>.</p></div>
+  <aside class="notes">What is smart storage worth? This curve is the backtest gain as the monthly loss rate changes. Storage pays only below about 12% a month; the chawl sits at 18%, so it never stores. Cold, sensor-monitored storage at 1.8% earns the gain. [→] That is the Industry 4.0 value: ₹4,546 a tonne, ₹4.55 a kilo; the extra capital pays back in 1.49 seasons; for a 1,000-tonne FPO, about ₹45.5 lakh a year.</aside>
+</section>
+
+<!-- ======================================================== 14 · IMPLICATIONS -->
+<section class="slide" id="implications" data-speaker="4" data-section="Implications">
+  <header class="hd"><p class="kicker"><span class="num">14</span>So what?</p><h2>Three decisions this <em>changes</em></h2></header>
+  <div class="card imp" style="left:120px"><div class="ico">01</div><h4>FPOs</h4><p>Store in cold or monitored storage, sell <b>Sep–Nov</b>, not at the April low. Sell the loan share at harvest.</p></div>
+  <div class="card imp" style="left:695px"><div class="ico">02</div><h4>Buffer stocks</h4><p>Don’t hold onions in chawls: NAFED lost about <b>53%</b> of its 2019 buffer. Use cold storage, release Sep–Nov.</p></div>
+  <div class="card imp" style="left:1270px"><div class="ico">03</div><h4>Industry 4.0</h4><p>Sensors that <b>measure</b> δ turn storage from a gamble into a plan — below 12%/month it pays.</p></div>
+  <div class="lims" id="lims">
+    <span class="chip ghost">Limitations →</span>
+    <span class="chip ghost">Composite price ≈10% below Lasalgaon</span>
+    <span class="chip ghost">H1 is an association, not a cause</span>
+    <span class="chip ghost">FPO a price-taker: 1,000 t = <span data-v="KC.pt.share_april_pct"></span>% of Lasalgaon April arrivals</span>
+    <span class="chip ghost">8 seasons — a small sample</span>
+    <span class="chip ghost">All-India gain not significant after extra costs</span>
+  </div>
+  <aside class="notes">Three takeaways. FPOs: store in cold or monitored storage and sell September to November, not at the April low. Buffer stocks: don't hold them in chawls — NAFED lost about 53% of its 2019 buffer. Industry 4.0: sensors that measure the loss rate turn storage from a gamble into a plan. [→] Limitations: our price is a composite about 10% below Lasalgaon; H1 is an association; we assume the FPO is a price-taker — 1,000 tonnes is 3.6% of Lasalgaon's April arrivals; eight seasons is a small sample; and the all-India gain is not significant once extra costs are added.</aside>
+</section>
+
+<!-- ======================================================== 15 · THANKS -->
+<section class="slide" id="thanks" data-speaker="4" data-section="Questions">
+  <div class="gl" id="gl-thanks" style="left:860px;top:40px;width:900px;height:900px"></div>
+  <div class="thanks-l">
+    <div class="logos" style="margin-bottom:0">
+      <img class="iitm" src="assets/iitm-logo.png" alt="IIT Madras logo">
+      <span class="lsep"></span>
+      <span class="mark" data-mark></span>
+      <div class="brand-big"><b>Kanda Code</b><span>कांदा</span></div>
+    </div>
+    <h1>Thank you.<br><em style="color:var(--gold);font-style:normal">Questions?</em></h1>
+    <p class="sub" style="margin-bottom:30px">Data, code, report and this deck are public and reproducible.</p>
+    <div class="team" id="team2"></div>
+    <div class="links"><a href="https://github.com/23f2003700/Kanda-Code" target="_blank" rel="noopener">github.com/23f2003700/Kanda-Code</a><br><span>Data: </span><a href="https://doi.org/10.17632/ds9jmxp9zy.1" target="_blank" rel="noopener">doi.org/10.17632/ds9jmxp9zy.1</a></div>
+  </div>
+  <div class="qr"><div class="box" id="qr"></div><p>Scan for the repository</p></div>
+  <aside class="notes">Thank you. Everything — data, code, report and this deck — is reproducible from the repository on the QR code. We are happy to take your questions.</aside>
+</section>
+
+<div id="foot">
+  <div class="brand"><span data-mark></span><span>KANDA CODE · <span id="sec"></span></span></div>
+  <div id="spk"><span class="dot"></span><span>Speaker · <b id="spkname"></b></span></div>
+  <div id="prog"><div id="segs"></div><span id="cnt"></span></div>
+</div>
+</div>
+
+<div id="hint">Click for full screen · <kbd>→</kbd> next · <kbd>←</kbd> back · <kbd>N</kbd> notes · <kbd>T</kbd> timer · <kbd>F</kbd> full screen</div>
+<div id="timer">00:00</div>
+<div id="notes"></div>
+<div id="jump"></div>
+
+<script src="vendor/gsap.min.js"></script>
+<script src="vendor/d3.min.js"></script>
+<script src="vendor/three.min.js"></script>
+<script src="vendor/qrcode.min.js"></script>
+<script src="data.js?v=a237966aa6"></script>
+<script src="slides.js?v=a237966aa6"></script>
+<script src="deck.js?v=a237966aa6"></script>
+</body>
+</html>
