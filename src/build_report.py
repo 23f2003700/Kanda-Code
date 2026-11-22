@@ -32,6 +32,7 @@ OUT = ROOT / "outputs"
 REP = ROOT / "report"
 REP.mkdir(exist_ok=True)
 R = json.loads((OUT / "results.json").read_text(encoding="utf-8"))
+AI = json.loads((OUT / "all_india" / "summary.json").read_text(encoding="utf-8"))  # src/all_india.py
 
 # ---- brand colours and fonts -------------------------------------------------------------------------
 INK, MUTED, RULE, PAPER = "#1D1420", "#5E5260", "#E6DDE6", "#F8F5F9"
@@ -725,11 +726,11 @@ para(f"**H1.** β = {mn(m3['elasticity'], '{:.3f}')} (HAC s.e. "
      f"{fd['direction_hit_pct']:.1f}% of month-to-month moves: the level is off, the shape is right – and shape is what the "
      f"LP needs. Flat forecasts (naive, 12-month average) earn Rs 0 because they never show a reason to store; shape-aware "
      f"models earn Rs {n0(min(shape_vals))}–{n0(max(shape_vals))}/t. **2024 plan (C).** Sell {xC[0]:.0f} t in April "
-     f"(capacity binds), then {xC[5]:.1f} t in September and {xC[6]:.0f} t each in October and November (handling cap "
-     f"binds); {P24['C']['lost_total']:.1f} t is lost to shrinkage. Verified marginal values: storage +Rs "
+     f"(capacity binds), then {xC[5]:.1f} t in Sep and {xC[6]:.0f} t each in Oct and Nov (handling cap "
+     f"binds); {P24['C']['lost_total']:.1f} t is lost to shrinkage. Verified shadow prices: storage +Rs "
      f"{n0(mv['capacity_C']['gain_if_plus_1t'])}/t, handling +Rs {n0(mv['handling_cap_U']['gain_if_plus_1t'])} per t/month "
      f"(Oct {n0(hand[5])} + Nov {n0(hand[6])}); the loan sale *L* is slack. Planned net Rs {n0(pvr24[1])}/t realised "
-     f"Rs {n0(pvr24[2])}/t at actual prices, as the forecast was low.")
+     f"Rs {n0(pvr24[2])}/t at real prices (low forecast).")
 
 # side-by-side: backtest table + Industry 4.0 economics
 outer = doc.add_table(rows=2, cols=2)
@@ -794,8 +795,13 @@ para(f"**Extension: weather and sensors.** Wettest-third seasons rose a median "
      f"never hurts: **Rs {n0(min(voiC_hi))}–{n0(max(voiC_hi))}/t** if the store slips to 8–15%/month.")
 figure(F2, "Figure 2.|  (a) Cold/IoT storage beats April sale in 7 of 8 seasons (2018: "
            f"Rs {n0(H3['min_diff_rs_per_t'])}/t); the chawl LP stores nothing. (b) Mean gain vs loss δ.")
-para(f"**Limitations.** The composite runs ≈10% below Lasalgaon, whose gains would be higher (Nasik prices: "
-     f"Rs {n0(nas[2023])} and {n0(nas[2024])}/t in 2023–24); H1 is an "
+AIS = AI["stress_extra_costs"]
+para(f"**All-India check.** Rerun on {AI['markets']} markets in {AI['states']} states, cold storage beat "
+     f"harvest sale in {AI['C_beats_harvest_markets']} (+Rs {n0(AI['C_gain_vs_harvest_mean'])}/t; "
+     f"{AI['C_gain_seasons_positive']}/8 seasons, *p* = {AI['C_gain_season_t_p']:.2f}); the chawl stored in "
+     f"{AI['B_markets_ever_storing']}. With fees and quality loss: {AIS['C_beats_harvest_markets']} wins, "
+     f"not significant (*p* = {AIS['C_gain_season_t_p']:.2f}). "
+     f"**Limitations.** The composite runs ≈10% below Lasalgaon, whose gains would be higher; H1 is an "
      f"association and H4 only suggestive; forecasts run low ({mn(fd['bias_pct'], '{:.0f}')}%; MAPE {fd['MAPE']}%); "
      f"loss rates extrapolate 120-day trials (ICAR’s multi-module store, C’s capex basis, loses "
      f"≈{mm_delta*100:.1f}%/month; at 3% C still gains Rs {n0(dC['0.030'])}/t); grading, price impact, credit and "
@@ -811,9 +817,9 @@ bullet("FPOs.", f"At ICAR’s {SCN['B']['delta']*100:.0f}%/month chawl loss, sel
        f"monthly, and add Oct–Nov handling capacity before space (shadow prices "
        f"+Rs {n0(mv['handling_cap_U']['gain_if_plus_1t'])} vs +Rs {n0(mv['capacity_C']['gain_if_plus_1t'])}/t): logistics, "
        f"not information, binds.")
-bullet("Govt buffer agencies (NAFED / NCCF).", f"Buying at the April trough is right, but traditional storage destroys "
-       f"value – the 2019 buffer loss is consistent with chawl physics. Hold buffers in cold or monitored storage and release "
-       f"them in Sep–Nov, when the index is "
+bullet("Govt buffer agencies (NAFED / NCCF).", f"Buying at the April trough is right, but chawl storage destroys "
+       f"value (the 2019 buffer loss). Hold buffers in cold or monitored storage; sell "
+       f"them in Sep–Nov at "
        f"{SIDX.loc['Sep','price_index_mean']:.2f}–{nov:.2f}× the year’s mean.")
 bullet("Storage investors and policy.", f"Low-loss storage repays in ≈{I4['base_case']['simple_payback_seasons']:.1f} "
        f"seasons at Rs {n0(I4['base_case']['capex_C_rs_per_t'])}/t and within one season at the MIDH Rs 8,000/t norm, but "

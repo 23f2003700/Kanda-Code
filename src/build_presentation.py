@@ -1,6 +1,6 @@
 """Build the web version of the Kanda Code slide deck.
 
-Reads the 19 slide files in presentation/slides/ (one 1920x1080 <section> per file, order in deck.json),
+Reads the slide files in presentation/slides/ (one 1920x1080 <section> per file, order in deck.json),
 inlines them into presentation/player_template.html, points every figure at outputs/figures/ and writes
 a self-contained static site to presentation/web/ (index.html + assets/). GitHub Pages serves that folder.
 

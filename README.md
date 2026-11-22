@@ -29,7 +29,7 @@ A price forecast and a linear programme decide, month by month, how much of a 1,
 
 | | What | Where |
 |---|---|---|
-| 🎞️ | **Presentation** (19 slides, 15 min, speaker notes) | **[23f2003700.github.io/Kanda-Code](https://23f2003700.github.io/Kanda-Code/)** · PDF: [`presentation/Kanda_Code_Deck.pdf`](presentation/Kanda_Code_Deck.pdf) |
+| 🎞️ | **Presentation** (20 slides, 15 min, speaker notes) | **[23f2003700.github.io/Kanda-Code](https://23f2003700.github.io/Kanda-Code/)** · PDF: [`presentation/Kanda_Code_Deck.pdf`](presentation/Kanda_Code_Deck.pdf) |
 | ▶️ | **Recorded explanation** | [YouTube](https://www.youtube.com/watch?v=mao4kfn39vw) |
 | 📄 | **Summary report** (3 pages, Times New Roman 11 pt) | [`report/KandaCode_Final_Report.pdf`](report/KandaCode_Final_Report.pdf) · editable [`.docx`](report/KandaCode_Final_Report.docx) |
 | 📓 | **Analysis notebook** (executed, narrated) | [`notebooks/KandaCode_Analysis.ipynb`](notebooks/KandaCode_Analysis.ipynb) |
@@ -97,6 +97,7 @@ subject to $s_1 = Q - x_1$, $\;s_t = (1-\delta)\,s_{t-1} - x_t$ (stock balance w
 | **H4** (extension): heavier Sep+Oct rain is followed by a bigger post-harvest price rise | **Weakly supported, suggestive** (NASA POWER satellite rain, 29 seasons 1996–2024) | β ≈ +20% bigger rise per 100 mm, p = 0.0361 (robust 0.0025), R² = 0.153; dropping 2005, 2018 or 2019 lifts p above 0.05 |
 | Real-time rain feed (extension) | A 1 November re-plan with the rain signal changes nothing | Rs 0/t for B and C: the handling cap U = 300 t binds (shadow price +Rs 6,526 per t/month in 2024) |
 | Value of loss information (extension) | Measuring the store pays when the price forecast is good, and most before the season | Chawl measured at 8%/month: Rs 2,200/t; cold store with accurate prices: sensing worth Rs 545–746/t at 8–15%/month loss |
+| **All-India check** | The same forecast + LP, unchanged, on every onion market with ≥95% monthly data 2014–24 | Cold storage beats harvest sale in **114 of 118 markets** in 15 states, mean +Rs 3,692/t; 6 of 8 seasons positive, season-level p = 0.039; the chawl plan stores in only 4 markets |
 
 Every quotable number lives in [`docs/KEY_NUMBERS.md`](docs/KEY_NUMBERS.md), generated from [`outputs/results.json`](outputs/results.json).
 
@@ -113,6 +114,20 @@ Every quotable number lives in [`docs/KEY_NUMBERS.md`](docs/KEY_NUMBERS.md), gen
 </tr>
 </table>
 
+## All-India check: does it work outside Maharashtra?
+
+We reran the **unchanged** pipeline (the same `regression_trend_season` forecast, the same LP and scenarios A/B/C, the same 2017–2024 backtest) on every Agmarknet onion market in the same dataset with at least 95% of months reported in 2014–2024. Markets below that coverage were dropped; gaps of at most 2 months inside a training window are log-interpolated. Run on our Maharashtra series, the same code reproduces the published backtest gains to within 10⁻¹² Rs/t. Script: [`src/all_india.py`](src/all_india.py).
+
+<div align="center"><img src="outputs/figures/f12_all_india.png" alt="Map of 118 onion markets and mean cold-storage gain by state" width="95%"></div>
+
+- **118 markets in 15 states, 829 market-seasons.** Cold storage beat selling everything at harvest in **114 markets**, mean +Rs 3,692/t (median 3,590). It was positive in 6 of 8 seasons (2018 and 2022 lost); season-level t-test p = 0.039.
+- **H2 holds nationally.** At ICAR's chawl loss rate the LP stored in only 4 of 118 markets (mean gain Rs -8/t).
+- **Where it works best:** markets whose cheapest month falls in March–May (112 markets, 97% win rate). A bigger Nov/Apr price swing goes with a bigger gain (Spearman ρ = 0.41, p < 0.001).
+- **Where it did not:** Pehowa (Haryana), Shahjahanpur (Uttar Pradesh), Dehradoon (Uttrakhand), Vikasnagar (Uttrakhand).
+- **Stress test.** With a 1% market fee, Rs 500/t selling cost and a 1%/month quality discount, cold storage still won in 105 of 118 markets (mean +Rs 2,367/t), but the season-level gain is **not significant** (p = 0.11).
+
+Outputs: [`outputs/all_india/`](outputs/all_india/) (`summary.json`, `markets.csv`, `states.csv`, `backtest.csv`, `market_monthly.csv`).
+
 <div align="center"><a href="https://23f2003700.github.io/Kanda-Code/"><img src="docs/images/deck_preview.png" alt="Four slides from the Kanda Code presentation" width="90%"></a><br><sub>From the <a href="https://23f2003700.github.io/Kanda-Code/">web presentation</a>.</sub></div>
 
 ---
@@ -124,7 +139,7 @@ Kanda-Code/
 ├── README.md
 ├── requirements.txt
 ├── presentation/
-│   ├── Kanda_Code_Deck.pdf              the 19-slide deck as PDF (one slide per page)
+│   ├── Kanda_Code_Deck.pdf              the 20-slide deck as PDF (one slide per page)
 │   ├── PRESENTATION_SCRIPT.md           15-minute speaking script: order, presenter, words and timing per slide
 │   ├── slides/                          deck source: one 1920×1080 HTML slide per file + deck.json (order, presenters)
 │   ├── player_template.html             web player: scaling, navigation, notes, timer, overview, print
@@ -144,6 +159,7 @@ Kanda-Code/
 │   ├── run_all.py                       runs the full pipeline; writes outputs/ and data/processed/ (~5 min)
 │   ├── fetch_nasa_power.py              re-downloads NASA POWER weather for Lasalgaon (free, no key)
 │   ├── viz.py                           draws figures f1–f11 from results.json
+│   ├── all_india.py                     all-India check: same model on 118 markets in 15 states; draws f12
 │   ├── build_excel.py                   builds the Excel Solver model
 │   ├── build_notebook.py                builds the narrated notebook
 │   ├── make_key_numbers.py              writes docs/KEY_NUMBERS.md from results.json
@@ -165,7 +181,8 @@ Kanda-Code/
 ├── outputs/
 │   ├── results.json                     single source of truth for every number
 │   ├── tables/                          backtest_2017_2024.csv (88 rows), backtest_2023_2024.csv, seasonal_profile.csv
-│   └── figures/                         f1–f11, PNG at 220 dpi in the brand colours
+│   ├── all_india/                       all-India check: summary.json, markets.csv, states.csv, backtest.csv
+│   └── figures/                         f1–f12, PNG at 220 dpi in the brand colours
 ├── docs/
 │   ├── Project_Proposal.pdf             the approved proposal
 │   ├── METHODOLOGY.md                   technical appendix: equations, parameters, leakage controls, deviations
@@ -192,6 +209,7 @@ gh release download v1.0 -p onion_2014_2024.parquet -D data/raw
 
 python src/run_all.py            # data → EDA → H1 → forecasts → LP → backtest → sensitivity → extensions (~5 min)
 python src/viz.py                # outputs/figures/f1..f11
+python src/all_india.py          # outputs/all_india/ + figures/f12_all_india.png (~2 min)
 python src/build_excel.py        # excel/KandaCode_LP_Model.xlsx
 python src/build_notebook.py     # notebooks/KandaCode_Analysis.ipynb
 python -m nbconvert --to notebook --execute --inplace notebooks/KandaCode_Analysis.ipynb
@@ -241,6 +259,7 @@ Three openly stated changes from the [approved proposal](docs/Project_Proposal.p
 - Loss rates are constant geometric rates from 120-day ICAR trials, extrapolated to 8 months. The C gain stays positive even at δ_C = 8%/month (+Rs 374/t).
 - The LP is deterministic: it plans on a point forecast and treats the FPO as a price-taker (1,000 t is 3.6% of Lasalgaon April arrivals).
 - Not modelled: quality grading, price impact, credit beyond the loan sale, export-policy shocks. 2018 was a losing year for low-loss storage (−Rs 1,181/t).
+- The all-India check uses the same 8 seasons per market; its season-level significance (p = 0.039) disappears once a 1% fee, Rs 500/t selling cost and 1%/month quality discount are added (p = 0.11).
 - Only 8 seasons, and 2 test seasons; tests on 2 seasons are descriptive only. The 8-season backtest includes the validation seasons 2019–22 that chose the forecast model.
 - **H4 is suggestive, not firm.** 29 seasons, R² = 0.153; dropping 2005, 2018 or 2019 lifts p above 0.05. NASA POWER rain is a ~0.5° satellite/reanalysis grid estimate, not a rain gauge.
 - The value-of-information test is stylised: a constant true loss rate, measured exactly from May, with no price re-forecast in the sensor store.

@@ -254,6 +254,8 @@ Pre-registered test seasons 2023–24, means: C forecast plan Rs 9,980/t; C perf
 
 **Nasik robustness.** Same pipeline and model on Nasik APMC prices (complete from 2016-01), 2023–24. Scenario C gains +Rs 11,510/t (2023) and +Rs 13,377/t (2024); B again never stores.
 
+**All-India robustness (`src/all_india.py`, 22 Nov 2026).** The same pipeline, with no re-tuning, run market by market on the same Agmarknet dataset. *Selection:* every market with ≥95% of months reported in 2014–24 and ≥6 scorable seasons (118 markets, 15 states, 829 market-seasons). *Cleaning:* the same price band (Rs 50–20,000/q), arrivals > 0, de-duplication, a state-day median outlier rule (0.2–5×) and the same variety collapse as §1.2; arrival-weighted monthly price per market. *Gaps:* up to 2 consecutive missing months inside a training window are log-interpolated; otherwise the season is skipped. *Model:* `regression_trend_season`, March origin, scenarios A/B/C with §10 parameters, scored at actual prices against harvest sale. *Check:* on our Maharashtra series the same code reproduces the published forecast-plan gains (max difference 1.8 × 10⁻¹² Rs/t). *Results:* C beats harvest sale in 114/118 markets (mean +Rs 3,692/t, median 3,590); by season 2017 +1,877, 2018 -667, 2019 +4,708, 2020 +2,674, 2021 +3,044, 2022 -1,163, 2023 +8,594, 2024 +10,591 (6/8 positive, one-sample t across seasons p = 0.039; across markets Wilcoxon p < 10⁻²⁰, but markets within a season are not independent, so the season-level test is the honest one). B stores in only 4 markets (H2 holds nationally). Win rate 97% where the cheapest month is Mar–May vs 83% elsewhere; Nov/Apr swing vs gain Spearman ρ = 0.41. Median test MAPE 24.1%. *Stress test:* prices × (1 − 0.01 t) × 0.99 − Rs 500/t in both forecast and actual (1%/month quality discount, 1% fee, selling cost): C still wins in 105/118 markets (mean +Rs 2,367/t), but the season-level gain is not significant (p = 0.11).
+
 ---
 
 ## 7. Sensitivity analysis
@@ -449,6 +451,7 @@ The calibrated column with our forecast equals the one-at-a-time δ sensitivity 
 | 12 | Price-taker assumption, to be checked | Checked: 3.6% of Lasalgaon April arrivals, implied impact about 1.6% | Done as planned |
 | 13 | Rerun on potato "if time allows" | Not done | Time; the model needs only a price series and a loss rate, so it transfers |
 | 14 | Not in the proposal | **Extension (10 Nov 2026):** NASA POWER satellite weather; new hypothesis H4 (late rain vs post-harvest price rise); a 1 November rain re-plan; value of loss-rate information (blind / sensor / calibrated) | Deepens the Industry 4.0 layer, where smart storage was one assumed loss rate; uses only syllabus methods (OLS as in H1; LP scenario and sensitivity analysis on the existing backtest). H1–H3 results unchanged |
+| 15 | Not in the proposal | **All-India robustness check (22 Nov 2026):** the unchanged model on 118 markets in 15 states (§6) | Tests whether the result is specific to Maharashtra; same syllabus methods, no new model. H1–H4 results unchanged |
 
 ---
 

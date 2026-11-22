@@ -2,7 +2,7 @@
 
 Team Kanda Code · Industry 4.0 (MS4001) · IIT Madras BS in Data Science
 
-**Target running time: 14:30** (hard limit 15:00; this leaves a 0:30 buffer for slide changes and one breath per hand-off). Times assume about 150 words a minute. Every number below is taken from `docs/KEY_NUMBERS.md`; do not round differently on the day.
+**Target running time: 14:50** (hard limit 15:00; this leaves a 0:10 buffer for slide changes and one breath per hand-off). Times assume about 150 words a minute. Every number below is taken from `docs/KEY_NUMBERS.md`; do not round differently on the day.
 
 ## Running order
 
@@ -20,20 +20,21 @@ Team Kanda Code · Industry 4.0 (MS4001) · IIT Madras BS in Data Science
 | 10 | `forecast-test` | Kathan | 216 | 1:25 | 8:40 |
 | 11 | `lp-model` | Aaryan | 142 | 0:55 | 9:35 |
 | 12 | `plan-2024` | Aaryan | 133 | 0:55 | 10:30 |
-| 13 | `backtest` | Aaryan | 167 | 1:05 | 11:35 |
-| 14 | `smart-storage` | Yash | 98 | 0:40 | 12:15 |
-| 15 | `weather-sensors` | Yash | 116 | 0:45 | 13:00 |
-| 16 | `sensitivity` | Yash | 79 | 0:30 | 13:30 |
-| 17 | `implications` | Yash | 61 | 0:25 | 13:55 |
-| 18 | `limitations` | Yash | 45 | 0:20 | 14:15 |
-| 19 | `close` | Yash | 43 | 0:15 | 14:30 |
+| 13 | `backtest` | Aaryan | 142 | 0:55 | 11:25 |
+| 14 | `all-india` | Aaryan | 76 | 0:30 | 11:55 |
+| 15 | `smart-storage` | Yash | 98 | 0:40 | 12:35 |
+| 16 | `weather-sensors` | Yash | 116 | 0:45 | 13:20 |
+| 17 | `sensitivity` | Yash | 79 | 0:30 | 13:50 |
+| 18 | `implications` | Yash | 61 | 0:25 | 14:15 |
+| 19 | `limitations` | Yash | 45 | 0:20 | 14:35 |
+| 20 | `close` | Yash | 43 | 0:15 | 14:50 |
 
 | Presenter | Slides | Speaking time |
 |---|---|---|
 | Raghuram Devarayi | cover, problem, why, questions, data | 2:55 |
 | Parashmani Datta | eda, seasonality, h1 | 2:55 |
 | Kathan Desai | forecast-models, forecast-test | 2:50 |
-| Aaryan Choudhary | lp-model, plan-2024, backtest | 2:55 |
+| Aaryan Choudhary | lp-model, plan-2024, backtest, all-india | 3:15 |
 | Yash Arabhavi | smart-storage, weather-sensors, sensitivity, implications, limitations, close | 2:55 |
 
 Each member speaks for about the same time (equal 20% contribution). Hand-offs are written into the last line of each section.
@@ -102,35 +103,39 @@ Each member speaks for about the same time (equal 20% contribution). Hand-offs a
 
 > Here is the 2024 plan. A and B sell all 1,000 tonnes in April. C sells 300 tonnes in April, the minimum a 700-tonne store allows, then holds and sells 21 tonnes in September and 300 in each of October and November. On the right, the shaded area is the stock in C and the dashed line is the March forecast, which turned out far below actual prices. Because this is an LP, we also get shadow prices, and we verified each one by re-solving with one tonne more and one tonne less. One more tonne of storage capacity is worth 4,028 rupees. One more tonne a month of handling capacity is worth 6,526, because the 300-tonne cap binds in October and November. The loan sale is slack, so its value is zero.
 
-**13. Tested on prices the model never saw (H2)** · `backtest` · 1:05 (ends at 11:35)
+**13. Tested on prices the model never saw (H2)** · `backtest` · 0:55 (ends at 11:25)
 
-> For each season from 2017 to 2024, we plan from a March forecast and score the plan at actual prices against selling all in April. H2 is not supported. At 18 percent loss a month, the chawl plan never stores, so it equals harvest sale in all eight seasons; and a naive September-to-November rule in a chawl would lose 1,149 rupees a tonne. In low-loss storage, the plan beats harvest sale in 7 of 8 seasons, by 4,546 rupees a tonne on average; a one-sided paired t-test gives p of 0.006, and a rank test agrees. The one loss was 2018. Even with perfect foresight, a chawl adds only 791 rupees a tonne. A fixed September-to-November calendar rule does better on average in cold storage, 5,508 rupees a tonne, though not in the 2023-24 test seasons. So the seasonal shape does the work; the LP adds knowing when not to store, and a price on every constraint. Yash will now put a rupee value on smart storage.
+> For each season from 2017 to 2024, we plan from a March forecast and score the plan at actual prices against selling all in April. H2 is not supported. At 18 percent loss a month, the chawl plan never stores, so it equals harvest sale in all eight seasons; and a naive September-to-November rule in a chawl would lose 1,149 rupees a tonne. In low-loss storage, the plan beats harvest sale in 7 of 8 seasons, by 4,546 rupees a tonne on average, one-sided p of 0.006. The one loss was 2018. A fixed September-to-November calendar rule does better on average in cold storage, 5,508 rupees a tonne, though not in the 2023-24 test seasons. So the seasonal shape does the work; the LP adds knowing when not to store, and a price on every constraint. Next: does it work outside Maharashtra?
+
+**14. Same model, 118 markets, 15 states (all-India check)** · `all-india` · 0:30 (ends at 11:55)
+
+> Does this only work in Maharashtra? We reran the same model, unchanged, on every Indian onion market with near-complete data: 118 markets in 15 states. Cold storage beat selling at harvest in 114 of them, by 3,692 rupees a tonne on average, and the chawl again almost never stored. With market fees and quality loss added, it still wins in 105 markets, but no longer significantly. Yash will now put a rupee value on smart storage.
 
 *Hand-off:* “Yash will now put a rupee value on smart storage.”
 
 ### Yash Arabhavi
 
-**14. Smart storage pays its way (H3)** · `smart-storage` · 0:40 (ends at 12:15)
+**15. Smart storage pays its way (H3)** · `smart-storage` · 0:40 (ends at 12:35)
 
 > Thanks, Aaryan. This is H3, our Industry 4.0 story: a closed loop. Sensors track temperature and humidity; alerts and cooling hold the loss near ICAR's cold-store 1.8 percent a month instead of 18; the LP re-plans monthly; the FPO sells or holds. It earns 4,546 rupees per tonne over the chawl across eight seasons. Monthly re-planning earns about the same, so the value is in cutting loss. At about 16,700 rupees a tonne of space versus 7,000 for a chawl, it pays back in one and a half seasons: 45.5 lakh rupees a year for a 1,000-tonne FPO.
 
-**15. What satellites and sensors are worth (extension: H4 and value of information)** · `weather-sensors` · 0:45 (ends at 13:00)
+**16. What satellites and sensors are worth (extension: H4 and value of information)** · `weather-sensors` · 0:45 (ends at 13:20)
 
 > Beyond the proposal: what is extra data worth? With NASA POWER satellite rain, each 100 millimetres of September-October rain goes with about a 20 percent bigger autumn rise, p of 0.036. It is fragile: drop 2005, 2018 or 2019 and p passes 0.05, so H4 is weakly supported. A live rain feed is worth zero: the handling cap already fixes November's sales. Sensors: a chawl measured at 8 percent a month earns 2,200 rupees a tonne, where the book 18 percent says never store. In a cold store, sensing earns 545 to 746 rupees a tonne if losses climb to 8 to 15 percent, but only with accurate prices. Lesson: measure the store before the season.
 
-**16. Storage pays below 12.4% loss a month** · `sensitivity` · 0:30 (ends at 13:30)
+**17. Storage pays below 12.4% loss a month** · `sensitivity` · 0:30 (ends at 13:50)
 
 > The grid varies the chawl's monthly loss and storage cost; purple cells gain, copper cells lose. At 250 rupees a month, storage breaks even at about 12.4 percent loss a month; the ICAR chawl, at 18, is above it. The cold store stays positive at 8 percent loss, plus 374 rupees, and at double the cost, plus 1,069. Removing the handling cap leaves the result intact. Each point of monthly loss avoided is worth about 685 rupees a tonne.
 
-**17. What each decision-maker should do** · `implications` · 0:25 (ends at 13:55)
+**18. What each decision-maker should do** · `implications` · 0:25 (ends at 14:15)
 
 > FPOs: never store in a chawl on hope; with low-loss storage, sell the minimum in April, hold for September to November, and add capacity and handling first. Buffer agencies: the storage type decides whether a buffer earns or rots. Investors: payback is about 1.5 seasons at ICAR's cost, but a small cold room at 50,000 rupees a tonne does not pay.
 
-**18. What our model does not claim** · `limitations` · 0:20 (ends at 14:15)
+**19. What our model does not claim** · `limitations` · 0:20 (ends at 14:35)
 
 > Our limits, openly. The series is a composite, about 10 percent below Lasalgaon. H1 is an association, and H4 is fragile. Forecasts are biased low. Loss rates come from 120-day trials. We skip grading, credit and export bans, and eight seasons make our tests indicative.
 
-**19. Cut the rot first, then time the sale · Questions** · `close` · 0:15 (ends at 14:30)
+**20. Cut the rot first, then time the sale · Questions** · `close` · 0:15 (ends at 14:50)
 
 > Our answer: cut the rot first, then time the sale. Low-loss storage adds about four and a half rupees a kilo and pays back in a season and a half. Measure the store first. Thank you. We are happy to take your questions.
 
@@ -143,7 +148,7 @@ Each member speaks for about the same time (equal 20% contribution). Hand-offs a
 **Two full run-throughs with a stopwatch, then one with a mock Q&A.**
 
 Timing
-- [ ] Each presenter finishes within ±10 s of their total in the table above; whole deck at or under 14:30.
+- [ ] Each presenter finishes within ±10 s of their total in the table above; whole deck at or under 14:50.
 - [ ] Practise the five hand-off lines word for word; the next speaker starts on the next slide without a pause.
 - [ ] If running long, cut the second sentence of each figure description, never a number or a limitation.
 - [ ] One person (Aaryan, coordination) keeps time with a silent phone timer and signals at 10:00 and 13:30.
