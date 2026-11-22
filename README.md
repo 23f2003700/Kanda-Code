@@ -29,7 +29,7 @@ A price forecast and a linear programme decide, month by month, how much of a 1,
 
 | | What | Where |
 |---|---|---|
-| 🎞️ | **Presentation** (20 slides, 15 min, speaker notes) | **[23f2003700.github.io/Kanda-Code](https://23f2003700.github.io/Kanda-Code/)** · PDF: [`presentation/Kanda_Code_Deck.pdf`](presentation/Kanda_Code_Deck.pdf) |
+| 🎞️ | **Viva presentation** (15 animated slides, per-speaker [script](presentation/viva/VIVA_SCRIPT.md)) | **[23f2003700.github.io/Kanda-Code](https://23f2003700.github.io/Kanda-Code/)** · original 20-slide deck: [/classic](https://23f2003700.github.io/Kanda-Code/classic/) · PDF: [`presentation/Kanda_Code_Deck.pdf`](presentation/Kanda_Code_Deck.pdf) |
 | ▶️ | **Recorded explanation** | [YouTube](https://www.youtube.com/watch?v=mao4kfn39vw) |
 | 📄 | **Summary report** (3 pages, Times New Roman 11 pt) | [`report/KandaCode_Final_Report.pdf`](report/KandaCode_Final_Report.pdf) · editable [`.docx`](report/KandaCode_Final_Report.docx) |
 | 📓 | **Analysis notebook** (executed, narrated) | [`notebooks/KandaCode_Analysis.ipynb`](notebooks/KandaCode_Analysis.ipynb) |
@@ -37,8 +37,9 @@ A price forecast and a linear programme decide, month by month, how much of a 1,
 | 🧮 | **Source code** (one analysis module + builders) | [`src/`](src/) |
 | 👥 | **Individual contribution sheet** (20% × 5) | [`submission/Kanda_Code_Individual_Contribution.xlsx`](submission/Kanda_Code_Individual_Contribution.xlsx) |
 | 📝 | Approved proposal · methodology · data dictionary · every quotable number | [`docs/`](docs/) |
+| 🗓️ | **Project timeline** (dated, with sources) | [`TIMELINE.md`](TIMELINE.md) |
 
-> **Presenting from the web deck:** `→` / `Space` next · `←` back · `F` full screen · `N` speaker notes with a 15-minute timer · `O` all slides · `Ctrl+P` saves a one-slide-per-page PDF. Deep links work: [`#/12`](https://23f2003700.github.io/Kanda-Code/#/12) opens slide 12.
+> **Presenting the viva deck:** click once for full screen · `→` / `Space` next · `←` back (every animation plays exactly in reverse) · `N` speaker notes · `T` timer · type a number + `Enter` to jump. Deep links work: [`#12`](https://23f2003700.github.io/Kanda-Code/#12) opens slide 12.
 
 ---
 
