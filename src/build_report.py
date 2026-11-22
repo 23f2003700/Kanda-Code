@@ -561,12 +561,13 @@ set_col_widths(gl, [Inches(7.1 / 4)] * 4)
 # 1-4
 # =========================================================================================================
 heading("1", "Problem Statement")
-para(f"Onion farmers in Maharashtra sell most of their rabi crop at the April–May harvest low, although November prices "
-     f"beat April’s in every year 2014–24, by a median {eda['median_rise_apr_to_nov_pct']:.0f}%; Lasalgaon farmers have "
-     f"been paid Rs 7–10/kg against a cultivation cost of Rs 22–25/kg [16]. Waiting is not free: stored onions shrink and rot – 54.89% in 120 days in a "
-     f"ventilated *kanda chawl*, only 5.00–7.14% in cold storage [4]. **Decision problem:** a farmer producer organisation "
-     f"(FPO) holds *Q* = {LPp['Q']:,.0f} t at harvest. How many tonnes should it sell in each month, April to December, so "
-     f"that the price rise beats storage loss and cost – and what is low-loss, sensor-monitored storage worth?")
+para(f"Farmers sell most rabi onion at the April–May harvest low, yet in Maharashtra, the largest producer, "
+     f"November prices beat April’s every year 2014–24 (median +{eda['median_rise_apr_to_nov_pct']:.0f}%); Lasalgaon farmers "
+     f"got Rs 7–10/kg against a Rs 22–25/kg cost [16]. Waiting is not free: stored onions shrink and rot – 54.89% in 120 "
+     f"days in a ventilated *kanda chawl*, 5.00–7.14% in cold storage [4]. **Decision problem:** a farmer producer "
+     f"organisation (FPO) holds *Q* = {LPp['Q']:,.0f} t at harvest. How many tonnes should it sell each month, April–December, "
+     f"so the price rise beats storage loss and cost – and what is low-loss, sensor-monitored storage worth? Solved for "
+     f"Maharashtra, it is rerun unchanged on {AI['markets']} markets in {AI['states']} states (§7).")
 
 heading("2", "Motivation for Problem Selection")
 para("**Recurring and large.** The government bought about 6.4 lakh t of onion for its buffer in 2023–24, yet in 2019 "
